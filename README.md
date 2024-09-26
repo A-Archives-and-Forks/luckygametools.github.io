@@ -1,2 +1,2 @@
-# lgt.github.io
+# luckygametools.github.io
 Lucky Game Tools  Official website
