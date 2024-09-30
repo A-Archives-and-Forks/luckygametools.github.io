@@ -7,6 +7,8 @@ Installer exe(https://raw.githubusercontent.com/hailsteam/steam-cfg/main/LuckyGa
 
 Installer exe for china(https://raw.githubusercontent.com/hailsteam/steam-cfg/main/LuckyGameToolsInstaller_zh.exe)
 
+                  https://gitlab.com/hailsteam/steam-cfg/-/raw/main/LuckyGameToolsInstaller_zh.exe
+
 Link with TG: https://t.me/luckygametools
 
 <h1>Not Only一键自动入库steam游戏工具: LuckyGameTools （永久免费）</h1>
@@ -24,7 +26,7 @@ Link with TG: https://t.me/luckygametools
 <h1>此软件为纯本地绿色软件，所有资源来自互联网，可能会出现杀毒误报，请大家放心食用</h1>
 
 
-墙内的铁汁们下载链接打不开的可以试试这个网盘 [https://gofile.io/d/Jn4ryP](https://gofile.io/d/Jn4ryP)
+墙内的铁汁们下载链接打不开的可以试试这个网盘 [https://gofile.io/d/xHaxMx](https://gofile.io/d/xHaxMx)
 
 大家注意一下使用时：
 
