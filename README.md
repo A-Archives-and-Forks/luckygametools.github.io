@@ -1,3 +1,13 @@
+<style>
+body {
+  background-image: url('background.jpg'); /* 确保路径正确 */
+  background-size: cover; /* 图片覆盖整个页面 */
+  background-position: center; /* 图片居中 */
+  background-repeat: no-repeat; /* 不重复图片 */
+  background-attachment: fixed; /* 背景随页面滚动 */
+}
+</style>
+
 # Lucky Game Tools   (free Forever free)
 Lucky Game Tools 《steamtools auto import》
 
