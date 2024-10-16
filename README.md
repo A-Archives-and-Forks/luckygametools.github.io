@@ -22,7 +22,9 @@ Installer exe for china(https://raw.githubusercontent.com/hailsteam/steam-cfg/ma
 Link with TG: https://t.me/luckygametools
 
 <h1>Not Only一键自动入库steam游戏工具: LuckyGameTools （永久免费）</h1>
+
 <h2>支持D加密游戏自动授权 支持D加密游戏自动授权 授权方法进TG联系群主</h2>
+
 ##
 - 自动安装清单文件
 - 一键解锁游戏
