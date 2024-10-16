@@ -22,7 +22,7 @@ Installer exe for china(https://raw.githubusercontent.com/hailsteam/steam-cfg/ma
 Link with TG: https://t.me/luckygametools
 
 <h1>Not Only一键自动入库steam游戏工具: LuckyGameTools （永久免费）</h1>
-
+<h2>支持D加密游戏自动授权 支持D加密游戏自动授权 授权方法进TG联系群主</h2>
 ##
 - 自动安装清单文件
 - 一键解锁游戏
@@ -31,11 +31,8 @@ Link with TG: https://t.me/luckygametools
 - 支持GTA5(及三部曲)和荒野大镖客2一键畅玩
 - 支持steam及社区加速
 
-<h1>支持D加密游戏自动授权 支持D加密游戏自动授权 授权方法进TG联系群主</h1>
+<h2>支持D加密游戏自动授权 授权方法进TG联系群主 支持D加密游戏自动授权</h2>
 
-<h1>支持D加密游戏自动授权 授权方法进TG联系群主 支持D加密游戏自动授权</h1>
-
-<h1>支持D加密游戏自动授权 支持D加密游戏自动授权 授权方法进TG联系群主</h1>
 
 <h2>游戏资源每天更新中，很多游戏都是满DLC豪华版</h2>
 
@@ -53,3 +50,5 @@ Link with TG: https://t.me/luckygametools
 3.初始使用游戏信息加载不全时，可以试下任务栏的“刷新”
 
 4.如出现一直"等待上线"的提示，可以关闭其它加速器再试(本软件自带steam加速功能,小技巧，右键->以管理员身份运行)
+
+<h2>支持D加密游戏自动授权 支持D加密游戏自动授权 授权方法进TG联系群主</h2>
