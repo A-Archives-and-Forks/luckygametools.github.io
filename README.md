@@ -27,7 +27,7 @@ Link with TG: https://t.me/luckygametools
 - 自动安装清单文件
 - 一键解锁游戏
 - 支持在线游戏-通过家庭共享后同时在线玩同一款游戏
-- 支持D加密游戏启动一次后自动授权(授权时退出本工具，启动游戏一次后，再运行本工具即可游戏D加密游戏，成功关闭windows的自动更新，防失效，关自动更新小工具:https://www.sordum.org/9470/windows-update-blocker-v1-8/)
+- 支持D加密游戏启动(支持自动授权,授权方法进TG联系)
 - 支持GTA5(及三部曲)和荒野大镖客2一键畅玩
 - 支持steam及社区加速
 
@@ -36,7 +36,7 @@ Link with TG: https://t.me/luckygametools
 <h1>此软件为纯本地绿色软件，所有资源来自互联网，可能会出现杀毒误报，请大家放心食用</h1>
 
 
-墙内的铁汁们下载链接打不开的可以试试这个网盘 [https://gofile.io/d/JHycDq](https://gofile.io/d/JHycDq)
+墙内的铁汁们下载链接打不开的可以试试这个网盘 [https://gofile.io/d/Bs58dv](https://gofile.io/d/Bs58dv)
 
 大家注意一下使用时：
 
