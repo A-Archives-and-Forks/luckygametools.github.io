@@ -35,7 +35,7 @@ Link with TG: https://t.me/luckygametools
 <h2>支持D加密游戏自动授权  激活需要神秘代码</h2>
 
 ## 激活步骤
-- 0.安装完成游戏后，在[电报群](https://t.me/luckygametools)联系群主
+- 0.安装完成游戏后，在[电报群](https://t.me/luckygametools)联系群主获取《神秘代码》
 - 1.退出正在运行的steam后
 - 2.复制完整的神秘代码
 - 3.鼠标移至本软件左侧的游戏上，会显示一个三角的启动按钮，点击他会启动steam
