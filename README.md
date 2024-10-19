@@ -31,7 +31,7 @@ Link with TG: https://t.me/luckygametools
 - 支持D加密游戏启动(支持自动授权,激活需要 神秘代码)
 - 支持GTA5(及三部曲)和荒野大镖客2一键畅玩
 - 支持steam及社区加速
-- 支持480联机组队(在steam的游戏右键设置，添加启动参数 -luckygametools ，再启动游戏就可以联机了)
+- 支持480联机组队-不支持网游类型(在steam的游戏右键设置，添加启动参数 -luckygametools ，再启动游戏就可以联机了)
 
 <h2>支持D加密游戏自动授权  激活需要神秘代码</h2>
 
@@ -55,7 +55,7 @@ Link with TG: https://t.me/luckygametools
 
 
 
-墙内的铁汁们下载链接打不开的可以试试这个网盘 [https://gofile.io/d/e8bFSn](https://gofile.io/d/e8bFSn)
+墙内的铁汁们下载链接打不开的可以试试这个网盘 [https://gofile.io/d/BHB3Yh](https://gofile.io/d/BHB3Yh)
 
 大家注意一下使用时：
 
