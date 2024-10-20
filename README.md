@@ -56,7 +56,7 @@ Link with TG: https://t.me/luckygametools
 
 
 
-墙内的铁汁们下载链接打不开的可以试试这个网盘 [https://gofile.io/d/BHB3Yh](https://gofile.io/d/BHB3Yh)
+墙内的铁汁们下载链接打不开的可以试试这个网盘 [https://gofile.io/d/4FeJvB](https://gofile.io/d/4FeJvB)
 
 大家注意一下使用时：
 
