@@ -17,7 +17,6 @@ Installer exe(https://raw.githubusercontent.com/hailsteam/steam-cfg/main/LuckyGa
 
 Installer exe for china(https://raw.githubusercontent.com/hailsteam/steam-cfg/main/LuckyGameToolsInstaller_zh.exe)
 
-                  https://gitlab.com/hailsteam/steam-cfg/-/raw/main/LuckyGameToolsInstaller_zh.exe
 
 Link with TG: https://t.me/luckygametools
 
