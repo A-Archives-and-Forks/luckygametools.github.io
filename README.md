@@ -1,14 +1,5 @@
-<style>
-body {
-  background-image: url('background.jpg'); 
-  background-size: cover; 
-  background-position: center;
-  background-repeat: no-repeat; 
-  background-attachment: fixed; 
-}
-</style>
 
-# Lucky Game Tools   (free Forever free)
+# Lucky Game Tools   [(free Forever free)](https://luckygametools.github.io/)
 Lucky Game Tools 《steamtools auto import》
 
 Link with Mail: LuckyGameTools@gmail.com
@@ -53,9 +44,6 @@ Link with TG: https://t.me/luckygametools
 
 <h3>此软件为纯本地绿色软件，所有资源来自互联网，没有服务器，所以也不可能去收集大家的隐私信息，也不会有用户登陆啥的之类的功能,可能会出现杀毒误报，请大家放心食用</h3>
 
-
-
-墙内的铁汁们下载链接打不开的可以试试这个网盘 [https://gofile.io/d/feF5RO](https://gofile.io/d/feF5RO)
 
 大家注意一下使用时：
 
