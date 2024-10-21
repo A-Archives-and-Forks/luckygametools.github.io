@@ -8,19 +8,19 @@ body {
 }
 </style>
 
-# Lucky Game Tools   (free Forever free)
-Lucky Game Tools 《steamtools auto import》
+# Lucky Game Tools   (永久免费)
+Lucky Game Tools 《可自动入库steam》
 
-Link with Mail: LuckyGameTools@gmail.com
+电报: https://t.me/luckygametools
 
-Installer exe(https://raw.githubusercontent.com/hailsteam/steam-cfg/main/LuckyGameToolsInstaller.exe)
+邮箱: LuckyGameTools@gmail.com
 
-Installer exe for china(https://raw.githubusercontent.com/hailsteam/steam-cfg/main/LuckyGameToolsInstaller_zh.exe)
+固定安装包英文(https://raw.githubusercontent.com/hailsteam/steam-cfg/main/LuckyGameToolsInstaller.exe)
+
+固定安装包中文(https://raw.githubusercontent.com/hailsteam/steam-cfg/main/LuckyGameToolsInstaller_zh.exe)
 
 
-Link with TG: https://t.me/luckygametools
-
-<h1>Not Only一键自动入库steam游戏工具: LuckyGameTools （永久免费）</h1>
+<h1>不仅仅 是 一键自动入库steam游戏工具: LuckyGameTools （永久免费）</h1>
 
 
 ##
