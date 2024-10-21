@@ -1,6 +1,9 @@
 ---
 layout: default
-title: README_zh
+title: Home
 ---
+# Wellcome
 
-{% include_relative README_zh.md %}
+- [English](README.md)
+- [中文](README_zh.md)
+
