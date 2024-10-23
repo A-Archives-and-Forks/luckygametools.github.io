@@ -30,7 +30,7 @@ Installer exe for china(https://raw.githubusercontent.com/hailsteam/steam-cfg/ma
 - Support DRM game startup (supports automatic authorization, activation requires mysterious code)
 - Support GTA5 (and trilogy) and Red Dead Redemption 2 for one key gameplay
 - Support Steam and community acceleration
-- Supports 480 online team building - does not support online game types (right-click on the game settings on Steam, add the startup parameter - luckygametools, and then start the game to go online)
+- Supports 480 online team building - does not support online game types ([right-click on the game settings on Steam, add the startup parameter - luckygametools](steam-arg.jpg), and then start the game to go online)
 
 <h2>Supporting automatic authorization activation for DRM games requires mysterious code</h2>
 
