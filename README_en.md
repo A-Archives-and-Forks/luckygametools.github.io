@@ -13,26 +13,26 @@ Lucky Game Tools 《steamtools auto import》
 
 Link with Mail: LuckyGameTools@gmail.com
 
+Link with TG: https://t.me/luckygametools
+
 Installer exe(https://raw.githubusercontent.com/hailsteam/steam-cfg/main/LuckyGameToolsInstaller.exe)
 
 Installer exe for china(https://raw.githubusercontent.com/hailsteam/steam-cfg/main/LuckyGameToolsInstaller_zh.exe)
 
 
-Link with TG: https://t.me/luckygametools
-
-<h1>Not Only一键自动入库steam游戏工具: LuckyGameTools （永久免费）</h1>
+<h1>Not Only One Key Automatic Storage Steam Game Tool: LuckyGameTools （Forever free）</h1>
 
 
 ##
-- 自动安装清单文件
-- 一键解锁游戏
-- 支持在线游戏-通过家庭共享后同时在线玩同一款游戏
-- 支持D加密游戏启动(支持自动授权,激活需要 神秘代码)
-- 支持GTA5(及三部曲)和荒野大镖客2一键畅玩
-- 支持steam及社区加速
-- 支持480联机组队-不支持网游类型(在steam的游戏右键设置，添加启动参数 -luckygametools ，再启动游戏就可以联机了)
+- Automatic Download Manifest
+- unlock game
+- unlock Family Sharing
+- Support DRM game startup (supports automatic authorization, activation requires mysterious code)
+- Support GTA5 (and trilogy) and Red Dead Redemption 2 for one key gameplay
+- Support Steam and community acceleration
+- Supports 480 online team building - does not support online game types (right-click on the game settings on Steam, add the startup parameter - luckygametools, and then start the game to go online)
 
-<h2>支持D加密游戏自动授权  激活需要神秘代码</h2>
+<h2>Supporting automatic authorization activation for DRM games requires mysterious code</h2>
 
 ## 激活步骤
 - 0.安装完成游戏后，启动一次确认弹出了D加密的提示窗，然在[电报群](https://t.me/luckygametools)联系群主获取《神秘代码》
@@ -47,15 +47,12 @@ Link with TG: https://t.me/luckygametools
 
 <h2>游戏资源每天更新中，很多游戏都是满DLC豪华版</h2>
 
-<h1>此软件为纯本地绿色软件，所有资源来自互联网，没有服务器，所以也不可能去收集大家的隐私信息，也不会有用户登陆啥的之类的功能,可能会出现杀毒误报，请大家放心食用</h1>
+<h1>This software is purely local green software. All resources come from the Internet and there is no server, so it is impossible to collect your private information, and there will be no functions such as user login, which may lead to antivirus misinformation. Please rest assured that you can use it</h1>
 
-<h2>此软件为纯本地绿色软件，所有资源来自互联网，没有服务器，所以也不可能去收集大家的隐私信息，也不会有用户登陆啥的之类的功能,可能会出现杀毒误报，请大家放心食用</h2>
+<h2>This software is purely local green software. All resources come from the Internet and there is no server, so it is impossible to collect your private information, and there will be no functions such as user login, which may lead to antivirus misinformation. Please rest assured that you can use it</h2>
 
-<h3>此软件为纯本地绿色软件，所有资源来自互联网，没有服务器，所以也不可能去收集大家的隐私信息，也不会有用户登陆啥的之类的功能,可能会出现杀毒误报，请大家放心食用</h3>
+<h3>This software is purely local green software. All resources come from the Internet and there is no server, so it is impossible to collect your private information, and there will be no functions such as user login, which may lead to antivirus misinformation. Please rest assured that you can use it</h3>
 
-
-
-墙内的铁汁们下载链接打不开的可以试试这个网盘 [https://gofile.io/d/feF5RO](https://gofile.io/d/feF5RO)
 
 大家注意一下使用时：
 
@@ -67,4 +64,4 @@ Link with TG: https://t.me/luckygametools
 
 4.如出现一直"等待上线"的提示，可以关闭其它加速器再试(本软件自带steam加速功能,小技巧，右键->以管理员身份运行)
 
-<h2>支持D加密游戏自动授权  激活需要神秘代码</h2>
+<h2>Supporting automatic authorization activation for DRM games requires mysterious code</h2>
