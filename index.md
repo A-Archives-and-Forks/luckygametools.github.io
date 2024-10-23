@@ -14,6 +14,6 @@ body {
 
 # Wellcome
 
-- <a href="README_en.md" target="_blank">English</a>
-- <a href="README_zh.md" target="_blank">中文</a>
+- <a href="README_en.html" target="_blank">English</a>
+- <a href="README_zh.html" target="_blank">中文</a>
 
