@@ -34,18 +34,18 @@ Installer exe for china(https://raw.githubusercontent.com/hailsteam/steam-cfg/ma
 
 <h2>Supporting automatic authorization activation for DRM games requires mysterious code</h2>
 
-## 激活步骤
-- 0.安装完成游戏后，启动一次确认弹出了D加密的提示窗，然在[电报群](https://t.me/luckygametools)联系群主获取《神秘代码》
-- 1.退出正在运行的steam后
-- 2.复制完整的神秘代码
-- 3.鼠标移至本软件左侧的游戏上，会显示一个三角的启动按钮，点击他会启动steam
-- 4.登陆一下自己的帐号
-- 5.等待激活完成后(有个弹窗英文提示激活成功，并会自动退出steam)
-- 6.然后大家自己正常启动steam后就可以畅玩游戏了
-- 7.帮忙到您了的话，帮忙在群里面内咱点个赞
+## Activation steps
+- 0.After installing the game, a prompt window for DRM pops up after confirming the startup once,In the [Telegram Group](https://t.me/luckygametools ) Contact the group leader to obtain the 'Mysterious Code'
+- 1.Exit the running Steam
+- 2.Copy the complete mysterious code
+- 3.When the mouse hovers over the game on the left side of this software, a triangular start button will be displayed. Clicking on it will launch Steam
+- 4.Log in to your own account
+- 5.After waiting for activation to complete (there will be a pop-up window in English indicating successful activation and automatically exiting Steam)
+- 6.Then everyone can start Steam normally and play the game smoothly
+- 7.If it helps you, please give us a like in the group chat
 
 
-<h2>游戏资源每天更新中，很多游戏都是满DLC豪华版</h2>
+<h2>Game resources are updated daily, and many games are full of DLC deluxe versions</h2>
 
 <h1>This software is purely local green software. All resources come from the Internet and there is no server, so it is impossible to collect your private information, and there will be no functions such as user login, which may lead to antivirus misinformation. Please rest assured that you can use it</h1>
 
@@ -54,14 +54,14 @@ Installer exe for china(https://raw.githubusercontent.com/hailsteam/steam-cfg/ma
 <h3>This software is purely local green software. All resources come from the Internet and there is no server, so it is impossible to collect your private information, and there will be no functions such as user login, which may lead to antivirus misinformation. Please rest assured that you can use it</h3>
 
 
-大家注意一下使用时：
+Please pay attention when using it：
 
-1.luckygametools使用了steam目录下的hid.dll文件，如果与其它入库工具相冲突，需要备份一下hid.dll文件
+1.LuckygameTools uses the hid. dll file in the Steam directory. If it conflicts with other library tools, it is necessary to back up the hid. dll file
 
-2.程序打开后提示进行安装，如果一直提示初始化中，应该是由于国内网络原因，重新启动一下程序两次应该可以正常
+2.After opening the program, it prompts for installation. If it keeps prompting for initialization, it should be due to domestic network issues. Restarting the program twice should work properly
 
-3.初始使用游戏信息加载不全时，可以试下任务栏的“刷新”
+3.When the game information is not fully loaded during initial use, you can try refreshing the taskbar
 
-4.如出现一直"等待上线"的提示，可以关闭其它加速器再试(本软件自带steam加速功能,小技巧，右键->以管理员身份运行)
+4.If there is a prompt of "waiting to go online" all the time, you can turn off other accelerators and try again (this software comes with Steam acceleration function, tips, right-click ->run as administrator)
 
 <h2>Supporting automatic authorization activation for DRM games requires mysterious code</h2>
