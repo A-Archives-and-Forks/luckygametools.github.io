@@ -15,9 +15,10 @@ Lucky Game Tools 《可自动入库steam》
 
 邮箱: LuckyGameTools@gmail.com
 
-固定安装包英文(https://raw.githubusercontent.com/hailsteam/steam-cfg/main/LuckyGameToolsInstaller.exe)
 
-固定安装包中文(https://raw.githubusercontent.com/hailsteam/steam-cfg/main/LuckyGameToolsInstaller_zh.exe)
+最新安装包中文(https://raw.githubusercontent.com/hailsteam/steam-cfg/main/LuckyGameToolsInstaller_zh.exe)
+
+最新安装包英文(https://raw.githubusercontent.com/hailsteam/steam-cfg/main/LuckyGameToolsInstaller.exe)
 
 墙内的铁汁们下载链接打不开的可以试试这个网盘 [https://gofile.io/d/f3Qm9H](https://gofile.io/d/f3Qm9H)
 
