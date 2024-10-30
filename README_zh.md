@@ -24,6 +24,7 @@ Lucky Game Tools 《可自动入库steam》
 
 <h1>不仅仅 是 一键自动入库steam游戏工具: LuckyGameTools （永久免费）</h1>
 
+<h2>今日口令 将会在电报群不定期更新，禁止在steam群中分享</h2>
 
 ## 支持内容
 - 自动安装清单文件
