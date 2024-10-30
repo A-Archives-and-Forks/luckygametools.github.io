@@ -22,6 +22,7 @@ Installer exe for china(https://raw.githubusercontent.com/hailsteam/steam-cfg/ma
 
 <h1>Not Only One Key Automatic Storage Steam Game Tool: LuckyGameTools （Forever free）</h1>
 
+<h2>DCode will be updated irregularly in the [Telegram group](https://t.me/luckygametools ), and sharing in the Steam group is prohibited</h2>
 
 ##
 - Automatic Download Manifest
