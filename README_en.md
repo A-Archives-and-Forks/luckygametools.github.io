@@ -26,6 +26,15 @@ Installer exe for china(https://raw.githubusercontent.com/hailsteam/steam-cfg/ma
 
 <h3>Some games are only open to users who have contributed to the project. Please contact the Telegram group owner to grant permission https://t.me/luckygametools</h3>
 
+
+## Donation method:
+-     1.Share this software on social media platforms
+-     eg：1.1 Share in two or more Telegram groups (with over 100 members),
+-         1.2 Leave at least 3 comments on YouTube game related videos
+-         1.3 Other main gaming media platforms are also available
+-     2.Screenshot of purchase orders through advertising links (trainer or top ad banner image)
+-     3.Provide at least one manifest that have not been listed on the platform
+
 ##
 - Automatic Download Manifest
 - unlock game
