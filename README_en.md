@@ -24,6 +24,8 @@ Installer exe for china(https://raw.githubusercontent.com/hailsteam/steam-cfg/ma
 
 <h2>DCode will be updated irregularly in the [Telegram group](https://t.me/luckygametools ), and sharing in the Steam group is prohibited (Import Game Before Copy DCode)</h2>
 
+<h3>Some games are only open to special users. Please contact the Telegram group owner to grant permission https://t.me/luckygametools</h3>
+
 ##
 - Automatic Download Manifest
 - unlock game
