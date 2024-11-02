@@ -20,7 +20,7 @@ Lucky Game Tools 《可自动入库steam》
 
 最新安装包英文(https://raw.githubusercontent.com/hailsteam/steam-cfg/main/LuckyGameToolsInstaller.exe)
 
-墙内的铁汁们下载链接打不开的可以试试这个网盘 [https://gofile.io/d/0dSxis](https://gofile.io/d/0dSxis)
+墙内的铁汁们下载链接打不开的可以试试这个网盘 [https://gofile.io/d/yVfFJU](https://gofile.io/d/yVfFJU)
 
 <h1>不仅仅 是 一键自动入库steam游戏工具: LuckyGameTools （永久免费）</h1>
 
