@@ -9,7 +9,7 @@ body {
 </style>
 
 # Lucky Game Tools   (永久免费)
-Lucky Game Tools 《可自动入库steam》
+Lucky Game Tools 《享受高质量的steam服务》
 
 电报: https://t.me/luckygametools
 
@@ -22,7 +22,7 @@ Lucky Game Tools 《可自动入库steam》
 
 墙内的铁汁们下载链接打不开的可以试试这个网盘 [https://gofile.io/d/iGp8EB](https://gofile.io/d/iGp8EB)
 
-<h1>不仅仅 是 一键自动入库steam游戏工具: LuckyGameTools （永久免费）</h1>
+<h1>一个简简单单的steam游戏工具: LuckyGameTools （永久免费）</h1>
 
 
 <h3>部分游戏只针对项目有贡献的用户开放,请联系电报群主开通权限 https://t.me/luckygametools </h3>
@@ -71,7 +71,7 @@ Lucky Game Tools 《可自动入库steam》
 
 大家注意一下使用时：
 
-1.luckygametools使用了steam目录下的hid.dll文件，如果与其它入库工具相冲突，需要备份一下hid.dll文件
+1.luckygametools使用了steam目录下的hid.dll文件，如果与其它工具相冲突，需要备份一下hid.dll文件
 
 2.程序打开后提示进行安装，如果一直提示初始化中，应该是由于国内网络原因，重新启动一下程序两次应该可以正常
 
