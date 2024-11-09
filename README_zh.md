@@ -47,7 +47,7 @@ Lucky Game Tools 《享受高质量的steam服务》
 - 支持游戏清单更新([联系群主](https://t.me/luckygametools)更新后,重新导入游戏即可)
 - 部分启动不了或者卡住的游戏，可尝试使用幸运参数启动(<a href="steam-arg.jpg" target="_blank">在steam的游戏右键设置，添加启动参数 -luckygametools</a> )
 - 部分启动不了或者卡住的游戏，参数搞不定的可以呼叫群主的神秘代码(保证进入)
-- 部分小H游只针对有贡献的用户开放
+- 小部分游戏只针对有贡献的用户开放
   
 <h2>支持D加密游戏自动授权</h2>
 
