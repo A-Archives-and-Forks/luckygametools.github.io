@@ -20,7 +20,7 @@ Lucky Game Tools 《享受高质量的steam服务》
 
 最新安装包英文(https://raw.githubusercontent.com/hailsteam/steam-cfg/main/LuckyGameToolsInstaller.exe)
 
-墙内的铁汁们下载链接打不开的可以试试这个网盘 [https://gofile.io/d/kcAKBy](https://gofile.io/d/kcAKBy)
+墙内的铁汁们下载链接打不开的可以试试这个网盘 [https://gofile.io/d/De4K0Z](https://gofile.io/d/De4K0Z)
 
 <h1>一个简简单单的steam游戏工具: LuckyGameTools （永久免费）</h1>
 
