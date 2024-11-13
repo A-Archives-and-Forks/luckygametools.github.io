@@ -8,7 +8,7 @@ body {
 }
 </style>
 
-# Lucky Game Tools   (永久免费)
+# Lucky Game Tools   (永久免费)1
 Lucky Game Tools 《可自动入库steam》
 
 电报: https://t.me/luckygametools
