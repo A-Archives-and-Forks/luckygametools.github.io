@@ -43,7 +43,7 @@ Lucky Game Tools 《享受高质量的steam服务》
 - 支持D加密游戏启动(支持自动授权,激活需要 神秘代码)
 - 支持GTA5(及三部曲)和荒野大镖客2一键畅玩
 - 支持steam及社区加速
-- 支持480联机组队-不支持网游类型(<a href="steam-arg.jpg" target="_blank">在steam的游戏右键设置，添加启动参数 -luckygametools</a> ，再启动游戏就可以联机了，此方法不能与正版联机)
+- 支持480联机组队-不支持网游类型(<a href="steam-arg.jpg" target="_blank">在steam的游戏右键设置，添加启动参数 -luckygametools</a> ，再启动游戏就可以联机了，此方法只能和非官方服务器联机)
 - 支持游戏清单更新([联系群主](https://t.me/luckygametools)更新后,重新导入游戏即可)
 - 部分启动不了或者卡住的游戏，可尝试使用幸运参数启动(<a href="steam-arg.jpg" target="_blank">在steam的游戏右键设置，添加启动参数 -luckygametools</a> )
 - 部分启动不了或者卡住的游戏，参数搞不定的可以呼叫群主的神秘代码(保证进入)
