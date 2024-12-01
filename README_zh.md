@@ -60,7 +60,7 @@ Lucky Game Tools 《享受高质量的steam服务》
 - 5.等待激活完成后(有个弹窗英文提示激活成功，并会自动退出steam)
 - 6.然后大家自己正常启动steam后就可以畅玩游戏了
 - 7.帮忙到您了的话，帮忙在群里面内咱点个赞
-- (<a href="[steam-arg.jpg](https://docs.qq.com/doc/DTUlQVVNBRFh6Y2Fr)" target="_blank">没有看明白的看这里</a> )
+- (<a href="https://docs.qq.com/doc/DTUlQVVNBRFh6Y2Fr" target="_blank">没有看明白的看这里</a> )
 
 
 <h2>游戏资源每天更新中，很多游戏都是满DLC豪华版</h2>
