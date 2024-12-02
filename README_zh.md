@@ -7,6 +7,8 @@ body {
   background-attachment: fixed; 
 }
 </style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7261994485465423"
+     crossorigin="anonymous"></script>
 
 # Lucky Game Tools   (永久免费)
 Lucky Game Tools 《享受高质量的steam服务》
