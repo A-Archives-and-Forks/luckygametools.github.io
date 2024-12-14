@@ -26,6 +26,7 @@ Lucky Game Tools 《享受高质量的steam服务》
 
 <h1>一个简简单单的steam游戏工具: LuckyGameTools （永久免费）</h1>
 
+<h2><a href="qa_zh.html" target="_blank">QA：常见问题</a> </h2>
 
 <h3>部分游戏只针对项目有贡献的用户开放,请联系电报群主开通权限 https://t.me/luckygametools </h3>
 
