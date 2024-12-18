@@ -35,7 +35,7 @@ Installer exe for china(https://raw.githubusercontent.com/luckygametools/steam-c
 -         1.2 Leave at least 3 comments on YouTube game related videos
 -         1.3 Other main gaming media platforms are also available
 -     2.Screenshot of purchase orders through advertising links (trainer or top ad banner image)
--     3.Provide at least one manifest that have not been listed on the platform
+-     3.And other shared
 
 ##
 - Automatic Download Manifest
