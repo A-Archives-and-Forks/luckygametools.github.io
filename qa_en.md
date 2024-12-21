@@ -11,6 +11,6 @@
  - 3.Over
 
 # 3. Steam has entered the wallpaper engine but cannot find it:
- -1. Wallpaper engine belongs to the software category on Steam
- -2. Check the software in the left filter of Steam to appear
- -3. Over
+ - 1.Wallpaper engine belongs to the software category on Steam
+ - 2.Check the software in the left filter of Steam to appear
+ - 3.Over
