@@ -10,7 +10,7 @@
  - 2.After completing the update in Luckygametools, reload the game (a red X will appear on the left side of the software when the mouse is moved, click to move the game out of the library, and then import it normally with one click)
  - 3.Over
 
-#3. Steam has entered the wallpaper engine but cannot find it:
+# 3. Steam has entered the wallpaper engine but cannot find it:
  -1. Wallpaper engine belongs to the software category on Steam
  -2. Check the software in the left filter of Steam to appear
  -3. Over
