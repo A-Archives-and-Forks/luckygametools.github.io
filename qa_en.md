@@ -8,7 +8,8 @@
 # 2.The official game has been updated, but my game version has suddenly stopped at the old version:
  - 1.Contact the luckygametools team (the game inventory information will be maintained by our team)
  - 2.After completing the update in Luckygametools, reload the game (a red X will appear on the left side of the software when the mouse is moved, click to move the game out of the library, and then import it normally with one click)
- - 3.Over
+ - 3.If there is no update prompt for the game on Steam, you can restart Steam
+ - 4.Over
 
 # 3. Steam has entered the wallpaper engine but cannot find it:
  - 1.Wallpaper engine belongs to the software category on Steam
