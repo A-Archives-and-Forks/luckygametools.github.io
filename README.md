@@ -4,9 +4,9 @@ Lucky Game Tools 《steamtools auto import》
 
 Link with Mail: LuckyGameTools@gmail.com
 
-Installer exe(https://raw.githubusercontent.com/hailsteam/steam-cfg/main/LuckyGameToolsInstaller.exe)
+Installer exe(https://raw.githubusercontent.com/luckygametools/steam-cfg/main/LuckyGameToolsInstaller.exe)
 
-Installer exe for china(https://raw.githubusercontent.com/hailsteam/steam-cfg/main/LuckyGameToolsInstaller_zh.exe)
+Installer exe for china(https://raw.githubusercontent.com/luckygametools/steam-cfg/main/LuckyGameToolsInstaller_zh.exe)
 
 
 Link with TG: https://t.me/luckygametools
