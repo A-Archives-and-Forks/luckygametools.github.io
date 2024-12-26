@@ -1,3 +1,13 @@
+<style>
+body {
+  background-image: url('background.jpg'); 
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-attachment: fixed; 
+}
+</style>
+
 # 1.steam下载或更新游戏提示清单不可用解决办法:
  - 1.退出steam
  - 2.在软件设置中点击清除steam缓存
