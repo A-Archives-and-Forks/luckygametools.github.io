@@ -15,3 +15,28 @@
  - 1.Wallpaper engine belongs to the software category on Steam
  - 2.Check the software in the left filter of Steam to appear
  - 3.Over
+
+# 4.🚨 Why is your program falsely reported by antivirus software?
+ -  🛡️ This is because we did not purchase Microsoft certification, but please rest assured that this is a false positive and the program is secure.
+
+# 5. 🎮 I bought a game, how can I play it with friends?
+ - 👥 You can share games through the Steam family group feature, and then launch the game with our software to play online with friends.
+
+# 6. 📸 I have contributed, what should we do now?
+ - 👌 Thank you for your contribution! Please provide your SteamID (a string starting with 76), and we will grant you auth1.
+
+# 7. 🚀 How can I upgrade my permissions?
+ -  📈 你You can upgrade to auth1 by sharing contributions, or to auth2 by making special contributions or donations.
+   
+# 8. 🗓️ I activated the DRM game, how long can it last?
+ -  🔒 As long as you don't update the system, it can usually last for about a month.
+   
+# 9. 🤔 Why doesn't my game have DLC?
+ - 🛍️ Perhaps it's because DLC hasn't been purchased yet. We ensure that all games are obtained through purchasing accounts, which ensures that games and DLCs are updated at any time.
+   
+# 10. 😖Why does software lag when starting?
+ - 💻 This is because the software needs to load over 2000 games, which is a normal phenomenon. After loading is complete, the game will be cached locally and will not occupy computer resources again thereafter.
+
+ # 11. 🔍 How can I search for games in the software?
+   - 🔑If you have already activated permission 1, you can try using the keywords "auth1" or "auth2" to search for games.
+     
