@@ -1,3 +1,13 @@
+<style>
+body {
+  background-image: url('background.jpg'); 
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-attachment: fixed; 
+}
+</style>
+
 # 1.Steam download or update game manifest not available solution:
  - 1.Exit steam
  - 2.Click to clear Steam cache in software settings
