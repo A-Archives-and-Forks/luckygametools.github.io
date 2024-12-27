@@ -55,7 +55,7 @@ Installer exe for china(https://raw.githubusercontent.com/luckygametools/steam-c
 - 3.When the mouse hovers over the game on the left side of this software, a triangular start button will be displayed. Clicking on it will launch Steam
 - 4.Log in to your own account
 - 5.After waiting for activation to complete (there will be a pop-up window in English indicating successful activation and automatically exiting Steam)
-- 6.Then everyone can start Steam normally and play the game smoothly
+- 6.Then everyone can start Steam normally and play the game smoothly(Do not update the system after activation)
 - 7.If it helps you, please give us a like in the group chat
 
 
