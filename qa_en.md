@@ -47,6 +47,11 @@ body {
 # 10. 😖Why does software lag when starting?
  - 💻 This is because the software needs to load over 2000 games, which is a normal phenomenon. After loading is complete, the game will be cached locally and will not occupy computer resources again thereafter.
 
- # 11. 🔍 How can I search for games in the software?
+# 11. 🔍 How can I search for games in the software?
    - 🔑If you have already activated permission 1, you can try using the keywords "auth1" or "auth2" to search for games.
+
+# 12.What should I do if the game encounters an error when starting with online parameters added（-luckygametools）（Steam Error  Application load error V:0000065432）:
+ - 1.Can be self debugged in online parameters,-luckygametools=a|b|c  
+ - 2:eg:appid:2567870(Chained Toogether)  The startup option is set to: -luckygametools=3 
+ - 3.Over
      
