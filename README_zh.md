@@ -28,7 +28,7 @@ Lucky Game Tools 《享受高质量的steam服务》
 
 <h2><a href="qa_zh.html" target="_blank">QA：常见问题</a> </h2>
 
-<h3>部分游戏(權限1、權限2)只针对项目有贡献的用户开放,请联系电报群主开通权限 https://t.me/luckygametools </h3>
+<h3>部分游戏(權限1、權限2)只针对项目有贡献的用户开放,贡献后再联系电报群主开通权限或領取神秘代碼 https://t.me/luckygametools </h3>
 
 ## 贡献方式:
 -     1.在社交平台分享本软件 (可獲取權限1和神秘代碼1次)
