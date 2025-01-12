@@ -26,17 +26,18 @@ Installer exe for china(https://raw.githubusercontent.com/luckygametools/steam-c
 
 <h2>DCode will be updated irregularly in the [Telegram group](https://t.me/luckygametools ), and sharing in the Steam group is prohibited (Import Game Before Copy DCode)</h2>
 
-<h3>Some games are only open to users who have contributed to the project. Please contact the Telegram group owner to grant permission https://t.me/luckygametools</h3>
+<h3>Some games are only open to users who have contributed to the project(Level1、Level2). Please contact the Telegram group owner to grant permission https://t.me/luckygametools</h3>
 
 
 ## Donation method:
--     1.Share this software on social media platforms
+-     1.Share this software on social media platforms(Upgradeable level 1 and mysterious code once)
 -     eg：1.1 Share in two or more Telegram groups (with over 100 members),
 -         1.2 Leave at least 3 comments on YouTube game related videos
 -         1.3 Other main gaming media platforms are also available
 -         1.4 follow https://youtu.be/LKfaK5IOPHQ
--     2.Screenshot of purchase orders through advertising links (trainer or top ad banner image)
--     3.And other shared
+-         1.5 And other shared
+-     2.Screenshot of purchase orders through advertising links (trainer or top ad banner image)(Upgradeable level 1 and mysterious code once)
+-     3.Make Video Share Media platform posts with over 3K views can receive special contributions(Upgradeable level 2)
 
 ##
 - Automatic Download Manifest
