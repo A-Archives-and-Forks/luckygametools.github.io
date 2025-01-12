@@ -34,7 +34,7 @@ Installer exe for china(https://raw.githubusercontent.com/luckygametools/steam-c
 -     eg：1.1 Share in two or more Telegram groups (with over 100 members),
 -         1.2 Leave at least 3 comments on YouTube game related videos
 -         1.3 Other main gaming media platforms are also available
--         1.4 follow https://youtu.be/fytswXoN2P0
+-         1.4 follow https://youtu.be/LKfaK5IOPHQ
 -     2.Screenshot of purchase orders through advertising links (trainer or top ad banner image)
 -     3.And other shared
 
