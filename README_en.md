@@ -54,7 +54,7 @@ Installer exe for china(https://raw.githubusercontent.com/luckygametools/steam-c
 <h2>Supporting automatic authorization activation for DRM games requires mysterious code</h2>
 
 ## Activation steps
-- 0.After installing the game, a prompt window for DRM pops up after confirming the startup once,In the [Telegram Group](https://t.me/luckygametools ) Contact the group leader to obtain the 'Mysterious Code'
+- 0.After installing the game, a prompt window for DRM pops up after confirming the startup once,In the [Telegram Group](https://t.me/luckygametools ) Contact the group leader to obtain the 'Mysterious Code' ,Bring the app ID for the game
 - 1.Exit the running Steam
 - 2.Copy the complete mysterious code
 - 3.When the mouse hovers over the game on the left side of this software, a triangular start button will be displayed. Clicking on it will launch Steam
