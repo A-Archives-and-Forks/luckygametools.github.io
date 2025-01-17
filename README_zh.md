@@ -17,6 +17,8 @@ Lucky Game Tools 《享受高质量的steam服务》
 
 邮箱: LuckyGameTools@gmail.com
 
+Discord: https://discord.gg/X4MTpDbcpT
+
 
 最新安装包中文([https://raw.githubusercontent.com/luckygametools/steam-cfg/main/LuckyGameToolsInstaller_zh.exe](https://raw.githubusercontent.com/luckygametools/steam-cfg/main/LuckyGameToolsInstaller_zh.exe))
 
