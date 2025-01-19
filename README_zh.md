@@ -28,7 +28,7 @@ Discord: https://discord.gg/X4MTpDbcpT
 
 <h1>一个简简单单的steam游戏工具: LuckyGameTools （永久免费）</h1>
 
-<h2><a href="qa_zh.html" target="_blank">QA：常见问题</a> </h2>
+<h2><a href="qa_zh.html" target="_blank">QA：常见问题</a> </h2> QA上沒有的請大家 自己查谷歌，自查 自查 自查 ，我最多是建議你 較驗一下文件完整性 ，關閉一些亂七八糟的軟件
 
 <h3>部分游戏(權限1、權限2)只针对项目有贡献的用户开放,贡献后再联系电报群主开通权限或領取神秘代碼 https://t.me/luckygametools </h3>
 
