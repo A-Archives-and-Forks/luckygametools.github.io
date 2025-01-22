@@ -34,7 +34,7 @@ Installer exe for china(https://raw.githubusercontent.com/luckygametools/steam-c
 ## Donation method:
 -     1.Share this software on social media platforms(Upgradeable level 1 and mysterious code once)
 -     eg：1.1 Share in two or more Telegram groups (with over 100 members),
--         1.2 Leave at least 3 comments on YouTube game related videos And follow us https://youtu.be/LKfaK5IOPHQ
+-         1.2 Make video share (yuutube tiktok twitch or other) And follow us https://youtu.be/LKfaK5IOPHQ
 -         1.3 Other main gaming media platforms are also available
 -         1.4 And other shared
 -     2.Screenshot of purchase orders through advertising links (trainer or top ad banner image)(Upgradeable level 1 and mysterious code once)
