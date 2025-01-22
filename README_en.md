@@ -67,8 +67,7 @@ Installer exe for china(https://raw.githubusercontent.com/luckygametools/steam-c
 
 | Donation($) | Welfare (Permission)                         | Welfare (Gift of DRM mysterious code) | Notes                                                                 |
 |-------------|----------------------------------------------|----------------------------------------|----------------------------------------------------------------------|
-| 0$ (share)  | auth1                                        | 1s                                     | make videos for sharing and the number of views has reached 3000 or  |
-|             |                                              |                                        | Equal sharing method can obtain Auth2                                |
+| 0$ (share)  | auth1                                        | 1s                                     | make videos for sharing and the number of views has reached 3000 or Equal sharing method can obtain Auth2   |
 | 1$+         | auth0                                        | 2s                                     |                                                                      |
 | 5$+         | auth1                                        | 5s                                     |                                                                      |
 | 15$+        | **Auth2**                                    | 15s                                    | **Auth2 Users' questions can receive thoughtful explanations from the team** |
