@@ -65,6 +65,19 @@ Installer exe for china(https://raw.githubusercontent.com/luckygametools/steam-c
 - 7.If it helps you, please give us a like in the group chat
 
 
+| Donation($) | Welfare (Permission)                         | Welfare (Gift of DRM mysterious code) | Notes                                                                 |
+|-------------|----------------------------------------------|----------------------------------------|----------------------------------------------------------------------|
+| 0$ (share)  | auth1                                        | 1s                                     | make videos for sharing and the number of views has reached 3000 or  |
+|             |                                              |                                        | Equal sharing method can obtain Auth2                                |
+| 1$+         | auth0                                        | 2s                                     |                                                                      |
+| 5$+         | auth1                                        | 5s                                     |                                                                      |
+| 15$+        | **Auth2**                                    | 15s                                    | **Auth2 Users' questions can receive thoughtful explanations from the team** |
+| 20$+        | auth2 (double)                               | 25s                                    |                                                                      |
+| 30$+        | There are no restrictions on the entire game in the future | 45s                                    |                                                                      |
+| 66$+        | All subsequent functions will be fully open  | 100s                                   |                                                                      |
+| 300$+       | Franchise (with the ability to grant permissions) | Exclusive DRM authorization tool       |                                                                      |
+
+
 <h2>Game resources are updated daily, and many games are full of DLC deluxe versions</h2>
 
 <h1>This software is purely local green software. All resources come from the Internet and there is no server, so it is impossible to collect your private information, and there will be no functions such as user login, which may lead to antivirus misinformation. Please rest assured that you can use it</h1>
