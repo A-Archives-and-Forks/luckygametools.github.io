@@ -67,11 +67,11 @@ Installer exe for china(https://raw.githubusercontent.com/luckygametools/steam-c
 
 | Donation($) | Welfare (Permission)                         | Welfare (Gift of DRM mysterious code) | Notes                                                                 |
 |-------------|----------------------------------------------|----------------------------------------|----------------------------------------------------------------------|
-| 0$ (share)  | auth1                                        | 1s                                     | make videos for sharing and the number of views has reached 3000 or Equal sharing method can obtain Auth2   |
-| 1$+         | auth0                                        | 2s                                     |                                                                      |
-| 5$+         | auth1                                        | 5s                                     |                                                                      |
-| 15$+        | **Auth2**                                    | 15s                                    | **Auth2 Users' questions can receive thoughtful explanations from the team** |
-| 20$+        | auth2 (double)                               | 25s                                    |                                                                      |
+| 0$ (share)  | level1                                        | 1s                                     | make videos for sharing and the number of views has reached 3000 or Equal sharing method can obtain level2   |
+| 1$+         | level0                                        | 2s                                     |                                                                      |
+| 5$+         | level1                                        | 5s                                     |                                                                      |
+| 15$+        | **level2**                                    | 15s                                    | **level2 Users' questions can receive thoughtful explanations from the team** |
+| 20$+        | level2 (double)                               | 25s                                    |                                                                      |
 | 30$+        | There are no restrictions on the entire game in the future | 45s                                    |                                                                      |
 | 66$+        | All subsequent functions will be fully open  | 100s                                   |                                                                      |
 | 300$+       | Franchise (with the ability to grant permissions) | Exclusive DRM authorization tool       |                                                                      |
