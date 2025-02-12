@@ -19,8 +19,6 @@ Lucky Game Tools 《享受高质量的steam服务》
 
 Discord: https://discord.gg/X4MTpDbcpT
 
-QQ:2545260683(大陸專屬)
-
 
 最新安装包中文([https://raw.githubusercontent.com/luckygametools/steam-cfg/main/LuckyGameToolsInstaller_zh.exe](https://raw.githubusercontent.com/luckygametools/steam-cfg/main/LuckyGameToolsInstaller_zh.exe))
 
