@@ -24,7 +24,7 @@ Discord: https://discord.gg/X4MTpDbcpT
 
 最新安装包英文([https://raw.githubusercontent.com/luckygametools/steam-cfg/main/LuckyGameToolsInstaller.exe](https://raw.githubusercontent.com/luckygametools/steam-cfg/main/LuckyGameToolsInstaller.exe))
 
-墙内的铁汁们下载链接打不开的可以试试这个网盘  (<a href="https://gofile.io/d/JevKbR" target="_blank">点击直达</a> )
+墙内的铁汁们下载链接打不开的可以试试这个网盘  (<a href="https://gofile.io/d/7SF5ZA" target="_blank">点击直达</a> )
 
 <h1>一个简简单单的steam游戏工具: LuckyGameTools （永久免费）</h1>
 
