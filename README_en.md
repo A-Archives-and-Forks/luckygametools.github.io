@@ -62,7 +62,7 @@ Installer exe for china(https://raw.githubusercontent.com/luckygametools/steam-c
 - 4.Log in to your own account
 - 5.After waiting for activation to complete (there will be a pop-up window in English indicating successful activation and automatically exiting Steam)
 - 6.Then everyone can start Steam normally and play the game smoothly(Do not update the system after activation)
-- 7.If it helps you, please give us a like in the group chat
+- 7.If it helps you, please follow us <a href="https://www.youtube.com/watch?v=LKfaK5IOPHQ" target="_blank">https://www.youtube.com/watch?v=LKfaK5IOPHQ</a> 
 
 
 | Donation($) | Welfare (Permission)                         | Welfare (Gift of DRM mysterious code) | Notes                                                                 |
