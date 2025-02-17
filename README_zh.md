@@ -63,7 +63,7 @@ Discord: https://discord.gg/X4MTpDbcpT
 - 4.登陆一下自己的帐号
 - 5.等待激活完成后(有个弹窗英文提示激活成功，并会自动退出steam)
 - 6.然后大家自己正常启动steam后就可以畅玩游戏了(激活后请勿更新系统)
-- 7.帮忙到您了的话，帮忙在群里面内咱点个赞
+- 7.帮忙到您了的话，帮忙訂閱:<a href="https://www.youtube.com/watch?v=LKfaK5IOPHQ" target="_blank">https://www.youtube.com/watch?v=LKfaK5IOPHQ</a> 
 - (<a href="https://docs.qq.com/doc/DTUlQVVNBRFh6Y2Fr" target="_blank">没有看明白的看这里</a> )
 
 
