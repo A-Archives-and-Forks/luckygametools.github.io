@@ -7,6 +7,8 @@ body {
   background-attachment: fixed; 
 }
 </style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7261994485465423"
+     crossorigin="anonymous"></script>
 
 # 1.Steam download or update game manifest not available solution:
  - 1.Exit steam
