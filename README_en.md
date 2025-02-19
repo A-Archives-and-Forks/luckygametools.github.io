@@ -13,13 +13,13 @@ Lucky Game Tools 《steamtools auto import》
 
 Link with Mail: LuckyGameTools@gmail.com
 
-Link with TG: https://t.me/luckygametools
+Link with TG: <a href="https://t.me/luckygametools" target="_blank">https://t.me/luckygametools</a> 
 
-Link with DC: https://discord.gg/X4MTpDbcpT
+Link with DC: <a href="https://discord.gg/X4MTpDbcpT" target="_blank">https://discord.gg/X4MTpDbcpT</a> 
 
-Installer exe(https://raw.githubusercontent.com/luckygametools/steam-cfg/main/LuckyGameToolsInstaller.exe)
+Installer exe ([https://raw.githubusercontent.com/luckygametools/steam-cfg/main/LuckyGameToolsInstaller.exe](https://raw.githubusercontent.com/luckygametools/steam-cfg/main/LuckyGameToolsInstaller.exe))
 
-Installer exe for china(https://raw.githubusercontent.com/luckygametools/steam-cfg/main/LuckyGameToolsInstaller_zh.exe)
+Installer exe for china ([https://raw.githubusercontent.com/luckygametools/steam-cfg/main/LuckyGameToolsInstaller_zh.exe](https://raw.githubusercontent.com/luckygametools/steam-cfg/main/LuckyGameToolsInstaller_zh.exe))
 
 
 <h1>Not Only One Key Automatic Storage Steam Game Tool: LuckyGameTools （Forever free）</h1>
