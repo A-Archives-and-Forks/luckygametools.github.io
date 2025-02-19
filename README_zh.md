@@ -13,11 +13,11 @@ body {
 # Lucky Game Tools   (永久免费)
 Lucky Game Tools 《享受高质量的steam服务》
 
-电报: https://t.me/luckygametools
+电报: <a href="https://t.me/luckygametools" target="_blank">https://t.me/luckygametools</a> 
 
 邮箱: LuckyGameTools@gmail.com
 
-Discord: https://discord.gg/X4MTpDbcpT
+Discord: <a href="https://discord.gg/X4MTpDbcpT" target="_blank">https://discord.gg/X4MTpDbcpT</a> 
 
 
 最新安装包中文([https://raw.githubusercontent.com/luckygametools/steam-cfg/main/LuckyGameToolsInstaller_zh.exe](https://raw.githubusercontent.com/luckygametools/steam-cfg/main/LuckyGameToolsInstaller_zh.exe))
