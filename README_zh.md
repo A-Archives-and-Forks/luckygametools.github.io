@@ -30,7 +30,7 @@ Discord: <a href="https://discord.gg/X4MTpDbcpT" target="_blank">https://discord
 
 <h2><a href="qa_zh.html" target="_blank">QA：常见问题(点击直达)</a> </h2> QA上沒有的請大家 自己查谷歌，自查 自查 自查 ，我最多是建議你 較驗一下文件完整性 ，關閉一些亂七八糟的軟件
 
-<h3>部分游戏18+(權限1、權限2)只针对项目有贡献的用户开放,贡献后再联系电报群主开通权限或領取神秘代碼 https://t.me/luckygametools </h3>
+<h3>部分游戏18+(在設置中開啟展示18+后,在軟件搜索中搜索關鍵詞 auth1、auth2)只针对项目有贡献的用户开放,贡献后再联系电报群主开通权限或領取神秘代碼 https://t.me/luckygametools </h3>
 
 ## 贡献方式:
 -     1.在社交平台分享本软件 (可獲取權限1和神秘代碼1次)【分享內容需包含官網鏈接和功能描述!!!】
