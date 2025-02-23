@@ -57,3 +57,7 @@ body {
  - 2:eg:appid:2567870(Chained Toogether)  The startup option is set to: -luckygametools=3 
  - 3.Over
      
+# 13.Why does a game released by CAPCOM crash? Eg: Resident Evil Remake, Street Fighter 6?
+ - 1.This is a bug from the CAPCOM BUG
+ - 2:<a href="https://raw.githubusercontent.com/luckygametools/steam-cfg/main/gamePatch/reframework/dinput8.dll" target="_blank">Click to download patch file</a>，Placing it in the root directory of the game can be repaired
+ - 3.Over
