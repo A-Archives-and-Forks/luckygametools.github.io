@@ -53,4 +53,9 @@ body {
  - 1.可在聯機參數中自行調試,-luckygametools=a|b|c  
  - 2:調試舉例，appid:2567870(Chained Toogether)  啟動選項設置為: -luckygametools=3 
  - 3.完毕
+
+# 12.為什麽 啟動  CAPCOM 發行的遊戲崩潰  eg: 生化危機重制、街霸6 :
+ - 1.這個是CAPCOM廠商的bug 
+ - 2:<a href="https://raw.githubusercontent.com/luckygametools/steam-cfg/main/gamePatch/reframework/dinput8.dll" target="_blank">點擊下載補丁文件</a>，放置遊戲根目錄下可修復
+ - 3.完毕
    
