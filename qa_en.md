@@ -23,7 +23,7 @@ body {
  - 3.If there is no update prompt for the game on Steam, you can restart Steam
  - 4.Over
 
-# 3. Steam has entered the wallpaper engine but cannot find it:
+# 3. Steam has entered the (wallpaper engine |  Lossless Scaling) but cannot find it:
  - 1.Wallpaper engine belongs to the software category on Steam
  - 2.Check the software in the left filter of Steam to appear
  - 3.Over
