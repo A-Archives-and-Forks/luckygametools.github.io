@@ -1,4 +1,4 @@
-<style>
+![图片](https://github.com/user-attachments/assets/c4113f5b-4a0f-4d11-953a-e0fa7f31ad45)<style>
 body {
   background-image: url('background.jpg'); 
   background-size: cover; 
@@ -29,7 +29,7 @@ body {
  - 3.完毕
 
 # 4.🚨 为什么你们的程序会被杀毒软件误报？
- -  🛡️ 这是因为我们没有购买微软认证，但请放心，这是误报，程序是安全的。
+ -  🛡️ 这是因为我们没有购买微软认证，但请放心，这是误报，程序是安全的，而且無需管理員權限就可以正常使用(加速器功能除外)。
 
 # 5. 🎮 我买了游戏，怎么和朋友一起玩？
  - 👥 你可以通过Steam家庭组功能共享游戏，然后用我们的软件启动游戏，就可以和朋友一起在线玩了。
@@ -37,7 +37,7 @@ body {
 # 6. 📸 我贡献了，现在怎么办？
  - 👌 谢谢你的贡献！请提供你的SteamID（76开头的数字串），我们将为你开通权限1。
 
-# 7. 🚀 我怎么升级我的权限？
+# 7. 🚀 怎么权限？
  -  📈 你可以通过分享贡献升级到1级，或者通过特殊贡献或捐赠升级到2级。
    
 # 8. 🗓️ 我激活了D加密游戏，能用多久？
@@ -55,7 +55,10 @@ body {
  - 3.完毕
 
 # 12.為什麽 啟動  CAPCOM 發行的遊戲崩潰  eg: 生化危機重制、街霸6 :
- - 1.這個是CAPCOM廠商的bug 
+ - 1.部份電腦環境會有bug 
  - 2:<a href="https://raw.githubusercontent.com/luckygametools/steam-cfg/main/gamePatch/reframework/dinput8.dll" target="_blank">點擊下載補丁文件</a>，放置遊戲根目錄下可修復
  - 3.完毕
-   
+
+# 12.為什麽 啟動了steam，還是提示未激活|未在線
+ - 1.那是因為本程序檢測的機制未檢測到
+ - 2.這時需要自行檢測防火墻、殺軟之類的
