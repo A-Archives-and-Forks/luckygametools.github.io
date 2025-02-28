@@ -1,4 +1,3 @@
-![图片](https://github.com/user-attachments/assets/c4113f5b-4a0f-4d11-953a-e0fa7f31ad45)<style>
 body {
   background-image: url('background.jpg'); 
   background-size: cover; 
