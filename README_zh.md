@@ -24,7 +24,7 @@ Discord: <a href="https://discord.gg/X4MTpDbcpT" target="_blank">https://discord
 
 最新安装包英文([https://raw.githubusercontent.com/luckygametools/steam-cfg/main/LuckyGameToolsInstaller.exe](https://raw.githubusercontent.com/luckygametools/steam-cfg/main/LuckyGameToolsInstaller.exe))
 
-墙内的铁汁们下载链接打不开的可以试试这个网盘  (<a href="https://gofile.io/d/iCNbMG" target="_blank">点击直达</a> )
+墙内的铁汁们下载链接打不开的可以试试这个网盘  (<a href="https://gofile.io/d/8CjB4e" target="_blank">点击直达</a> )
 
 <h1>一个简简单单的steam游戏工具: LuckyGameTools （永久免费）</h1>
 
@@ -58,7 +58,7 @@ Discord: <a href="https://discord.gg/X4MTpDbcpT" target="_blank">https://discord
 ## 激活步骤 
 - 0.安装完成游戏后，启动一次确认游戏存在弹出了D加密的提示窗(完成此步后再呼叫群主,带上游戏的appid)
 - 1.退出正在运行的steam后
-- 2.复制完整的神秘代码
+- 2.复制完整的神秘代码(神秘代碼有效期30分鐘)
 - 3.鼠标移至本软件左侧的游戏上，会显示一个三角的启动按钮，点击他会启动steam
 - 4.登陆一下自己的帐号
 - 5.等待激活完成后(有个弹窗英文提示激活成功，并会自动退出steam)
@@ -69,13 +69,13 @@ Discord: <a href="https://discord.gg/X4MTpDbcpT" target="_blank">https://discord
 
 <h2>游戏资源每天更新中，很多游戏都是满DLC豪华版</h2>
 
-<h1>此软件为纯本地绿色软件，所有资源来自互联网，没有服务器，所以也不可能去收集大家的隐私信息，也不会有用户登陆啥的之类的功能,可能会出现杀毒误报，请大家放心食用</h1>
+<h1>此软件为纯本地绿色软件，無需管理員權限就可以正常使用(加速器功能除外)，所有资源来自互联网，没有服务器，所以也不可能去收集大家的隐私信息，也不会有用户登陆啥的之类的功能,可能会出现杀毒误报，请大家放心食用</h1>
 
-<h2>此软件为纯本地绿色软件，所有资源来自互联网，没有服务器，所以也不可能去收集大家的隐私信息，也不会有用户登陆啥的之类的功能,可能会出现杀毒误报，请大家放心食用</h2>
+<h2>此软件为纯本地绿色软件，無需管理員權限就可以正常使用(加速器功能除外)，所有资源来自互联网，没有服务器，所以也不可能去收集大家的隐私信息，也不会有用户登陆啥的之类的功能,可能会出现杀毒误报，请大家放心食用</h2>
 
-<h3>此软件为纯本地绿色软件，所有资源来自互联网，没有服务器，所以也不可能去收集大家的隐私信息，也不会有用户登陆啥的之类的功能,可能会出现杀毒误报，请大家放心食用</h3>
+<h3>此软件为纯本地绿色软件，無需管理員權限就可以正常使用(加速器功能除外)，所有资源来自互联网，没有服务器，所以也不可能去收集大家的隐私信息，也不会有用户登陆啥的之类的功能,可能会出现杀毒误报，请大家放心食用</h3>
 
-大家注意一下使用时：
+大家注意一下使用时：（無需管理員權限的陌生軟件大概率有問題)）
 
 1.luckygametools使用了steam目录下的hid.dll文件，如果与其它工具相冲突，需要备份一下hid.dll文件
 
