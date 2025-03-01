@@ -43,7 +43,7 @@ Discord: <a href="https://discord.gg/X4MTpDbcpT" target="_blank">https://discord
 ## 支持内容
 - 自动安装清单文件 
 - (<a href="https://docs.qq.com/doc/DTVl3S0VhY0RvcEVZ" target="_blank">一键解锁游戏(点击直达)</a> )
-- 支持解除家庭共享限制-加入steam家庭共享组后通过本软件启动可同时玩同一款游戏
+- 支持解除家庭共享限制-加入steam家庭共享组后通过本软件启动可同时玩同一款游戏【包括任何聯機遊戲】
 - 支持D加密游戏启动(支持自动授权,激活需要 神秘代码)
 - 支持GTA5(及三部曲)和荒野大镖客1和2一键畅玩
 - 支持steam及社区加速
