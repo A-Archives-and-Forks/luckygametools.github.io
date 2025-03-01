@@ -58,6 +58,10 @@ body {
  - 2:<a href="https://raw.githubusercontent.com/luckygametools/steam-cfg/main/gamePatch/reframework/dinput8.dll" target="_blank">點擊下載補丁文件</a>，放置遊戲根目錄下可修復
  - 3.完毕
 
-# 12.為什麽 啟動了steam，還是提示未激活|未在線
+# 13.為什麽 啟動了steam，還是提示未激活|未在線
  - 1.那是因為本程序檢測的機制未檢測到
  - 2.這時需要自行檢測防火墻、殺軟之類的
+
+# 14.為什麽 紙嫁衣 系列啟動 進不入遊戲界面
+ - 這個得進群看訂閱頻道的信息
+
