@@ -56,7 +56,8 @@ body {
 # 12.為什麽 啟動  CAPCOM 發行的遊戲崩潰  eg: 生化危機重制、街霸6 :
  - 1.部份電腦環境會有bug 
  - 2:<a href="https://raw.githubusercontent.com/luckygametools/steam-cfg/main/gamePatch/reframework/dinput8.dll" target="_blank">點擊下載補丁文件</a>，放置遊戲根目錄下可修復
- - 3.第2步已作廢，正確方式是，啟動steam需要從luckygametools的左下角啟動
+ - 3.第2步已作廢，正確方式是，啟動steam需要從luckygametools的左下角啟動![图片](https://github.com/user-attachments/assets/8e18ba43-8b6a-49ed-8717-a4374b4766c0)
+
  - 4.完毕
 
 # 13.為什麽 啟動了steam，還是提示未激活|未在線
