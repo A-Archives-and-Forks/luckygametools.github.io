@@ -59,5 +59,5 @@ body {
      
 # 13.Why does a game released by CAPCOM crash? Eg: Resident Evil Remake, Street Fighter 6?
  - 1.This is a bug from the CAPCOM BUG
- - 2:<a href="https://raw.githubusercontent.com/luckygametools/steam-cfg/main/gamePatch/reframework/dinput8.dll" target="_blank">Click to download patch file</a>，Placing it in the root directory of the game can be repaired
+ - 2:To start Steam, you need to start it from the bottom left corner of luckygame tools
  - 3.Over
