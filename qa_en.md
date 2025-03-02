@@ -57,7 +57,7 @@ body {
  - 2:eg:appid:2567870(Chained Toogether)  The startup option is set to: -luckygametools=3 
  - 3.Over
      
-# 13.Why does a game released by CAPCOM crash? Eg: Resident Evil Remake, Street Fighter 6?
+# 13.Why does a game released by CAPCOM crash? Eg: Resident Evil Remake, Street Fighter 6,Monster Hunter Wilds?
  - 1.This is a bug from the CAPCOM BUG
- - 2:To start Steam, you need to start it from the bottom left corner of luckygame tools
+ - 2:To start Steam, you need to start it from the bottom left corner of luckygame tools ![图片](https://github.com/user-attachments/assets/8e18ba43-8b6a-49ed-8717-a4374b4766c0)
  - 3.Over
