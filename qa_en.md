@@ -10,7 +10,7 @@ body {
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7261994485465423"
      crossorigin="anonymous"></script>
 
-# 1.Steam download or update game manifest not available solution:
+# 1.Steam download or update game manifest not available solution(The version after 2.0.1.14 will not have this issue. If it occurs, try restarting Steam):
  - 1.Exit steam
  - 2.Click to clear Steam cache in software settings
  - 3.Start steam
