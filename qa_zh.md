@@ -11,7 +11,7 @@ body {
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7261994485465423"
      crossorigin="anonymous"></script>
 
-# 1.steam下载或更新游戏提示清单不可用解决办法:
+# 1.steam下载或更新游戏提示清单不可用解决办法(2.0.1.14后的版本將不會出現此問題，如果出現試試重啟steam):
  - 1.退出steam
  - 2.在软件设置中点击清除steam缓存
  - 3.启动steam
