@@ -20,6 +20,8 @@ body {
 
 3.CDK生成的神秘代碼，只能用于最新版本的軟件和當前生成神秘代碼的steam帳戶
 
+4.CDK獲取后請自行保存，不補發
+
 # 兌換步驟:
 
 1.在luckygametools的steam聊天群組中找到一個名為:luckygametools-bot的機器人，該機器人的有個特定的角色叫:bot，防止他人假冒
