@@ -13,8 +13,11 @@ body {
 # 目前只針對捐贈過的用戶開放，捐贈時會贈送部份CDK,后續可找群主繼續捐贈獲取更多的CDK
 
 # 使用注意：
+
 1.目前luckygametools機器人只開發了CDK兌換神秘代碼的功能
+
 2.CDK格式：AAA-BBB-CCC-DDD-EEE-FFF-GGG
+
 3.CDK生成的神秘代碼，只能用于最新版本的軟件和當前生成神秘代碼的steam帳戶
 
 # 兌換步驟:
