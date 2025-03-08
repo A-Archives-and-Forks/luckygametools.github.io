@@ -14,7 +14,7 @@ body {
 
 # 使用注意：
 
-1.目前luckygametools機器人只開發了CDK兌換神秘代碼的功能
+1.目前luckygametools機器人只開發了CDK兌換神秘代碼(用于激活D加密遊戲)的功能
 
 2.CDK格式：AAA-BBB-CCC-DDD-EEE-FFF-GGG
 
