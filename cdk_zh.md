@@ -10,7 +10,7 @@ body {
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7261994485465423"
      crossorigin="anonymous"></script>
 
-# 目前只針對捐贈過的用戶開放，捐贈時會贈送部份CDK,后續可找群主繼續捐贈獲取更多的CDK
+# CDK兌換-> 機器人使用指南 (目前只針對捐贈過的用戶開放，捐贈時會贈送部份CDK,后續可找群主繼續捐贈獲取更多的CDK)
 
 # 使用注意：
 
