@@ -10,7 +10,7 @@ body {
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7261994485465423"
      crossorigin="anonymous"></script>
 
-# At present, it is only open to users who have donated before. When donating, some CDKs will be given as gifts. In the future, you can continue to donate to the group owner to obtain more CDKs
+# CDK Exchange ->Robot Usage Guide (At present, it is only open to users who have donated before. When donating, some CDKs will be given as gifts. In the future, you can continue to donate to the group owner to obtain more CDKs)
 
 # Precautions for use：
 
