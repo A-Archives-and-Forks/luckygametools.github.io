@@ -38,3 +38,8 @@ eg(例如):drm1234567|AAA-BBB-CCC-DDD-EEE-FFF-GGG
 ![图片](https://github.com/user-attachments/assets/428203f8-3f5b-4d7e-818f-c842ec4772eb)
 
 這時機器會自動回復后，就可以正常使用指令功能了
+
+# D加密神秘代碼使用說明 
+(<a href="https://luckygametools.github.io/README_zh.html#%E6%94%AF%E6%8C%81d%E5%8A%A0%E5%AF%86%E6%B8%B8%E6%88%8F%E8%87%AA%E5%8A%A8%E6%8E%88%E6%9D%83" target="_blank">点击直达</a> )
+
+
