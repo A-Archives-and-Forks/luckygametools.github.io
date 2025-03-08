@@ -34,7 +34,7 @@ eg(例如):drm1234567|AAA-BBB-CCC-DDD-EEE-FFF-GGG
 
 
 
-3.If Steam prompts' no permission 'when sending a message command, you can send a key command in the Steam chat group of luckygame tools: callboss, to prohibit malicious use
+3.If Steam prompts' no permission 'when sending a message command or no response, you can send a key command in the Steam chat group of luckygame tools: callboss, to prohibit malicious use
 ![图片](https://github.com/user-attachments/assets/428203f8-3f5b-4d7e-818f-c842ec4772eb)
 
 At this point, the machine will automatically reply and the command function can be used normally
