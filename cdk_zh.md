@@ -34,7 +34,7 @@ eg(例如):drm1234567|AAA-BBB-CCC-DDD-EEE-FFF-GGG
 
 
 
-3.如果發送消息指令時steam提示無權限 或者 發完機器人無響應，則可以在luckygametools的steam聊天群組發送關鍵指令：呼叫boss 或 callboss,禁止爛用 
+3.如果發送消息指令時steam提示無權限 或者 發完機器人無響應，則可以在luckygametools的steam聊天群組發送關鍵指令：呼叫boss 或 callboss,禁止爛用，機器人會生氣不回復的 
 ![图片](https://github.com/user-attachments/assets/428203f8-3f5b-4d7e-818f-c842ec4772eb)
 
 這時機器會自動回復后，就可以正常使用指令功能了
