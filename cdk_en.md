@@ -38,3 +38,6 @@ eg(例如):drm1234567|AAA-BBB-CCC-DDD-EEE-FFF-GGG
 ![图片](https://github.com/user-attachments/assets/428203f8-3f5b-4d7e-818f-c842ec4772eb)
 
 At this point, the machine will automatically reply and the command function can be used normally
+
+# Instructions for using encrypted mysterious code DRM 
+(<a href="https://luckygametools.github.io/README_en.html#supporting-automatic-authorization-activation-for-drm-games-requ" target="_blank">Goto</a> )
