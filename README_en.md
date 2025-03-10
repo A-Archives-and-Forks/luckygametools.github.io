@@ -44,10 +44,11 @@ Installer exe for china ([https://raw.githubusercontent.com/luckygametools/steam
 - Automatic Download Manifest
 - unlock game
 - unlock Family Sharing
+- Supports 480 online team building - does not support online game types (<a href="steam-arg.jpg" target="_blank">right-click on the game settings on Steam, add the startup parameter</a>  -luckygametools, and then start the game to go online)
+- Notes for 480 (SpaceCar) Online : [1. Can only connect to unofficial servers. 2. Friends also need to add startup parameters. 3. For friend invitation based games, friends need to start the game first when receiving an online invitation message from Steam (SpaceCar), and then click on the invitation link in the Steam message to enter the online connection]
 - Support DRM game startup (supports automatic authorization, activation requires mysterious code)
 - Support GTA5 (and trilogy) and Red Dead Redemption 2 for one key gameplay
 - Support Steam and community acceleration
-- Supports 480 online team building - does not support online game types (<a href="steam-arg.jpg" target="_blank">right-click on the game settings on Steam, add the startup parameter</a>  -luckygametools, and then start the game to go online)
 - For some games that cannot be started or get stuck, you can try using the lucky parameter to start them (<a href="steam-arg.jpg" target="_blank">right-click on the game settings on Steam and add the startup parameter</a> -luckygametools), see<a href="qa_en.html" target="_blank"> QA-11</a> for details
 - Support game list updates (after contacting the [group owner](https://t.me/luckygametools ) to update, simply import the game again)
 - A small number of games are only open to users who have made contributions
