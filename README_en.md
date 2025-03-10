@@ -8,7 +8,7 @@ body {
 }
 </style>
 
-# Lucky Game Tools   (free Forever free)
+# Lucky Game Tools   (Secure, fast and free Forever free steam game solution)
 Lucky Game Tools 《steamtools auto import》
 
 Link with Mail: LuckyGameTools@gmail.com
