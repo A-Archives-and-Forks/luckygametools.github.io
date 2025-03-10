@@ -44,11 +44,12 @@ Discord: <a href="https://discord.gg/X4MTpDbcpT" target="_blank">https://discord
 - 自动安装清单文件 
 - (<a href="https://docs.qq.com/doc/DTVl3S0VhY0RvcEVZ" target="_blank">一键解锁游戏(点击直达)</a> )
 - 支持解除正版Steam家庭共享限制-加入steam家庭共享组后通过本软件启动可同时玩同一款游戏【包括任何聯機遊戲】
+- 支持480(SpaceWar)联机组队-不支持网游类型(<a href="steam-arg.jpg" target="_blank">在steam的游戏右键设置，添加启动参数 -luckygametools (点击直达)</a> ，再启动游戏就可以联机了
+- 480(SpaceWar)联机注意事項補充 ：【1.只能和非官方服务器联机  2.好友也需要添加啟動參數  3.好友邀請式的遊戲，需要好友在接收到steam的聯機邀請消息時(SpaceWar),需要先啟動遊戲后，再點擊steam消息中邀請鏈接進入聯機】
+- 部分启动不了或者卡住的游戏，可尝试使用幸运参数启动(<a href="steam-arg.jpg" target="_blank">在steam的游戏右键设置，添加启动参数 -luckygametools (点击直达)</a> )，<a href="qa_zh.html" target="_blank">详见QA-11(点击直达)</a>
 - 支持D加密游戏启动(支持自动授权,激活需要 神秘代码)
 - 支持GTA5(及三部曲)和荒野大镖客1和2一键畅玩
 - 支持steam及社区加速
-- 支持480(SpaceWar)联机组队-不支持网游类型(<a href="steam-arg.jpg" target="_blank">在steam的游戏右键设置，添加启动参数 -luckygametools (点击直达)</a> ，再启动游戏就可以联机了，【注意：好友也需要加啟動參數】此方法只能和非官方服务器联机
-- 部分启动不了或者卡住的游戏，可尝试使用幸运参数启动(<a href="steam-arg.jpg" target="_blank">在steam的游戏右键设置，添加启动参数 -luckygametools (点击直达)</a> )，<a href="qa_zh.html" target="_blank">详见QA-11(点击直达)</a>
 - 支持游戏清单更新([联系群主](https://t.me/luckygametools)更新后,重新导入游戏即可)
 - 部分启动不了或者卡住的游戏，参数搞不定的可以呼叫群主的神秘代码(保证进入)
 - 小部分游戏只针对有贡献的用户开放
