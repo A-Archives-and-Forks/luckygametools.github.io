@@ -89,12 +89,10 @@ Installer exe for china ([https://raw.githubusercontent.com/luckygametools/steam
 
 Please pay attention when using it：
 
-1.LuckygameTools uses the hid. dll file in the Steam directory. If it conflicts with other library tools, it is necessary to back up the hid. dll file
+1.After opening the program, it prompts for installation. If it keeps prompting for initialization, it should be due to domestic network issues. Restarting the program twice should work properly
 
-2.After opening the program, it prompts for installation. If it keeps prompting for initialization, it should be due to domestic network issues. Restarting the program twice should work properly
+2.When the game information is not fully loaded during initial use, you can try refreshing the taskbar
 
-3.When the game information is not fully loaded during initial use, you can try refreshing the taskbar
-
-4.If there is a prompt of "waiting to go online" all the time, you can turn off other accelerators and try again (this software comes with Steam acceleration function, tips, right-click ->run as administrator)
+3.If there is a prompt of "waiting to go online" all the time, you can turn off other accelerators and try again (this software comes with Steam acceleration function, tips, right-click ->run as administrator)
 
 <h2>Supporting automatic authorization activation for DRM games requires mysterious code</h2>
