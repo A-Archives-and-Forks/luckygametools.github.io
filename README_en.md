@@ -75,7 +75,7 @@ Installer exe for china ([https://raw.githubusercontent.com/luckygametools/steam
 | 20$+        | level2 (double)                               | 25s                                    |                                                                      |
 | 30$+        | There are no restrictions on the entire game in the future | 45s                                    |                                                                      |
 | 66$+        | All subsequent functions will be fully open  | 100s                                   |                                                                      |
-| 300$+       | Franchise (with the ability to grant permissions) | Exclusive DRM authorization tool       |                                                                      |
+| 300$+       | Promoteable revenue sharing | unlimit       |                                                                      |
 
 
 <h2>Game resources are updated daily, and many games are full of DLC deluxe versions</h2>
