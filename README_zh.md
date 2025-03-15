@@ -38,6 +38,7 @@ Discord: <a href="https://discord.gg/X4MTpDbcpT" target="_blank">https://discord
 -         1.2 其它主流媒体平台發貼分享均可（B站、贴吧、论坛 ...）
 -     2.通过广告链接的购买订单截图(軟件顶部广告baner图)(可獲取權限1和神秘代碼1次)
 -     3.媒体平台發貼瀏覽量達3K+的可獲取特殊貢獻(可獲取權限2)
+-     4.贊助本軟件
 
 
 ## 支持内容
