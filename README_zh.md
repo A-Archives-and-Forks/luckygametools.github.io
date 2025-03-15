@@ -71,7 +71,6 @@ Discord: <a href="https://discord.gg/X4MTpDbcpT" target="_blank">https://discord
 - 5.啟動遊戲,等待激活完成后(有个弹窗英文提示激活成功【DRM Activation successful】，并会自动退出steam)
 - 6.然后大家自己正常启动steam后就可以畅玩游戏了(激活后请勿更新系统)
 - 7.帮忙到您了的话，帮忙訂閱:<a href="https://www.youtube.com/watch?v=LKfaK5IOPHQ" target="_blank">https://www.youtube.com/watch?v=LKfaK5IOPHQ</a> 
-- (<a href="https://docs.qq.com/doc/DTUlQVVNBRFh6Y2Fr" target="_blank">没有看明白的看这里</a> )
 
 
 <h2>游戏资源每天更新中，很多游戏都是满DLC豪华版</h2>
