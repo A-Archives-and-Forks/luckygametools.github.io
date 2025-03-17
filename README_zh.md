@@ -11,7 +11,7 @@ body {
      crossorigin="anonymous"></script>
 
 # Lucky Game Tools   (永久免费)
-Lucky Game Tools 《享受高质量的steam服务》
+Lucky Game Tools 《享受高质量的遊戲服务》
 
 电报: <a href="https://t.me/luckygametools" target="_blank">https://t.me/luckygametools</a> 
 
@@ -26,7 +26,7 @@ Discord: <a href="https://discord.gg/X4MTpDbcpT" target="_blank">https://discord
 
 墙内的铁汁们下载链接打不开的可以试试这个网盘  (<a href="https://gofile.io/d/EvLGJK" target="_blank">点击直达</a> )
 
-<h1>一个简简单单的steam游戏工具: LuckyGameTools （永久免费）</h1>
+<h1>一个简简单单的幸運游戏工具: LuckyGameTools （永久免费）</h1>
 
 <h2><a href="qa_zh.html" target="_blank">QA：常见问题(点击直达)</a> </h2> QA上沒有的請大家 自己查谷歌|AI，自查 自查 自查 
 
@@ -34,7 +34,7 @@ Discord: <a href="https://discord.gg/X4MTpDbcpT" target="_blank">https://discord
 
 ## 贡献方式:
 -     1.在社交平台分享本软件 (可獲取權限1和神秘代碼1次)【分享內容需包含官網鏈接和功能描述!!!】
--     eg：1.1 分享至steam游戏相关百人以上QQ群(加速器、修改器 ...)，
+-     eg：1.1 分享至游戏相关百人以上QQ群(加速器、修改器 ...)，
 -         1.2 其它主流媒体平台發貼分享均可（B站、贴吧、论坛 ...）
 -     2.通过广告链接的购买订单截图(軟件顶部广告baner图)(可獲取權限1和神秘代碼1次)
 -     3.媒体平台發貼瀏覽量達3K+的可獲取特殊貢獻(可獲取權限2)
