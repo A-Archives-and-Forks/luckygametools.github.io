@@ -15,8 +15,10 @@ body {
      crossorigin="anonymous"></script>
 # Welcome
 
-- <a href="README_en.html" target="_blank">English</a>
-- <a href="README_zh.html" target="_blank">中文</a>
+- <a href="README_en.html" target="_blank">English Doc</a>
+- <a href="README_zh.html" target="_blank">中文手冊(點擊前往)</a>
 
+- <a href="qa_en.html" target="_blank">QA(English)</a>
+- <a href="qa_zh.html" target="_blank">常见问题(點擊直达)</a> 
 
 <h2> <a href="https://docs.qq.com/sheet/DTW92amZZUElVZG1p" target="_blank">List of games Will be added(待添加游戏列表)</a> </h2>
