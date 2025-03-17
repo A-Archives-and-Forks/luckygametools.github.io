@@ -19,26 +19,8 @@ Link with DC: <a href="https://discord.gg/X4MTpDbcpT" target="_blank">https://di
 
 Installer exe ([https://raw.githubusercontent.com/luckygametools/steam-cfg/main/LuckyGameToolsInstaller.exe](https://raw.githubusercontent.com/luckygametools/steam-cfg/main/LuckyGameToolsInstaller.exe))
 
-Installer exe for china ([https://raw.githubusercontent.com/luckygametools/steam-cfg/main/LuckyGameToolsInstaller_zh.exe](https://raw.githubusercontent.com/luckygametools/steam-cfg/main/LuckyGameToolsInstaller_zh.exe))
-
 
 <h1>Not Only One Key Automatic Storage Steam Game Tool: LuckyGameTools （Forever free）</h1>
-
-<h2><a href="qa_en.html" target="_blank">QA</a> </h2>
-
-<h2>DCode will be updated irregularly in the [Telegram group](https://t.me/luckygametools ), and sharing in the Steam group is prohibited (Import Game Before Copy DCode)</h2>
-
-<h3>Some games(18+) are only open to users who have contributed to the project(After enabling the display of 18+in the settings, search for the keyword auth1 | auth2 in the software search).After contributed and contact the Telegram group owner to grant permission or take Mysterious Code  <a href="https://t.me/luckygametools" target="_blank">https://t.me/luckygametools</a> </h3>
-
-
-## Donation method:
--     1.Share this software on social media platforms(Upgradeable level 1 and mysterious code once)
--     eg：1.1 Share in two or more Telegram groups (with over 100 members),
--         1.2 Make video share (youtube tiktok twitch or other) And follow us https://youtu.be/LKfaK5IOPHQ
--         1.3 Other main gaming media platforms are also available
--         1.4 And other shared
--     2.Screenshot of purchase orders through advertising links (trainer or top ad banner image)(Upgradeable level 1 and mysterious code once)
--     3.Make Video Share Media platform posts with over 3K views can receive special contributions(Upgradeable level 2)
 
 ## Function List
 - Automatic Download Manifest
@@ -66,6 +48,21 @@ Installer exe for china ([https://raw.githubusercontent.com/luckygametools/steam
 - 7.If it helps you, please follow us <a href="https://www.youtube.com/watch?v=LKfaK5IOPHQ" target="_blank">https://www.youtube.com/watch?v=LKfaK5IOPHQ</a> 
 
 
+<h2>DCode will be updated irregularly in the [Telegram group](https://t.me/luckygametools ), and sharing in the Steam group is prohibited (Import Game Before Copy DCode)</h2>
+
+<h3>Some games(18+) are only open to users who have contributed to the project(After enabling the display of 18+in the settings, search for the keyword auth1 | auth2 in the software search).After contributed and contact the Telegram group owner to grant permission or take Mysterious Code  <a href="https://t.me/luckygametools" target="_blank">https://t.me/luckygametools</a> </h3>
+
+
+## Donation method:
+-     1.Share this software on social media platforms(Upgradeable level 1 and mysterious code once)
+-     eg：1.1 Share in two or more Telegram groups (with over 100 members),
+-         1.2 Make video share (youtube tiktok twitch or other) And follow us https://youtu.be/LKfaK5IOPHQ
+-         1.3 Other main gaming media platforms are also available
+-         1.4 And other shared
+-     2.Screenshot of purchase orders through advertising links (trainer or top ad banner image)(Upgradeable level 1 and mysterious code once)
+-     3.Make Video Share Media platform posts with over 3K views can receive special contributions(Upgradeable level 2)
+
+
 | Donation($) | Welfare (Permission)                         | Welfare (Gift of DRM mysterious code) | Notes                                                                 |
 |-------------|----------------------------------------------|----------------------------------------|----------------------------------------------------------------------|
 | 0$ (share)  | level1                                        | 1s                                     | make videos for sharing and the number of views has reached 3000 or Equal sharing method can obtain level2   |
@@ -87,12 +84,6 @@ Installer exe for china ([https://raw.githubusercontent.com/luckygametools/steam
 <h3>This software is purely local green software. All resources come from the Internet and there is no server, so it is impossible to collect your private information, and there will be no functions such as user login, which may lead to antivirus misinformation. Please rest assured that you can use it</h3>
 
 
-Please pay attention when using it：
-
-1.After opening the program, it prompts for installation. If it keeps prompting for initialization, it should be due to domestic network issues. Restarting the program twice should work properly
-
-2.When the game information is not fully loaded during initial use, you can try refreshing the taskbar
-
-3.If there is a prompt of "waiting to go online" all the time, you can turn off other accelerators and try again (this software comes with Steam acceleration function, tips, right-click ->run as administrator)
+<h2><a href="qa_en.html" target="_blank">QA</a> </h2>
 
 <h2>Supporting automatic authorization activation for DRM games requires mysterious code</h2>
