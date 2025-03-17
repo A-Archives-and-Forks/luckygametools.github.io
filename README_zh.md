@@ -30,7 +30,7 @@ Discord: <a href="https://discord.gg/X4MTpDbcpT" target="_blank">https://discord
 
 <h2><a href="qa_zh.html" target="_blank">QA：常见问题(点击直达)</a> </h2> QA上沒有的請大家 自己查谷歌，自查 自查 自查 ，我最多是建議你 較驗一下文件完整性 ，關閉一些亂七八糟的軟件
 
-<h3>部分游戏18+(在設置中開啟展示18+后,在軟件搜索中搜索關鍵詞 auth1、auth2)只针对项目有贡献的用户(權限1、權限2)开放,贡献后再联系电报群主开通权限或領取神秘代碼  <a href="https://t.me/luckygametools" target="_blank">https://t.me/luckygametools</a>  </h3>
+<h3>部分游戏18+(在設置中開啟展示18+后,在軟件搜索中搜索關鍵詞 auth1、auth2)只针对项目有贡献的用户(權限1、權限2)开放,贡献后可联系电报开通权限或領取神秘代碼  <a href="https://t.me/luckygametools" target="_blank">https://t.me/luckygametools</a>  </h3>
 
 ## 贡献方式:
 -     1.在社交平台分享本软件 (可獲取權限1和神秘代碼1次)【分享內容需包含官網鏈接和功能描述!!!】
@@ -57,8 +57,8 @@ Discord: <a href="https://discord.gg/X4MTpDbcpT" target="_blank">https://discord
 - 支持D加密游戏启动(支持自动授权,激活需要 神秘代码)
 - 支持GTA5(及三部曲)和荒野大镖客1和2一键畅玩
 - 支持steam及社区加速
-- 支持游戏清单更新([联系群主](https://t.me/luckygametools)更新后,重新导入游戏即可)
-- 部分启动不了或者卡住的游戏，参数搞不定的可以呼叫群主的神秘代码(保证进入)
+- 支持游戏清单更新([联系](https://t.me/luckygametools)更新后,重新导入游戏即可)
+- 部分启动不了或者卡住的游戏，参数搞不定的可以([联系](https://t.me/luckygametools)
 - 小部分游戏只针对有贡献的用户开放
   
 <h2>支持D加密游戏自动授权</h2>
