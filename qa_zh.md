@@ -13,7 +13,8 @@ body {
 
 # 1.steam下载或更新游戏提示清单不可用解决办法(2.0.1.14后的版本將不會出現此問題，如果出現試試重啟steam):
  - 1.退出steam
- - 2.在软件设置中点击清除steam缓存
+ - 2.在本软件设置中点击清除steam缓存![image](https://github.com/user-attachments/assets/1d47b48d-5963-4065-84fa-1df12f17054b)
+
  - 3.启动steam
  - 4.在luckygametools软件中重新导入游戏(鼠标移动软件左侧游戏上会出现一个红X，点击可以将游戏移出库，然后再正常一键导入)
  - 5.完毕
