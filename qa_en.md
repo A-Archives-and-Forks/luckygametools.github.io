@@ -40,8 +40,8 @@ body {
 # 7. 🚀 How can I upgrade my permissions?
  -  📈 你You can upgrade to auth1 by sharing contributions, or to auth2 by making special contributions or donations.
    
-# 8. 🗓️ I activated the DRM game, how long can it last?
- -  🔒 As long as you don't update the system, it can usually last for about a month.
+# 8. 🗓️ I activated the Denuvo game, how long can it last?
+ -  🔒Denuvo is an official behavior of the game (this software only assists in activation and bypassing), D The encryption principle is that encrypted game files are bound to the system, and only when the system or game files change, they need to be reactivated. Without any changes, the activation should be valid for one month.
    
 # 9. 🤔 Why doesn't my game have DLC?
  - 🛍️ Perhaps it's because DLC hasn't been purchased yet. We ensure that all games are obtained through purchasing accounts, which ensures that games and DLCs are updated at any time.
