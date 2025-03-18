@@ -28,14 +28,14 @@ Installer exe ([https://raw.githubusercontent.com/luckygametools/steam-cfg/main/
 - unlock Family Sharing
 - Supports 480 online team building - does not support online game types (<a href="steam-arg.jpg" target="_blank">right-click on the game settings on Steam, add the startup parameter</a>  -luckygametools, and then start the game to go online)
 - Notes for 480 (SpaceCar) Online : [1. Can only connect to unofficial servers. 2. Friends also need to add startup parameters. 3. For friend invitation based games, friends need to start the game first when receiving an online invitation message from Steam (SpaceCar), and then click on the invitation link in the Steam message to enter the online connection]
-- Support DRM game startup (supports automatic authorization, activation requires mysterious code)
+- Support Denuvo game startup (supports automatic authorization, activation requires mysterious code)
 - Support GTA5 (and trilogy) and Red Dead Redemption 2 for one key gameplay
 - Support Steam and community acceleration
 - For some games that cannot be started or get stuck, you can try using the lucky parameter to start them (<a href="steam-arg.jpg" target="_blank">right-click on the game settings on Steam and add the startup parameter</a> -luckygametools), see<a href="qa_en.html" target="_blank"> QA-11</a> for details
 - Support game list updates (after contacting the [group owner](https://t.me/luckygametools ) to update, simply import the game again)
 - A small number of games are only open to users who have made contributions
 
-<h2>Supporting automatic authorization activation for DRM games requires mysterious code</h2>
+<h2>Supporting automatic authorization activation for Denuvo games requires mysterious code</h2>
 
 ## Activation steps
 - 0.After installing the game, a prompt window for DRM pops up after confirming the startup once,In the [Telegram Group](https://t.me/luckygametools ) Contact the group leader to obtain the 'Mysterious Code' ,Bring the app ID for the game
@@ -45,10 +45,9 @@ Installer exe ([https://raw.githubusercontent.com/luckygametools/steam-cfg/main/
 - 4.Log in to your own account
 - 5.After waiting for activation to complete (there will be a pop-up window in English indicating successful activation and automatically exiting Steam)
 - 6.Then everyone can start Steam normally and play the game smoothly(Do not update the system after activation)
-- 7.If it helps you, please follow us <a href="https://www.youtube.com/watch?v=LKfaK5IOPHQ" target="_blank">https://www.youtube.com/watch?v=LKfaK5IOPHQ</a> 
+- 7.If it helps you, please follow us <a href="https://www.youtube.com/watch?v=LKfaK5IOPHQ" target="_blank">https://www.youtube.com/watch?v=LKfaK5IOPHQ</a>
+- 8.Denuvo is an official behavior of the game (this software only assists in activation and bypassing), Denuvo principle is that encrypted game files are bound to the system, and only when the system or game files change, they need to be reactivated. Without any changes, the activation should be valid for one month.
 
-
-<h2>DCode will be updated irregularly in the [Telegram group](https://t.me/luckygametools ), and sharing in the Steam group is prohibited (Import Game Before Copy DCode)</h2>
 
 <h3>Some games(18+) are only open to users who have contributed to the project(After enabling the display of 18+in the settings, search for the keyword auth1 | auth2 in the software search).After contributed and contact the Telegram group owner to grant permission or take Mysterious Code  <a href="https://t.me/luckygametools" target="_blank">https://t.me/luckygametools</a> </h3>
 
@@ -63,7 +62,7 @@ Installer exe ([https://raw.githubusercontent.com/luckygametools/steam-cfg/main/
 -     3.Make Video Share Media platform posts with over 3K views can receive special contributions(Upgradeable level 2)
 
 
-| Donation($) | Welfare (Permission)                         | Welfare (Gift of DRM mysterious code) | Notes                                                                 |
+| Donation($) | Welfare (Permission)                         | Welfare (Gift of Denuvo Game mysterious code) | Notes                                                                 |
 |-------------|----------------------------------------------|----------------------------------------|----------------------------------------------------------------------|
 | 0$ (share)  | level1                                        | 1s                                     | make videos for sharing and the number of views has reached 3000 or Equal sharing method can obtain level2   |
 | 1$+         | level0                                        | 2s                                     |                                                                      |
@@ -86,4 +85,4 @@ Installer exe ([https://raw.githubusercontent.com/luckygametools/steam-cfg/main/
 
 <h2><a href="qa_en.html" target="_blank">QA</a> </h2>
 
-<h2>Supporting automatic authorization activation for DRM games requires mysterious code</h2>
+<h2>Supporting automatic authorization activation for Denuvo games requires mysterious code</h2>
