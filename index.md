@@ -21,7 +21,7 @@ body {
 - <a href="qa_en.html" target="_blank">QA(English)</a> | <a href="qa_zh.html" target="_blank">常见问题(點擊直达)</a>
 
 
-- <a href="qdevLog.html" target="_blank">Development logs(開發日誌)</a>
+- <a href="devLog.html" target="_blank">Development logs(開發日誌)</a>
 
 
 <h1>Solemnly declare that this software is pure local green software, which can be used normally without administrator permission (except for the accelerator function). All resources come from the Internet, and there is no server, so it is impossible to collect your private information, and there will be no functions such as user login, and there may be anti-virus misinformation. Please rest assured that you can use it </h1>
