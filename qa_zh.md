@@ -71,5 +71,8 @@ body {
  - 使用本軟件自帶的加速功能可以進行(右鍵管理員權限運行本程序)
 
 # 15.MyDockFinder 啟動不了？
- - 添加steam的啟動參數  -luckygametools 
+ - 添加steam的啟動參數  -luckygametools
+
+# 16.為什麽軟件會提示 Ban On User(禁止使用)
+ - 紅信號或者steam中luckygametools的群組被管理ban了，或者網絡問題
 
