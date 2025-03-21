@@ -62,3 +62,6 @@ body {
  - 2.To start Steam, you need to start it from the bottom left corner of luckygame tools ![图片](https://github.com/user-attachments/assets/8e18ba43-8b6a-49ed-8717-a4374b4766c0)
  - 3.If step 3 still runs normally, please run luckygame tools with administrator privileges before repeating step 3
  - 4.Over
+
+# 14Why does the software prompt  Ban On User(禁止使用)
+-The group for luckygametools in the red signal or Steam has been banned or there are network issues
