@@ -40,6 +40,7 @@ Discord: <a href="https://discord.gg/X4MTpDbcpT" target="_blank">https://discord
 -  |   2.好友也需要添加啟動參數
 -  |   3.好友邀請式的遊戲，需要好友在接收到steam的聯機邀請消息時(SpaceWar),需要先啟動遊戲后，再點擊steam消息中邀請鏈接進入聯機】
 -  |   4.如果加了參數后，還是提示需要加參數的，可在從軟件左下解啟動steam,或者查看啟動steam時軟件正上方的紅字提示
+-  |   5.軟件目前已對部份遊戲自動集成參數：<a href="https://github.com/luckygametools/steam-cfg/blob/main/arg-luckygametools" target="_blank">(已收錄的遊戲列表)</a>
 - ---------------------------------联机注意事項---------------------------------------------
 - 部分启动不了或者卡住的游戏，可尝试使用幸运参数启动(<a href="steam-arg.jpg" target="_blank">在steam的游戏右键设置，添加启动参数 -luckygametools (点击直达)</a> )，<a href="qa_zh.html" target="_blank">详见QA-11(点击直达)</a>
 - 支持D加密游戏启动(支持自动授权,激活需要 神秘代码)
