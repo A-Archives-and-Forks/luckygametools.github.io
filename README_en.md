@@ -45,7 +45,7 @@ Installer exe ([https://raw.githubusercontent.com/luckygametools/steam-cfg/main/
 - 2.Copy the complete mysterious code(The mysterious code is a string of characters starting with the letter lgt, valid for 30 minutes)
 - 3.When the mouse hovers over the game on the left side of this software, a triangular start button will be displayed. Clicking on it will launch Steam
 - 4.Log in to your own account
-- 5.After waiting for activation to complete (there will be a pop-up window in English indicating successful activation and automatically exiting Steam)
+- 5.Launch the game,After waiting for activation to complete (there will be a pop-up window in English indicating successful activation and automatically exiting Steam)
 - 6.Then everyone can start Steam normally and play the game smoothly(Do not update the system after activation)
 - 7.If it helps you, please follow us <a href="https://www.youtube.com/watch?v=LKfaK5IOPHQ" target="_blank">https://www.youtube.com/watch?v=LKfaK5IOPHQ</a>
 - 8.Denuvo is an official behavior of the game (this software only assists in activation and bypassing), Denuvo principle is that encrypted game files are bound to the system, and only when the system or game files change, they need to be reactivated. Without any changes, the activation should be valid for one month.
