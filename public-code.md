@@ -1,0 +1,7 @@
+# 1.appid:3159330刺客信條.影
+  D加密激活神秘代碼：
+  
+    lgt00303522KsEPHYYkItcibYNaYQ+Gm1bLc2NUr5SdGdGVueMPLLecRGPWK4DyiNjx9Fcvvm1m+INaH4Iu5iB6/aqDyVBLp7Nrfql6cpatwn84VQFVt6XqrX/RVME1lVcKnagP7Dyd/xBR5nGrHD3RdGe+KsfCN7YuaJ26UZzJOidB5DZT+R0wFMELyMUJ75xoQSTiH90JQizL4nIJEzldKvBmwfN5rYvpiT72DCUZdYCFYoCNaDgJr7y64u4AFylA4X3oLsS4ic7Bhm4uJ2MmDXSNpuzwf0QvzKHVMzyAadxEmMKhAUJqakIp7kAB8C/D5W/1x4d8eQupMVVpzH7/QK/X4AoPyuybATimQCEZZ6vByxDIJ0Sgn/1Hf/HsRkoC9ddhgEua
+  
+  有效期20天(過期請聯繫作者重新生成)，激活后需要自行登陸一個擁用該steam版本遊戲的UB帳號，才可以最終啟動遊戲
+  損贈的高級用戶可以在高級群中查看作者分享的UB帳號
