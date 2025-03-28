@@ -63,6 +63,7 @@ Discord: <a href="https://discord.gg/X4MTpDbcpT" target="_blank">https://discord
 - 6.然后大家自己正常启动steam后就可以畅玩游戏了(激活后请勿更新系统)
 - 7.帮忙到您了的话，帮忙訂閱:<a href="https://www.youtube.com/watch?v=LKfaK5IOPHQ" target="_blank">https://www.youtube.com/watch?v=LKfaK5IOPHQ</a>
 - 8.D加密是遊戲官方行為（本軟件只是輔助激活繞過），D加密原理是加密的遊戲文件和系統綁定，只有系統或遊戲文件變動才需要重新激活，在不變動的情況下，激活應該可以持续1个月有效。
+- 9.部份公開神秘代碼 (<a href="public-code.html" target="_blank"> (点击直达)</a>)
 
 <h2><a href="qa_zh.html" target="_blank">QA：常见问题(点击直达)</a> </h2> QA上沒有的請大家 自己查谷歌|AI，自查 自查 自查 
 
