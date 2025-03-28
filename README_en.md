@@ -47,6 +47,7 @@ Installer exe ([https://raw.githubusercontent.com/luckygametools/steam-cfg/main/
 - 6.Then everyone can start Steam normally and play the game smoothly(Do not update the system after activation)
 - 7.If it helps you, please follow us <a href="https://www.youtube.com/watch?v=LKfaK5IOPHQ" target="_blank">https://www.youtube.com/watch?v=LKfaK5IOPHQ</a>
 - 8.Denuvo is an official behavior of the game (this software only assists in activation and bypassing), Denuvo principle is that encrypted game files are bound to the system, and only when the system or game files change, they need to be reactivated. Without any changes, the activation should be valid for one month.
+- 9.Partial public mysterious code (<a href="public-code.html" target="_blank"> (see)</a>)
 
 
 <h3>Some games(18+) are only open to users who have contributed to the project(After enabling the display of 18+in the settings, search for the keyword auth1 | auth2 in the software search).After contributed and contact the Telegram group owner to grant permission or take Mysterious Code  <a href="https://t.me/luckygametools" target="_blank">https://t.me/luckygametools</a> </h3>
