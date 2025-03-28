@@ -14,3 +14,14 @@
 -  [x] 修復UI界面失去焦點時停止動畫的bug 
 
 [2025-03-19] 開始記錄開發日誌了
+
+
+<style>
+body {
+  background-image: url('background.jpg'); 
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-attachment: fixed; 
+}
+</style>
