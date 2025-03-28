@@ -47,7 +47,7 @@ Discord: <a href="https://discord.gg/X4MTpDbcpT" target="_blank">https://discord
 - 支持GTA5(及三部曲)和荒野大镖客1和2一键畅玩
 - 支持steam及社区加速
 - 支持游戏清单更新([联系](https://t.me/luckygametools)更新后,重新导入游戏即可)
-- 部分启动不了或者卡住的游戏，参数搞不定的可以([联系電報群](https://t.me/luckygametools))
+- 部分启动不了或者卡住或者提示連接失敗需要登陸上線驗證的游戏(eg:微软飞行模拟器)，参数搞不定的可以联系([電報群](https://t.me/luckygametools))
 - 小部分游戏只针对有贡献的用户开放
   
 <h2>支持D加密游戏自动授权</h2>
