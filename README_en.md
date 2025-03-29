@@ -34,6 +34,7 @@ Installer exe ([https://raw.githubusercontent.com/luckygametools/steam-cfg/main/
 - Support GTA5 (and trilogy) and Red Dead Redemption 2 for one key gameplay
 - Support Steam and community acceleration
 - For some games that cannot be started or get stuck or Game that prompts connection failure and requires login and online verification(eg:Microsoft Flight Simulator 40th Anniversary Edition), you can try using the lucky parameter to start them (<a href="steam-arg.jpg" target="_blank">right-click on the game settings on Steam and add the startup parameter</a> -luckygametools), see<a href="qa_en.html" target="_blank"> QA-11</a> for details
+- Partially unable to start or stuck or<a href="https://luckygametools.github.io/README_en.html#support-some-single-player-games-that-require-online-authorizati" target="_blank">Game that prompts connection failure and requires login and online verification</a>(eg:Microsoft Flight Simulator )，If the parameters cannot be determined, please contact us([TG](https://t.me/luckygametools))
 - Support game list updates (after contacting the [group owner](https://t.me/luckygametools ) to update, simply import the game again)
 - A small number of games are only open to users who have made contributions
 
