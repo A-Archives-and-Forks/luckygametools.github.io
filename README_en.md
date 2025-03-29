@@ -43,14 +43,24 @@ Installer exe ([https://raw.githubusercontent.com/luckygametools/steam-cfg/main/
 - 0.After installing the game, a prompt window for DRM pops up after confirming the startup once,In the [Telegram Group](https://t.me/luckygametools ) Contact the group leader to obtain the 'Mysterious Code' ,Bring the app ID for the game
 - 1.Exit the running Steam
 - 2.Copy the complete mysterious code(The mysterious code is a string of characters starting with the letter lgt, valid for 30 minutes)
-- 3.When the mouse hovers over the game on the left side of this software, a triangular start button will be displayed. Clicking on it will launch Steam
-- 4.Log in to your own account
+- 3.When the mouse hovers over the corresponding game on the left side of this software, a triangular start button will be displayed. Clicking on it will start Steam (if it doesn't appear, it may be a system clipboard issue, try pasting it in an empty space)
+- 4.Log in to your account (make sure to start Steam from step 3 for it to be valid)
 - 5.Launch the game,After waiting for activation to complete (there will be a pop-up window in English indicating successful activation and automatically exiting Steam)
 - 6.Then everyone can start Steam normally and play the game smoothly(Do not update the system after activation)
 - 7.If it helps you, please follow us <a href="https://www.youtube.com/watch?v=LKfaK5IOPHQ" target="_blank">https://www.youtube.com/watch?v=LKfaK5IOPHQ</a>
 - 8.Denuvo is an official behavior of the game (this software only assists in activation and bypassing), Denuvo principle is that encrypted game files are bound to the system, and only when the system or game files change, they need to be reactivated. Without any changes, the activation should be valid for one month.
 - 9.Partial public mysterious code (<a href="public-code.html" target="_blank"> (see)</a>)
 
+<h2>Support some single player games that require online authorization verification</h2>
+
+## Usage steps
+- 0.After installing the game, start it once to confirm that the game exists and requires network authorization verification before it can be played normally
+- 1.Exit the running Steam
+- 2.Copy the complete mysterious code(The mysterious code is a string of characters starting with the letter lgt, valid for 30 minutes)
+- | The mysterious code is a string of characters starting with the letter lot, with an unknown expiration date. Please use it as soon as possible
+- 3.When the mouse hovers over the corresponding game on the left side of this software, a triangular start button will be displayed. Clicking on it will start Steam (if it doesn't appear, it may be a system clipboard issue, try pasting it in an empty space)
+- 4.Log in to your account (make sure to start Steam from step 3 for it to be valid)
+- 5.Then you can play the game freely (do not exit Steam, otherwise you will need to repeat the above steps)
 
 <h3>Some games(18+) are only open to users who have contributed to the project(After enabling the display of 18+in the settings, search for the keyword auth1 | auth2 in the software search).After contributed and contact the Telegram group owner to grant permission or take Mysterious Code  <a href="https://t.me/luckygametools" target="_blank">https://t.me/luckygametools</a> </h3>
 
