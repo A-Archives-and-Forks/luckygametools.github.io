@@ -42,4 +42,10 @@ eg(例如):drm1234567|AAA-BBB-CCC-DDD-EEE-FFF-GGG
 # D加密神秘代碼使用說明 
 (<a href="https://luckygametools.github.io/README_zh.html#%E6%94%AF%E6%8C%81d%E5%8A%A0%E5%AF%86%E6%B8%B8%E6%88%8F%E8%87%AA%E5%8A%A8%E6%8E%88%E6%9D%83" target="_blank">点击直达</a> )
 
+# 額外福利
 
+ 1.機器人新增指令：online  eg:online1234567|AAA-BBB-CCC-DDD-EEE-FFF-GGG
+ 
+ 2.用于解決部份遊戲啟動后還要進行聯網驗證  eg:1250410 微软飞行模拟器
+ 
+ 3.歡迎大家提交使用，此指令不會消耗CDK,只用于驗證
