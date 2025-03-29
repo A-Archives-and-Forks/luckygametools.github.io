@@ -28,7 +28,7 @@ body {
 ![图片](https://github.com/user-attachments/assets/9182c8a6-ad50-49b2-9f53-d5bcd192795b)
 
 2.Right click on the robot avatar and select 'Send Message' to see the instructions for the robot：
-CDK exchange mysterious code instruction(CDK兌換神秘代碼指令):drm+appid+|+cdk
+CDK exchange mysterious code instruction(CDK exchange mysterious code command):drm+appid+|+cdk
 eg(例如):drm1234567|AAA-BBB-CCC-DDD-EEE-FFF-GGG
 ![图片](https://github.com/user-attachments/assets/0f621163-de7a-4f50-89f8-8f51209db8c3)
 
@@ -41,3 +41,13 @@ At this point, the machine will automatically reply and the command function can
 
 # Instructions for using encrypted mysterious code DRM 
 (<a href="https://luckygametools.github.io/README_en.html#supporting-automatic-authorization-activation-for-drm-games-requ" target="_blank">Goto</a> )
+
+# fringe benefits
+
+ 1.Robot adds new command：online  eg:online1234567|AAA-BBB-CCC-DDD-EEE-FFF-GGG
+ 
+ 2.Used to solve the problem of some games requiring network verification after startup  eg:1250410 Microsoft Flight Simulator 
+ 
+ 3.Welcome everyone to submit and use. This command will not consume CDK and is only used for verification
+
+ 4.This command will generate a mysterious code starting with 'lot'. Please refer to the activation method of DRM for instructions on how to use it
