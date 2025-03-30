@@ -29,7 +29,14 @@ Installer exe ([https://raw.githubusercontent.com/luckygametools/steam-cfg/main/
 - unlock game
 - unlock Family Sharing
 - Supports 480 online team building - does not support online game types (<a href="steam-arg.jpg" target="_blank">right-click on the game settings on Steam, add the startup parameter</a>  -luckygametools, and then start the game to go online)
-- Notes for 480 (SpaceCar) Online : [1. Can only connect to unofficial servers. 2. Friends also need to add startup parameters. 3. For friend invitation based games, friends need to start the game first when receiving an online invitation message from Steam (SpaceCar), and then click on the invitation link in the Steam message to enter the online connection]
+- 480(SpaceWar)Additional online precautions ：
+- ---------------------------------Online precautions---------------------------------------------
+-  |   1.Can only connect to unofficial servers
+-  |   2.Friends also need to add startup parameters
+-  |   3.A friend invitation game requires friends to start the game first when receiving an online invitation message from Steam (SpaceWar), and then click on the invitation link in the Steam message to enter the online game
+-  |   4.If there is still a prompt to add parameters after adding them, you can restart Steam from the bottom left of the software or check the red prompt directly above the software when starting Steam
+-  |   5.The software currently automatically integrates parameters for some games：<a href="https://github.com/luckygametools/steam-cfg/blob/main/arg-luckygametools" target="_blank">(List of games already included)</a>
+- ---------------------------------Online precautions---------------------------------------------
 - Support Denuvo game startup (supports automatic authorization, activation requires mysterious code)
 - Support GTA5 (and trilogy) and Red Dead Redemption 2 for one key gameplay
 - Support Steam and community acceleration
