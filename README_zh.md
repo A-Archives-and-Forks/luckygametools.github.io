@@ -52,7 +52,7 @@ Discord: <a href="https://discord.gg/X4MTpDbcpT" target="_blank">https://discord
   
 <h2>支持D加密游戏自动授权</h2>
 
-## 激活步骤 
+## 激活步骤 (<a href="https://youtu.be/vyAiCWiyotI" target="_blank">視頻演示</a>)
 - 0.安装完成游戏后，启动一次确认游戏存在弹出了D加密的提示窗
 - 1.退出正在运行的steam后
 - 2.复制完整的神秘代码(怎麼獲取神秘代碼？查看下面 貢獻方式)
@@ -61,7 +61,7 @@ Discord: <a href="https://discord.gg/X4MTpDbcpT" target="_blank">https://discord
 - 4.登陆一下自己的帐号(確記是從第3步啟動的steam才有效)
 - 5.啟動遊戲,等待激活完成后(有个弹窗英文提示激活成功【DRM Activation successful】，并会自动退出steam)
 - 6.然后大家自己正常启动steam后就可以畅玩游戏了(激活后请勿更新系统)
-- 7.帮忙到您了的话，帮忙訂閱:<a href="https://www.youtube.com/watch?v=LKfaK5IOPHQ" target="_blank">https://www.youtube.com/watch?v=LKfaK5IOPHQ</a>
+- 7.帮忙到您了的话，帮忙訂閱:<a href="https://youtu.be/vyAiCWiyotI" target="_blank">https://youtu.be/vyAiCWiyotI</a>
 - 8.D加密是遊戲官方行為（本軟件只是輔助激活繞過），D加密原理是加密的遊戲文件和系統綁定，只有系統或遊戲文件變動才需要重新激活，在不變動的情況下，激活應該可以持续1个月有效。
 - 9.部份公開神秘代碼 (<a href="public-code.html" target="_blank"> (点击直达)</a>)
 
