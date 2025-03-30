@@ -55,7 +55,7 @@ Installer exe ([https://raw.githubusercontent.com/luckygametools/steam-cfg/main/
 - 4.Log in to your account (make sure to start Steam from step 3 for it to be valid)
 - 5.Launch the game,After waiting for activation to complete (there will be a pop-up window in English indicating successful activation and automatically exiting Steam)
 - 6.Then everyone can start Steam normally and play the game smoothly(Do not update the system after activation)
-- 7.If it helps you, please follow us <a href="https://www.youtube.com/watch?v=LKfaK5IOPHQ" target="_blank">https://www.youtube.com/watch?v=LKfaK5IOPHQ</a>
+- 7.If it helps you, please follow us <a href="https://youtu.be/vyAiCWiyotI" target="_blank">https://youtu.be/vyAiCWiyotI</a>
 - 8.Denuvo is an official behavior of the game (this software only assists in activation and bypassing), Denuvo principle is that encrypted game files are bound to the system, and only when the system or game files change, they need to be reactivated. Without any changes, the activation should be valid for one month.
 - 9.Partial public mysterious code (<a href="public-code.html" target="_blank"> (see)</a>)
 
