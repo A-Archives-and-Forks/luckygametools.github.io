@@ -78,7 +78,7 @@ Installer exe ([https://raw.githubusercontent.com/luckygametools/steam-cfg/main/
 
 | Donation($) | Welfare (Permission)                         | Welfare (Gift of Denuvo Game mysterious code) | Notes                                                                 |
 |-------------|----------------------------------------------|----------------------------------------|----------------------------------------------------------------------|
-| 0$ (share)  | level1                                        | 1s                                     | make videos for sharing and the number of views has reached 3000 or Equal sharing method can obtain level2   |
+| 0$ (share)  | level1                                        | 1s(times)                                     | make videos for sharing and the number of views has reached 3000 or Equal sharing method can obtain level2   |
 | 1$+         | level0                                        | 2s                                     |                                                                      |
 | 5$+         | level1                                        | 5s                                     |                                                                      |
 | 15$+        | **level2**                                    | 15s                                    | **level2 Users' questions can receive thoughtful explanations from the team** |
