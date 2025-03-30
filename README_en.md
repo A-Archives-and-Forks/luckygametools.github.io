@@ -29,7 +29,7 @@ Installer exe ([https://raw.githubusercontent.com/luckygametools/steam-cfg/main/
 - unlock game
 - unlock Family Sharing
 - Supports 480 online team building - does not support online game types (<a href="steam-arg.jpg" target="_blank">right-click on the game settings on Steam, add the startup parameter</a>  -luckygametools, and then start the game to go online)
-- 480(SpaceWar)Additional online precautions ：
+- 480(SpaceWar)Additional online precautions ：(<a href="https://youtu.be/I2f69LMkknA" target="_blank">Video demonstration</a>)
 - ---------------------------------Online precautions---------------------------------------------
 -  |   1.Can only connect to unofficial servers
 -  |   2.Friends also need to add startup parameters
