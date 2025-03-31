@@ -70,10 +70,11 @@ Installer exe ([https://raw.githubusercontent.com/luckygametools/steam-cfg/main/
 - 4.Log in to your account (make sure to start Steam from step 3 for it to be valid)
 - 5.Then you can play the game freely (do not exit Steam, otherwise you will need to repeat the above steps)
 
+## Upgrade Level
 <h3>Some games(18+) are only open to users who have contributed to the project(After enabling the display of 18+in the settings, search for the keyword auth1 | auth2 in the software search).After contributed and contact the Telegram group owner to grant permission or take Mysterious Code  <a href="https://t.me/luckygametools" target="_blank">https://t.me/luckygametools</a> </h3>
 
 
-## Donation method:
+### Donation method:
 -     1.Share this software on social media platforms(Upgradeable level 1 and mysterious code once)
 -     eg：1.1 Share in two or more Telegram groups (with over 100 members),
 -         1.2 Make video share (youtube tiktok twitch or other) And follow us https://youtu.be/LKfaK5IOPHQ
