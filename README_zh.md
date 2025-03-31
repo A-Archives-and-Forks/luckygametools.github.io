@@ -76,12 +76,10 @@ Discord: <a href="https://discord.gg/X4MTpDbcpT" target="_blank">https://discord
 - 4.登陆一下自己的帐号(確記是從第3步啟動的steam才有效)
 - 5.然后就可以畅玩游戏了(不要退出steam，否則需要重來一次上面的步驟)
 
-<h2><a href="qa_zh.html" target="_blank">QA：常见问题(点击直达)</a> </h2> QA上沒有的請大家 自己查谷歌|AI，自查 自查 自查 
-
 ##  提升等級
 <h3>部分游戏18+(在設置中開啟展示18+后,在軟件搜索中搜索關鍵詞 auth1、auth2)，只针对项目有贡献的用户(權限1、權限2)开放</h3>
 
-## 贡献方式:
+### 贡献方式:
 -     1.在社交平台分享本软件 【分享內容需包含官網鏈接和功能描述!!!】
 -     eg：1.1 分享至游戏相关百人以上聊天群
 -         1.2 其它主流媒体平台發貼分享均可(eg:油管、推特等)
@@ -90,6 +88,8 @@ Discord: <a href="https://discord.gg/X4MTpDbcpT" target="_blank">https://discord
 -     贡献后截圖联系电报开通权限或領取神秘代碼  <a href="https://t.me/luckygametools" target="_blank">https://t.me/luckygametools</a> 
 
 <h2>游戏资源每天更新中，很多游戏都是满DLC豪华版</h2>
+
+<h2><a href="qa_zh.html" target="_blank">QA：常见问题(点击直达)</a> </h2> QA上沒有的請大家 自己查谷歌|AI，自查 自查 自查 
 
 <h1>本软件为纯本地绿色软件，無需管理員權限就可以正常使用(加速器功能除外)，所有资源来自互联网，没有服务器，所以也不可能去收集大家的隐私信息，也不会有用户登陆啥的之类的功能,可能会出现杀毒误报，请大家放心食用(可以安裝火絨殺毒軟件測試)</h1>
 
