@@ -79,8 +79,7 @@ Installer exe ([https://raw.githubusercontent.com/luckygametools/steam-cfg/main/
 -         1.2 Make video share (youtube tiktok twitch or other) And follow us https://youtu.be/LKfaK5IOPHQ
 -         1.3 Other main gaming media platforms are also available
 -         1.4 And other shared
--     2.Screenshot of purchase orders through advertising links (trainer or top ad banner image)(Upgradeable level 1 and mysterious code once)
--     3.Make Video Share Media platform posts with over 3K views can receive special contributions(Upgradeable level 2)
+-     2.Make Video Share Media platform posts with over 3K views can receive special contributions(Upgradeable level 2)
 
 
 | Donation($) | Welfare (Permission)                         | Welfare (Gift of Denuvo Game mysterious code) | Notes                                                                 |
