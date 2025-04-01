@@ -75,13 +75,17 @@ Installer exe ([https://raw.githubusercontent.com/luckygametools/steam-cfg/main/
 
 
 ### Donation method:
--     1.Share this software on social media platforms(Upgradeable level 1 and mysterious code once)
--     eg：1.1 Share in two or more Telegram groups (with over 100 members),
--         1.2 Make video share (youtube tiktok twitch or other) And follow us https://youtu.be/LKfaK5IOPHQ
+-     1.Share this software on social media platforms(Upgradeable level1 or mysterious code once)
+-     eg：
+-         1.1 Share in two or more Telegram groups (with over 100 members),
+-         1.2 Make video share (youtube tiktok twitch or other) And follow us https://youtu.be/vyAiCWiyotI
 -         1.3 Other main gaming media platforms are also available
 -         1.4 And other shared
 -     2.Make Video Share Media platform posts with over 3K views can receive special contributions(Upgradeable level 2)
-
+- ------------------------------------------------------------------------------------------------------------
+-      |  after Donation contact<a href="https://t.me/luckygametools" target="_blank">TG</a> Upgrade or receive mysterious codes
+-      |  Confirm the second step of activation before receiving the mysterious code，And inform the other party that they need to Activation the game <a class="bold">AppId</a>
+- ------------------------------------------------------------------------------------------------------------
 
 | Donation($) | Welfare (Permission)                         | Welfare (Gift of Denuvo Game mysterious code) | Notes                                                                 |
 |-------------|----------------------------------------------|----------------------------------------|----------------------------------------------------------------------|
