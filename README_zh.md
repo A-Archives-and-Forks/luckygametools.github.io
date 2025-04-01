@@ -92,7 +92,7 @@ Discord: <a href="https://discord.gg/X4MTpDbcpT" target="_blank">https://discord
 -     3.贊助本軟件
   
 -     贡献后截圖联系电报开通权限或領取神秘代碼
--     領取神秘代碼前確認到了激活的第2步，并告訴對方需要領取遊戲的 <div class="red-bold">AppId</div> <a href="https://t.me/luckygametools" target="_blank">https://t.me/luckygametools</a> 
+-     領取神秘代碼前確認到了激活的第2步，并告訴對方需要領取遊戲的 <a class="red-bold">AppId</a> <a href="https://t.me/luckygametools" target="_blank">https://t.me/luckygametools</a> 
 
 <h2>游戏资源每天更新中，很多游戏都是满DLC豪华版</h2>
 
