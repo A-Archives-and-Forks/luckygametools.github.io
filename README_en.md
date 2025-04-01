@@ -83,7 +83,7 @@ Installer exe ([https://raw.githubusercontent.com/luckygametools/steam-cfg/main/
 -         1.4 And other shared
 -     2.Make Video Share Media platform posts with over 3K views can receive special contributions(Upgradeable level 2)
 - ------------------------------------------------------------------------------------------------------------
--      |  after Donation contact<a href="https://t.me/luckygametools" target="_blank">TG</a> Upgrade or receive mysterious codes
+-      |  after Donation contact <a href="https://t.me/luckygametools" target="_blank">TG</a> Upgrade or receive mysterious codes
 -      |  Confirm the second step of activation before receiving the mysterious code，And inform the other party that they need to Activation the game <a class="bold">AppId</a>
 - ------------------------------------------------------------------------------------------------------------
 
