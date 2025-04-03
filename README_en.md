@@ -45,6 +45,8 @@ Installer exe ([https://raw.githubusercontent.com/luckygametools/steam-cfg/main/
 - Partially unable to start or stuck or<a href="https://luckygametools.github.io/README_en.html#support-some-single-player-games-that-require-online-authorizati">Game that prompts connection failure and requires login and online verification</a>(eg:Microsoft Flight Simulator )，If the parameters cannot be determined, please contact us([TG](https://t.me/luckygametools))
 - Support game list updates (after contacting the [group owner](https://t.me/luckygametools ) to update, simply import the game again)
 - A small number of games are only open to users who have made contributions
+- Suggest everyone to experience it on their own empty account and support the genuine version if they have the financial strength
+
 
 <h2>Supporting automatic authorization activation for Denuvo games requires mysterious code</h2>
 
