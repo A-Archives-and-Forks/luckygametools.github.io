@@ -2,8 +2,10 @@
 layout: default
 title: Home
 ---
+<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
 <style>
 body {
+  font-family: 'Poppins', sans-serif;
   background-image: url('background.jpg'); 
   background-size: cover; 
   background-position: center;
