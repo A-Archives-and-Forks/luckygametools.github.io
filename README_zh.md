@@ -39,7 +39,7 @@ Discord: <a href="https://discord.gg/X4MTpDbcpT" target="_blank">https://discord
 
 ## 支持内容
 - 自动安装清单文件 
-- (<a href="https://docs.qq.com/doc/DTVl3S0VhY0RvcEVZ" target="_blank">一键解锁游戏(点击直达)</a> )
+- (<a href="https://youtu.be/LKfaK5IOPHQ" target="_blank">一键解锁游戏(点击直达)</a> )
 - 支持解除正版Steam家庭共享限制-加入steam家庭共享组后通过本软件启动可同时玩同一款游戏【包括任何聯機遊戲】
 - 支持480(SpaceWar)联机组队-不支持网游类型(<a href="steam-arg.jpg" target="_blank">在steam的游戏右键设置，添加启动参数 -luckygametools (点击直达)</a> ，再启动游戏就可以联机了
 - 480(SpaceWar)联机注意事項補充 ：(<a href="https://youtu.be/I2f69LMkknA" target="_blank">視頻演示</a>)
