@@ -1,3 +1,4 @@
+<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
 <style>
 body {
   background-image: url('background.jpg'); 
@@ -5,6 +6,7 @@ body {
   background-position: center;
   background-repeat: no-repeat; 
   background-attachment: fixed; 
+  font-family: 'Poppins', sans-serif;
 }
 </style>
 
