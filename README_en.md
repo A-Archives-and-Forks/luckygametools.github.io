@@ -53,7 +53,8 @@ Installer exe ([https://raw.githubusercontent.com/luckygametools/steam-cfg/main/
 <h2>Supporting automatic authorization activation for Denuvo games requires mysterious code</h2>
 
 ## Activation steps (<a href="https://youtu.be/vyAiCWiyotI" target="_blank">Video demonstration</a>)
-- 0.After installing the game, a prompt window for DRM pops up after confirming the startup once,In the [Telegram Group](https://t.me/luckygametools ) Contact the group leader to obtain the 'Mysterious Code' ,Bring the app ID for the game
+###### How to get the  <a href="https://luckygametools.github.io/README_en.html#donation-method">Mysterious Code</a>
+- 0.After installed the game, a pop-up message will appear when starting the game indicating that the Denuvo game needs to be activated
 - 1.Exit the running Steam
 - 2.Copy the complete mysterious code(The mysterious code is a string of characters starting with the letter lgt, valid for 30 minutes)
 - 3.When the mouse hovers over the corresponding game on the left side of this software, a triangular start button will be displayed. Clicking on it will start Steam (if it doesn't appear, it may be a system clipboard issue, try pasting it in an empty space)
