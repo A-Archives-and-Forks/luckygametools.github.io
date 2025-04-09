@@ -62,9 +62,10 @@ Discord: <a href="https://discord.gg/X4MTpDbcpT" target="_blank">https://discord
 <h2>支持D加密游戏自动授权</h2>
 
 ## 激活步骤 (<a href="https://youtu.be/vyAiCWiyotI" target="_blank">視頻演示</a>)
+###### 怎麼獲取神秘代碼 <a href="https://luckygametools.github.io/README_zh.html#%E8%B4%A1%E7%8C%AE%E6%96%B9%E5%BC%8F">點擊直達</a>
 - 0.安装完成游戏后，启动一次确认游戏存在弹出了D加密的提示窗
 - 1.退出正在运行的steam后
-- 2.复制完整的神秘代码(怎麼獲取神秘代碼？查看下面 貢獻方式)
+- 2.复制完整的神秘代码
 - | 神秘代碼是字母lgt開頭的一串字符，有效期30分鐘
 - 3.鼠标移至本软件左侧對應的游戏上，会显示一个三角的启动按钮，点击他会启动steam(如果沒有出現，可能是系統剪切板問題，找個空地粘貼試試)
 - 4.登陆一下自己的帐号(確記是從第3步啟動的steam才有效)
@@ -86,7 +87,8 @@ Discord: <a href="https://discord.gg/X4MTpDbcpT" target="_blank">https://discord
 - 5.然后就可以畅玩游戏了(不要退出steam，否則需要重來一次上面的步驟)
 
 ##  提升等級
-<h3>部分游戏18+(在設置中開啟展示18+后,在軟件搜索中搜索關鍵詞 auth1、auth2)，只针对项目有贡献的用户(權限1、權限2)开放</h3>
+-  部分游戏18+(在設置中開啟展示18+后,在軟件搜索中搜索關鍵詞 auth1、auth2)，只针对项目有贡献的用户(權限1、權限2)开放
+-  如何提升等級請查看下面 貢獻方式 
 
 ### 贡献方式:
 -     1.在社交平台分享本软件 【分享內容需包含官網鏈接和功能描述!!!】
