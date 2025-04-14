@@ -44,6 +44,7 @@ Discord: <a href="https://discord.gg/X4MTpDbcpT" target="_blank">https://discord
 - 支持480(SpaceWar)联机组队-不支持网游类型(<a href="steam-arg.jpg" target="_blank">在steam的游戏右键设置，添加启动参数 -luckygametools (点击直达)</a> ，再启动游戏就可以联机了
 - 480(SpaceWar)联机注意事項補充 ：(<a href="https://youtu.be/I2f69LMkknA" target="_blank">視頻演示</a>)
 - ---------------------------------联机注意事項---------------------------------------------
+-  |   0.無需任何第三方聯機補丁，支持99.99%的Steam聯機組隊遊戲
 -  |   1.只能和非官方服务器联机
 -  |   2.好友也需要添加啟動參數
 -  |   3.好友邀請式的遊戲，需要好友在接收到steam的聯機邀請消息時(SpaceWar),需要先啟動遊戲后，再點擊steam消息中邀請鏈接進入聯機】
