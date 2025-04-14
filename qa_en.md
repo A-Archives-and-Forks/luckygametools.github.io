@@ -65,5 +65,11 @@ body {
  - 3.If step 3 still runs normally, please run luckygame tools with administrator privileges before repeating step 3
  - 4.Over
 
-# 14Why does the software prompt  Ban On User(禁止使用)
+# 14.Why does the software prompt  Ban On User(禁止使用)
 -The group for luckygametools in the red signal or Steam has been banned or there are network issues
+
+# 15.Why does Steam still prompt 'not activated | not online' even after starting it
+ - 1.That's because the mechanism detected by this program did not detect it
+ - 2.At this point, it is necessary to self detect firewalls, antivirus software, and Other the like
+ - ![img_v3_02lc_cb8ba968-5620-44dd-b8c5-3ced4a6db07g](https://github.com/user-attachments/assets/2403ffb6-b11a-49c1-9626-3bacf6153c8e)
+
