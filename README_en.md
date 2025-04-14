@@ -34,6 +34,7 @@ Installer exe ([https://raw.githubusercontent.com/luckygametools/steam-cfg/main/
 - Supports 480 online team building - does not support online game types (<a href="steam-arg.jpg" target="_blank">right-click on the game settings on Steam, add the startup parameter</a>  -luckygametools, and then start the game to go online)
 - 480(SpaceWar)Additional online precautions ：(<a href="https://youtu.be/I2f69LMkknA" target="_blank">Video demonstration</a>)
 - ---------------------------------Online precautions---------------------------------------------
+-  |   0.No need for any third-party online patches, supports 99.99% of Steam online team games
 -  |   1.Can only connect to unofficial servers
 -  |   2.Friends also need to add startup parameters
 -  |   3.A friend invitation game requires friends to start the game first when receiving an online invitation message from Steam (SpaceWar), and then click on the invitation link in the Steam message to enter the online game
