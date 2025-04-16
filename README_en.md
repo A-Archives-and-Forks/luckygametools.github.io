@@ -82,12 +82,13 @@ Installer exe ([https://raw.githubusercontent.com/luckygametools/steam-cfg/main/
 
 
 ### Donation method:
--     1.Share this software on social media platforms(Upgradeable level1 or mysterious code once)
--     eg：(1.1  1.2  1.3  Just complete one of them)
+-     1.Share this software on social media platforms
+-     (Get a level 1 upgrade or a one-time mysterious code)
+-     eg：
 -         1.1 Share in two or more Telegram groups (with over 100 members),
--         1.2 Make video share (youtube tiktok twitch or other) And follow us https://youtu.be/vyAiCWiyotI
--         1.3 Or other main gaming media platforms are also available
--     2.Make Video Share Media platform posts with over 3K views can receive special contributions(Upgradeable level 2)
+-         1.2 Create and share a video on YouTube, TikTok, Twitch, or other platforms — and follow us here: https://youtu.be/vyAiCWiyotI
+-         1.3 Other major gaming media platforms are also acceptable
+-     2.Make Video Share Media platform posts with over 3K views can receive special contributions(Upgradeable level2)
 - ------------------------------------------------------------------------------------------------------------
 -      |  After Donation ,pls contact <a href="https://t.me/luckygametools" target="_blank">TG</a>, Can be upgraded to a higher level or Get mysterious codes
 -      |  Confirm the second step of activation before receiving the mysterious code，And inform the other party that they need to Activation the game <a class="bold">AppId</a>
