@@ -86,8 +86,7 @@ Installer exe ([https://raw.githubusercontent.com/luckygametools/steam-cfg/main/
 -     eg：
 -         1.1 Share in two or more Telegram groups (with over 100 members),
 -         1.2 Make video share (youtube tiktok twitch or other) And follow us https://youtu.be/vyAiCWiyotI
--         1.3 Other main gaming media platforms are also available
--         1.4 And other shared
+-         1.3 Or other main gaming media platforms are also available
 -     2.Make Video Share Media platform posts with over 3K views can receive special contributions(Upgradeable level 2)
 - ------------------------------------------------------------------------------------------------------------
 -      |  After Donation ,pls contact <a href="https://t.me/luckygametools" target="_blank">TG</a>, Can be upgraded to a higher level or Get mysterious codes
