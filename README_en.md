@@ -105,6 +105,11 @@ Installer exe ([https://raw.githubusercontent.com/luckygametools/steam-cfg/main/
 | 66$+        | All subsequent functions will be fully open  | 100s                                   |                                                                      |
 | 300$+       | Promoteable revenue sharing | unlimit       |                                                                      |
 
+## Advanced Tools
+######  At present, the toolbox is gradually opening up more useful game assistance tools
+-  1.One click offline gaming platform tool, currently supports offline Ubisoft, and will be added gradually when other platforms continue to use it
+-  2.A tool for exporting game lists with one click. After entering the game's appid in the software's "Toolbox" interface, you can export the corresponding game list with one click (friendly reminder: most games can unlock DLC)
+-  3.Support dragging the list files shared by oneself or others directly into the software interface, so that games not added by the author can be stored (do not use administrator privileges to start the software when dragging)
 
 <h2>Game resources are updated daily, and many games are full of DLC deluxe versions</h2>
 
