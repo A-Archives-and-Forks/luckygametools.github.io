@@ -73,3 +73,11 @@ body {
  - 2.At this point, it is necessary to self detect firewalls, antivirus software, and Other the like
  - ![img_v3_02lc_cb8ba968-5620-44dd-b8c5-3ced4a6db07g](https://github.com/user-attachments/assets/2403ffb6-b11a-49c1-9626-3bacf6153c8e)
 
+# 16.Why did I suddenly stop playing Red Dead Redemption 2 when I was able to play it normally before
+ - Previously being able to play indicates that your game files are normal and have not been modified by other software
+ - solution
+ -   Step 1: Enter the game directory and find RDR2.exe. It can be found that the digital signature of this program is estimated to be abnormal
+ -   Step 2: Find Launcher.exe in the current directory and copy a duplicate named RDR2.exe (delete the original one first)
+ -   Step 3: Restart the game and get it done
+ -   If there is no Launcher. exe in the second step directory, you need to download the game again or verify the integrity of the game
+
