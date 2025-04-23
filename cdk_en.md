@@ -13,7 +13,7 @@ body {
      crossorigin="anonymous"></script>
 
 # CDK Exchange ->Robot Usage Guide (At present, it is only open to users who have donated before. When donating, some CDKs will be given as gifts. In the future, you can continue to donate to the group owner to obtain more CDKs)
-
+###### CDK The process of redeeming mysterious codes for DRM games: Find a robot from the Steam chat group you logged in to -->callbot to activate the robot -->Send the redemption format to the robot's private chat -->The robot will reply with the mysterious code for this game within 10 seconds -->Use the mysterious code to activate the game according to the activation steps
 # Precautions for use：
 
 1.At present, the luckygame tools robot has only developed the function of exchanging CDK for mysterious codes
