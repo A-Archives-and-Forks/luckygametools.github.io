@@ -12,7 +12,7 @@ body {
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7261994485465423"
      crossorigin="anonymous"></script>
 
-# CDK兌換-> 機器人使用指南 (目前只針對捐贈過的用戶開放，捐贈時會贈送部份CDK,后續可找群主繼續捐贈獲取更多的CDK)
+# CDK兌換-> 機器人使用指南 (目前只針對捐贈過的用戶開放，捐贈時會贈送部份CDK,后續可找作者繼續捐贈獲取更多的CDK)
 
 ###### CDK兌換D加密遊戲神秘代碼流程： 從登陸的Steam聊天群組中找機器人-->callbot激活機器人-->向機器人私聊發送 兌換的格式 -->機器人正常10秒內會回復 這個遊戲的神秘代碼-->用神秘代碼按激活步驟去激活遊戲
 
