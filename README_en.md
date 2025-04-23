@@ -24,6 +24,7 @@ Link with DC: <a href="https://discord.gg/X4MTpDbcpT" target="_blank">https://di
 Installer exe ([https://raw.githubusercontent.com/luckygametools/steam-cfg/main/LuckyGameToolsInstaller.exe](https://raw.githubusercontent.com/luckygametools/steam-cfg/main/LuckyGameToolsInstaller.exe))
 
 ###### The installation interface of the software is written as an installation program, but it is actually just a decompression program. You can use it with confidence and there is no operating system or anything else
+###### The latest version of the software is compliant with Windows Defender and will not be banned by it
 
 <h1>Not Only One Key Automatic Storage Steam Game Tool: LuckyGameTools （Forever free）</h1>
 
