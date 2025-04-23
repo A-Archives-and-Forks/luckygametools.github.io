@@ -83,7 +83,7 @@ Installer exe ([https://raw.githubusercontent.com/luckygametools/steam-cfg/main/
 
 
 ### Donation method:
--     1.Share this software on social media platforms
+-     1.Share this software on social media platforms(The shared content should include official website links and functional descriptions!!!)
 -     (Get a level 1 upgrade or a one-time mysterious code)
 -     eg：
 -         1.1 Share in two or more Telegram groups (with over 100 members),
