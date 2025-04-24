@@ -55,7 +55,7 @@ body {
    - 🔑If you have already activated permission 1, you can try using the keywords "auth1" or "auth2" to search for games.
 
 # 12.What should I do if the game encounters an error when starting with online parameters added（-luckygametools）（Steam Error  Application load error V:0000065432）:
- - 1.Can be self debugged in online parameters,"-luckygametools=1|2|3|4|5|6" (Followed by numbers, multiple numbers are separated by vertical lines)
+ - 1.Can be self debugged in online parameters,`-luckygametools=1|2|3|4|5|6` (Followed by numbers, multiple numbers are separated by vertical lines)
  - 2:eg:appid:2567870(Chained Toogether)  The startup option is set to: -luckygametools=3 
  - 3.Over
      
