@@ -48,7 +48,7 @@ eg(例如):drm1234567|AAA-BBB-CCC-DDD-EEE-FFF-GGG
 
 # 額外福利
 
- 1.機器人新增指令：online  eg:online1234567|AAA-BBB-CCC-DDD-EEE-FFF-GGG
+ 1.機器人新增指令：online  eg:`online1234567|AAA-BBB-CCC-DDD-EEE-FFF-GGG`
  
  2.用于解決部份遊戲啟動后還要進行聯網驗證  eg:1250410 微软飞行模拟器
  
