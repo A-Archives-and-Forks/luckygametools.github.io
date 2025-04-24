@@ -46,7 +46,7 @@ At this point, the machine will automatically reply and the command function can
 
 # fringe benefits
 
- 1.Robot adds new command：online  eg:online1234567|AAA-BBB-CCC-DDD-EEE-FFF-GGG
+ 1.Robot adds new command：online  eg:`online1234567|AAA-BBB-CCC-DDD-EEE-FFF-GGG`
  
  2.Used to solve the problem of some games requiring network verification after startup  eg:1250410 Microsoft Flight Simulator 
  
