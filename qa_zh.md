@@ -54,9 +54,9 @@ body {
  - 💻 这是因为软件需要加载2000多个游戏，这是正常现象。加载完成后，游戏会在本地缓存，之后就不会再次占用电脑资源。
 
 # 11.加了聯機參數（-luckygametools）啟動時遊戲報錯怎麼辦（Steam Error  Application load error V:0000065432）:
- - 1.可在聯機參數中自行調試,"-luckygametools=1|2|3|4|5|6" (后面跟的是數字，多個數字用豎劃線隔開，排列組合測試)
+ - 1.可在聯機參數中自行調試,`-luckygametools=1|2|3|4|5|6` (后面跟的是數字，多個數字用豎劃線隔開，排列組合測試)
  - 2:調試舉例，appid:2567870(Chained Toogether)  啟動選項設置為: -luckygametools=3
- - 3.排列組合多測試eg: -luckygametools=2|3|4|5|6  -luckygametools=2|3|5|6 -luckygametools=4|5|6  -luckygametools=2|3|6 等等
+ - 3.排列組合多測試eg: `-luckygametools=2|3|4|5|6  -luckygametools=2|3|5|6 -luckygametools=4|5|6  -luckygametools=2|3|6 `等等
  - 4.完毕
 
 # 12.為什麽 啟動  CAPCOM 發行的遊戲崩潰  eg: 生化危機重制、街霸6、怪物獵人荒野 :
