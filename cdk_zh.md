@@ -9,8 +9,6 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 </style>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7261994485465423"
-     crossorigin="anonymous"></script>
 
 # CDK兌換-> 機器人使用指南 (目前只針對捐贈過的用戶開放，捐贈時會贈送部份CDK,后續可找作者繼續捐贈有更便宜的價格獲取CDK)
 
