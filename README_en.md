@@ -103,7 +103,7 @@ Installer exe ([https://raw.githubusercontent.com/luckygametools/steam-cfg/main/
 | 1$+         | level0                                        | 2s                                     |                                                                      |
 | 5$+         | level1                                        | 5s                                     |                                                                      |
 | 15$+        | **level2**                                    | 15s                                    | **level2 Users' questions can receive thoughtful explanations from the team** |
-| 20$+        | level2 (double)                               | 25s                                    |                                                                      |
+| 20$+        | level2                                        | 30s                                    |                                                                      |
 | 30$+        | There are no restrictions on the entire game in the future | 45s                                    |                                                                      |
 | 66$+        | All subsequent functions will be fully open  | 100s                                   |                                                                      |
 | 300$+       | Promoteable revenue sharing | unlimit       |                                                                      |
