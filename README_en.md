@@ -99,12 +99,12 @@ Installer exe ([https://raw.githubusercontent.com/luckygametools/steam-cfg/main/
 
 | Donation($) | Welfare (Permission)                         | Welfare (Gift of Denuvo Game mysterious code) | Notes                                                                 |
 |-------------|----------------------------------------------|----------------------------------------|----------------------------------------------------------------------|
-| 0$ (share)  | level1                                        | 1s(times)                                     | make videos for sharing and the number of views has reached 3000 or Equal sharing method can obtain level2   |
+| 0$ (share)  | level1                                        | 1s(times)                                     | Make Video Share Media platform posts with over 3K views can receive special contributions(Upgradeable level2)   |
 | 1$+         | level0                                        | 2s                                     |                                                                      |
 | 5$+         | level1                                        | 5s                                     |                                                                      |
 | 15$+        | **level2**                                    | 15s                                    | **level2 Users' questions can receive thoughtful explanations from the team** |
 | 20$+        | level2                                        | 30s                                    |                                                                      |
-| 30$+        | There are no restrictions on the entire game in the future | 45s                                    |                                                                      |
+| 30$+        | level3                                        | 45s                                    |    **Can enter advanced level VIP Group**                     |
 | 66$+        | All subsequent functions will be fully open  | 100s                                   |                                                                      |
 | 300$+       | Promoteable revenue sharing | unlimit       |                                                                      |
 
