@@ -81,3 +81,7 @@ body {
  -   Step 3: Restart the game and get it done
  -   If there is no Launcher. exe in the second step directory, you need to download the game again or verify the integrity of the game
 
+# 18. Solutions for Net Bar or other computer environment software not working properly
+ - 1. Switch between enhanced settings in the upper right corner of the software Steam Power mode is HID mode
+ - 2. Confirm from the settings in the upper right corner of the software steam Is the installation directory normal? Open it steam Catalog, confirm hid.dll File exists
+ - 3. From steam Start on the icon steam
