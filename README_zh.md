@@ -33,7 +33,7 @@ Discord: <a href="https://discord.gg/X4MTpDbcpT" target="_blank">https://discord
 ###### 軟件的安裝界面 寫的是 安裝程序 ，其實只是個解壓程序，放心使用，沒有操作系統任何東西
 ###### 最新版本的軟件已符合windows defender,不會被它Ban掉了
 
-墙内的铁汁们下载链接打不开的可以试试这个网盘  (<a href="https://gofile.io/d/sU37mt" target="_blank">点击直达</a> )
+墙内的铁汁们下载链接打不开的可以试试这个网盘  (<a href="https://gofile.io/d/sU37mt" target="_blank">点击直达</a> ):這個網盤暫時出了問題，不可上傳，目前上傳的不是最新包，但是可以使用，安裝后軟件會提示自動更新到最新版本的
 
 <h1>一个简简单单的幸運游戏工具: LuckyGameTools （永久免费）</h1>
 
