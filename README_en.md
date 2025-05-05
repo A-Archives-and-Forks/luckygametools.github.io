@@ -17,7 +17,7 @@ Lucky Game Tools 《steamtools auto import》
 
 Link with Mail: LuckyGameTools@gmail.com
 
-Link with TG: <a href="https://t.me/luckygametools" target="_blank">https://t.me/luckygametools(Chat)</a> |  <a href="https://t.me/luckygametools2" target="_blank">https://t.me/luckygametools2(Subscriber)</a> 
+Link with TG: <a href="https://t.me/luckygametools3" target="_blank">https://t.me/luckygametools3(Chat)</a> |  <a href="https://t.me/luckygametools2" target="_blank">https://t.me/luckygametools2(Subscriber)</a> 
 
 Link with DC: <a href="https://discord.gg/X4MTpDbcpT" target="_blank">https://discord.gg/X4MTpDbcpT</a> 
 
