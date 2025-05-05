@@ -19,7 +19,7 @@ body {
 # Lucky Game Tools   (永久免费)
 Lucky Game Tools 《享受高质量的遊戲服务》
 
-电报: <a href="https://t.me/luckygametools" target="_blank">https://t.me/luckygametools</a> 
+电报: <a href="https://t.me/luckygametools" target="_blank">https://t.me/luckygametools(聊天水友群)</a>  | <a href="https://t.me/luckygametools2" target="_blank">https://t.me/luckygametools2(訂閱公告頻道)</a>
 
 邮箱: LuckyGameTools@gmail.com
 
