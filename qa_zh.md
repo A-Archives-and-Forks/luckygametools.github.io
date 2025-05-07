@@ -96,6 +96,6 @@ body {
 
 # 19.為啥GTA5的增強版無法啟動
  - 1.作者目前無精力去做破解補丁
- - 2.給大家找到了個其它破解組織的補丁，<a href="https://raw.githubusercontent.com/luckygametools/steam-cfg/main/gamePatch/GTA5_Enhanced1.0.814.9.7z" target="_blank">點擊下載補丁文件</a>  <a href="https://gofile.io/d/eozmp5" target="_blank">備用下載地址1</a> <a href="https://ranoz.gg/file/uNZi8OID" target="_blank">備用下載地址2</a>
+ - 2.給大家找到了個其它破解組織的補丁，<a href="https://raw.githubusercontent.com/luckygametools/steam-cfg/main/gamePatch/GTA5_Enhanced1.0.814.9_zh.7z" target="_blank">點擊下載補丁文件</a>  <a href="https://gofile.io/d/TbIHIL" target="_blank">備用下載地址1</a> <a href="https://ranoz.gg/file/faemeM79" target="_blank">備用下載地址2</a>
  - 3.測試可以正常啟動GTA5增強版
  - 4.使用方法：下載完補丁文件后，將其它解壓至遊戲目錄即可(PlayGTAV.exe替換前可以備份一下)
