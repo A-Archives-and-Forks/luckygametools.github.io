@@ -25,15 +25,17 @@ Lucky Game Tools 《享受高质量的遊戲服务》
 
 Discord: <a href="https://discord.gg/X4MTpDbcpT" target="_blank">https://discord.gg/X4MTpDbcpT</a> 
 
-
-最新安装包中文([https://raw.githubusercontent.com/luckygametools/steam-cfg/main/LuckyGameToolsInstaller_zh.exe](https://raw.githubusercontent.com/luckygametools/steam-cfg/main/LuckyGameToolsInstaller_zh.exe))
-
 最新安装包英文([https://raw.githubusercontent.com/luckygametools/steam-cfg/main/LuckyGameToolsInstaller.exe](https://raw.githubusercontent.com/luckygametools/steam-cfg/main/LuckyGameToolsInstaller.exe))
+
+最新安装包中文([https://raw.githubusercontent.com/luckygametools/steam-cfg/main/LuckyGameToolsInstaller_zh.exe](https://raw.githubusercontent.com/luckygametools/steam-cfg/main/LuckyGameToolsInstaller_zh.exe))  
+
+中文備用下載地址1: (<a href="https://gofile.io/d/sU37mt" target="_blank">点击直达</a>
+
 
 ###### 軟件的安裝界面 寫的是 安裝程序 ，其實只是個解壓程序，放心使用，沒有操作系統任何東西
 ###### 最新版本的軟件已符合windows defender,不會被它Ban掉了
 
-墙内的铁汁们下载链接打不开的可以试试这个网盘  (<a href="https://gofile.io/d/sU37mt" target="_blank">点击直达</a> ):這個網盤暫時出了問題，不可上傳，目前上傳的不是最新包，但是可以使用，安裝后軟件會提示自動更新到最新版本的
+
 
 <h1>一个简简单单的幸運游戏工具: LuckyGameTools （永久免费）</h1>
 
