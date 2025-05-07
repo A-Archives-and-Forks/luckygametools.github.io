@@ -54,7 +54,7 @@ Discord: <a href="https://discord.gg/X4MTpDbcpT" target="_blank">https://discord
 - ---------------------------------联机注意事項---------------------------------------------
 - 部分启动不了或者卡住的游戏，可尝试使用幸运参数启动(<a href="steam-arg.jpg" target="_blank">在steam的游戏右键设置，添加启动参数 -luckygametools (点击直达)</a> )，<a href="qa_zh.html" target="_blank">详见QA-11(点击直达)</a>
 - 支持D加密游戏启动(支持自动授权,激活需要 神秘代码)
-- 支持GTA5(及三部曲)和荒野大镖客1和2一键畅玩
+- 支持GTA系列(gta5|gta4|及三部曲)和荒野大镖客1和2一键畅玩
 - 支持steam及社区加速
 - 支持游戏清单更新([联系](https://t.me/luckygametools)更新后,重新导入游戏即可)
 - 部分启动不了或者卡住或者<a href="https://luckygametools.github.io/README_zh.html#%E6%94%AF%E6%8C%81%E9%83%A8%E4%BB%BD%E9%9C%80%E8%A6%81%E8%81%AF%E7%B6%B2%E6%8E%88%E6%AC%8A%E9%A9%97%E8%AD%89%E7%9A%84%E5%96%AE%E6%A9%9F%E9%81%8A%E6%88%B2-%E6%88%96-steam%E8%AA%8D%E8%AD%89%E5%A4%B1%E6%95%97-%E7%9A%84%E5%A0%B4%E6%99%AF">提示連接失敗需要登陸上線驗證的游戏</a>(eg:微软飞行模拟器)，参数搞不定的可以联系([電報群](https://t.me/luckygametools))
