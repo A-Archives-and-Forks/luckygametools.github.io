@@ -86,8 +86,12 @@ body {
  - 2. Confirm from the settings in the upper right corner of the software steam Is the installation directory normal? Open it steam Catalog, confirm hid.dll File exists
  - 3. From steam Start on the icon steam
 
-# 19.Why? GTA5 The enhanced version cannot start
+# 19.GTA V enhanced Crack patch instructions
   - 1. The author currently has no energy to do cracking patches
   - 2. We have found a patch from another cracking organization for everyone <a href="https://raw.githubusercontent.com/luckygametools/steam-cfg/main/gamePatch/GTA5_Enhanced1.0.814.9.zip" target="_blank"> Click to download patch file</a> | <a href="https://gofile.io/d/5B3dhX" target="_blank"> Backup download address 1</a> | <a href="https://ranoz.gg/file/aRfPi4l4" target="_blank"> Backup download address 2</a>
   - 3. The test can start normally GTA5 Plus
   - 4. Usage: After downloading the patch file, unzip the rest to the game directory (you can back it up before replacing PlayGTAV.exe)
+
+# 20.GTA IV Crack patch instructions
+ - 1.We have found a patch from another cracking organization for everyone<a href="https://raw.githubusercontent.com/luckygametools/steam-cfg/main/gamePatch/GTAIV1.2.0.59.zip" target="_blank">Click to download patch file</a>  | <a href="https://gofile.io/d/2wlteo" target="_blank">Backup download address 1</a> | <a href="https://ranoz.gg/file/OqJ0Grxx" target="_blank">Backup download address 2</a>
+ - 2. Usage: After downloading the patch file, unzip the rest to the game directory(you can back it up before replacing PlayGTAIV.exe and、GTAIV.exe)
