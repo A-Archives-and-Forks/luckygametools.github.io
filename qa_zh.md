@@ -94,8 +94,12 @@ body {
  - 2.從軟件右上角的設置中確認steam的安裝目錄是否正常，打開steam目錄，確認hid.dll文件存在
  - 3.從steam的圖標上啟動steam
 
-# 19.為啥GTA5的增強版無法啟動
+# 19.GTA5增強版破解補丁說明
  - 1.作者目前無精力去做破解補丁
  - 2.給大家找到了個其它破解組織的補丁，<a href="https://raw.githubusercontent.com/luckygametools/steam-cfg/main/gamePatch/GTA5_Enhanced1.0.814.9_zh.zip" target="_blank">點擊下載補丁文件</a>  | <a href="https://gofile.io/d/ifvkmz" target="_blank">備用下載地址1</a> | <a href="https://ranoz.gg/file/ciNEbuCC" target="_blank">備用下載地址2</a>
  - 3.測試可以正常啟動GTA5增強版
  - 4.使用方法：下載完補丁文件后，將其它解壓至遊戲目錄即可(PlayGTAV.exe替換前可以備份一下)
+
+# 20.GTA4破解補丁說明
+ - 1.給大家找到了個其它破解組織的補丁，<a href="https://raw.githubusercontent.com/luckygametools/steam-cfg/main/gamePatch/GTAIV1.2.0.59.zip" target="_blank">點擊下載補丁文件</a>  | <a href="https://gofile.io/d/2wlteo" target="_blank">備用下載地址1</a> | <a href="https://ranoz.gg/file/OqJ0Grxx" target="_blank">備用下載地址2</a>
+ - 2.使用方法：下載完補丁文件后，將其它解壓至遊戲目錄即可(PlayGTAIV.exe、GTAIV.exe替換前可以備份一下)
