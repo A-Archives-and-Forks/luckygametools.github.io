@@ -27,4 +27,4 @@ body {
 
 
 <h1>Solemnly declare that this software is pure local green software, which can be used normally without administrator permission (except for the accelerator function). All resources come from the Internet, and there is no server, so it is impossible to collect your private information, and there will be no functions such as user login, and there may be anti-virus misinformation. Please rest assured that you can use it </h1>
-<h1>鄭重聲明：本软件为纯本地绿色软件，無需管理員權限就可以正常使用(加速器功能除外)，所有资源来自互联网，没有服务器，所以也不可能去收集大家的隐私信息，也不会有用户登陆啥的之类的功能,可能会出现杀毒误报，请大家放心使用用</h1>
+<h1>鄭重聲明：本软件为纯本地绿色软件，無需管理員權限就可以正常使用(加速器功能除外)，所有资源来自互联网，没有服务器，所以也不可能去收集大家的隐私信息，也不会有用户登陆啥的之类的功能,可能会出现杀毒误报，请大家放心使用</h1>
