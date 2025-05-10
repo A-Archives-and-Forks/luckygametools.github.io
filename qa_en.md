@@ -87,6 +87,7 @@ body {
  - 3. From steam Start on the icon steam
 
 # 19.GTA V enhanced Crack patch instructions
+  - 0.If after importing the enhanced version steam Unable to find in the library -> Remove the legacy version, import the enhanced version again, and restart steam
   - 1. The author currently has no energy to do cracking patches
   - 2. We have found a patch from another cracking organization for everyone <a href="https://raw.githubusercontent.com/luckygametools/steam-cfg/main/gamePatch/GTA5_Enhanced1.0.814.9.zip" target="_blank"> Click to download patch file</a> | <a href="https://gofile.io/d/5B3dhX" target="_blank"> Backup download address 1</a> | <a href="https://ranoz.gg/file/aRfPi4l4" target="_blank"> Backup download address 2</a>
   - 3. The test can start normally GTA5 Plus
