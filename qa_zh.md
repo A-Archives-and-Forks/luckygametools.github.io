@@ -95,6 +95,7 @@ body {
  - 3.從steam的圖標上啟動steam
 
 # 19.GTA5增強版破解補丁說明
+ - 0.如果導入增強版后在steam庫中找不到->移除傳承版后,再導入增强版,重啟一下steam
  - 1.作者目前無精力去做破解補丁
  - 2.給大家找到了個其它破解組織的補丁，<a href="https://raw.githubusercontent.com/luckygametools/steam-cfg/main/gamePatch/GTA5_Enhanced1.0.814.9_zh.zip" target="_blank">點擊下載補丁文件</a>  | <a href="https://gofile.io/d/ifvkmz" target="_blank">備用下載地址1</a> | <a href="https://ranoz.gg/file/ciNEbuCC" target="_blank">備用下載地址2</a>
  - 3.測試可以正常啟動GTA5增強版
