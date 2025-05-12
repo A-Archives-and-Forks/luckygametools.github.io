@@ -108,4 +108,4 @@ body {
 # 21.有些單機遊戲會提示需要聯網認證進入不了遊戲怎麼辦
  - 1.軟件目前收錄了部份可以突破此限制遊戲
  - 2.使用方法見<a href="https://luckygametools.github.io/README_zh.html" target="_blank">https://luckygametools.github.io/README_zh.html</a> 支持部份需要聯網授權驗證的單機遊戲(或 steam認證失敗 的場景)
- - 3.例如:英雄连3 ,真人快打 等遊戲
+ - 3.例如:英雄连3 ,真人快打,夜族崛起 等遊戲
