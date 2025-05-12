@@ -43,6 +43,7 @@ Installer exe ([https://raw.githubusercontent.com/luckygametools/steam-cfg/main/
 -  |   5.The software currently automatically integrates parameters for some games：<a href="https://github.com/luckygametools/steam-cfg/blob/main/arg-luckygametools" target="_blank">(List of games already included)</a>
 - ---------------------------------Online precautions---------------------------------------------
 - Support Denuvo game startup (supports automatic authorization, activation requires mysterious code)
+- Support single player games that require network authorization verification (or steam Scenarios of authentication failure
 - Support GTA5 (and trilogy) and Red Dead Redemption 2 for one key gameplay
 - Support Steam and community acceleration
 - For some games that cannot be started or get stuck or Game that prompts connection failure and requires login and online verification(eg:Microsoft Flight Simulator 40th Anniversary Edition), you can try using the lucky parameter to start them (<a href="steam-arg.jpg" target="_blank">right-click on the game settings on Steam and add the startup parameter</a> -luckygametools), see<a href="qa_en.html" target="_blank"> QA-11</a> for details
