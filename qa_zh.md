@@ -104,3 +104,8 @@ body {
 # 20.GTA4破解補丁說明
  - 1. 給大家找到了個其它破解組織的補丁，<a href="https://raw.githubusercontent.com/luckygametools/steam-cfg/main/gamePatch/GTAIV1.2.0.59.zip" target="_blank">點擊下載補丁文件</a>  | <a href="https://gofile.io/d/2wlteo" target="_blank">備用下載地址1</a> | <a href="https://ranoz.gg/file/OqJ0Grxx" target="_blank">備用下載地址2</a>
  - 2. 使用方法：下載完補丁文件后，將其它解壓至遊戲目錄即可(PlayGTAIV.exe、GTAIV.exe替換前可以備份一下)
+
+# 21.有些單機遊戲會提示需要聯網認證進入不了遊戲怎麼辦
+ - 1.軟件目前收錄了部份可以突破此限制遊戲
+ - 2.使用方法見<a href="https://luckygametools.github.io/README_zh.html" target="_blank">https://luckygametools.github.io/README_zh.html</a> 支持部份需要聯網授權驗證的單機遊戲(或 steam認證失敗 的場景)
+ - 3.例如:英雄连3 ,真人快打 等遊戲
