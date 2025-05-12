@@ -96,3 +96,8 @@ body {
 # 20.GTA IV Crack patch instructions
  - 1. We have found a patch from another cracking organization for everyone<a href="https://raw.githubusercontent.com/luckygametools/steam-cfg/main/gamePatch/GTAIV1.2.0.59.zip" target="_blank">Click to download patch file</a>  | <a href="https://gofile.io/d/2wlteo" target="_blank">Backup download address 1</a> | <a href="https://ranoz.gg/file/OqJ0Grxx" target="_blank">Backup download address 2</a>
  - 2. Usage: After downloading the patch file, unzip the rest to the game directory(you can back it up before replacing PlayGTAIV.exe and、GTAIV.exe)
+
+# 21.Some single player games may prompt that network authentication is required, but I cannot enter the game. What should I do
+ - 1.The software currently includes some games that can break through this restriction
+ - 2.See instructions for usage<a href="https://luckygametools.github.io/README_en.html" target="_blank">https://luckygametools.github.io/README_en.html</a> Support some single player games that require online authorization verification
+ - 3.eg:Company of Heroes 3 ,Mortal Kombat 1 and more games
