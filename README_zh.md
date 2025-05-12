@@ -56,6 +56,7 @@ Discord: <a href="https://discord.gg/X4MTpDbcpT" target="_blank">https://discord
 - ---------------------------------联机注意事項---------------------------------------------
 - 部分启动不了或者卡住的游戏，可尝试使用幸运参数启动(<a href="steam-arg.jpg" target="_blank">在steam的游戏右键设置，添加启动参数 -luckygametools (点击直达)</a> )，<a href="qa_zh.html" target="_blank">详见QA-11(点击直达)</a>
 - 支持D加密游戏启动(支持自动授权,激活需要 神秘代码)
+- 支持部份需要聯網授權驗證的單機遊戲(或 steam認證失敗 的場景)
 - 支持GTA系列(gta5|gta4|及三部曲)和荒野大镖客1和2一键畅玩
 - 支持steam及社区加速
 - 支持游戏清单更新([联系](https://t.me/luckygametools)更新后,重新导入游戏即可)
