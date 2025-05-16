@@ -12,6 +12,15 @@ body {
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7261994485465423"
      crossorigin="anonymous"></script>
 
+<div id="google_translate_element"></div>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en_us'}, 'google_translate_element');
+}
+</script>
+
+
 # Lucky Game Tools   (Secure, fast and free Forever free steam game solution)
 Lucky Game Tools 《steamtools auto import》
 
