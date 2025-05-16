@@ -11,6 +11,15 @@ body {
 </style>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7261994485465423"
      crossorigin="anonymous"></script>
+<div id="google_translate_element"></div>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en_us'}, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer></script>
 
 # 1.Steam download or update game manifest not available solution(The version after 2.0.1.14 will not have this issue. If it occurs, try restarting Steam):
  - 1.Exit steam
