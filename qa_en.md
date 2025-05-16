@@ -18,7 +18,6 @@ function googleTranslateElementInit() {
   new google.translate.TranslateElement({pageLanguage: 'en_us'}, 'google_translate_element');
 }
 </script>
-
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer></script>
 
 # 1.Steam download or update game manifest not available solution(The version after 2.0.1.14 will not have this issue. If it occurs, try restarting Steam):
