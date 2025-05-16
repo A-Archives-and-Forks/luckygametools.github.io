@@ -23,7 +23,7 @@ function googleTranslateElementInit() {
   new google.translate.TranslateElement({pageLanguage: 'zh-TW'}, 'google_translate_element');
 }
 </script>
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer></script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer ></script>
 
 # Welcome
 
