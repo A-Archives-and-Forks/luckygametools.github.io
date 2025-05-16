@@ -6,7 +6,7 @@ function googleTranslateElementInit() {
   new google.translate.TranslateElement({pageLanguage: 'en_us'}, 'google_translate_element');
 }
 </script>
-
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer></script>
 
 [2025-05-10] 3.0.2.2版本更新
 - [x] 將消息通知自動彈出
