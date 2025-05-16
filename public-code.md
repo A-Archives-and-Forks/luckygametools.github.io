@@ -13,6 +13,13 @@ body {
      crossorigin="anonymous"></script>
 <div id="google_translate_element"></div>
 
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'zh_cn'}, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer></script>
+
 # 1.appid:3159330 刺客信條.影
   D加密激活神秘代碼：
   
@@ -22,9 +29,3 @@ body {
 
   損贈的高級用戶可以在高級群中查看作者分享的UB帳號
 
-<script type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'zh_cn'}, 'google_translate_element');
-}
-</script>
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
