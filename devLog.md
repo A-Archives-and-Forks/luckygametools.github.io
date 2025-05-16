@@ -1,4 +1,13 @@
 
+<div id="google_translate_element"></div>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en_us'}, 'google_translate_element');
+}
+</script>
+
+
 [2025-05-10] 3.0.2.2版本更新
 - [x] 將消息通知自動彈出
 - [x] 支持steamdeck掌機最小分辨率1280*768
