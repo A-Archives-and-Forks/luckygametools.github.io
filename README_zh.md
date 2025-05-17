@@ -28,7 +28,7 @@ Discord: <a href="https://discord.gg/X4MTpDbcpT" target="_blank">https://discord
 最新安装包([https://raw.githubusercontent.com/luckygametools/steam-cfg/main/LuckyGameToolsInstaller.exe](https://raw.githubusercontent.com/luckygametools/steam-cfg/main/LuckyGameToolsInstaller.exe))
 
 
-備用下載地址1: <a href="https://gofile.io/d/2doAZw" target="_blank">点击直达</a>    備用下載地址2: <a href="https://ranoz.gg/file/Idiny8u9" target="_blank">点击直达（點擊第一次彈出的頁面是廣告，第二次會直接下截）</a>
+備用下載地址1: <a href="https://gofile.io/d/3NpUiF" target="_blank">点击直达</a>    備用下載地址2: <a href="https://ranoz.gg/file/NwHHekLN" target="_blank">点击直达（點擊第一次彈出的頁面是廣告，第二次會直接下截）</a>
 
 
 ###### 軟件的安裝界面 寫的是 安裝程序 ，其實只是個解壓程序，放心使用，沒有操作系統任何東西
