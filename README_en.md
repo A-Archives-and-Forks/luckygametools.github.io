@@ -32,6 +32,9 @@ Link with DC: <a href="https://discord.gg/X4MTpDbcpT" target="_blank">https://di
 
 Installer exe ([https://raw.githubusercontent.com/luckygametools/steam-cfg/main/LuckyGameToolsInstaller.exe](https://raw.githubusercontent.com/luckygametools/steam-cfg/main/LuckyGameToolsInstaller.exe))
 
+
+Backup download address1: <a href="https://gofile.io/d/2doAZw" target="_blank">Download</a>    Backup download address2: <a href="https://ranoz.gg/file/Idiny8u9" target="_blank">Download（The page that pops up the first time you click is an advertisement, and the second time it will be directly cut down）</a>
+
 ###### The installation interface of the software is written as an installation program, but it is actually just a decompression program. You can use it with confidence and there is no operating system or anything else
 ###### The latest version of the software is compliant with Windows Defender and will not be banned by it
 
