@@ -8,6 +8,12 @@ function googleTranslateElementInit() {
 </script>
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer ></script>
 
+[2025-05-17] 4.0.0.1版本更新
+- [x] 將程序全面國際化,支持非常多國家的語言(全面擁抱Steam支持的語言)
+- [x] 對于特殊遊戲只能從桌標啟動Steam.exe彈窗提示
+- [x] 添加程序卸載腳本在安裝目錄下
+- [x] 適配更新小分辮率
+
 [2025-05-10] 3.0.2.2版本更新
 - [x] 將消息通知自動彈出
 - [x] 支持steamdeck掌機最小分辨率1280*768
