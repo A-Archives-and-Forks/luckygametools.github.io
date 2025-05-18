@@ -102,7 +102,7 @@ Backup download address1: <a href="https://gofile.io/d/3NpUiF" target="_blank">D
 -         1.1 Share in two or more Telegram groups (with over 100 members),
 -         1.2 Create and share a video on YouTube, TikTok, Twitch, or other platforms — and follow us here: https://youtu.be/vyAiCWiyotI
 -         1.3 Other major gaming media platforms are also acceptable
--         1.4 Export one or more games using the functions of this software toolbox and share them with the author (requiring games that can be played normally and are not included in the software and not free game)
+-         1.4 Export one or more games using the functions of this software toolbox and share them with the author (Must be able to play normally and not included in the software as non free non Denuvo and Steam Platform games)
 -     2.Make Video Share Media platform posts with over 3K views can receive special contributions(Upgradeable level2)
 -     3.Donate this software, sponsorship can be done through telegram (fastest reply) discord、 Contact the author via email
 - ------------------------------------------------------------------------------------------------------------
