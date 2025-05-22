@@ -30,6 +30,10 @@ Discord: <a href="https://discord.gg/X4MTpDbcpT" target="_blank">https://discord
 
 備用下載地址1: <a href="https://gofile.io/d/3NpUiF" target="_blank">点击直达</a>    備用下載地址2: <a href="https://ranoz.gg/file/NwHHekLN" target="_blank">点击直达（點擊第一次彈出的頁面是廣告，第二次會直接下截）</a>
 
+<h3>通知:luckygametools粉絲群现已开放，由热爱LGT的各位用户自发创建的，官方给予推广和奖励，如果你也想申請成為luckygametools的粉絲群，可联系<a href="https://t.me/luckygametools" target="_blank">電報群管理</a>【通过审核群，我们有粉絲群福利：可每天給粉絲群主提供部份神秘代碼 及 不定期提供升級權限2的名額】</h3>
+
+粉絲群： Q1:<a href="https://qm.qq.com/cgi-bin/qm/qr?k=978603522" target="_blank">978603522</a> Q2:<a href="https://qm.qq.com/cgi-bin/qm/qr?k=934285149" target="_blank">934285149</a>
+
 
 ###### 軟件的安裝界面 寫的是 安裝程序 ，其實只是個解壓程序，放心使用，沒有操作系統任何東西
 ###### 最新版本的軟件已符合windows defender,不會被它Ban掉了
@@ -37,7 +41,6 @@ Discord: <a href="https://discord.gg/X4MTpDbcpT" target="_blank">https://discord
 
 
 <h1>一个简简单单的幸運游戏工具: LuckyGameTools （永久免费）</h1>
-
 
 ## 支持内容
 - 自动安装清单文件 
