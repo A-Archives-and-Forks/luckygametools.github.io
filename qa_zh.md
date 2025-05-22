@@ -51,7 +51,7 @@ body {
  - 🛍️ 可能是因为DLC没有购买。我们确保所有游戏都是通过购买账号获得的，这样可以保障游戏和DLC的随时更新。
    
 # 10.😖 为什么软件启动时会卡顿，資源占用？
- - 💻 这是因为软件需要加载2000多个游戏，这是正常现象。加载完成后，游戏会在本地缓存，之后就不会再次占用电脑资源。
+ - 💻 这是因为软件需要加载3000多个游戏，这是正常现象。加载完成后，游戏会在本地缓存，之后就不会再次占用电脑资源。
 
 # 11.加了聯機參數（-luckygametools）啟動時遊戲報錯怎麼辦（Steam Error  Application load error V:0000065432）:
  - 1.可在聯機參數中自行調試,`-luckygametools=1|2|3|4|5|6` (后面跟的是數字，多個數字用豎劃線隔開，排列組合測試)
@@ -59,7 +59,7 @@ body {
  - 3.排列組合多測試eg: `-luckygametools=2|3|4|5|6  -luckygametools=2|3|5|6 -luckygametools=4|5|6  -luckygametools=2|3|6 `等等
  - 4.完毕
 
-# 12.為什麽 啟動  CAPCOM 發行的遊戲崩潰  eg: 生化危機重制、街霸6、怪物獵人荒野 :
+# 12.為什麽 啟動  CAPCOM 發行的遊戲崩潰  eg: 生化危機重制、街霸系列、怪物獵人荒野 :
  - 1.啟動steam需要從luckygametools的左下角啟動![图片](https://github.com/user-attachments/assets/8e18ba43-8b6a-49ed-8717-a4374b4766c0)
  - 2.如果還是有問題，請使用管理員權限運行luckygametools試試
  - 3.完毕
