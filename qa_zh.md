@@ -14,7 +14,7 @@ body {
      crossorigin="anonymous"></script>
 
 # 1.steam下载或更新游戏提示清单不可用解决办法(2.0.1.14后的版本將不會出現此問題，如果出現試試重啟steam):
- - 0.原因是本軟件在沒有運行的情況下，不會對用戶的steam做任何處理，所以也就沒有鎖住程序的更新，解決方案如下:
+ - 0.原因是本軟件在沒有運行的情況下，不會對用戶的steam做任何處理，所以也就沒有鎖住遊戲清單的更新，解決方案如下:
  - 1.退出steam
  - 2.在本软件设置中点击清除steam缓存![image](https://github.com/user-attachments/assets/1d47b48d-5963-4065-84fa-1df12f17054b)
 
