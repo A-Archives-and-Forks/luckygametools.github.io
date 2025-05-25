@@ -8,6 +8,13 @@ function googleTranslateElementInit() {
 </script>
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer ></script>
 
+[2025-05-17] 4.0.0.2版本更新
+- [x] 遊戲搜索支持tag
+- [x] 左側已導入遊戲，支持過濾
+- [x] 工具箱導出遊戲時，如果軟件中已有的遊戲，導出按鈕背景會變黃提示
+- [x] 優化網絡抖動時警告提示
+- [x] 修復已導入遊戲不再出現導入按鈕
+
 [2025-05-17] 4.0.0.1版本更新
 - [x] 解決重大BUG,UI界面從此不再卡頓
 - [x] 將程序全面國際化,支持非常多國家的語言(全面擁抱Steam支持的語言)
