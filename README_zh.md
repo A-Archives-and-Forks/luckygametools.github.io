@@ -19,8 +19,6 @@ body {
 # Lucky Game Tools   (永久免费)
 Lucky Game Tools 《享受高质量的遊戲服务》
 
-<h1>為慶祝軟件總用戶即將超過3W,后續將會每天在官方唯一电报TG群內，隨機發放1-3款D加密遊戲的神秘代碼，感謝大家的關注！</h1>
-
 电报: <a href="https://t.me/luckygametools" target="_blank">https://t.me/luckygametools(聊天水友群)</a>  | <a href="https://t.me/luckygametools2" target="_blank">https://t.me/luckygametools2(訂閱公告頻道)</a>
 
 邮箱: LuckyGameTools@gmail.com
@@ -41,8 +39,9 @@ Discord: <a href="https://discord.gg/X4MTpDbcpT" target="_blank">https://discord
 ###### 最新版本的軟件已符合windows defender,不會被它Ban掉了
 
 
-
 <h1>一个简简单单的幸運游戏工具: LuckyGameTools （永久免费）</h1>
+
+<h2>為慶祝軟件總用戶即將超過3W,后續將會每天在官方唯一电报TG群內，隨機發放1-3款D加密遊戲的神秘代碼，感謝大家的關注！</h2>
 
 ## 支持内容
 - 自动安装清单文件 
