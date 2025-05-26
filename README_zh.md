@@ -19,6 +19,8 @@ body {
 # Lucky Game Tools   (永久免费)
 Lucky Game Tools 《享受高质量的遊戲服务》
 
+<h1>為慶祝軟件總用戶即將超過3W,后續將會每天在官方唯一电报TG群內，隨機發放1-3款D加密遊戲的神秘代碼，感謝大家的關注！</h1>
+
 电报: <a href="https://t.me/luckygametools" target="_blank">https://t.me/luckygametools(聊天水友群)</a>  | <a href="https://t.me/luckygametools2" target="_blank">https://t.me/luckygametools2(訂閱公告頻道)</a>
 
 邮箱: LuckyGameTools@gmail.com
