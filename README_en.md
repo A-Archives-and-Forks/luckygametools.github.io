@@ -24,6 +24,8 @@ function googleTranslateElementInit() {
 # Lucky Game Tools   (Secure, fast and free Forever free steam game solution)
 Lucky Game Tools 《steamtools auto import》
 
+<h1>To celebrate our software reaching nearly 30,000 total users, we will be randomly giving away 1 to 3 mysterious activation codes for Denuvo  games every day in our one and only official Telegram group. Thank you all for your support!</h1>
+
 Link with Mail: LuckyGameTools@gmail.com
 
 Link with TG: <a href="https://t.me/luckygametools3" target="_blank">https://t.me/luckygametools3(Chat)</a> |  <a href="https://t.me/luckygametools2" target="_blank">https://t.me/luckygametools2(Subscriber)</a> 
