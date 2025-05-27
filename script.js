@@ -2,7 +2,7 @@
 // Currently no interactive functionality is needed
 // This file is included for future enhancements
 var downloadUrl1="https://gofile.io/d/7x1sZ9";
-var downloadUrl2="https://ranoz.gg/file/cPOv0ao6111111";
+var downloadUrl2="https://ranoz.gg/file/cPOv0ao6";
 
 // 友情鏈接資料陣列
 const friendLinks = [
@@ -46,5 +46,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // 加入 footer 中
   footer.appendChild(linkContainer);
+
 
 });
