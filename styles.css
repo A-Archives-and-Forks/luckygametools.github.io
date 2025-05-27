@@ -84,6 +84,9 @@ html, body {
 .site-international { background: #0088cc; }
 .site-china { background: #7289da; }
 .email { background: #ea4335; }
+.qa-en { background: #ea4335; }
+.qa-zh { background: #ea8335; }
+.dev-log { background: #2a4335; }
 
 .download-section {
     background: rgba(255, 255, 255, 0.95);
