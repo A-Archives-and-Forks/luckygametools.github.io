@@ -17,6 +17,10 @@ html, body {
   margin: 0;
 }
 
+.no-underline {
+  text-decoration: none;
+}
+
 .wrapper {
   min-height: 100vh;
   display: flex;
