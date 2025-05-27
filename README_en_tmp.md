@@ -13,6 +13,7 @@ body {
      crossorigin="anonymous"></script>
 
 <div id="google_translate_element"></div>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer ></script>
 
 <script type="text/javascript">
 function googleTranslateElementInit() {
