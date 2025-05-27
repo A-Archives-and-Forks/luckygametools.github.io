@@ -108,4 +108,4 @@ function googleTranslateElementInit() {
 # 21.Some single player games may prompt that network authentication is required, but I cannot enter the game. What should I do
  - 1.The software currently includes some games that can break through this restriction
  - 2.See instructions for usage<a href="https://luckygametools.github.io/README_en.html" target="_blank">https://luckygametools.github.io/README_en.html</a> Support some single player games that require online authorization verification
- - 3.eg:Company of Heroes 3 ,Mortal Kombat 1, V Rising  and more games
+ - 3.eg:Company of Heroes 3 ,Mortal Kombat 1, V Rising,Microsoft Flight Simulator   and more games
