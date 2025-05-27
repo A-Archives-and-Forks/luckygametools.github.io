@@ -247,29 +247,3 @@ body {
         padding: 20px;
     }
 }
-.tooltip-wrapper {
-  position: relative;
-  display: inline-block;
-}
-
-.tooltip-wrapper .tooltip-text {
-  visibility: hidden;
-  width: 120px;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  border-radius: 4px;
-  padding: 6px;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%; /* 上方顯示 */
-  left: 50%;
-  transform: translateX(-50%);
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.tooltip-wrapper:hover .tooltip-text {
-  visibility: visible;
-  opacity: 1;
-}
