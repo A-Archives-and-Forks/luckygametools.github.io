@@ -13,6 +13,13 @@ body {
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7261994485465423"
      crossorigin="anonymous"></script>
 
+# 0.導入遊戲時提示:網絡錯誤？
+ - 1.由于本軟件沒有使用任務服務器,導入遊戲的資源全部放在Github上，出現網絡錯誤有兩個原因
+ - 2. 原因1： github的api對于訪問有頻率限制，導入遊戲過多過快時請求會被短暫限制
+ - 3. 原因2： 部份國家地區運營商對github的請求有屏蔽過濾
+ - 4. 解決方法：1.本軟件自帶探速功能,出現了原因2導致網絡錯誤，可以稍后再重新導入
+ - 5. 解決方法：2.使用VPN全局模式，開啟TUN代理
+
 # 1.steam下载或更新游戏提示清单不可用解决办法(2.0.1.14后的版本將不會出現此問題，如果出現試試重啟steam):
  - 0.原因是本軟件在沒有運行的情況下，不會對用戶的steam做任何處理，所以也就沒有鎖住遊戲清單的更新，解決方案如下:
  - 1.退出steam
