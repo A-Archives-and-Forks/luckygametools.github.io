@@ -22,6 +22,53 @@ document.addEventListener('DOMContentLoaded', function() {
 	}
 
 
+// 創建modal元素（如果頁面上還沒有）
+  let modal = document.getElementById('imageModal');
+  if (!modal) {
+    modal = document.createElement('div');
+    modal.id = 'imageModal';
+    modal.className = 'modal';
+    
+    const closeBtn = document.createElement('span');
+    closeBtn.className = 'close';
+    closeBtn.innerHTML = '&times;';
+    
+    const modalImg = document.createElement('img');
+    modalImg.className = 'modal-content';
+    modalImg.id = 'modalImage';
+    
+    modal.appendChild(closeBtn);
+    modal.appendChild(modalImg);
+    document.body.appendChild(modal);
+  }
+  
+  const modalImg = document.getElementById('modalImage');
+  const close = modal.querySelector('.close');
+  
+  // 為頁面上所有圖片添加點擊事件
+  document.addEventListener('click', function(e) {
+    if (e.target.tagName === 'IMG' && !e.target.classList.contains('modal-content')) {
+      modal.style.display = 'flex';
+      modalImg.src = e.target.src;
+      // 可選：使用高解析度圖片（如果有）
+      if (e.target.dataset.fullsize) {
+        modalImg.src = e.target.dataset.fullsize;
+      }
+    }
+  });
+  
+  // 關閉按鈕事件
+  close.addEventListener('click', function() {
+    modal.style.display = 'none';
+  });
+  
+  // 點擊modal背景關閉
+  modal.addEventListener('click', function(e) {
+    if (e.target === modal) {
+      modal.style.display = 'none';
+    }
+  });
+
   // 取得 footer 元素
   const footer = document.getElementsByTagName('footer')[0];
 
