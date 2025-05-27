@@ -327,3 +327,33 @@ html, body {
     box-shadow: 0 2px 6px rgba(0,0,0,0.2);
     transition: background-color 0.3s ease;
 }
+
+.happy {
+  background-color: #fffae6;
+  color: #d35400;
+  padding: 15px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  box-shadow: 0 0 10px #f39c12;
+  animation: glow 1.5s infinite alternate;
+  animation: textBounce 1s infinite;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 10px #f39c12;
+  }
+  to {
+    box-shadow: 0 0 20px #f1c40f;
+  }
+}
+@keyframes textBounce {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
