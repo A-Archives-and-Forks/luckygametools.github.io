@@ -8,11 +8,11 @@
     <meta name="keywords" content="steam, free,luckygametools, steamtools,patch,Free Forever,Game,Library,Add,Update">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7261994485465423" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7261994485465423" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="google_translate_element" class="floating-top-left"></div>
+	<div id="google_translate_element" class="floating-top-left"></div>
 
     <div class="container">
         <!-- 頁首區域 -->
@@ -21,25 +21,26 @@
 
 			<!-- 安全聲明 -->
 			<section class="section">
-            <div class="security-info">
-                <h2>🎮 Game Library Add or Update</h2>
-                <p>Game Library resources are updated daily, and many games are full of DLC deluxe versions</p>
-            </div>
-        </section>
-
+				<div class="security-info">
+					<h2>🎮 Game Library Add or Update</h2>
+					<p>Game Library resources are updated daily, and many games are full of DLC deluxe versions</p>
+				</div>
+			</section>
         </header>
         
         <section class="section">
+			<div class="warning">There are too many game resources, which require system resources. Please be patient and wait for the loading to complete!</div>
 			<table  style="border-collapse: collapse; width: 100%; text-align: center;">
 				<thead>
 				  <tr>
-					<th>🕹️ Game(Appid)</th>
+				  	<th>🕹️ Game</th>
+					<th>🎰 Appid</th>
 					<th>🕰️ Time</th>
 					<th>🔱 AddOrUpdae</th>
 				  </tr>
 				</thead>
 				<tbody id="table-body">
-				  <tr><td colspan="3" style="height:30vh"><div  class="shake"> ⌛ Loading... </div></td></tr>
+				  <tr><td colspan="4" style="height:30vh"><div  class="shake"> ⌛ Loading... </div></td></tr>
 				</tbody>
 			</table>
 		</section>
@@ -65,27 +66,39 @@
 				const sorted = data.sort((a, b) => new Date(b.last_modified) - new Date(a.last_modified));
 
 				tbody.innerHTML = '';
-
-				for (const item of sorted) {
+				let index = 0;
+				const onceSize = 500;
+				
+				let nowRowsHtml="";
+				
+				for (; index < data.length; index++)  {
+				  const item = data[index];
 				  const date = new Date(item.last_modified);
 				  const displayTime = date.toLocaleString();
 				  const type = item.change_type;
-				  const typeLabel = type === 'added' ? '🆕 added' : '🎈 modified';
-				  const typeClass = type === 'added' ? 'added' : 'modified';
+				  const typeLabel = type === 'added' ? '🆕 added' : '🎈 updated';
+				  const typeClass = type === 'added' ? 'added' : 'updated';
 
 				  const row = `
 					<tr>
-					  <td>${item.directory}</td>
+					  <td><img loading="lazy" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/${item.directory}/capsule_184x69.jpg"></td>
+					  <td><a href="https://steamdb.info/app/${item.directory}" target="_blank" class="no-underline">${item.directory}</a></td>
 					  <td>${displayTime}</td>
 					  <td class="${typeClass}">${typeLabel}</td>
 					</tr>
 				  `;
 
-				  tbody.innerHTML += row;
+				  nowRowsHtml+=row;
+				  if(index!=0&&index%onceSize==0){
+				  	tbody.innerHTML += nowRowsHtml;
+					nowRowsHtml="";
+				  }
 				}
+				
+				tbody.innerHTML += nowRowsHtml;
 			} catch (err) {
 				const tbody = document.getElementById('table-body');
-				tbody.innerHTML = '<tr><td colspan="3"  style="height:30vh">❌ load fail,please retry!</td></tr>';
+				tbody.innerHTML = '<tr><td colspan="4"  style="height:30vh">❌ load fail,please retry!</td></tr>';
 				console.error(err);
 			}
 		}
@@ -96,7 +109,6 @@
 		})
 	
 	</script>
-        <script src="script.js"></script>
 	<script async type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>
