@@ -8,6 +8,11 @@ function googleTranslateElementInit() {
 </script>
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer ></script>
 
+[2025-05-29] 4.0.0.3版本更新
+- [x] 默認不自動播放遊戲視頻
+- [x] 添加監聽關機事件，關機時自動退出程序
+- [x] 優化遊戲列表加載過程
+
 [2025-05-17] 4.0.0.2版本更新
 - [x] 遊戲搜索支持tag
 - [x] 左側已導入遊戲，支持過濾
