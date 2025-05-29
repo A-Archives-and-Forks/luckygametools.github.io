@@ -10,6 +10,10 @@ const friendLinks = [
 { name: "Discord", url: "https://discord.gg/X4MTpDbcpT" },
 { name: "Youtube", url: "https://www.youtube.com/@GameToolsLucky" }
 ];
+
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
   
 document.addEventListener('DOMContentLoaded', function() {
     // Page loaded successfully
