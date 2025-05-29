@@ -195,7 +195,7 @@ html, body {
 
 .notice {
     background: linear-gradient(45deg, #ff6b6b, #ffa726);
-    color: #856404;
+    color: white;
     padding: 20px;
     border-radius: 10px;
     margin: 20px 0;
@@ -314,6 +314,10 @@ html, body {
     font-size: 14px;
     z-index: 9999;
     transition: background-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* 或 center，看你想要寬度是否對齊 */
+    gap: 10px; /* 按鈕之間間距 */
 }
 .floating-btn-right:hover {
     background-color: #664ba2;
