@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky Game Tools - STEAM Game Tools - Game Add or Update</title>
+    <meta name="description" content="luckygametools Secure, Fast and Free Forever Steam Game Tools(QGame Add or Update)">
+    <meta name="keywords" content="steam, free,luckygametools, steamtools,patch,Free Forever,Game,Add,Update">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7261994485465423" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div id="google_translate_element" class="floating-top-left"></div>
+
+    <div class="container">
+        <!-- 頁首區域 -->
+        <header class="header">
+            <h1 class="logo"><a href="/" class="no-underline">LuckyGameTools</a></h1>            
+
+			<!-- 安全聲明 -->
+			<section class="section">
+            <div class="security-info">
+                <h2>🎮 Game Add or Update</h2>
+                <p>Game resources are updated daily, and many games are full of DLC deluxe versions</p>
+            </div>
+        </section>
+
+        </header>
+        
+        <section class="section">
+			<table  style="border-collapse: collapse; width: 100%; text-align: center;">
+				<thead>
+				  <tr>
+					<th>🕹️ Game(Appid)</th>
+					<th>🕰️ Time</th>
+					<th>🔱 AddOrUpdae</th>
+				  </tr>
+				</thead>
+				<tbody id="table-body">
+				  <tr><td colspan="3" style="height:30vh"><div  class="shake"> ⌛ Loading... </div></td></tr>
+				</tbody>
+			</table>
+		</section>
+        
+        <!-- 頁尾 -->
+        <footer style="text-align: center; margin-top: 50px; color: rgba(255,255,255,0.8);">
+            <p>© 2025 LuckyGameTools - Game resources are updated daily, and many games are full of DLC deluxe versions</p>
+            <p style="margin-top: 10px;">If you have any other questions, please provide feedback to the author or do it yourself Google/AI query</p>
+        </footer>
+    </div>
+    
+    <script type="text/javascript">
+		const gitSteamDBUrl="https://raw.githubusercontent.com/luckygametools/steam-cfg/refs/heads/main/output/steamdb2_dir_times.json"
+
+		const tbody = document.getElementById('table-body');
+
+		async function loadData() {
+			try {
+				const response = await fetch(gitSteamDBUrl);
+				const data = await response.json();
+
+				// 按最後更新時間倒序
+				const sorted = data.sort((a, b) => new Date(b.last_modified) - new Date(a.last_modified));
+
+				tbody.innerHTML = '';
+
+				for (const item of sorted) {
+				  const date = new Date(item.last_modified);
+				  const displayTime = date.toLocaleString();
+				  const type = item.change_type;
+				  const typeLabel = type === 'added' ? '🆕 added' : '🎈 modified';
+				  const typeClass = type === 'added' ? 'added' : 'modified';
+
+				  const row = `
+					<tr>
+					  <td>${item.directory}</td>
+					  <td>${displayTime}</td>
+					  <td class="${typeClass}">${typeLabel}</td>
+					</tr>
+				  `;
+
+				  tbody.innerHTML += row;
+				}
+			} catch (err) {
+				const tbody = document.getElementById('table-body');
+				tbody.innerHTML = '<tr><td colspan="3"  style="height:30vh">❌ load fail,please retry!</td></tr>';
+				console.error(err);
+			}
+		}
+
+  
+		document.addEventListener('DOMContentLoaded', function() {
+			loadData();
+		})
+	
+	</script>
+	<script async type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
