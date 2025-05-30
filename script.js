@@ -8,7 +8,8 @@ var downloadUrl2="https://ranoz.gg/file/bI2oKIU9";
 const friendLinks = [
 { name: "Telegram", url: "https://t.me/luckygametools" },
 { name: "Discord", url: "https://discord.gg/X4MTpDbcpT" },
-{ name: "Youtube", url: "https://www.youtube.com/@GameToolsLucky" }
+{ name: "Youtube", url: "https://www.youtube.com/@GameToolsLucky" },
+{ name: "YuCursorTool", url: "https://970410.xyz/" }
 ];
 
 function googleTranslateElementInit() {
