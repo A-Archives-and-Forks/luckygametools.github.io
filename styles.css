@@ -122,26 +122,35 @@ html, body {
 }
 
 .safe-button {
-  background-color: #4CAF50; 
+  background: linear-gradient(to bottom, #6de88a, #3cbf61); /* 漸層綠色 */
   color: white;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 12px;
+  padding: 14px 28px;
   font-size: 16px;
   font-weight: bold;
-  box-shadow: 0 4px 8px rgba(0, 128, 0, 0.2);
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(60, 191, 97, 0.4), inset 0 1px 0 rgba(255,255,255,0.6);
   cursor: pointer;
-  transition: all 0.2s ease;
   position: relative;
+  transition: all 0.3s ease;
 }
 
-.safe-button::before {
-  margin-right: 8px;
+.safe-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  pointer-events: none;
 }
 
 .safe-button:hover {
-  background-color: #45A049;
-  box-shadow: 0 6px 12px rgba(0, 128, 0, 0.3);
+  box-shadow: 0 6px 14px rgba(60, 191, 97, 0.5);
+  transform: translateY(-1px);
 }
 
 .safe-button:active {
