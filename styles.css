@@ -240,6 +240,15 @@ html, body {
     font-weight: bold;
 }
 
+.benefits {
+    background: linear-gradient(45deg, #ff3b6b, #ffa726);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    text-align: center;
+    font-weight: bold;
+}
+
 .warning {
     background: #fff3cd;
     border: 1px solid #ffeaa7;
