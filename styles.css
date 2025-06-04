@@ -121,6 +121,33 @@ html, body {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
+.safe-button {
+  background-color: #4CAF50; 
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 128, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.safe-button::before {
+  margin-right: 8px;
+}
+
+.safe-button:hover {
+  background-color: #45A049;
+  box-shadow: 0 6px 12px rgba(0, 128, 0, 0.3);
+}
+
+.safe-button:active {
+  transform: scale(0.98);
+}
+
 .section {
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
