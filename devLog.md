@@ -8,6 +8,12 @@ function googleTranslateElementInit() {
 </script>
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer ></script>
 
+[2025-06-05] 4.0.0.4版本更新
+- [x] DRM遊戲圖片框右上角增加醒目的"DRM"字樣
+- [x] 強化關機處理事件
+- [x] 修復左側遊戲過多時最下方的遊戲無法滾出展示的bug
+- [x] 縮小遊戲圖片加載失敗時默認的18禁圖片的尺寸 
+
 [2025-05-29] 4.0.0.3版本更新
 - [x] 默認不自動播放遊戲視頻
 - [x] 添加監聽關機事件，關機時自動退出程序
