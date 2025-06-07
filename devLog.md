@@ -8,6 +8,15 @@ function googleTranslateElementInit() {
 </script>
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer ></script>
 
+
+[2025-06-08] 4.0.0.5版本更新
+- [x] 修復部分聯機遊戲無法切換語言的問題，但修正為語言默認和軟件端選擇的語言保持一至
+- [x] 修復部份聯機遊戲無法彈窗出邀請好友的界面,使用幸運參數=luckygametools=0
+- [x] 修復新版本提示是點消息是空的bug
+- [x] 修復導入清單時，可能會引起cpu誤占用的bug
+- [x] 修正寓管理員權限啟動時默認不全局加速steam
+
+
 [2025-06-05] 4.0.0.4版本更新
 - [x] DRM遊戲圖片框右上角增加醒目的"DRM"字樣
 - [x] 強化關機處理事件
