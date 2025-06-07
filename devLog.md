@@ -11,7 +11,7 @@ function googleTranslateElementInit() {
 
 [2025-06-08] 4.0.0.5版本更新
 - [x] 修復部分聯機遊戲無法切換語言的問題，但修正為語言默認和軟件端選擇的語言保持一至
-- [x] 修復部份聯機遊戲無法彈窗出邀請好友的界面,使用幸運參數=luckygametools=0
+- [x] 修復部份聯機遊戲無法彈窗出邀請好友的界面,使用幸運參數=luckygametools=0 (eg:Sons of The Forest )
 - [x] 修復新版本提示是點消息是空的bug
 - [x] 修復導入清單時，可能會引起cpu誤占用的bug
 - [x] 修正寓管理員權限啟動時默認不全局加速steam
