@@ -16,20 +16,20 @@ function googleTranslateElementInit() {
   new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
 }
 
-function copyEmail() {
-    //event.preventDefault();
-    const email = "luckygametools@gmail.com";
+function copyEmail(thiz,email) {
 
     // 複製到剪貼簿
     navigator.clipboard.writeText(email).then(() => {
-        const tooltip = document.getElementById("emailLink");
+        const tooltip = thiz.firstElementChild;
+        var oldTooltipText=tooltip.textContent;
         tooltip.textContent = "Copied！"; 
 
         setTimeout(() => {
-            tooltip.textContent = email;
+            tooltip.textContent = oldTooltipText;
         }, 2000);
     });
 }
+
 
 document.addEventListener('DOMContentLoaded', function() {
     // Page loaded successfully
