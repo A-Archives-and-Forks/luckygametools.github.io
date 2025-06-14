@@ -8,7 +8,10 @@ function googleTranslateElementInit() {
 </script>
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer ></script>
 
-
+[2025-06-14] 4.0.0.6版本更新
+- [x] 應該解決了 最新的win11 下defender 不再被誤殺了
+- [x] 修复 小红车 steam 连接错误的提示
+ 
 [2025-06-08] 4.0.0.5版本更新
 - [x] 修復部分聯機遊戲無法切換語言的問題，但修正為語言默認和軟件端選擇的語言保持一至
 - [x] 修復部份聯機遊戲無法彈窗出邀請好友的界面,使用幸運參數=luckygametools=0 (eg:Sons of The Forest )
