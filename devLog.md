@@ -8,6 +8,12 @@ function googleTranslateElementInit() {
 </script>
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer ></script>
 
+
+[2025-06-19] 4.0.0.7版本更新
+- [x] 修復聯機時誤處理了未導入的遊戲
+- [x] 修復已導入遊戲中包含無詳情時，無法篩查的功能
+  
+ 
 [2025-06-14] 4.0.0.6版本更新
 - [x] 應該解決了 最新的win11 下defender 不再被誤殺了
 - [x] 修复 小红车 steam 连接错误的提示
