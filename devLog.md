@@ -8,6 +8,9 @@ function googleTranslateElementInit() {
 </script>
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer ></script>
 
+[2025-06-26] 4.0.1.0版本更新
+- [x] 給軟件添加了插件功能，支持擴展一些lot代碼也繞不過的單機遊戲 eg:撈女
+- [x] 優化 steam強化模式下：純淨模式的靈敏度 
 
 [2025-06-21] 4.0.0.8版本更新
 - [x] 添加對于需要補丁的遊戲在導入時彈窗提醒
