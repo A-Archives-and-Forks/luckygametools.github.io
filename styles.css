@@ -230,6 +230,23 @@ html, body {
     flex-shrink: 0;
 }
 
+.step-appid {
+    background: #667eea;
+    color: white;
+    border-radius: 10%;
+    width: 100px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+ .step-gamename a {
+    margin-left: 10px;
+  }
+
 .notice {
     background: linear-gradient(45deg, #ff6b6b, #ffa726);
     color: white;
