@@ -2,7 +2,8 @@
 // Currently no interactive functionality is needed
 // This file is included for future enhancements
 var downloadUrl1="https://gofile.io/d/6DYE7p";
-var downloadUrl2="https://ranoz.gg/file/7IaQRMhV";
+var downloadUrl2="https://ranoz.gg/file/N9urW5Yx";
+var downloadUrl3="https://mega.nz/file/Xp4jTbqa#T_CJyo6XD23tQ2Fa3iCFg0jvEMcmHfFibvRgQ_U1GZw";
 
 // 友情鏈接資料陣列
 const friendLinks = [
@@ -40,6 +41,9 @@ document.addEventListener('DOMContentLoaded', function() {
 	if(document.getElementById('download2')!=null){
 		document.getElementById('download2').href=downloadUrl2;
 	}
+  if(document.getElementById('download3')!=null){
+    document.getElementById('download3').href=downloadUrl3;
+  }
 
 
 // 創建modal元素（如果頁面上還沒有）
