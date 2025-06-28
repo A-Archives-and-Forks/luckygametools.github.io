@@ -8,6 +8,10 @@ function googleTranslateElementInit() {
 </script>
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer ></script>
 
+
+[2025-06-28] 4.0.1.1版本更新
+- [x] 兼容部份遊戲啟動時會強制較驗Steam.exe進程名字 （eg：天命奇御二 、 美女，请别影响我成仙）
+
 [2025-06-26] 4.0.1.0版本更新
 - [x] 給軟件添加了插件功能，支持擴展一些lot代碼也繞不過的單機遊戲 eg:撈女
 - [x] 優化 steam強化模式下：純淨模式的靈敏度 
