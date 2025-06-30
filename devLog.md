@@ -8,6 +8,8 @@ function googleTranslateElementInit() {
 </script>
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer ></script>
 
+[2025-06-30] 4.0.2.1 版本更新
+- [x] lot神秘代碼完全兼容steam上需要聯網驗證的單機遊戲，（eg：eg：英雄连3、真人快打、夜族崛起、微軟飛行模擬器、美女，请别影响我成仙等 ）
 
 [2025-06-28] 4.0.1.1版本更新
 - [x] 兼容部份遊戲啟動時會強制較驗Steam.exe進程名字 （eg：天命奇御二 、 美女，请别影响我成仙）
