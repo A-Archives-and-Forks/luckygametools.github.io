@@ -9,6 +9,10 @@ function googleTranslateElementInit() {
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer ></script>
 
 
+[2025-07-14] 4.0.3.0 版本更新
+- [x] 新功能，支持 steam 創意工坊 的下載了，目前已通的遊戲是： 小紅車，後續會持續開通其它的遊戲
+- [x] 集成7zip，降低了安裝包的體積，方便大家快速下載安裝
+
 [2025-07-05] 4.0.2.0 版本更新
 - [x] 支持了Steam成就系統 
 - [x] 優化了鎖定steam清單，steam不再提示LuckyGameTools軟件導入的遊戲更新 
