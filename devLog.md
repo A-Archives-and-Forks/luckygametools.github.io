@@ -9,6 +9,11 @@ function googleTranslateElementInit() {
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer ></script>
 
 
+[2025-07-14] 4.0.3.1 版本更新
+- [x] 修復上個版本引起的部分帶dlc的遊戲下載問題
+- [x] 修復軟件自動更新的BUG
+- [x] 優化權限獲取邏輯
+
 [2025-07-14] 4.0.3.0 版本更新
 - [x] 新功能，支持 steam 創意工坊 的下載了，目前已通的遊戲是： 小紅車，後續會持續開通其它的遊戲
 - [x] 集成7zip，降低了安裝包的體積，方便大家快速下載安裝
