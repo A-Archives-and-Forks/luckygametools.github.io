@@ -9,6 +9,12 @@ function googleTranslateElementInit() {
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer ></script>
 
 
+[2025-08-09] 4.0.3.2 版本更新
+- [x] 軟件默認跟隨系統代理
+- [x] 修復解除安裝腳本清理入庫數據文件
+- [x] 修復部份D加密遊戲使用lot指令不成功的bug
+- [x] 修復部份遊戲入庫時錯誤提示安裝破解腳本的BUG
+
 [2025-07-20] 4.0.3.1 版本更新
 - [x] 修復上個版本引起的部分帶dlc的遊戲下載問題
 - [x] 修復軟件自動更新的BUG
