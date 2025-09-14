@@ -8,6 +8,15 @@ function googleTranslateElementInit() {
 </script>
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer ></script>
 
+[2025-09-14] 5.0.0.1 版本更新
+- [x] 工具箱添加 生成 lot 代碼（用于需要在線驗證的單機遊戲）
+- [x] 工具箱添加 生成 lgt 代碼 (用于D加密遊戲的激活)
+- [x] 移除遊戲列表中18 or net error圖片
+- [x] 優化遊戲資料庫異步請求時，自動放棄官方store已下架隱藏的遊戲
+- [x] 軟件新版本安裝程序在安裝中默認開啟展示隱藏的18+遊戲
+- [x] 升級了軟件所依賴的開源依賴，提升了一點點性能
+
+
 
 [2025-08-09] 4.0.3.2 版本更新
 - [x] 軟件默認跟隨系統代理
