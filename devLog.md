@@ -8,6 +8,9 @@ function googleTranslateElementInit() {
 </script>
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer ></script>
 
+[2025-09-16] 5.0.0.2 版本更新
+- [x] 將D加密遊戲彈窗提示語國際化
+
 [2025-09-14] 5.0.0.1 版本更新
 - [x] 工具箱添加 生成 lot 代碼（用于需要在線驗證的單機遊戲）
 - [x] 工具箱添加 生成 lgt 代碼 (用于D加密遊戲的激活)

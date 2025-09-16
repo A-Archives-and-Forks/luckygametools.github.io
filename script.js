@@ -1,9 +1,9 @@
 // JavaScript file for Lucky Game Tools
 // Currently no interactive functionality is needed
 // This file is included for future enhancements
-var downloadUrl1="https://gofile.io/d/yNVSgF";
-var downloadUrl2="https://ranoz.gg/file/xSzVUSuS";
-var downloadUrl3="https://mega.nz/file/XxIQmSiQ#TivJGY0DS-A93PSI7CR62F_R_0eGFNGjn1CVonJGrZ4";
+var downloadUrl1="https://gofile.io/d/1fbRWO";
+var downloadUrl2="https://ranoz.gg/file/PLYclRuR";
+var downloadUrl3="https://mega.nz/file/HpxBUBjb#VD6D01S-MVMvsvNMoUccMUIu44jC_Di36Bu5UVM7aAE";
 
 // 友情鏈接資料陣列
 const friendLinks = [
