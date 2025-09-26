@@ -10,8 +10,7 @@ const friendLinks = [
 { name: "Telegram", url: "https://t.me/luckygametools" },
 { name: "Discord", url: "https://discord.gg/X4MTpDbcpT" },
 { name: "Youtube", url: "https://www.youtube.com/@GameToolsLucky" },
-{ name: "YuCursorTool", url: "https://970410.xyz/" },
-{ name: "YuTV", url: "https://yutv.970410.xyz/" }
+{ name: "YuCursorTool", url: "https://970410.xyz/" }
 ];
 
 function googleTranslateElementInit() {
