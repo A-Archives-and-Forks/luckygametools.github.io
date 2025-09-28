@@ -1,6 +1,7 @@
 // JavaScript file for Lucky Game Tools
 // Currently no interactive functionality is needed
 // This file is included for future enhancements
+var downloadUrl="https://pan.quark.cn/s/384501379dcf";
 var downloadUrl1="https://gofile.io/d/1fbRWO";
 var downloadUrl2="https://ranoz.gg/file/PLYclRuR";
 var downloadUrl3="https://mega.nz/file/HpxBUBjb#VD6D01S-MVMvsvNMoUccMUIu44jC_Di36Bu5UVM7aAE";
@@ -35,6 +36,9 @@ function copyEmail(thiz,email) {
 document.addEventListener('DOMContentLoaded', function() {
     // Page loaded successfully
     console.log('LuckyGameTools page loaded');
+	 if(document.getElementById('download')!=null){
+	    document.getElementById('download').href=downloadUrl;
+	  }
 	if(document.getElementById('download1')!=null){
 		document.getElementById('download1').href=downloadUrl1;
 	}
