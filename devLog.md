@@ -8,6 +8,12 @@ function googleTranslateElementInit() {
 </script>
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer ></script>
 
+
+[2025-10-18] 5.0.0.3 版本更新
+- [x] 去除工具箱中，權限為0時不能生成lgt神秘代碼的限制，并解除此狀態下生成神秘代碼的驗證
+- [x] 兼容部份遊戲遊戲啟動后預設配置不生效的問題，(出現此問題可以反饋給作者配合解決)
+- [x] 修正awth1字樣為auth1
+
 [2025-09-16] 5.0.0.2 版本更新
 - [x] 將D加密遊戲彈窗提示語國際化
 
