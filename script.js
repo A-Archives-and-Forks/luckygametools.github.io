@@ -11,6 +11,7 @@ const friendLinks = [
 { name: "Telegram", url: "https://t.me/luckygametools" },
 { name: "Discord", url: "https://discord.gg/X4MTpDbcpT" },
 { name: "Youtube", url: "https://www.youtube.com/@GameToolsLucky" },
+{ name: "BaiLuAI", url: "https://bailucode.com" },
 { name: "YuCursorTool", url: "https://970410.xyz/" }
 ];
 
