@@ -8,6 +8,8 @@ function googleTranslateElementInit() {
 </script>
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer ></script>
 
+[2025-11-14] 5.0.1.3 版本更新
+- [x] 修復https://api.steampowered.com/ISteamApps/GetAppList/v2/ 接口失效引發的kit程序崩潰問題
 
 [2025-10-18] 5.0.0.3 版本更新
 - [x] 去除工具箱中，權限為0時不能生成lgt神秘代碼的限制，并解除此狀態下生成神秘代碼的驗證
