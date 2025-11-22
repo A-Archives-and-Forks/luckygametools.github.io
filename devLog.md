@@ -8,6 +8,11 @@ function googleTranslateElementInit() {
 </script>
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer ></script>
 
+
+[2025-11-22] 5.0.2.0 版本更新
+- [x] 修復Steam調整導致創意工坊偶爾無法正常使用的問題
+
+
 [2025-11-14] 5.0.1.3 版本更新
 - [x] 修復https://api.steampowered.com/ISteamApps/GetAppList/v2/ 接口失效引發的kit程序崩潰問題
 

@@ -2,9 +2,9 @@
 // Currently no interactive functionality is needed
 // This file is included for future enhancements
 var downloadUrl="https://pan.xunlei.com/s/VOdyALg1-d37ocXSlMcra3fiA1?pwd=6psk";
-var downloadUrl1="https://gofile.io/d/raamiz";
-var downloadUrl2="https://ranoz.gg/file/E62S088r";
-var downloadUrl3="https://mega.nz/file/i5AQzTCI#d1sy0SDis4_LFYGwiuaa8Axb4ZJzKC2SP5N5EvIQ1Og";
+var downloadUrl1="https://gofile.io/d/Y4CZEN";
+var downloadUrl2="https://ranoz.gg/file/qBZnBhYl";
+var downloadUrl3="https://mega.nz/file/XxwyAYID#aIP20IrQoApTXenGQrydia0MJoSWcX-G0wYhFZMn-fQ";
 
 // 友情鏈接資料陣列
 const friendLinks = [
