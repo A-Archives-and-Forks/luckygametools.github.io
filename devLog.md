@@ -9,6 +9,9 @@ function googleTranslateElementInit() {
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer ></script>
 
 
+[2025-11-28] 5.0.2.1 版本更新
+- [x] 臨時優化gitlab故障，清單入庫網絡異常的情況
+
 [2025-11-22] 5.0.2.0 版本更新
 - [x] 修復Steam調整導致創意工坊偶爾無法正常使用的問題
 
