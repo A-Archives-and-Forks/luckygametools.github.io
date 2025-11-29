@@ -1,7 +1,7 @@
 // JavaScript file for Lucky Game Tools
 // Currently no interactive functionality is needed
 // This file is included for future enhancements
-var downloadUrl="https://pan.xunlei.com/s/VOeeOEogWl7T7-iRUoy_DTxIA1?pwd=u56v";
+var downloadUrl="https://share.feijipan.com/s/YtZMWNuy";
 var downloadUrl1="https://gofile.io/d/R2mwQF";
 var downloadUrl2="https://ranoz.gg/file/g4KnEb8r";
 var downloadUrl3="https://mega.nz/file/Cp4zyBLK#F4-hnKmS1NWyqqkKiSTSqAgNFOLZ1i4aqtjWguWzunQ";
