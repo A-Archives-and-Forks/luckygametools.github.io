@@ -13,6 +13,7 @@ function googleTranslateElementInit() {
 - [x] 屏蔽https://api.steampowered.com/ISteamApps/GetAppList/v2/ 接口的無效請求
 - [x] 優化UI遊戲列表頁面加载空白的情況
 - [x] 增加大文件清單下載是請求等待時長
+- [x] 修復網絡異常的情況下，點擊設置崩潰閃退的bug
 - [x] 適配未來的64位steam
 
 [2025-11-28] 5.0.2.1 版本更新
