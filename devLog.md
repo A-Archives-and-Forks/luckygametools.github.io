@@ -8,6 +8,12 @@ function googleTranslateElementInit() {
 </script>
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer ></script>
 
+[2025-11-30] 6.0.0.0 版本更新
+- [x] 恢復gitlab資源正常訪問
+- [x] 屏蔽https://api.steampowered.com/ISteamApps/GetAppList/v2/ 接口的無效請求
+- [x] 優化UI遊戲列表頁面加载空白的情況
+- [x] 增加大文件清單下載是請求等待時長
+- [x] 適配未來的64位steam
 
 [2025-11-28] 5.0.2.1 版本更新
 - [x] 臨時優化gitlab故障，清單入庫網絡異常的情況
