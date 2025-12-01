@@ -13,13 +13,21 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          persist-credentials: false  # 關鍵！禁用默認認證
 
       - name: Push to B
+        env:
+          TOKEN: ${{ secrets.TARGET_REPO_TOKEN }}
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
           
-          # 使用用戶名 + token 格式
-          git remote add target https://luckygametools:${{ secrets.TARGET_REPO_TOKEN }}@github.com/luckygametools/luckygametools2.github.io.git
+          # 清除可能存在的認證緩存
+          git config --global --unset-all http.https://github.com/.extraheader || true
           
+          # 設置認證
+          git config --global url."https://luckygametools:${TOKEN}@github.com/".insteadOf "https://github.com/"
+          
+          # Push
+          git remote add target https://github.com/luckygametools/luckygametools2.github.io.git
           git push target HEAD:main --force
