@@ -3,35 +3,25 @@ name: Sync to 2
 on:
   push:
     branches:
-      - main
+      - main  # A repo 的主分支
 
 jobs:
   sync:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout
+    - name: Checkout A
       uses: actions/checkout@v4
       with:
         fetch-depth: 0
 
-    - name: Setup Askpass
+    - name: Setup Git Credentials
       run: |
-        cat > ~/.git-askpass <<EOF
-        #!/bin/sh
-        echo "$PAT"
-        EOF
-        chmod +x ~/.git-askpass
-      env:
-        PAT: ${{ secrets.PAT }}
-
-    - name: Push to luckygametools2.github.io
-      env:
-        GIT_ASKPASS: ~/.git-askpass
-        PAT: ${{ secrets.PAT }}
-      run: |
-        git config --global user.email "github-actions@github.com"
         git config --global user.name "github-actions"
+        git config --global user.email "github-actions@github.com"
 
-        git remote add target https://github.com/luckygametools/luckygametools2.github.io.git
+        # 添加 B repo 的 remote，使用 PAT 認證
+        git remote add target https://luckygametools:${{secrets.PAT}}@github.com/luckygametools/luckygametools2.github.io.git
+
+        # Push 到 B
         git push target HEAD:main --force
