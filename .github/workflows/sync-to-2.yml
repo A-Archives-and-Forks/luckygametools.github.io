@@ -11,14 +11,15 @@ jobs:
 
     steps:
     - name: Checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         fetch-depth: 0
 
-    - name: Setup Git Credentials
+    - name: Setup Askpass
       run: |
         cat > ~/.git-askpass <<EOF
-        echo ${PAT}
+        #!/bin/sh
+        echo "$PAT"
         EOF
         chmod +x ~/.git-askpass
       env:
@@ -26,11 +27,11 @@ jobs:
 
     - name: Push to luckygametools2.github.io
       env:
+        GIT_ASKPASS: ~/.git-askpass
         PAT: ${{ secrets.PAT }}
       run: |
-        git config --global user.name "github-actions"
         git config --global user.email "github-actions@github.com"
-        git config --global core.askPass "~/.git-askpass"
+        git config --global user.name "github-actions"
 
         git remote add target https://github.com/luckygametools/luckygametools2.github.io.git
         git push target HEAD:main --force
