@@ -14,23 +14,12 @@ jobs:
         with:
           fetch-depth: 0
 
-      # 調試：檢查 token 是否存在（不會顯示實際值）
-      - name: Check token
-        env:
-          TARGET_TOKEN: ${{ secrets.PAT }}
-        run: |
-          if [ -z "$TARGET_TOKEN" ]; then
-            echo "❌ TOKEN 是空的！Secret 沒有正確設置"
-            exit 1
-          else
-            echo "✅ TOKEN 存在，長度: ${#TARGET_TOKEN} 字符"
-          fi
-
       - name: Push to B
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
           
-          git remote add target https://${{ secrets.PAT }}@github.com/luckygametools/luckygametools2.github.io.git
+          # 使用用戶名 + token 格式
+          git remote add target https://luckygametools:${{ secrets.TARGET_REPO_TOKEN }}@github.com/luckygametools/luckygametools2.github.io.git
           
           git push target HEAD:main --force
