@@ -21,7 +21,7 @@ jobs:
         git config --global user.email "github-actions@github.com"
 
         # 你的 luckygametools2.github.io 倉庫地址（HTTPS）
-        git remote add target https://${{ secrets.PAT }}@github.com/luckygametools/luckygametools2.github.io
-
+        git remote add target https://luckygametools:${{ secrets.PAT }}@github.com/luckygametools/luckygametools2.github.io.git
+        
         # 使用 PAT 進行身份驗證
         git push target HEAD:main --force
