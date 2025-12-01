@@ -13,7 +13,7 @@ body {
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7261994485465423"
      crossorigin="anonymous"></script>
 
-# 0.導入遊戲時提示:網絡錯誤？?
+# 0.導入遊戲時提示:網絡錯誤？??
  - 1.由于本軟件沒有使用任何服務器,導入遊戲的資源全部放在Github上，出現網絡錯誤有兩個原因
  - 2.原因1： github的api對于訪問有頻率限制，導入遊戲過多過快時請求會被短暫限制
  - 3.原因2： 部份國家地區運營商對github的請求有屏蔽過濾
