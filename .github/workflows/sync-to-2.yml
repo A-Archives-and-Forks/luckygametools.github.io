@@ -21,7 +21,7 @@ jobs:
         git config --global user.email "github-actions@github.com"
 
         # 添加 B repo 的 remote，使用 PAT 認證
-        git remote add target https://luckygametools:${{secrets.PAT}}@github.com/luckygametools/luckygametools2.github.io
+        git remote add target https://x-access-token:${{secrets.PAT}}@github.com/luckygametools/luckygametools2.github.io
 
         # Push 到 B
         git push target HEAD:main --force
