@@ -1,27 +1,27 @@
-name: Sync to 2
+name: Sync to Project B
 
 on:
   push:
     branches:
-      - main  # A repo 的主分支
+      - main
 
 jobs:
   sync:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout A
-      uses: actions/checkout@v4
-      with:
-        fetch-depth: 0
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-    - name: Setup Git Credentials
-      run: |
-        git config --global user.name "github-actions"
-        git config --global user.email "github-actions@github.com"
-
-        # 添加 B repo 的 remote，使用 PAT 認證
-        git remote add target https://x-access-token:${{secrets.PAT}}@github.com/luckygametools/luckygametools2.github.io
-
-        # Push 到 B
-        git push target HEAD:main --force
+      - name: Push to B
+        env:
+          TARGET_TOKEN: ${{ secrets.PAT }}
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          
+          # 使用 env 變量，確保 token 正確傳遞
+          git remote add target https://${TARGET_TOKEN}@github.com/luckygametools/luckygametools2.github.io.git
+          
+          git push target HEAD:main --force
