@@ -1,0 +1,29 @@
+name: Sync to 2
+
+on:
+  push:
+    branches:
+      - main   # luckygametools.github.io 的主分支
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout luckygametools.github.io
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+
+    - name: Push to luckygametools2.github.io
+      run: |
+        git config --global user.name "github-actions"
+        git config --global user.email "github-actions@github.com"
+
+        # 你的 luckygametools2.github.io 倉庫地址（HTTPS）
+        git remote add target https://github.com/luckygametools/luckygametools2.github.io.git
+
+        # 使用 PAT 進行身份驗證
+        git push target HEAD:main --force
+      env:
+        GITHUB_TOKEN: ${{ secrets.PAT }}
