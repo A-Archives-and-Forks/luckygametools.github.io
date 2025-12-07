@@ -8,6 +8,11 @@ function googleTranslateElementInit() {
 </script>
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer ></script>
 
+
+[2025-12-07]
+- [+] LuckyGameTools軟件裝會陸續開源中
+- [+] 第一彈：安裝包程序，原汁原味開源地址：https://github.com/luckygametools/installer.git
+ 
 [2025-11-30] 6.0.0.0 版本更新
 - [x] 恢復gitlab資源正常訪問
 - [x] 屏蔽https://api.steampowered.com/ISteamApps/GetAppList/v2/ 接口的無效請求
