@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>纯JS生成签到界面</title>
+<!-- 依然需要引入库文件，或者你也可以动态加载它，这里为了方便直接引入 -->
+<script src="twallpaper.js"></script>
+</head>
+<body>
+
+<!-- body 里空空如也，全部靠下面的 JS 生成 -->
+
+<script>
+(function() {
+  
+  // ============================================
+  // 1. 注入 CSS 样式
+  // ============================================
+  const css = `
+    * { box-sizing: border-box; user-select: none; }
+    html, body { margin: 0; height: 100%; overflow: hidden; font-family: "PingFang SC", sans-serif; background: #111; color: #fff; }
+    
+    /* 背景容器 */
+    .twp { position: fixed; inset: 0; z-index: 1; pointer-events: none; }
+    .twp canvas { width: 100%; height: 100%; display: block; }
+
+    /* 侧滑面板 */
+    .side-panel {
+      position: fixed; left: -320px; top: 50%; transform: translateY(-50%);
+      z-index: 100; display: flex; align-items: center;
+      transition: left 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+    .side-panel.open { left: 20px; }
+
+    /* 卡片样式 */
+    .sign-card {
+      width: 300px;
+      background: rgba(20, 20, 20, 0.75);
+      backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 24px; padding: 30px 24px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+      text-align: center; color: #fff; position: relative; overflow: hidden;
+    }
+    /* 装饰光 */
+    .sign-card::before {
+      content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%;
+      background: radial-gradient(circle, rgba(250, 204, 21, 0.1) 0%, transparent 60%);
+      z-index: -1; pointer-events: none;
+    }
+
+    /* 用户信息 */
+    .user-info { display: flex; flex-direction: column; align-items: center; gap: 10px; margin-bottom: 20px; }
+    .avatar {
+      width: 60px; height: 60px; border-radius: 50%;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 24px; border: 3px solid rgba(255,255,255,0.2);
+    }
+    .level-badge {
+      background: linear-gradient(90deg, #FFD700, #FFA500); color: #000;
+      padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 800;
+      box-shadow: 0 2px 10px rgba(255, 165, 0, 0.3);
+    }
+
+    /* 签到计数 */
+    .streak-section { margin: 25px 0; }
+    .streak-label { font-size: 14px; opacity: 0.6; margin-bottom: 5px; }
+    .streak-num {
+      font-size: 56px; font-weight: 700; line-height: 1;
+      background: linear-gradient(to bottom, #fff, #999);
+      -webkit-background-clip: text; color: transparent;
+    }
+    .streak-unit { font-size: 16px; color: #aaa; margin-left: 5px; }
+
+    /* 把手 */
+    .toggle-handle {
+      width: 50px; height: 60px; background: #facc15;
+      border-radius: 0 12px 12px 0; margin-left: -1px;
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer; font-size: 24px;
+      box-shadow: 4px 0 15px rgba(250, 204, 21, 0.3);
+      transition: transform 0.2s;
+    }
+    .toggle-handle:hover { transform: translateX(3px); }
+
+    /* 按钮 */
+    .btn-sign {
+      width: 100%; padding: 14px; border-radius: 12px; border: none;
+      font-size: 16px; font-weight: 600; cursor: pointer;
+      background: linear-gradient(135deg, #facc15, #eab308); color: #000;
+      box-shadow: 0 4px 15px rgba(250, 204, 21, 0.3); transition: all 0.2s;
+    }
+    .btn-sign:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(250, 204, 21, 0.4); }
+    .btn-sign:active { transform: scale(0.98); }
+    .btn-sign.disabled {
+      background: rgba(255,255,255,0.1); color: rgba(255,255,255,0.3);
+      box-shadow: none; pointer-events: none; transform: none;
+    }
+
+    /* 庆祝全屏层 */
+    .celebration-overlay {
+      position: fixed; inset: 0; z-index: 200;
+      background: rgba(0,0,0,0.85); backdrop-filter: blur(8px);
+      display: flex; align-items: center; justify-content: center;
+      opacity: 0; pointer-events: none; transition: opacity 0.4s;
+    }
+    .celebration-overlay.active { opacity: 1; pointer-events: auto; }
+
+    .prize-box {
+      text-align: center; transform: scale(0.5); opacity: 0;
+      transition: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+    .celebration-overlay.active .prize-box { transform: scale(1); opacity: 1; }
+
+    .rays {
+      position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+      width: 600px; height: 600px; z-index: -1;
+      background: conic-gradient(from 0deg, transparent 0deg, rgba(250, 204, 21, 0.2) 20deg, transparent 40deg, rgba(250, 204, 21, 0.2) 60deg, transparent 80deg);
+      mask-image: radial-gradient(circle, black 20%, transparent 70%);
+      animation: rotate 10s linear infinite;
+    }
+    
+    .prize-icon { font-size: 90px; margin-bottom: 10px; filter: drop-shadow(0 0 30px rgba(250,204,21,0.6)); }
+    .prize-title { font-size: 32px; font-weight: bold; color: #facc15; margin: 0 0 10px 0; }
+    .prize-desc { color: #ccc; margin-bottom: 30px; }
+    .btn-collect {
+      padding: 12px 40px; border-radius: 50px; border: 2px solid #facc15;
+      background: transparent; color: #facc15; font-size: 16px; font-weight: bold;
+      cursor: pointer; transition: 0.2s;
+    }
+    .btn-collect:hover { background: #facc15; color: #000; }
+    
+    @keyframes rotate { from { transform: translate(-50%, -50%) rotate(0deg); } to { transform: translate(-50%, -50%) rotate(360deg); } }
+  `;
+  
+  const styleEl = document.createElement('style');
+  styleEl.innerHTML = css;
+  document.head.appendChild(styleEl);
+
+
+  // ============================================
+  // 2. 注入 HTML 结构 (使用 Template String)
+  // ============================================
+  const htmlTemplate = `
+    <!-- 动态背景层 -->
+    <div class="twp" id="tw-container"></div>
+
+    <!-- 侧滑面板 -->
+    <div class="side-panel" id="sidePanel">
+      <div class="sign-card">
+        
+        <!-- 用户区 -->
+        <div class="user-info">
+          <div class="avatar">👨‍🚀</div>
+          <div class="level-badge">LV.5 黄金会员</div>
+        </div>
+
+        <div style="height:1px; background:rgba(255,255,255,0.1); width:100%;"></div>
+
+        <!-- 计数区 -->
+        <div class="streak-section">
+          <div class="streak-label">已连续签到</div>
+          <div>
+            <span class="streak-num" id="streak-num">2</span>
+            <span class="streak-unit">天</span>
+          </div>
+        </div>
+
+        <!-- 按钮 -->
+        <button class="btn-sign" id="sign-btn">立即签到</button>
+      </div>
+
+      <!-- 侧滑把手 -->
+      <div class="toggle-handle" id="toggle-handle">🎁</div>
+    </div>
+
+    <!-- 庆祝弹窗 -->
+    <div class="celebration-overlay" id="celebrationOverlay">
+      <div class="prize-box">
+        <div class="rays"></div>
+        <div class="prize-icon">🏆</div>
+        <h2 class="prize-title">3天连签达成！</h2>
+        <p class="prize-desc">获得「坚持不懈」徽章 + 100 积分</p>
+        <button class="btn-collect" id="collect-btn">开心收下</button>
+      </div>
+    </div>
+  `;
+
+  // 创建一个临时容器来转换 HTML 字符串
+  const wrapper = document.createElement('div');
+  wrapper.innerHTML = htmlTemplate;
+  
+  // 将生成的元素一个个移动到 body 中
+  while (wrapper.firstChild) {
+    document.body.appendChild(wrapper.firstChild);
+  }
+
+
+  // ============================================
+  // 3. 业务逻辑 (JS)
+  // ============================================
+  
+  // A. 初始化背景
+  const Tw = window.TWallpaper ? (window.TWallpaper.default || window.TWallpaper) : null;
+  const twContainer = document.getElementById('tw-container');
+  
+  if (Tw && twContainer) {
+    if (Tw.prototype) {
+      Tw.prototype.width  = Math.floor(window.innerWidth  / 12);
+      Tw.prototype.height = Math.floor(window.innerHeight / 12);
+    }
+    const tw = new Tw(twContainer, {
+      fps: 60, tails: 90, animate: true, scrollAnimate: true,
+      colors: ["#4183f1", "#5d3e1c", "#c9b3c0", "#c9a72c"],
+      pattern: { image: "games.svg", background: "transparent", blur: 0.3, opacity: 0.6, mask: false }
+    });
+    tw.init();
+  }
+
+  // B. 状态与元素获取
+  const state = { streak: 2, hasSigned: false }; // 初始连续2天
+  const sidePanel = document.getElementById('sidePanel');
+  const toggleHandle = document.getElementById('toggle-handle');
+  const signBtn = document.getElementById('sign-btn');
+  const streakNum = document.getElementById('streak-num');
+  const overlay = document.getElementById('celebrationOverlay');
+  const collectBtn = document.getElementById('collect-btn');
+  
+  let isPanelOpen = false;
+
+  // C. 交互函数定义
+  function togglePanel(forceState) {
+    if (typeof forceState === 'boolean') isPanelOpen = forceState;
+    else isPanelOpen = !isPanelOpen;
+
+    if (isPanelOpen) sidePanel.classList.add('open');
+    else sidePanel.classList.remove('open');
+  }
+
+  function handleSignIn() {
+    if (state.hasSigned) return;
+
+    // 更新数据
+    state.streak++;
+    state.hasSigned = true;
+
+    // 更新界面
+    streakNum.innerText = state.streak;
+    signBtn.innerText = "今日已签到";
+    signBtn.classList.add('disabled');
+
+    // ★ 关键逻辑：如果签到后达到 3 天，触发彩蛋
+    if (state.streak === 3) {
+      setTimeout(() => {
+        overlay.classList.add('active'); // 显示庆祝
+      }, 400);
+    } else {
+      // 普通签到，1秒后收回
+      setTimeout(() => { togglePanel(false); }, 1000);
+    }
+  }
+
+  function closeCelebration() {
+    overlay.classList.remove('active');
+    // 奖励领完了，顺便把侧边栏也关掉
+    setTimeout(() => { togglePanel(false); }, 500);
+  }
+
+  // D. 事件绑定
+  toggleHandle.onclick = () => togglePanel();
+  signBtn.onclick = handleSignIn;
+  collectBtn.onclick = closeCelebration;
+
+  // 点击空白关闭侧栏
+  document.addEventListener('click', (e) => {
+    // 只有在面板打开，且没有点击面板内部，且没有点击庆祝弹窗时才关闭
+    if (isPanelOpen && 
+        !sidePanel.contains(e.target) && 
+        !overlay.contains(e.target)) {
+      togglePanel(false);
+    }
+  });
+
+})();
+</script>
+
+</body>
+</html>
