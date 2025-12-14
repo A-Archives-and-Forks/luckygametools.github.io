@@ -33,13 +33,80 @@ function copyEmail(thiz,email) {
     });
 }
 
+{
+  // 1. 获取库对象
+  const Tw = window.TWallpaper.default || window.TWallpaper;
+
+  // 2. 性能/分辨率优化 (可选)
+  if (Tw.prototype) {
+    Tw.prototype.width  = Math.floor(window.innerWidth  / 12);
+    Tw.prototype.height = Math.floor(window.innerHeight / 12);
+  }
+
+  // 3. 准备配置项
+  const options = {
+    fps: 60,
+    tails: 90,      // 粒子数量
+    animate: true,  // 开启初始动画
+    scrollAnimate: true,
+    colors: [
+      "#4183f1", "#5d3e1c", "#c9b3c0", "#c9a72c"
+    ],
+    pattern: {
+      image: "games.svg", 
+      background: "transparent",
+      blur: 0.3,
+      opacity: 0.6,
+      mask: false
+    }
+  };
+
+  // 4. 获取 DOM 元素
+  const container = document.querySelector(".twp");
+
+  // 【关键修复步骤】
+  // 这里的构造函数需要两个参数：(容器Element, 选项Object)
+  const tw = new Tw(container, options);
+
+  // 【关键修复步骤】
+  // 启动方法是 init()，不是 play()
+  tw.init(); 
+
+  // 窗口大小改变处理（防抖动 + 重新渲染）
+  let resizeTimer;
+
+  window.addEventListener('resize', () => {
+    // 防抖：拖动窗口过程中不执行，停下后执行
+    clearTimeout(resizeTimer);
+    
+    resizeTimer = setTimeout(() => {
+      console.log("窗口大小改变，正在重新渲染背景...");
+
+      // 1. 清空容器内容 (移除旧的 canvas)
+      // 这样不会导致页面闪烁，只会重绘背景
+      container.innerHTML = '';
+
+      // 2. 重新计算分辨率 (非常重要，否则新背景会变形或模糊)
+      if (Tw.prototype) {
+        Tw.prototype.width  = Math.floor(window.innerWidth  / 12);
+        Tw.prototype.height = Math.floor(window.innerHeight / 12);
+      }
+
+      // 3. 重新实例化并启动
+      // 注意：这里不需要 let/const 重新声明，或者用一个临时变量即可
+      const newTw = new Tw(container, options);
+      newTw.init();
+
+    }, 200); // 200毫秒延迟，响应比较快
+  });
+}
 
 document.addEventListener('DOMContentLoaded', function() {
     // Page loaded successfully
-    console.log('LuckyGameTools page loaded');
-	 if(document.getElementById('download')!=null){
+  console.log('LuckyGameTools page loaded');
+	if(document.getElementById('download')!=null){
 	    document.getElementById('download').href=downloadUrl;
-	  }
+	}
 	if(document.getElementById('download1')!=null){
 		document.getElementById('download1').href=downloadUrl1;
 	}
@@ -51,7 +118,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
 
-// 創建modal元素（如果頁面上還沒有）
+  // 創建modal元素（如果頁面上還沒有）
   let modal = document.getElementById('imageModal');
   if (!modal) {
     modal = document.createElement('div');
@@ -122,6 +189,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // 加入 footer 中
   footer.appendChild(linkContainer);
-
-
 });

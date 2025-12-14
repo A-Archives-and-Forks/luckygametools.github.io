@@ -28,10 +28,6 @@ html, body {
   flex-direction: column;
 }
 
-.content {
-  flex: 1;
-}
-
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -544,4 +540,56 @@ html, body {
   border-width: 6px 6px 0;
   border-style: solid;
   border-color: #ffffff transparent transparent;
+}
+
+
+/* 背景容器 */
+.twp {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* 强制 Canvas 铺满 */
+.twp canvas {
+  width: 100% !important;
+  height: 100% !important;
+  display: block;
+}
+
+/* 纹理层样式 (SVG) */
+.tw-pattern {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  
+  /* --- 修改开始 --- */
+  
+  /* 1. 允许平铺 (解决没铺满的问题) */
+  background-repeat: repeat !important;
+  
+  /* 2. 设置纹理的大小 (解决被拉伸/太大的问题) */
+  /* auto = 图片原始大小 */
+  /* 也可以写具体数值，比如 100px, 300px 等，数值越小纹理越密集 */
+  background-size: 400px !important; 
+  
+  /* 3. 起始对齐位置 */
+  background-position: top left;
+  
+  /* --- 修改结束 --- */
+  
+  /* 绑定库生成的变量 */
+  background-image: var(--tw-image);
+  background-color: var(--tw-background);
+  opacity: var(--tw-opacity);
+  filter: blur(var(--tw-blur));
+}
+
+/* 内容层 */
+.content {
+  position: relative;
+  z-index: 10;
+  padding: 40px;
+/*  text-shadow: 0 2px 8px rgba(0,0,0,0.6);*/
 }
