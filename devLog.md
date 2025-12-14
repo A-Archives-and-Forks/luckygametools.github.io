@@ -9,6 +9,10 @@ function googleTranslateElementInit() {
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer ></script>
 
 
+[2025-12-14]
+- [+] 优化DNS解析github文件 
+- [+] 在游戏列表加载时强化提示，关注游戏列表和刷新指引
+
 [2025-12-07]
 - [+] LuckyGameTools軟件裝會陸續開源中
 - [+] 第一彈：安裝包程序，原汁原味開源地址：https://github.com/luckygametools/installer.git
