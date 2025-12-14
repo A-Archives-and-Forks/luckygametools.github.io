@@ -9,7 +9,7 @@ function googleTranslateElementInit() {
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer ></script>
 
 
-[2025-12-14]
+[2025-12-14] 6.0.0.1 版本更新
 - [+] 优化DNS解析github文件 
 - [+] 在游戏列表加载时强化提示，关注游戏列表和刷新指引
 
