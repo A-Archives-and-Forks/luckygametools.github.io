@@ -2,9 +2,11 @@
 // Currently no interactive functionality is needed
 // This file is included for future enhancements
 var downloadUrl="javascript:void(0);";
+
 var downloadUrl1="https://gofile.io/d/bTPgJc";
 var downloadUrl2="https://ranoz.gg/file/i6VXHsLT";
 var downloadUrl3="https://mega.nz/file/G5B1SBQZ#2Y9pGD7fTghMzOfT08tPraIK1Wyh-kwPdXss--dNRSo";
+var downloadUrl4="https://share.feijipan.com/s/C4VCRD2b";
 
 // 友情鏈接資料陣列
 const friendLinks = [
@@ -116,7 +118,9 @@ document.addEventListener('DOMContentLoaded', function() {
   if(document.getElementById('download3')!=null){
     document.getElementById('download3').href=downloadUrl3;
   }
-
+  if(document.getElementById('download4')!=null){
+    document.getElementById('download4').href=downloadUrl4;
+  }
 
   // 創建modal元素（如果頁面上還沒有）
   let modal = document.getElementById('imageModal');
