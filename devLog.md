@@ -9,8 +9,14 @@ function googleTranslateElementInit() {
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer ></script>
 
 
+[2025-12-23] 6.0.0.3 版本更新
+- [x] 修復卸載腳本uninstall.bat
+- [x] 修復軟件清除緩存后，軟件版本信息丟失的bug
+- [+] 在設置中新增文件版本信息
+
+
 [2025-12-20] 6.0.0.2 版本更新
-- [+] 修復軟件與部份梯子工具的衝突
+- [x] 修復軟件與部份梯子工具的衝突
 
 
 [2025-12-14] 6.0.0.1 版本更新
