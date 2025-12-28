@@ -21,6 +21,11 @@ html, body {
   text-decoration: none;
 }
 
+.fan-groups img {
+    max-height: 260px;
+    width: auto;
+    height: 100%;
+}
 
 .wrapper {
   min-height: 100vh;
