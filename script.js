@@ -123,7 +123,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('download4').href=downloadUrl4;
   }
   if(document.getElementById('download5')!=null){
-    document.getElementById('download5').href=downloadUrl5;
+    document.getElementById('download5').href=downloadUrl;
   }
 
   // 創建modal元素（如果頁面上還沒有）
