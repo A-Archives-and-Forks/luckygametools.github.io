@@ -18,6 +18,9 @@ function googleTranslateElementInit() {
   gtag('config', 'G-9897WHQ9FH');
 </script>
 
+[2026-03-10] 6.0.2.0 版本更新
+- [x]修復部份加D加密遊戲激活后，重啟后steam提示啟動遊戲失敗 54 的問題，比如：生化危機9
+
 [2026-03-01] 6.0.1.0 版本更新
 - [x]新增steam遊戲啟動參數lgt= ,用于解決部份機器環境啟動遊戲失敗(錯誤代碼 xx)的問題，使用方法見最新的FAQ
 
