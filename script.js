@@ -7,7 +7,7 @@ var downloadUrl1="https://gofile.io/d/c4Chth";
 var downloadUrl2="https://ranoz.gg/file/YLjiLNzh";
 var downloadUrl3="https://mega.nz/file/blYBzTBS#v8E7WCbHPK4Xk_MIuhXx5ge4sjR1P85MfgqqO0I4CQ4";
 var downloadUrl4="https://share.feijipan.com/s/xB1xP6nU";
-var downloadUrl4="https://pan.xunlei.com/s/VOnMw7z6sJRTnLXvW6uJwTKxA1?pwd=ncg3";
+var downloadUrl5="https://pan.xunlei.com/s/VOnMw7z6sJRTnLXvW6uJwTKxA1?pwd=ncg3";
 
 // 友情鏈接資料陣列
 const friendLinks = [
