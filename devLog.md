@@ -18,7 +18,7 @@ function googleTranslateElementInit() {
   gtag('config', 'G-9897WHQ9FH');
 </script>
 
-[2026-03-10] 6.0.2.0 版本更新
+[2026-03-15] 6.0.2.0 版本更新
 - [x]优化部分环节Steam加载问题
 - [x]限制开屏动画最多持续30秒
 - [x]软件左上解增加权限标识
