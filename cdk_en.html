@@ -8,7 +8,7 @@
     <meta name="keywords" content="steam,steam unlocked, free,luckygametools, steamtools,patch,Free Forever,CDK,bot,robot,Guide">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="preload" as="style" crossorigin
         href="https://fontsapi.zeoseven.com/532/main/result.css"
         onload="this.rel='stylesheet'"
@@ -37,9 +37,60 @@
 </head>
 <body>
 	<div id="google_translate_element" class="floating-top-left"></div>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <a href="/" class="navbar-brand">
+            <div class="logo-icon">🎮</div>
+            <span>LuckyGameTools</span>
+        </a>
+
+        <button class="navbar-toggle" id="navbarToggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <div class="navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="README_en.html" class="nav-link">
+                        <span class="nav-icon"><svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg></span> Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="README_en.html" class="nav-link">
+                        <span class="nav-icon"><svg viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg></span> Download
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="qa_en.html" class="nav-link">
+                        <span class="nav-icon"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/></svg></span> FAQ
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="game_update.html" class="nav-link">
+                        <span class="nav-icon"><svg viewBox="0 0 24 24"><path d="M21 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-10 7H8v3H6v-3H3v-2h3V8h2v3h3v2zm4.5 2c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4-3c-.83 0-1.5-.67-1.5-1.5S18.67 9 19.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg></span> Games
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="cdk_en.html" class="nav-link active">
+                        <span class="nav-icon"><svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z"/></svg></span> CDK
+                    </a>
+                </li>
+            </ul>
+
+            <div class="lang-switcher">
+                <a href="cdk_zh.html" class="lang-toggle" id="langToggle" title="Switch language">
+                    <span class="lang-toggle-slider"></span>
+                    <span class="lang-toggle-option en">EN</span>
+                    <span class="lang-toggle-option zh">中</span>
+                </a>
+            </div>
+        </div>
+    </nav>
 
     <div class="twp"></div>
-    <div class="container content">
+    <div class="container content main-content">
         <!-- 頁首區域 -->
         <header class="header">
             <h1 class="logo"><a href="/" class="no-underline">LuckyGameTools</a></h1>            

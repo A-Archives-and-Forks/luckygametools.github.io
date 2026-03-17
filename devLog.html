@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky Game Tools - STEAM免費萬能工具 - 開發日誌(steam unlocked)</title>
+    <meta name="description" content="luckygametools 開發日誌|steam unlocked">
+    <meta name="keywords" content="steam,steam unlocked, free,luckygametools,開發日誌>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet"> -->
+    <link rel="preload" as="style" crossorigin
+        href="https://fontsapi.zeoseven.com/532/main/result.css"
+        onload="this.rel='stylesheet'"
+        onerror="this.href='https://fontsapi-storage.zeoseven.com/532/main/result.css'" />
+    <noscript>
+        <link rel="stylesheet" href="https://fontsapi.zeoseven.com/532/main/result.css" />
+    </noscript>
+    <style>
+        body {
+            font-family: "NanoDyongChyangSong CN 24";
+            font-weight: normal;
+        }
+    </style>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7261994485465423" crossorigin="anonymous"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9897WHQ9FH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-9897WHQ9FH');
+    </script>
+
+    <style>
+        /* DevLog Timeline Styles */
+        .timeline {
+            position: relative;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(180deg, var(--primary) 0%, var(--primary-dark) 100%);
+            border-radius: 2px;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 40px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .timeline-content {
+            position: relative;
+            width: 45%;
+            background: var(--bg-card);
+            backdrop-filter: blur(20px) saturate(180%);
+            border-radius: var(--radius-lg);
+            padding: 28px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: var(--shadow-md);
+            transition: all var(--transition-normal);
+        }
+
+        .timeline-content:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+            background: var(--bg-card-hover);
+        }
+
+        .timeline-item:nth-child(odd) .timeline-content {
+            margin-right: auto;
+            margin-left: 0;
+        }
+
+        .timeline-item:nth-child(even) .timeline-content {
+            margin-left: auto;
+            margin-right: 0;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 20px;
+            height: 20px;
+            background: var(--gradient-primary);
+            border-radius: 50%;
+            box-shadow: 0 0 20px rgba(99, 102, 241, 0.5);
+            z-index: 10;
+            top: 30px;
+        }
+
+        .timeline-dot::after {
+            content: '';
+            position: absolute;
+            inset: -6px;
+            border: 2px solid var(--primary);
+            border-radius: 50%;
+            opacity: 0.5;
+        }
+
+        .timeline-date {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.2), rgba(139, 92, 246, 0.1));
+            color: var(--primary-light);
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+            border: 1px solid rgba(99, 102, 241, 0.2);
+        }
+
+        .timeline-date::before {
+            content: '📅';
+        }
+
+        .timeline-version {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .timeline-version::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background: var(--accent);
+            border-radius: 50%;
+            box-shadow: 0 0 10px var(--accent-glow);
+        }
+
+        .timeline-changes {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .timeline-changes li {
+            position: relative;
+            padding-left: 28px;
+            margin-bottom: 12px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+            font-size: 0.95rem;
+        }
+
+        .timeline-changes li:last-child {
+            margin-bottom: 0;
+        }
+
+        .timeline-changes li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 6px;
+            width: 18px;
+            height: 18px;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+        }
+
+        .timeline-changes li.added::before {
+            content: '+';
+            background: rgba(16, 185, 129, 0.2);
+            color: var(--success);
+        }
+
+        .timeline-changes li.fixed::before {
+            content: '✓';
+            background: rgba(59, 130, 246, 0.2);
+            color: var(--info);
+        }
+
+        .timeline-changes li.changed::before {
+            content: '⟳';
+            background: rgba(245, 158, 11, 0.2);
+            color: var(--warning);
+        }
+
+        .timeline-changes li.removed::before {
+            content: '-';
+            background: rgba(239, 68, 68, 0.2);
+            color: var(--danger);
+        }
+
+        /* Google Translate styling */
+        .translate-wrapper {
+            position: fixed;
+            top: 90px;
+            right: 20px;
+            z-index: 100;
+            background: var(--bg-card);
+            backdrop-filter: blur(10px);
+            padding: 10px 16px;
+            border-radius: var(--radius-md);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: var(--shadow-md);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .timeline::before {
+                left: 20px;
+            }
+
+            .timeline-dot {
+                left: 20px;
+            }
+
+            .timeline-content {
+                width: calc(100% - 60px);
+                margin-left: 50px !important;
+                margin-right: 0 !important;
+                padding: 20px;
+            }
+
+            .timeline-date {
+                font-size: 0.8rem;
+            }
+
+            .timeline-version {
+                font-size: 1.1rem;
+            }
+
+            .translate-wrapper {
+                top: 80px;
+                right: 10px;
+                left: 10px;
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+        /* Loading animation for timeline items */
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .timeline-item {
+            animation: slideInUp 0.5s ease forwards;
+            opacity: 0;
+        }
+
+        .timeline-item:nth-child(1) { animation-delay: 0.1s; }
+        .timeline-item:nth-child(2) { animation-delay: 0.2s; }
+        .timeline-item:nth-child(3) { animation-delay: 0.3s; }
+        .timeline-item:nth-child(4) { animation-delay: 0.4s; }
+        .timeline-item:nth-child(5) { animation-delay: 0.5s; }
+        .timeline-item:nth-child(n+6) { animation-delay: 0.6s; }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <a href="README_zh.html" class="navbar-brand">
+            <div class="logo-icon">🎮</div>
+            <span>LuckyGameTools</span>
+        </a>
+
+        <button class="navbar-toggle" id="navbarToggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <div class="navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="README_zh.html" class="nav-link">
+                        <span class="nav-icon"><svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg></span> 首頁
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="README_zh.html#download" class="nav-link">
+                        <span class="nav-icon"><svg viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg></span> 下載
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="qa_zh.html" class="nav-link">
+                        <span class="nav-icon"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/></svg></span> 常見問題
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="game_update.html" class="nav-link">
+                        <span class="nav-icon"><svg viewBox="0 0 24 24"><path d="M21 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-10 7H8v3H6v-3H3v-2h3V8h2v3h3v2zm4.5 2c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4-3c-.83 0-1.5-.67-1.5-1.5S18.67 9 19.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg></span> 遊戲庫
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="devLog.html" class="nav-link active">
+                        <span class="nav-icon"><svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg></span> 開發日誌
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <!-- Google Translate -->
+    <div class="translate-wrapper">
+        <div id="google_translate_element"></div>
+    </div>
+    <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'zh-TW'}, 'google_translate_element');
+    }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer></script>
+
+    <div class="twp"></div>
+    <div class="container content main-content">
+        <!-- Header -->
+        <header class="header">
+            <h1 class="logo">開發日誌</h1>
+            <p class="subtitle">LuckyGameTools 版本更新記錄</p>
+        </header>
+
+        <!-- Timeline -->
+        <div class="timeline">
+            <!-- v6.0.3.0 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2026-03-15</div>
+                    <div class="timeline-version">6.0.3.0 版本更新</div>
+                    <ul class="timeline-changes">
+                        <li class="fixed">優化部分環節Steam加載問題</li>
+                        <li class="fixed">限制開屏動畫最多持續30秒</li>
+                        <li class="added">軟件左上角增加權限標識</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- v6.0.2.0 - 2026-03-10 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2026-03-10</div>
+                    <div class="timeline-version">6.0.2.0 版本更新</div>
+                    <ul class="timeline-changes">
+                        <li class="fixed">修復部份加D加密遊戲激活后，重啟后steam提示啟動遊戲失敗 54 的問題，比如：生化危機9</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- v6.0.1.0 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2026-03-01</div>
+                    <div class="timeline-version">6.0.1.0 版本更新</div>
+                    <ul class="timeline-changes">
+                        <li class="added">新增steam遊戲啟動參數lgt= ,用于解決部份機器環境啟動遊戲失敗(錯誤代碼 xx)的問題，使用方法見最新的FAQ</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- v6.0.0.3 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2025-12-23</div>
+                    <div class="timeline-version">6.0.0.3 版本更新</div>
+                    <ul class="timeline-changes">
+                        <li class="fixed">修復卸載腳本uninstall.bat</li>
+                        <li class="fixed">修復軟件清除緩存后，軟件版本信息丟失的bug</li>
+                        <li class="added">在設置中新增文件版本信息</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- v6.0.0.2 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2025-12-20</div>
+                    <div class="timeline-version">6.0.0.2 版本更新</div>
+                    <ul class="timeline-changes">
+                        <li class="fixed">修復軟件與部份梯子工具的衝突</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- v6.0.0.1 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2025-12-14</div>
+                    <div class="timeline-version">6.0.0.1 版本更新</div>
+                    <ul class="timeline-changes">
+                        <li class="added">优化DNS解析github文件</li>
+                        <li class="added">在游戏列表加载时强化提示，关注游戏列表和刷新指引</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 2025-12-07 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2025-12-07</div>
+                    <div class="timeline-version">開源計劃</div>
+                    <ul class="timeline-changes">
+                        <li class="added">LuckyGameTools軟件裝會陸續開源中</li>
+                        <li class="added">第一彈：安裝包程序，原汁原味開源地址：<a href="https://github.com/luckygametools/installer.git" target="_blank" style="color: var(--primary-light);">github.com/luckygametools/installer</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- v6.0.0.0 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2025-11-30</div>
+                    <div class="timeline-version">6.0.0.0 版本更新</div>
+                    <ul class="timeline-changes">
+                        <li class="fixed">恢復gitlab資源正常訪問</li>
+                        <li class="fixed">屏蔽https://api.steampowered.com/ISteamApps/GetAppList/v2/ 接口的無效請求</li>
+                        <li class="fixed">優化UI遊戲列表頁面加载空白的情況</li>
+                        <li class="fixed">增加大文件清單下載是請求等待時長</li>
+                        <li class="fixed">修復網絡異常的情況下，點擊設置崩潰閃退的bug</li>
+                        <li class="added">適配未來的64位steam</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- v5.0.2.1 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2025-11-28</div>
+                    <div class="timeline-version">5.0.2.1 版本更新</div>
+                    <ul class="timeline-changes">
+                        <li class="fixed">臨時優化gitlab故障，清單入庫網絡異常的情況</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- v5.0.2.0 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2025-11-22</div>
+                    <div class="timeline-version">5.0.2.0 版本更新</div>
+                    <ul class="timeline-changes">
+                        <li class="fixed">修復Steam調整導致創意工坊偶爾無法正常使用的問題</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- v5.0.1.3 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2025-11-14</div>
+                    <div class="timeline-version">5.0.1.3 版本更新</div>
+                    <ul class="timeline-changes">
+                        <li class="fixed">修復https://api.steampowered.com/ISteamApps/GetAppList/v2/ 接口失效引發的kit程序崩潰問題</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- v5.0.0.3 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2025-10-18</div>
+                    <div class="timeline-version">5.0.0.3 版本更新</div>
+                    <ul class="timeline-changes">
+                        <li class="changed">去除工具箱中，權限為0時不能生成lgt神秘代碼的限制，并解除此狀態下生成神秘代碼的驗證</li>
+                        <li class="fixed">兼容部份遊戲遊戲啟動后預設配置不生效的問題，(出現此問題可以反饋給作者配合解決)</li>
+                        <li class="fixed">修正awth1字樣為auth1</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- v5.0.0.2 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2025-09-16</div>
+                    <div class="timeline-version">5.0.0.2 版本更新</div>
+                    <ul class="timeline-changes">
+                        <li class="changed">將D加密遊戲彈窗提示語國際化</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- v5.0.0.1 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2025-09-14</div>
+                    <div class="timeline-version">5.0.0.1 版本更新</div>
+                    <ul class="timeline-changes">
+                        <li class="added">工具箱添加 生成 lot 代碼（用于需要在線驗證的單機遊戲）</li>
+                        <li class="added">工具箱添加 生成 lgt 代碼 (用于D加密遊戲的激活)</li>
+                        <li class="fixed">移除遊戲列表中18 or net error圖片</li>
+                        <li class="fixed">優化遊戲資料庫異步請求時，自動放棄官方store已下架隱藏的遊戲</li>
+                        <li class="added">軟件新版本安裝程序在安裝中默認開啟展示隱藏的18+遊戲</li>
+                        <li class="changed">升級了軟件所依賴的開源依賴，提升了一點點性能</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- v4.0.3.2 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2025-08-09</div>
+                    <div class="timeline-version">4.0.3.2 版本更新</div>
+                    <ul class="timeline-changes">
+                        <li class="changed">軟件默認跟隨系統代理</li>
+                        <li class="fixed">修復解除安裝腳本清理入庫數據文件</li>
+                        <li class="fixed">修復部份D加密遊戲使用lot指令不成功的bug</li>
+                        <li class="fixed">修復部份遊戲入庫時錯誤提示安裝破解腳本的BUG</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- v4.0.3.1 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2025-07-20</div>
+                    <div class="timeline-version">4.0.3.1 版本更新</div>
+                    <ul class="timeline-changes">
+                        <li class="fixed">修復上個版本引起的部分帶dlc的遊戲下載問題</li>
+                        <li class="fixed">修復軟件自動更新的BUG</li>
+                        <li class="changed">優化權限獲取邏輯</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- v4.0.3.0 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2025-07-14</div>
+                    <div class="timeline-version">4.0.3.0 版本更新</div>
+                    <ul class="timeline-changes">
+                        <li class="added">新功能，支持 steam 創意工坊 的下載了，目前已通的遊戲是： 小紅車，後續會持續開通其它的遊戲</li>
+                        <li class="changed">集成7zip，降低了安裝包的體積，方便大家快速下載安裝</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- v4.0.2.0 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2025-07-05</div>
+                    <div class="timeline-version">4.0.2.0 版本更新</div>
+                    <ul class="timeline-changes">
+                        <li class="added">支持了Steam成就系統</li>
+                        <li class="changed">優化了鎖定steam清單，steam不再提示LuckyGameTools軟件導入的遊戲更新</li>
+                        <li class="changed">默認只對 自動更新腳本 更新的遊戲附加成就系統 ，需要立馬使用成就系統的遊戲appid可以告訴作者添加</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- v4.0.1.2 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2025-06-30</div>
+                    <div class="timeline-version">4.0.1.2 版本更新</div>
+                    <ul class="timeline-changes">
+                        <li class="changed">lot神秘代碼完全兼容steam上需要聯網驗證的單機遊戲，（eg：英雄连3、真人快打、夜族崛起、微軟飛行模擬器、美女，请别影响我成仙等 ）</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- v4.0.1.1 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2025-06-28</div>
+                    <div class="timeline-version">4.0.1.1 版本更新</div>
+                    <ul class="timeline-changes">
+                        <li class="fixed">兼容部份遊戲啟動時會強制較驗Steam.exe進程名字 （eg：天命奇御二 、 美女，请别影响我成仙）</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- v4.0.1.0 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2025-06-26</div>
+                    <div class="timeline-version">4.0.1.0 版本更新</div>
+                    <ul class="timeline-changes">
+                        <li class="added">給軟件添加了插件功能，支持擴展一些lot代碼也繞不過的單機遊戲 eg:撈女</li>
+                        <li class="changed">優化 steam強化模式下：純淨模式的靈敏度</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- v4.0.0.8 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2025-06-21</div>
+                    <div class="timeline-version">4.0.0.8 版本更新</div>
+                    <ul class="timeline-changes">
+                        <li class="added">添加對于需要補丁的遊戲在導入時彈窗提醒</li>
+                        <li class="fixed">修復新版本提示時消息不存在的bug</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- v4.0.0.7 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2025-06-19</div>
+                    <div class="timeline-version">4.0.0.7 版本更新</div>
+                    <ul class="timeline-changes">
+                        <li class="fixed">修復聯機時誤處理了未導入的遊戲</li>
+                        <li class="fixed">修復已導入遊戲中包含無詳情時，無法篩查的功能</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- v4.0.0.6 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2025-06-14</div>
+                    <div class="timeline-version">4.0.0.6 版本更新</div>
+                    <ul class="timeline-changes">
+                        <li class="fixed">應該解決了 最新的win11 下defender 不再被誤殺了</li>
+                        <li class="fixed">修复 小红车 steam 连接错误的提示</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- v4.0.0.5 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2025-06-08</div>
+                    <div class="timeline-version">4.0.0.5 版本更新</div>
+                    <ul class="timeline-changes">
+                        <li class="fixed">修復部分聯機遊戲無法切換語言的問題，但修正為語言默認和軟件端選擇的語言保持一至</li>
+                        <li class="fixed">修復部份聯機遊戲無法彈窗出邀請好友的界面,使用幸運參數=luckygametools=0 (eg:Sons of The Forest )</li>
+                        <li class="fixed">修復新版本提示是點消息是空的bug</li>
+                        <li class="fixed">修復導入清單時，可能會引起cpu誤占用的bug</li>
+                        <li class="changed">修正寓管理員權限啟動時默認不全局加速steam</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- v4.0.0.4 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2025-06-05</div>
+                    <div class="timeline-version">4.0.0.4 版本更新</div>
+                    <ul class="timeline-changes">
+                        <li class="added">DRM遊戲圖片框右上角增加醒目的"DRM"字樣</li>
+                        <li class="changed">強化關機處理事件</li>
+                        <li class="fixed">修復左側遊戲過多時最下方的遊戲無法滾出展示的bug</li>
+                        <li class="changed">縮小遊戲圖片加載失敗時默認的18禁圖片的尺寸</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- v4.0.0.3 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2025-05-29</div>
+                    <div class="timeline-version">4.0.0.3 版本更新</div>
+                    <ul class="timeline-changes">
+                        <li class="changed">默認不自動播放遊戲視頻</li>
+                        <li class="added">添加監聽關機事件，關機時自動退出程序</li>
+                        <li class="changed">優化遊戲列表加載過程</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- v4.0.0.2 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2025-05-17</div>
+                    <div class="timeline-version">4.0.0.2 版本更新</div>
+                    <ul class="timeline-changes">
+                        <li class="added">遊戲搜索支持tag</li>
+                        <li class="added">左側已導入遊戲，支持過濾</li>
+                        <li class="added">工具箱導出遊戲時，如果軟件中已有的遊戲，導出按鈕背景會變黃提示</li>
+                        <li class="changed">優化網絡抖動時警告提示</li>
+                        <li class="fixed">修復已導入遊戲不再出現導入按鈕</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- v4.0.0.1 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2025-05-17</div>
+                    <div class="timeline-version">4.0.0.1 版本更新</div>
+                    <ul class="timeline-changes">
+                        <li class="fixed">解決重大BUG,UI界面從此不再卡頓</li>
+                        <li class="added">將程序全面國際化,支持非常多國家的語言(全面擁抱Steam支持的語言)</li>
+                        <li class="added">對于特殊遊戲只能從桌標啟動Steam.exe彈窗提示</li>
+                        <li class="added">添加程序卸載腳本在安裝目錄下</li>
+                        <li class="added">適配更新小分辮率</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- v3.0.2.2 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2025-05-10</div>
+                    <div class="timeline-version">3.0.2.2 版本更新</div>
+                    <ul class="timeline-changes">
+                        <li class="changed">將消息通知自動彈出</li>
+                        <li class="added">支持steamdeck掌機最小分辨率1280*768</li>
+                        <li class="changed">優化部份按鈕佈局和描述</li>
+                        <li class="added">對于需要從luckygametools官網下載補丁的遊戲在導入時彈框提示</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- v3.0.2.1 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2025-04-29</div>
+                    <div class="timeline-version">3.0.2.1 版本更新</div>
+                    <ul class="timeline-changes">
+                        <li class="added">新增系統消息提示窗口,方便重要消息通知</li>
+                        <li class="fixed">優化自動更新下載空包數據，導致軟件無法更新使用的問題</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- v3.0.2.0 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2025-04-26</div>
+                    <div class="timeline-version">3.0.2.0 版本更新</div>
+                    <ul class="timeline-changes">
+                        <li class="changed">進一步符合windows開發規範，進一步保障Windows defender誤殺問題</li>
+                        <li class="changed">優化掉強制安裝CA證書</li>
+                        <li class="fixed">修復導入遊戲，重啟后無效的BUG</li>
+                        <li class="changed">去遊戲加載時的閃爍動畫,減少CPU使用</li>
+                        <li class="changed">優化其它若干問題</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- v3.0.1.0 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2025-04-17</div>
+                    <div class="timeline-version">3.0.1.0 版本更新</div>
+                    <ul class="timeline-changes">
+                        <li class="changed">規範使用windows api程序使用姿勢,作者本機測試，不會觸發Windows defender誤殺</li>
+                        <li class="changed">優化線程并發卡死問題</li>
+                        <li class="fixed">優化UI界面遊戲列表偶爾不展示的問題</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- v3.0.0.4 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2025-04-17</div>
+                    <div class="timeline-version">3.0.0.4 版本更新</div>
+                    <ul class="timeline-changes">
+                        <li class="fixed">修復480聯機遊戲 的存檔問題</li>
+                        <li class="changed">優化核心文件免殺defender</li>
+                        <li class="changed">優化部份文件大小</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- v3.0.0.3 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2025-04-15</div>
+                    <div class="timeline-version">3.0.0.3 版本更新</div>
+                    <ul class="timeline-changes">
+                        <li class="added">給大家帶來了全新的SpaceWar 480聯機引擎，無需任何第三方聯機補丁，支持99.99%SpaceWar 480聯機遊戲</li>
+                        <li class="changed">優化其它性能問題等等</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- v3.0.0.2 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2025-04-13</div>
+                    <div class="timeline-version">3.0.0.2 版本更新</div>
+                    <ul class="timeline-changes">
+                        <li class="changed">優化當遊戲列表網絡查詢失敗時，使用本地緩存的遊戲列表</li>
+                        <li class="added">導入的清單對于特定遊戲可以解鎖DLC</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- v3.0.0.1 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2025-04-13</div>
+                    <div class="timeline-version">3.0.0.1 版本更新</div>
+                    <ul class="timeline-changes">
+                        <li class="fixed">修復添加-luckygametools啟動遊戲時丟失其它參數的BUG</li>
+                        <li class="fixed">Patch遊戲工具DSX(1812620),完全可用</li>
+                        <li class="added">開機自啟動添加任務計劃姿勢</li>
+                        <li class="changed">優化遊戲名稱搜索功能</li>
+                        <li class="added">以需要管理員權限才能正常進入遊戲的遊戲在啟動時，彈窗提醒</li>
+                        <li class="added">使用新字體美化了界面字體</li>
+                        <li class="added">重大更新：：：：：添加清單導出和導入功能：：：：：：</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- v2.0.3.2 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2025-03-31</div>
+                    <div class="timeline-version">2.0.3.2 版本更新</div>
+                    <ul class="timeline-changes">
+                        <li class="added">遊戲列表界面展示出D加密遊戲標示</li>
+                        <li class="fixed">修復遊戲列表默認是中文的BUG</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- v2.0.3.1 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2025-03-28</div>
+                    <div class="timeline-version">2.0.3.1 版本更新</div>
+                    <ul class="timeline-changes">
+                        <li class="added">新增 《工具箱》版本，目前版本推出，一鍵離線 Uplay的功能</li>
+                        <li class="added">新增 部份單機遊戲需要在線驗證時進不去的 繞過方式，具體使用姿勢說過官網或群消息</li>
+                        <li class="changed">優化遊戲列表在網絡限制的情況下可以使用本地緩存的列表</li>
+                        <li class="fixed">修復部份dns解析bug</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- v2.0.3.0 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2025-03-22</div>
+                    <div class="timeline-version">2.0.3.0 版本更新</div>
+                    <ul class="timeline-changes">
+                        <li class="fixed">優化hosts文件在程序異常退出時未能正常恢復，在程序下次啟動時修正</li>
+                        <li class="changed">減少程序啟動時UI界面的動畫效果，可有效減少CPU佔用(這個破cef框架太老了導致的)</li>
+                        <li class="added">自動添加聯機啟動遊戲480參數: -luckygametools(<a href="https://github.com/luckygametools/steam-cfg/blob/main/arg-luckygametools" target="_blank" style="color: var(--primary-light);">已收錄的遊戲列表</a>)</li>
+                        <li class="changed">優化日誌自動清理，只保存最近兩天的</li>
+                        <li class="fixed">修復hid steam強化模式</li>
+                        <li class="fixed">修復移除入庫后重啟steam，遊戲還在的BUG</li>
+                        <li class="fixed">修復UI界面失去焦點時停止動畫的bug</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Start -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2025-03-19</div>
+                    <div class="timeline-version">開始記錄開發日誌</div>
+                    <ul class="timeline-changes">
+                        <li class="added">LuckyGameTools 正式開始記錄版本更新歷史</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>© 2025 LuckyGameTools - 持續更新中</p>
+            <p style="margin-top: 10px;">如有問題請通過 Telegram 聯繫作者</p>
+        </footer>
+    </div>
+
+    <script src="twallpaper.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

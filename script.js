@@ -53,13 +53,13 @@ function copyEmail(thiz,email) {
     animate: true,  // 开启初始动画
     scrollAnimate: true,
     colors: [
-      "#4183f1", "#5d3e1c", "#c9b3c0", "#c9a72c"
+      "#6366f1", "#8b5cf6", "#ec4899", "#f59e0b"
     ],
     pattern: {
-      image: "games.svg", 
+      image: "games.svg",
       background: "transparent",
-      blur: 0.3,
-      opacity: 0.6,
+      blur: 0.5,
+      opacity: 0.4,
       mask: false
     }
   };
@@ -197,4 +197,34 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // 加入 footer 中
   footer.appendChild(linkContainer);
+
+  {
+    // Navbar scroll effect
+      const navbar = document.getElementById('navbar');
+      window.addEventListener('scroll', () => {
+          if (window.scrollY > 50) {
+              navbar.classList.add('scrolled');
+          } else {
+              navbar.classList.remove('scrolled');
+          }
+      });
+
+      // Mobile menu toggle
+      const navbarToggle = document.getElementById('navbarToggle');
+      const navbarCollapse = document.getElementById('navbarCollapse');
+
+      navbarToggle.addEventListener('click', () => {
+          navbarToggle.classList.toggle('active');
+          navbarCollapse.classList.toggle('active');
+      });
+
+      // Close mobile menu when clicking on a link
+      document.querySelectorAll('.nav-link').forEach(link => {
+          link.addEventListener('click', () => {
+              navbarToggle.classList.remove('active');
+              navbarCollapse.classList.remove('active');
+          });
+      });
+  }
+        
 });

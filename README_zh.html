@@ -9,13 +9,13 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="styles.css">
     <!-- <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet"> -->
-	<link rel="preload" as="style" crossorigin
-	    href="https://fontsapi.zeoseven.com/532/main/result.css"
-	    onload="this.rel='stylesheet'"
-	    onerror="this.href='https://fontsapi-storage.zeoseven.com/532/main/result.css'" />
-	<noscript>
-	    <link rel="stylesheet" href="https://fontsapi.zeoseven.com/532/main/result.css" />
-	</noscript>
+    <link rel="preload" as="style" crossorigin
+        href="https://fontsapi.zeoseven.com/532/main/result.css"
+        onload="this.rel='stylesheet'"
+        onerror="this.href='https://fontsapi-storage.zeoseven.com/532/main/result.css'" />
+    <noscript>
+        <link rel="stylesheet" href="https://fontsapi.zeoseven.com/532/main/result.css" />
+    </noscript>
 	<style>
 	    body {
 	        font-family: "NanoDyongChyangSong CN 24";
@@ -30,26 +30,76 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-9897WHQ9FH');
     </script>
-
 </head>
 <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="navbar-brand">
+            <div class="logo-icon">🎮</div>
+            <span>LuckyGameTools</span>
+        </a>
 
-	<div class="contact-links floating-btn-right">
-		<a href="qa_zh.html" target="_blank" class="contact-btn qa-zh">💬常见问题</a>
-		<a href="game_update.html" target="_blank" class="contact-btn qa-en">🎮 遊戲列表</a>
-	</div>
+        <button class="navbar-toggle" id="navbarToggle" aria-label="切換導航">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <div class="navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="README_zh.html" class="nav-link active">
+                        <span class="nav-icon"><svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg></span> 首頁
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="README_zh.html#download" class="nav-link">
+                        <span class="nav-icon"><svg viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg></span> 下載
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="qa_zh.html" class="nav-link">
+                        <span class="nav-icon"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/></svg></span> 常見問題
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="game_update.html" class="nav-link">
+                        <span class="nav-icon"><svg viewBox="0 0 24 24"><path d="M21 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-10 7H8v3H6v-3H3v-2h3V8h2v3h3v2zm4.5 2c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4-3c-.83 0-1.5-.67-1.5-1.5S18.67 9 19.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg></span> 遊戲列表
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="devLog.html" class="nav-link">
+                        <span class="nav-icon"><svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg></span> 開發日誌
+                    </a>
+                </li>
+            </ul>
+
+            <div class="lang-switcher">
+                <a href="README_en.html" class="lang-toggle active" id="langToggle" title="Switch language">
+                    <span class="lang-toggle-slider"></span>
+                    <span class="lang-toggle-option en">EN</span>
+                    <span class="lang-toggle-option zh">中</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Animated Background -->
     <div class="twp"></div>
-    <div class="container content">
-        <!-- 頁首區域 -->
+
+    <!-- Main Content -->
+    <div class="container content main-content">
+
+        <!-- Header -->
         <header class="header">
-            <h1 class="logo"><a href="/" class="no-underline">LuckyGameTools</a></h1>
+            <div class="badge">永久免費</div>
+            <h1 class="logo"><a href="README_zh.html" style="text-decoration: none; color: inherit;">LuckyGameTools</a></h1>
             <p class="subtitle">享受高質量的遊戲服務 - 永久免費</p>
-            
+
             <div class="contact-links">
-                <a href="https://t.me/luckygametools" target="_blank" class="contact-btn telegram">電報聊天群</a>
+                <a href="https://t.me/luckygametools" target="_blank" class="contact-btn telegram">電報群</a>
                 <a href="https://t.me/luckygametools2" target="_blank" class="contact-btn telegram">訂閱公告</a>
                 <a href="https://discord.gg/X4MTpDbcpT" target="_blank" class="contact-btn discord">Discord</a>
                 <a href="https://www.youtube.com/@GameToolsLucky" target="_blank" class="contact-btn youtube">Youtube</a>
@@ -71,7 +121,7 @@
         <!-- 安全聲明 -->
         <section class="section">
             <div class="security-info">
-                <h2>🛡️ 安全聲明</h2>
+            <h2>🛡️ 安全聲明</h2>
                 <p>本軟體為純本地綠色安全軟體，無需管理員權限就可正常使用（加速器功能除外）</p>
                 <p>不會有用戶登錄等功能，不存在上報收集用戶任何隱私信息行為</p>
                 <p>沒有服務器，歡迎各路大神前來檢閱(個人作品，沒錢養服務器，換句話說:服務永久有效)</p>
@@ -80,16 +130,16 @@
                 <p>建議大家小號體驗，有經濟實力的請支持正版</p>
 				<h2></h2>
                 <h3>安全檢測報告</h3>
-				<div style="text-align: center;" class="contact-links">
-					<a href="https://www.virscan.org/report/6f6663f0356e0122fc6ef6ab6be22c07f25d54558d18010a3f8895f872165d08" target="_blank" class="contact-btn safe-button"><strong>Virscan</strong></a>
+            <div style="text-align: center;" class="contact-links">
+                <a href="https://www.virscan.org/report/6f6663f0356e0122fc6ef6ab6be22c07f25d54558d18010a3f8895f872165d08" target="_blank" class="contact-btn safe-button"><strong>Virscan</strong></a>
 
-					<a href="https://www.virustotal.com/gui/file-analysis/NjBiOTI5YjlmZWQ2Y2YzM2ViZTBlZTQyM2FlMGNhMTA6MTc2MzgwMTgzNg==" target="_blank" class="contact-btn safe-button"><strong>Virustotal</strong></a>
+                <a href="https://www.virustotal.com/gui/file-analysis/NjBiOTI5YjlmZWQ2Y2YzM2ViZTBlZTQyM2FlMGNhMTA6MTc2MzgwMTgzNg==" target="_blank" class="contact-btn safe-button"><strong>Virustotal</strong></a>
 
-					<a href="https://sandbox.ti.qianxin.com/sandbox/page/detail?type=file&id=7892007c991b58c96dd367828c70e480712e6ccb" target="_blank" class="contact-btn safe-button"><strong>奇安信</strong></a>
+                <a href="https://sandbox.ti.qianxin.com/sandbox/page/detail?type=file&id=7892007c991b58c96dd367828c70e480712e6ccb" target="_blank" class="contact-btn safe-button"><strong>奇安信</strong></a>
 				  
-				</div>
-            
-                <div class="warning">
+            </div>
+
+            <div class="warning">
                     <strong>Note:</strong> 我们的软件可以在Windows Defender、火绒、卡巴斯基等殺毒软件下运行
                 </div>
             </div>
@@ -100,16 +150,16 @@
             <div style="text-align: center;">
                 <div class="download-wrapper">
                     <a id="download5" href="javascript:void(0);" class="download-btn">迅雷网盘下載(速度快!)</a>
-                      <div class="qr-box">
+                    <div class="qr-box">
                         <img src="china_download_xl.jpg" alt="大陸網盤下載">
-                      </div>
+                    </div>
                 </div>
-				<div class="download-wrapper">
+                <div class="download-wrapper">
 					<a id="download" href="javascript:void(0);" class="download-btn">夸克網盤下載(速度快!)</a>
-					  <div class="qr-box">
+                    <div class="qr-box">
 						<img src="china_download.jpg" alt="大陸網盤下載">
-					  </div>
-				</div>
+                    </div>
+                </div>
 				<a id="download4" href="https://share.feijipan.com/s/C4VCRD2b" target="_blank" class="download-btn">小飛機網盤下載</a>
                 <a href="https://raw.githubusercontent.com/luckygametools/steam-cfg/main/LuckyGameToolsInstaller.exe" target="_blank" class="download-btn">最新安裝包</a>
 				<!--
@@ -123,12 +173,12 @@
                 <a id="download3" href="https://mega.nz/file/Xp4jTbqa#T_CJyo6XD23tQ2Fa3iCFg0jvEMcmHfFibvRgQ_U1GZw" target="_blank" class="download-btn">備用下載3</a>
 				-->
             </div>
-            
+
             <div class="warning">
                 <strong>安裝說明：</strong> 軟體的安裝界面寫的是"安裝程序"，其實只是個解壓程序，放心使用，沒有操作系統任何東西。最新版本已符合Windows Defender，不會被誤判了。项目开源地址：https://github.com/luckygametools/installer
             </div>
             <div class="warning">
-                <strong>友情提示：</strong> 本軟件由作者個人獨立開發，難免有不足之處，大家可以多提建議一起改進，感謝大家的支持和熱愛 :)
+                <strong>友情提示：</strong>本軟件由作者個人獨立開發，難免有不足之處，大家可以多提建議一起改進，感謝大家的支持和熱愛 :)
             </div>
         </section>
 
@@ -141,16 +191,16 @@
                 🎉 為慶祝軟體總用戶超過4萬，開放權限2持續至2025-12-01！
             </div>  -->
             <div class="notice happy">
-                🎉 喜迎2026中國新年，開放權限2 2026-02-08至2026-02-26！
-            </div> 
+                🎉 喜迎2026中國新年，開放權限2 2026-02-08 至 2026-02-26！
+            </div>
             <h3>🎮 粉絲群資訊</h3>
             <p>LuckyGameTools粉絲群現已開放，由熱愛LGT的各位用戶自發創建。官方給予推廣和獎勵！</p>
             <div class="fan-groups">
                 <div class="fan-group download-wrapper">
                     <a id="download" href="https://pd.qq.com/s/8isgzq4ku?b=9"  target="_blank" >QQ频道</a>
-                      <div class="qr-box">
+                    <div class="qr-box">
                         <img src="qq_dc.jpg" alt="QQ频道">
-                      </div>
+                    </div>
                 </div>
                 <div class="fan-group">Q群1: 954568952</div>
                 <div class="fan-group">Q群2: 882402017</div>
@@ -165,29 +215,29 @@
             <div class="feature-grid">
                 <div class="feature-card">
                     <h3>🎯 自動安裝清單</h3>
-                    <p>一鍵解鎖遊戲，自動安裝清單文件(steam unlocked)</p>
+                    <p>一鍵解鎖遊戲，自動安裝清單文件 (steam unlocked)</p>
                 </div>
-                
+
                 <div class="feature-card">
                     <h3>👥 Steam家庭共享</h3>
                     <p>解除正版Steam家庭共享限制，同時玩同一款遊戲，包括聯機遊戲(需要成員同時使用本軟件)</p>
                 </div>
-                
+
                 <div class="feature-card">
                     <h3>🧑‍🤝‍🧑 480聯機組隊</h3>
                     <p>支持SpaceWar聯機組隊，支持99.99%的Steam聯機組隊遊戲</p>
                 </div>
-                
+
                 <div class="feature-card">
                     <h3>🔐 D加密遊戲支持</h3>
-                    <p>支持D加密遊戲啟動，支持自動授權（需要神秘代碼激活）</p>
+                    <p>支持 D 加密遊戲啟動，支持自動授權（需要神秘代碼激活）</p>
                 </div>
-                
+
                 <div class="feature-card">
                     <h3>🗿 創意工坊支持</h3>
                     <p>支持steam遊戲 創意工坊 任性下載，<a href="https://github.com/luckygametools/steam-cfg/blob/main/workshop-games" target="_blank">(目前支持的遊戲列表)</a> ，更多遊戲陸續開放中</p>
                 </div>
-                
+
                 <div class="feature-card">
                     <h3>🌐 支持需要聯網驗證的單機遊戲</h3>
                     <p>支持部份需要聯網授權驗證的單機遊戲(steam認證失敗 的遊戲)</p>
@@ -198,7 +248,7 @@
                 </div>
                 <div class="feature-card">
                     <h3>⚡ Steam加速</h3>
-                    <p>支持Steam及社區加速功能</p>
+                    <p>支持 Steam 及社區加速功能</p>
                 </div>
 
             </div>
@@ -210,11 +260,11 @@
             <div class="steps">
                 <div class="step">
                     <div class="step-number">1</div>
-                    <div>安裝完成遊戲後，啟動一次確認遊戲存在彈出D加密的提示窗</div>
+                    <div>安裝完成遊戲後，啟動一次確認遊戲存在彈出 D 加密的提示窗</div>
                 </div>
                 <div class="step">
                     <div class="step-number">2</div>
-                    <div>退出正在運行的Steam</div>
+                    <div>退出正在運行的 Steam</div>
                 </div>
                 <div class="step">
                     <div class="step-number">3</div>
@@ -226,7 +276,7 @@
                 </div>
                 <div class="step">
                     <div class="step-number">5</div>
-                    <div>登錄你的Steam帳號（確保是從第4步啟動的Steam）</div>
+                    <div>登錄你的 Steam 帳號（確保是從第 4 步啟動的 Steam）</div>
                 </div>
                 <div class="step">
                     <div class="step-number">6</div>
@@ -243,7 +293,7 @@
                 <p>2.從Steam跳轉到第三方平臺的遊戲，激活后<strong>目前需要</strong>自行登陸一個擁用該steam版本遊戲的第三方平臺的帳號，才可以最終啟動遊戲，啟動成功遊戲后使用本軟件中《工具箱》一鍵離線第三方平臺，例如：UB平臺的《刺客信條.影》</p>
             </div>
         </section>
-        
+
         <!-- D加密遊戲激活教學 -->
         <section class="section">
             <h2>🌐 支持需要聯網驗證的單機遊戲教學？</h2>
@@ -263,7 +313,7 @@
             <div class="warning">
                 <p><strong>重要提醒：</strong></p>
                 <ul style="margin-left: 20px; margin-top: 10px;">
-                    <li>無需任何第三方聯機補丁，支持99.99%的Steam聯機組隊遊戲</li>
+                    <li>無需任何第三方聯機補丁，支持 99.99% 的 Steam 聯機組隊遊戲</li>
                     <li>只能和非官方服務器聯機</li>
                     <li>好友也需要添加啟動參數 <code>-luckygametools</code> 或者 <code>-luckygametools=3</code> 或者 <a href="/qa_zh.html" target="_blank">查看QA常見問題聯機補充</a></li>
                     <li>對于需要好友邀請組隊的遊戲，需要好友在接收到steam的聯機邀請消息前,需要先啟動遊戲，再點擊steam聊天消息中邀請鏈接進入聯機</li>
@@ -272,17 +322,17 @@
                     <li>聯機遊戲在steam上選擇的語言項無效，默認聯機時遊戲語言和軟件選擇的語言保持一至</li>
                     <li>部份聯機遊戲無法彈窗出邀請好友的界面,請使用幸運參數：-luckygametools=0 (eg:Sons of The Forest )</li>
                     <li>如果出現加入不了對方服務器的情況，請確認遊戲版本是否一至，部份遊戲版本不一至時會進不了對方服務器</li>			
-		</ul>
+                </ul>
             </div>
         </section>
 
-        <!-- 工具箱功能 -->
+        <!-- Toolbox -->
         <section class="section">
             <h2>🛠️ 進階工具箱</h2>
             <div class="tools-grid">
                 <div class="tool-card">
                     <h3>🔄 離線遊戲平台</h3>
-                    <p>一鍵離線Ubisoft等平台工具</p>
+                    <p>一鍵離線 Ubisoft 等平台工具</p>
                 </div>
                 <div class="tool-card">
                     <h3>📋 遊戲清單導出</h3>
@@ -303,10 +353,10 @@
             </div>
         </section>
 
-        <!-- 貢獻方式與權限提升 -->
+        <!-- Contribution -->
         <section class="section">
             <h2>⭐ 獲取神秘代碼 或 提升權限</h2>
-            <h3>貢獻方式如下：</h3>
+            <h3>貢獻方式：</h3>
             <div class="steps">
                 <div class="step">
                     <div class="step-number">1</div>
@@ -326,14 +376,14 @@
                 </div>
                 <div class="step">
                     <div class="step-number">5</div>
-                    <div>媒體平台發貼瀏覽量達3K+可獲取高級權限2</div>
+                    <div>媒體平台發貼瀏覽量達 3K+ 可獲取高級權限 2</div>
                 </div>
-		<div class="step">
+                <div class="step">
                     <div class="step-number">6</div>
                     <div>贊助本軟件(大陸只針對老用戶)可以 直接升级权限并获取神秘代码的购买资格，贊助方式可以通過 <a href="https://t.me/luckygametools" target="_blank">電報(Telegram)</a> 聯繫作者(電報群主)</div>
                 </div>
             </div>
-            
+
             <div class="warning">
                 <strong>以上貢獻方式只需要選擇一項完成,都算一次貢獻</strong>
             </div>
@@ -353,7 +403,7 @@
             <p style="margin-top: 10px;">如有問題請先查看<a href="/qa_zh.html" target="_blank">QA常見問題</a>，或自行Google/AI查詢</p>
         </footer>
     </div>
-    
+
     <script src="twallpaper.js"></script>
     <script src="script.js"></script>
 </body>

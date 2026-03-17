@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,47 +23,92 @@
         }
     </style>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7261994485465423" crossorigin="anonymous"></script>
-    
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-9897WHQ9FH"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-9897WHQ9FH');
     </script>
-
 </head>
 <body>
 	<div id="google_translate_element" class="floating-top-left"></div>
-	<div class="contact-links floating-btn-right">
-		<a href="qa_en.html" target="_blank" class="contact-btn qa-en">💬 FAQ</a>
-		<a href="game_update.html" target="_blank" class="contact-btn qa-zh">🎮 Game List</a>
-	</div>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="navbar-brand">
+            <div class="logo-icon">🎮</div>
+            <span>LuckyGameTools</span>
+        </a>
+
+        <button class="navbar-toggle" id="navbarToggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <div class="navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="README_en.html" class="nav-link active">
+                        <span class="nav-icon"><svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg></span> Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="README_en.html#download" class="nav-link">
+                        <span class="nav-icon"><svg viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg></span> Download
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="qa_en.html" class="nav-link">
+                        <span class="nav-icon"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/></svg></span> FAQ
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="game_update.html" class="nav-link">
+                        <span class="nav-icon"><svg viewBox="0 0 24 24"><path d="M21 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-10 7H8v3H6v-3H3v-2h3V8h2v3h3v2zm4.5 2c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4-3c-.83 0-1.5-.67-1.5-1.5S18.67 9 19.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg></span> Games
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="devLog.html" class="nav-link">
+                        <span class="nav-icon"><svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg></span> DevLog
+                    </a>
+                </li>
+            </ul>
+
+            <div class="lang-switcher">
+                <a href="README_zh.html" class="lang-toggle" id="langToggle" title="Switch language">
+                    <span class="lang-toggle-slider"></span>
+                    <span class="lang-toggle-option en">EN</span>
+                    <span class="lang-toggle-option zh">中</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Animated Background -->
     <div class="twp"></div>
-    <div class="container content">
-        <!-- 頁首區域 -->
+
+    <!-- Main Content -->
+    <div class="container content main-content">
+
+        <!-- Header -->
         <header class="header">
-            <h1 class="logo"><a href="/" class="no-underline">LuckyGameTools</a></h1>
-            <p class="subtitle">Secure, Fast and Free Forever Steam Game Solution</p>
-            
+            <div class="badge">Free Forever</div>
+            <h1 class="logo"><a href="README_en.html" style="text-decoration: none; color: inherit;">LuckyGameTools</a></h1>
+            <p class="subtitle">Enjoy High-Quality Gaming Experience - Forever Free</p>
+
             <div class="contact-links">
-                <a href="https://t.me/luckygametools3" target="_blank" class="contact-btn telegram">Telegram(Chat)</a>
-                <a href="https://t.me/luckygametools2" target="_blank" class="contact-btn telegram">Telegram(Subscriber)</a>
+                <a href="https://t.me/luckygametools" target="_blank" class="contact-btn telegram">Telegram</a>
+                <a href="https://t.me/luckygametools2" target="_blank" class="contact-btn telegram">Announcements</a>
                 <a href="https://discord.gg/X4MTpDbcpT" target="_blank" class="contact-btn discord">Discord</a>
                 <a href="https://www.youtube.com/@GameToolsLucky" target="_blank" class="contact-btn youtube">Youtube</a>
-                <a href="mailto:LuckyGameTools@gmail.com" target="_blank" onclick="copyEmail(this,'luckygametools@gmail.com')" class="contact-btn email tooltip-wrapper">
-                    Email(developer)
-                    <span class="tooltip-text">Only accepts donations luckygametools@gmail.com </span>
+                <a href="mailto:LuckyGameTools@gmail.com" onclick="copyEmail(this,'luckygametools@gmail.com')" class="contact-btn email tooltip-wrapper">
+                    Email
+                    <span class="tooltip-text">Click to copy email</span>
                 </a>
-                <a href="https://github.com/luckygametools" target="_blank" class="contact-btn git">GITHUB</a>
-		<!--  
-                <a href="mailto:soffice528@gmail.com" target="_blank" onclick="copyEmail(this,'soffice528@gmail.com')" class="contact-btn email tooltip-wrapper">
-                    Email(Assistant)
-                    <span class="tooltip-text">Reception Sharing Contribution soffice528@gmail.com </span>
-                </a>
-		--> 
+                <a href="https://github.com/luckygametools" target="_blank" class="contact-btn git">GitHub</a>
             </div>
         </header>
 
@@ -81,7 +126,7 @@
                 </span>
                 <a id="download3" href="https://mega.nz/file/Xp4jTbqa#T_CJyo6XD23tQ2Fa3iCFg0jvEMcmHfFibvRgQ_U1GZw" target="_blank" class="download-btn">Mega</a>
             </div>
-            
+
             <div class="warning">
                 <strong>Tip：</strong>The installation interface of the software is written as an installation program, but it is actually just a decompression program. You can use it with confidence and there is no operating system or anything else(The latest version of the software is compliant with Windows Defender and will not be banned by it) - Git repo: https://github.com/luckygametools/installer
             </div>
@@ -101,8 +146,8 @@
             <!-- <div class="notice happy">
                 🎉 To celebrate our software reaching nearly 30,000 total users, we will be randomly giving away 1 to 3 mysterious activation codes for Denuvo  games every day in our one and only official Telegram group. Thank you all for your support!
             </div> -->
-            
-			
+
+
             <h3>🎮 Recruiting fan groups</h3>
             <p>LuckyGameTools,Recruit fan groups, such as WhatsApp, Instagram, TikTok, etc,Official promotion and rewards！</p>
 			<!--
@@ -112,7 +157,7 @@
             </div>
 			-->
             <p><strong>Fan group benefits：</strong> Provide daily access to some mysterious codes and occasional upgrade permissions for level2</p>
-			
+
         </section>
 
         <!-- 功能特色 -->
@@ -123,17 +168,17 @@
                     <h3>🎯 Automatic Download And Install Manifest(steam unlocked)</h3>
                     <p>Automatic Unlock Game(including the game 、 DLC、 Achievements)</p>
                 </div>
-                
+
                 <div class="feature-card">
                     <h3>👥 Steam Family Sharing</h3>
                     <p>unlock Family Sharing,Support playing the same game simultaneously(Including online games)[(Members are required to use this software simultaneously)]</p>
                 </div>
-                
+
                 <div class="feature-card">
                     <h3>🧑‍🤝‍🧑 480 Online Team </h3>
                     <p>Supports 480 online team building(Supports 99.99% Steam Online team game)</p>
                 </div>
-                
+
                 <div class="feature-card">
                     <h3>🔐  Support Denuvo Game</h3>
                     <p>Support Denuvo game startup (supports automatic authorization, activation requires mysterious code)</p>
@@ -146,7 +191,7 @@
                     <h3>🌐 Support single player games that require network authorization verification</h3>
                     <p>Support single player games that require network authorization verification (steam Scenarios of authentication failure)</p>
                 </div>
-		<div class="feature-card">
+                <div class="feature-card">
                     <h3>🎮 Support featured games</h3>
                     <p>Support GTA5 (and trilogy) and Red Dead Redemption 2 for one key gameplay</p>
                 </div>
@@ -209,7 +254,7 @@
                 How to Get or Gen the  mysterious code of lot At the beginning : details CDK User manual benefits section (unlimited use,Currently only open to donate users)
             </div>
         </section>
-		
+
         <!-- 聯機注意事項 -->
         <section class="section">
             <h2>🧑‍🤝‍🧑 How to use luckygametools Online Games(480SpaceWar)<a href="https://youtu.be/I2f69LMkknA" target="_blank">(Video guide)</a></h2>
@@ -225,7 +270,7 @@
                     <li>Online games are available steam The language option selected above is invalid. By default, the game language and software selected language remain the same when online</li>
                     <li>Some online games are unable to pop up an invitation window for friends. Please use the lucky parameter：-luckygametools=0 (eg:Sons of The Forest )</li>
                     <li>If there is a situation where you cannot join the other lobby server, please confirm whether the game version is the same. Some game versions may not be able to enter the other lobby server when they are not the same</li>				
-		</ul>
+                </ul>
             </div>
         </section>
 
@@ -281,7 +326,7 @@
                     <div class="step-number">5</div>
                     <div>Make Video Share Media platform posts with over 3K views can receive special contributions(Upgradeable level2)</div>
                 </div>
-				<div class="step">
+                <div class="step">
                     <div class="step-number">6</div>
                     <div>Donate this software, sponsorship can be done through telegram (fastest reply) discord、 Contact the author via email</div>
                 </div>
@@ -289,12 +334,12 @@
             <div class="warning">
                 <strong>The above contribution methods only require selecting one option to complete, and all will be considered as one contribution</strong>
             </div>
-			
+
             <div class="warning">
                 <strong>After Donation ,pls contact <a href="https://t.me/luckygametools" target="_blank">Telegram</a>, Can be upgraded to a higher level or Get mysterious codes</strong>
 				(If  Get mysterious code: Confirm the second step of activation before receiving the mysterious code，And inform the other party that they need to Activation the game <a class="bold">AppId</a>)
             </div>
-  	   <div class="warning">
+            <div class="warning">
                 <strong>The Upgrade permissions are permanently valid. If you occasionally find that the permissions have disappeared, there is no need to panic. Network problems can be resolved by setting up a ladder (global tun) or contacting the author to obtain another way of pulling permissions</strong>
             </div>
 		
@@ -361,7 +406,7 @@
 				  </tbody>
 				</table>
 
-			</div>
+            </div>
         </section>
 
         <!-- 安全聲明 -->
@@ -400,7 +445,7 @@
             <p style="margin-top: 10px;">If you have any questions, please check first<a href="/qa_en.html" target="_blank">QA</a>,Or independently Google/AI query</p>
         </footer>
     </div>
-    
+
     <script src="twallpaper.js"></script>
     <script src="script.js"></script>
     <script async type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" ></script>

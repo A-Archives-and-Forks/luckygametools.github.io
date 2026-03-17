@@ -23,27 +23,69 @@
         }
     </style>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7261994485465423" crossorigin="anonymous"></script>
-    
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-9897WHQ9FH"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-9897WHQ9FH');
     </script>
-
 </head>
 <body>
 	<div id="google_translate_element" class="floating-top-left"></div>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <a href="/" class="navbar-brand">
+            <div class="logo-icon">🎮</div>
+            <span>LuckyGameTools</span>
+        </a>
+
+        <button class="navbar-toggle" id="navbarToggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <div class="navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="README_en.html" class="nav-link">
+                        <span class="nav-icon"><svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg></span> Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="README_en.html" class="nav-link">
+                        <span class="nav-icon"><svg viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg></span> Download
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="qa_en.html" class="nav-link active">
+                        <span class="nav-icon"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/></svg></span> FAQ
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="game_update.html" class="nav-link">
+                        <span class="nav-icon"><svg viewBox="0 0 24 24"><path d="M21 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-10 7H8v3H6v-3H3v-2h3V8h2v3h3v2zm4.5 2c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4-3c-.83 0-1.5-.67-1.5-1.5S18.67 9 19.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg></span> Games
+                    </a>
+                </li>
+            </ul>
+
+            <div class="lang-switcher">
+                <a href="qa_zh.html" class="lang-toggle" id="langToggle" title="Switch language">
+                    <span class="lang-toggle-slider"></span>
+                    <span class="lang-toggle-option en">EN</span>
+                    <span class="lang-toggle-option zh">中</span>
+                </a>
+            </div>
+        </div>
+    </nav>
 
     <div class="twp"></div>
-    <div class="container content">
+    <div class="container content main-content">
         <!-- 頁首區域 -->
         <header class="header">
-            <h1 class="logo"><a href="/" class="no-underline">LuckyGameTools</a></h1>            
-
 			<!-- 安全聲明 -->
 			<section class="section">
             <div class="security-info">
@@ -57,7 +99,7 @@
             <p class="subtitle"><h2><strong>Frequently asked questions are being continuously collected and updated</strong><h2></p>
 
         </header>
-        
+
         <section class="section">
             <h2>⭐ Prompt when importing game: Network error？</h2>
             <div class="steps">
@@ -82,7 +124,7 @@
                     <div>Solution: 2. Use VPN Global mode, enabled TUN agent</div>
                 </div>
         </section>
-		
+
         <section class="section">
             <h2>⭐ Steam download or update game manifest not available solution(The version after 2.0.1.14 will not have this issue. If it occurs, try restarting Steam)</h2>
 	    <div class="warning">
@@ -90,7 +132,7 @@
             	<br>
 		<br>
 		<strong>Simple solution: In the software settings，steam->Clear Cache On Start Steam->ON  (Starting when there are too many games Steam It will be more time-consuming)</strong>
-	    </div>                          
+	    </div>
 
 	    <div class="steps">
                 <div class="step">
@@ -118,9 +160,9 @@
                     <div>Over</div>
                 </div>
             </div>
-            
+
         </section>
-		
+
 	<section class="section">
             <h2>⭐ The official game has been updated, but my game version has suddenly stopped at the old version:</h2>
             <div class="steps">
@@ -141,9 +183,9 @@
                     <div>Over</div>
                 </div>
             </div>
-            
+
         </section>
-		
+
 	<section class="section">
             <h2>⭐ Why mine steam Login successful, software still prompts: Please Restart Steam | Waiting Steam Active </h2>
 			<div class="warning">
@@ -166,7 +208,7 @@
                     <div class="step-number">4</div>
                     <div>If it still doesn't work, you can try turning off the system's firewall, antivirus software, etc</div>
                 </div>
-				
+
             </div>
         </section>
 
@@ -186,9 +228,9 @@
                     <div>eg:Company of Heroes 3 ,Mortal Kombat 1, V Rising,Microsoft Flight Simulator   and more games</div>
                 </div>
             </div>
-            
+
         </section>
-		    
+
 	<section class="section">
             <h2>⭐ Why can't I access the Steam store after my computer is turned on today </h2>
 	    <div class="warning">
@@ -203,12 +245,12 @@
                     <div class="step-number">2</div>
                     <div>Recovery method 2: Delete the file %windir%\System32\drivers\etc\hosts </div>
                 </div>
-            </div>    
+            </div>
 	    <div class="warning">
                 <strong>Due to computer crashes, power outages, and failure to exit the software properly, the program did not restore Hosts files properly</strong>
             </div>
         </section>
-		
+
 	<section class="section">
             <h2>⭐ Steam has entered the (wallpaper engine | Lossless Scaling) but cannot find it:</h2>
             <div class="steps">
@@ -228,7 +270,7 @@
 			<div class="warning">
                 <strong>Due to network issues</strong> Some games may experience certain delays before being released Steam Appearing in the library
             </div>
-            
+
         </section>
 
 
@@ -237,7 +279,7 @@
             <div class="warning">
                 <strong>Restricted steam account By Steam Or LuckyGameTools , or there are network issues</strong>
             </div>
-            
+
         </section>
         <section class="section">
             <h2>⭐ why Steam When starting the game, it will prompt: Cloud storage synchronization failed</h2>
@@ -245,10 +287,10 @@
                 <strong>This is Steam The official has made adjustments to game cloud storage, requiring the account to truly own the game in order to use it Steam The cloud synchronization function</strong>
                 <br/><br/><br/>
                 <strong>At this point, you need to be on your own Steam Turn off the settings Steam Cloud Sync</strong>
-            </div>        
+            </div>
         </section>
-        
-		
+
+
 		<section class="section">
             <h2>⭐ What should I do if the game encounters an error when starting with online parameters added（-luckygametools）（Steam Error Application load error V:0000065432）</h2>
             <div class="steps">
@@ -269,7 +311,7 @@
                     <div>Over</div>
                 </div>
             </div>
-            
+
         </section>
 
 		<section class="section">
@@ -288,7 +330,7 @@
                     <div>Over</div>
                 </div>
             </div>
-            
+
         </section>
 
 		<section class="section">
@@ -296,7 +338,7 @@
             <div class="steps">
                 <div class="step">
                     <div class="step-number">1</div>
-      				<div>eg:Prompt error code 54!</div>                
+      				<div>eg:Prompt error code 54!</div>
 				</div>
                 <div class="step">
                     <div class="step-number">2</div>
@@ -312,9 +354,9 @@
                     <div>Over</div>
                 </div>
             </div>
-            
+
         </section>
-		
+
 		<section class="section">
             <h2>⭐ Why did I suddenly stop playing Red Dead Redemption 2 when I was able to play it normally before </h2>
 			<div class="warning">
@@ -333,16 +375,16 @@
                     <div class="step-number">3</div>
                     <div>Restart the game and it's done</div>
                 </div>
-				
+
 				 <div class="step">
                     <div class="step-number">4</div>
                     <div>If there is no directory in the second step Launcher.exe， You need to download the game again or verify the integrity of the game</div>
                 </div>
             </div>
-            
+
         </section>
 
-		
+
 		<section class="section">
             <h2>⭐ Solutions for Net Bar or other computer environment software not working properly </h2>
             <div class="steps">
@@ -359,9 +401,9 @@
                     <div>Follow steam Start on the icon steam( Ensure that it is the truly activated internet cafe steam Program)</div>
                 </div>
             </div>
-            
+
         </section>
-		
+
 		<section class="section">
             <h2>⭐ GTA V enhanced Crack patch instructions </h2>
 			<div class="warning">
@@ -380,15 +422,15 @@
                     <div class="step-number">3</div>
                     <div> The test can start normally GTA5 Plus</div>
                 </div>
-				
+
 				 <div class="step">
                     <div class="step-number">4</div>
                     <div>Usage: After downloading the patch file, unzip the rest to the game directory (you can back it up before replacing PlayGTAV.exe)</div>
                 </div>
             </div>
-            
+
         </section>
-		
+
 		<section class="section">
             <h2>⭐ GTA IV Crack patch instructions </h2>
             <div class="steps">
@@ -401,11 +443,11 @@
                     <div>Usage: After downloading the patch file, unzip the rest to the game directory(you can back it up before replacing PlayGTAIV.exe and、GTAIV.exe)</div>
                 </div>
             </div>
-            
+
         </section>
 
-		    
-	<section class="section">
+
+		<section class="section">
             <h2>⭐ 《Assassin's Creed Valhalla》 Crack patch instructions </h2>
             <div class="steps">
                 <div class="step">
@@ -417,7 +459,7 @@
                     <div>Usage: After downloading the patch file, unzip the rest to the game director,and Run ACValhalla.exe</div>
                 </div>
             </div>
-            
+
         </section>
 
 
@@ -425,17 +467,17 @@
             <h2>⭐ LuckyGameTools  Make external plugins instructions </h2>
             <div class="warning">
                 <strong>Usage: After downloading the patch file,copy to LuckyGameTools Under the installation directory plugins Below (if not available) plugins Directory, please update and install the latest version of software)</strong>
-                <br>     
-                <br>     				
+                <br>
+                <br>
                 <strong>Tips:This patch file requires LuckyGameTools The program needs to be launched with administrator privileges to take effect. (If unsuccessful, please update the game.)</strong>
-                <br>  
+                <br>
                 <strong>tip:Administrator privileges are only used for modifying Hosts, May be related to some VPN Software Conflict(If the plugin is found to be ineffective, the high probability is that Hosts File modification failed, you can delete it now Hosts Try the file [path:%] windir%\System32\drivers\etc\hosts])</strong>
                 <br>
-                <br>     
+                <br>
                 <strong>More game plugins are being developing</strong>
             </div>
             <div class="steps">
-               
+
                 <div class="step">
                     <div class="step-appid">3350200</div>
                     <div class="step-gamename">撈女遊戲 情感反詐模擬器(Fixed version:18941501)<a href="https://raw.githubusercontent.com/luckygametools/steam-cfg/main/gamePatch/plugins/3350200.plug" target="_blank">Click to download plugin file</a>  </div>
@@ -449,16 +491,16 @@
                     <div class="step-gamename">时空重构<a href="https://raw.githubusercontent.com/luckygametools/steam-cfg/main/gamePatch/plugins/3292340.plug" target="_blank">Click to download plugin file</a>  </div>
                 </div>
             </div>
-            
+
         </section>
-		
+
         <!-- 頁尾 -->
         <footer style="text-align: center; margin-top: 50px; color: rgba(255,255,255,0.8);">
             <p>© 2025 LuckyGameTools - Game resources are updated daily, and many games are full of DLC deluxe versions</p>
             <p style="margin-top: 10px;">If you have any other questions, please provide feedback to the author or do it yourself Google/AI query</p>
         </footer>
     </div>
-    
+
     <script src="twallpaper.js"></script>
     <script src="script.js"></script>
     <script async type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
