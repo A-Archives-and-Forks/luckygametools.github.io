@@ -149,6 +149,12 @@ html, body {
   font-size: 1.6rem;
   box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
   transition: all var(--transition-fast);
+  background-image: url('favicon.ico'); /* 確保路徑正確 */
+  background-size: contain;   /* 讓圖片完整縮放適應容器 */
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;      /* 讓 div 像圖片一樣排列 */
+  vertical-align: middle;     /* 調整與文字的對齊 */
 }
 
 .navbar-brand:hover .logo-icon {
