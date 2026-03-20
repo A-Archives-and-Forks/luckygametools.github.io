@@ -49,6 +49,64 @@
 
 html {
   scroll-behavior: smooth;
+  pointer-events: auto;
+  cursor: url('https://cdn.fastly.steamstatic.com/store/promo/spring2026/01.svg?v=1') 15 25, pointer;
+  animation: playcursor 1.5s steps(1, end) infinite;
+  -webkit-animation: playcursor 1.5s steps(1, end) infinite;
+}
+
+@keyframes playcursor {
+	0% {
+		cursor: url('https://cdn.fastly.steamstatic.com/store/promo/spring2026/01.svg?v=1') 15 25, pointer;
+		outline-color: rgba(0,0,0,0);
+	}
+	10% {
+		cursor: url('https://cdn.fastly.steamstatic.com/store/promo/spring2026/03.svg?v=1') 15 25, pointer;
+		outline-color: rgba(0,0,0,0);
+	}
+	20% {
+		cursor: url('https://cdn.fastly.steamstatic.com/store/promo/spring2026/02.svg?v=1') 15 25, pointer;
+		outline-color: rgba(0,0,0,0);
+	}
+	30% {
+		cursor: url('https://cdn.fastly.steamstatic.com/store/promo/spring2026/03.svg?v=1') 15 25, pointer;
+		outline-color: rgba(0,0,0,0);
+	}
+	40% {
+		cursor: url('https://cdn.fastly.steamstatic.com/store/promo/spring2026/02.svg?v=1') 15 25, pointer;
+		outline-color: rgba(0,0,0,0.01); /* this is to trick the browser into pushing the animation through, dumb but it works */
+	}
+	70%, 100% {
+		cursor: url('https://cdn.fastly.steamstatic.com/store/promo/spring2026/04.svg?v=1') 15 25, pointer;
+		outline-color: rgba(0,0,0,0);
+	}
+}
+
+@-webkit-keyframes playcursor {
+	0% {
+		cursor: url('https://cdn.fastly.steamstatic.com/store/promo/spring2026/01.svg?v=1') 15 25, pointer;
+		outline-color: rgba(0,0,0,0);
+	}
+	10% {
+		cursor: url('https://cdn.fastly.steamstatic.com/store/promo/spring2026/03.svg?v=1') 15 25, pointer;
+		outline-color: rgba(0,0,0,0);
+	}
+	20% {
+		cursor: url('https://cdn.fastly.steamstatic.com/store/promo/spring2026/02.svg?v=1') 15 25, pointer;
+		outline-color: rgba(0,0,0,0);
+	}
+	30% {
+		cursor: url('https://cdn.fastly.steamstatic.com/store/promo/spring2026/03.svg?v=1') 15 25, pointer;
+		outline-color: rgba(0,0,0,0);
+	}
+	40% {
+		cursor: url('https://cdn.fastly.steamstatic.com/store/promo/spring2026/02.svg?v=1') 15 25, pointer;
+		outline-color: rgba(0,0,0,0.01); /* this is to trick the browser into pushing the animation through, dumb but it works */
+	}
+	70%, 100% {
+		cursor: url('https://cdn.fastly.steamstatic.com/store/promo/spring2026/04.svg?v=1') 15 25, pointer;
+		outline-color: rgba(0,0,0,0);
+	}
 }
 
 body {
