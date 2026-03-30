@@ -87,7 +87,6 @@
                 <div class="data-item"><div class="data-label">SteamID3</div><div class="data-value" id="out3">-</div></div>
                 <div class="data-item"><div class="data-label">Legacy ID</div><div class="data-value" id="outLegacy">-</div></div>
                 <div class="data-item"><div class="data-label">Hex ID (FiveM)</div><div class="data-value" id="outHex">-</div></div>
-                <div class="data-item"><div class="data-label">Base36 短鏈</div><div class="data-value" id="outBase36">-</div></div>
             </div>
             <p style="font-size: 12px; color: var(--text-muted); margin-top: 20px;">
                 * 註：由於 Steam 隱私政策，純前端無法直接讀取非公開的遊戲庫和庫存詳情，請點擊左側按鈕前往 Steam 社區查看。
@@ -218,7 +217,6 @@
         document.getElementById('out3').textContent = `[U:1:${accId}]`;
         document.getElementById('outLegacy').textContent = `STEAM_0:${accId % 2n}:${accId / 2n}`;
         document.getElementById('outHex').textContent = "steam:" + id64.toString(16).toLowerCase();
-        document.getElementById('outBase36').textContent = `s.team/p/${Number(accId).toString(36)}`;
     }
 
     // 抓取 XML 並渲染名片
