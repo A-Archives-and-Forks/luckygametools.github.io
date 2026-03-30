@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steam 終極情報站 | 純前端</title>
+    <style>
+        :root { --bg-main: #171a21; --bg-card: #1b2838; --bg-input: #101822; --steam-blue: #66c0f4; --steam-green: #5c7e10; --text-main: #c7d5e0; --text-muted: #8f98a0; --border-color: #2a475e; }
+        body { font-family: "Motiva Sans", "Segoe UI", sans-serif; background-color: var(--bg-main); color: var(--text-main); margin: 0; padding: 20px; display: flex; justify-content: center; min-height: 100vh; }
+        .container { width: 100%; max-width: 1000px; }
+        .header { text-align: center; margin-bottom: 30px; }
+        .header h1 { color: #fff; font-size: 2.2rem; margin: 0 0 10px 0; text-shadow: 0 0 10px rgba(102, 192, 244, 0.3); }
+        
+        .universal-input-wrapper { position: relative; margin-bottom: 30px; }
+        .universal-input-wrapper input { width: 100%; background: var(--bg-input); border: 2px solid var(--border-color); color: #fff; padding: 18px 20px; font-size: 1.2rem; border-radius: 6px; box-sizing: border-box; outline: none; transition: 0.3s; }
+        .universal-input-wrapper input:focus { border-color: var(--steam-blue); }
+        .status-badge { position: absolute; right: 15px; top: 50%; transform: translateY(-50%); background: var(--text-muted); color: #fff; padding: 4px 10px; border-radius: 4px; font-size: 0.85rem; display: none; }
+        
+        .main-grid { display: grid; grid-template-columns: 1fr; gap: 20px; opacity: 0.5; pointer-events: none; transition: 0.3s; }
+        @media(min-width: 768px) { .main-grid { grid-template-columns: 300px 1fr; } }
+        
+        .card { background: var(--bg-card); border-radius: 8px; box-shadow: 0 8px 24px rgba(0,0,0,0.6); padding: 25px; border: 1px solid var(--border-color); }
+        .card h3 { color: var(--steam-blue); margin-top: 0; border-bottom: 1px solid var(--border-color); padding-bottom: 10px; }
+
+        /* 玩家名片樣式 */
+        .profile-card { text-align: center; }
+        .avatar-container { position: relative; width: 120px; height: 120px; margin: 0 auto 15px auto; padding: 4px; background: #333; border-radius: 8px; }
+        .avatar-container img { width: 100%; height: 100%; border-radius: 4px; object-fit: cover; }
+        .avatar-container.online { background: linear-gradient(to bottom, #53a4c4 5%, #458097 95%); }
+        .avatar-container.ingame { background: linear-gradient(to bottom, #8cc453 5%, #6b9745 95%); }
+        
+        .player-name { font-size: 1.5rem; color: #fff; margin: 10px 0 5px 0; font-weight: bold; }
+        .player-realname { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 15px; }
+        .player-state { font-size: 0.9rem; margin-bottom: 20px; color: var(--steam-blue); }
+        .player-state.ingame { color: var(--steam-green); }
+
+        .btn-group { display: flex; gap: 10px; flex-direction: column; }
+        .action-btn { background: rgba(255,255,255,0.1); color: #fff; text-decoration: none; padding: 10px; border-radius: 4px; font-size: 0.9rem; transition: 0.2s; border: 1px solid rgba(255,255,255,0.2); }
+        .action-btn:hover { background: rgba(255,255,255,0.2); border-color: #fff; }
+
+        /* 數據網格樣式 */
+        .data-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; }
+        .data-item { background: rgba(0,0,0,0.2); padding: 12px; border-radius: 6px; border-left: 3px solid var(--border-color); }
+        .data-label { font-size: 0.8rem; color: var(--text-muted); margin-bottom: 5px; }
+        .data-value { font-family: monospace; font-size: 1.05rem; color: #fff; word-break: break-all; }
+
+        .error-msg { color: #ff5252; text-align: center; margin-bottom: 20px; display: none; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>Steam 終極情報站</h1>
+        <p style="color:var(--text-muted)">輸入 ID 或網址，自動抓取玩家檔案與底層數據</p>
+    </div>
+
+    <div class="universal-input-wrapper">
+        <input type="text" id="universalInput" placeholder="粘貼 SteamID64, Vanity URL, Hex 等..." autocomplete="off">
+        <span class="status-badge" id="statusBadge">解析中...</span>
+    </div>
+    <div class="error-msg" id="errorMsg">無法解析，請確保 ID 正確且網絡暢通。</div>
+
+    <div class="main-grid" id="mainGrid">
+        <!-- 左側：玩家名片 -->
+        <div class="card profile-card">
+            <div class="avatar-container" id="avatarBox">
+                <img id="playerAvatar" src="https://avatars.steamstatic.com/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_full.jpg" alt="Avatar">
+            </div>
+            <div class="player-name" id="playerName">等待輸入</div>
+            <div class="player-realname" id="playerRealName">---</div>
+            <div class="player-state" id="playerState">---</div>
+            
+            <div class="btn-group">
+                <a id="linkProfile" href="#" target="_blank" class="action-btn">🔗 訪問主頁</a>
+                <a id="linkGames" href="#" target="_blank" class="action-btn">🎮 查看遊戲庫 (若公開)</a>
+                <a id="linkInventory" href="#" target="_blank" class="action-btn">🎒 查看庫存 (若公開)</a>
+            </div>
+        </div>
+
+        <!-- 右側：ID 數據 -->
+        <div class="card">
+            <h3>底層 ID 數據轉換</h3>
+            <div class="data-grid">
+                <div class="data-item"><div class="data-label">SteamID64</div><div class="data-value" id="out64">-</div></div>
+                <div class="data-item"><div class="data-label">AccountID (32位)</div><div class="data-value" id="out32">-</div></div>
+                <div class="data-item"><div class="data-label">SteamID3</div><div class="data-value" id="out3">-</div></div>
+                <div class="data-item"><div class="data-label">Legacy ID</div><div class="data-value" id="outLegacy">-</div></div>
+                <div class="data-item"><div class="data-label">Hex ID (FiveM)</div><div class="data-value" id="outHex">-</div></div>
+                <div class="data-item"><div class="data-label">Base36 短鏈</div><div class="data-value" id="outBase36">-</div></div>
+            </div>
+            <p style="font-size: 12px; color: var(--text-muted); margin-top: 20px;">
+                * 註：由於 Steam 隱私政策，純前端無法直接讀取非公開的遊戲庫和庫存詳情，請點擊左側按鈕前往 Steam 社區查看。
+            </p>
+        </div>
+    </div>
+</div>
+
+<script>
+    const STEAMID64_BASE = BigInt("76561197960265728");
+    let debounceTimer;
+
+    // 監聽輸入防抖
+    document.getElementById('universalInput').addEventListener('input', (e) => {
+        clearTimeout(debounceTimer);
+        debounceTimer = setTimeout(() => processInput(e.target.value.trim()), 800);
+    });
+
+    // 核心：多節點代理競速函數 (Promise Racing)
+    async function fetchWithRacing(targetUrl) {
+        const encodedUrl = encodeURIComponent(targetUrl);
+
+        // 定義三個不同的代理伺服器及其數據解析方式
+        const proxyTasks = [
+            // 節點 1: CodeTabs (返回純文本 XML)
+            fetch(`https://api.codetabs.com/v1/proxy?quest=${encodedUrl}`).then(async res => {
+                if (!res.ok) throw new Error('CodeTabs 失敗');
+                return await res.text();
+            }),
+            // 節點 2: CorsProxy.io (返回純文本 XML)
+            fetch(`https://corsproxy.io/?${encodedUrl}`).then(async res => {
+                if (!res.ok) throw new Error('CorsProxy 失敗');
+                return await res.text();
+            }),
+            // 節點 3: AllOrigins (返回 JSON，內容在 contents 欄位)
+            fetch(`https://api.allorigins.win/get?url=${encodedUrl}`).then(async res => {
+                if (!res.ok) throw new Error('AllOrigins 失敗');
+                const data = await res.json();
+                return data.contents; 
+            })
+        ];
+
+        try {
+            // Promise.any 會返回第一個成功的結果，只要有一個節點活著，就能秒出數據！
+            const fastestResult = await Promise.any(proxyTasks);
+            return fastestResult;
+        } catch (error) {
+            // 只有當三個節點全部掛掉時，才會報錯
+            throw new Error("所有代理節點均無響應");
+        }
+    }
+
+    async function processInput(input) {
+        const badge = document.getElementById('statusBadge');
+        const errorMsg = document.getElementById('errorMsg');
+        const mainGrid = document.getElementById('mainGrid');
+
+        if (!input) {
+            badge.style.display = 'none'; errorMsg.style.display = 'none'; 
+            mainGrid.style.opacity = '0.5'; mainGrid.style.pointerEvents = 'none';
+            return;
+        }
+
+        badge.style.display = 'inline-block';
+        badge.style.backgroundColor = 'var(--text-muted)';
+        badge.textContent = "多節點競速解析中...";
+        errorMsg.style.display = 'none';
+
+        try {
+            // 1. 本地數學解析 ID
+            let id64 = await parseToID64(input);
+
+            if (!id64) {
+                showError("無法識別的格式或解析失敗");
+                return;
+            }
+
+            // 2. 計算所有格式並填充右側
+            fillDataGrid(id64);
+
+            // 3. 透過多節點代理抓取 Steam 玩家 XML
+            await fetchProfileData(id64);
+
+            badge.textContent = "解析完成";
+            badge.style.backgroundColor = 'var(--steam-green)';
+            mainGrid.style.opacity = '1';
+            mainGrid.style.pointerEvents = 'auto';
+
+        } catch (e) {
+            showError("網絡代理請求失敗，請稍後再試。");
+        }
+    }
+
+    // 解析任何輸入為 ID64
+    async function parseToID64(input) {
+        if (input.includes("/id/")) {
+            const vanity = input.split("/id/")[1].split('/')[0].split('?')[0];
+            try {
+                const xmlString = await fetchWithRacing(`https://steamcommunity.com/id/${vanity}?xml=1`);
+                const xmlDoc = new DOMParser().parseFromString(xmlString, "text/xml");
+                if (xmlDoc.getElementsByTagName("error").length > 0) return null;
+                return BigInt(xmlDoc.getElementsByTagName("steamID64")[0].textContent);
+            } catch(e) { 
+                console.error("自定義URL解析失敗:", e);
+                return null; 
+            }
+        } else if (input.includes("/profiles/")) {
+            const sid = input.split("/profiles/")[1].split('/')[0].split('?')[0];
+            return /^\d{17}$/.test(sid) ? BigInt(sid) : null;
+        } else if (/^\d{17}$/.test(input)) {
+            return BigInt(input);
+        } else if (/^\d{1,10}$/.test(input)) {
+            return BigInt(input) + STEAMID64_BASE;
+        } else if (/^STEAM_[0-5]:[0-1]:[0-9]+$/i.test(input)) {
+            const parts = input.match(/^STEAM_[0-5]:([0-1]):([0-9]+)$/i);
+            return (BigInt(parts[2]) * 2n) + BigInt(parts[1]) + STEAMID64_BASE;
+        } else if (/^(steam:)?[0-9a-fA-F]{15,16}$/i.test(input)) {
+            return BigInt("0x" + input.replace(/^steam:/i, ''));
+        }
+        return null;
+    }
+
+    // 計算並填充轉換數據
+    function fillDataGrid(id64) {
+        const accId = id64 - STEAMID64_BASE;
+        document.getElementById('out64').textContent = id64.toString();
+        document.getElementById('out32').textContent = accId.toString();
+        document.getElementById('out3').textContent = `[U:1:${accId}]`;
+        document.getElementById('outLegacy').textContent = `STEAM_0:${accId % 2n}:${accId / 2n}`;
+        document.getElementById('outHex').textContent = "steam:" + id64.toString(16).toLowerCase();
+        document.getElementById('outBase36').textContent = `s.team/p/${Number(accId).toString(36)}`;
+    }
+
+    // 抓取 XML 並渲染名片
+    async function fetchProfileData(id64) {
+        try {
+            const xmlString = await fetchWithRacing(`https://steamcommunity.com/profiles/${id64}?xml=1`);
+            const xmlDoc = new DOMParser().parseFromString(xmlString, "text/xml");
+
+            // 提取數據
+            const avatar = xmlDoc.getElementsByTagName("avatarFull")[0]?.textContent || '';
+            const nickname = xmlDoc.getElementsByTagName("steamID")[0]?.textContent || '未知用戶';
+            const realname = xmlDoc.getElementsByTagName("realname")[0]?.textContent || '';
+            const location = xmlDoc.getElementsByTagName("location")[0]?.textContent || '';
+            const stateMsg = xmlDoc.getElementsByTagName("stateMessage")[0]?.textContent || 'Offline';
+            const isOnline = xmlDoc.getElementsByTagName("onlineState")[0]?.textContent !== 'offline';
+            
+            // 渲染 UI
+            document.getElementById('playerAvatar').src = avatar;
+            document.getElementById('playerName').innerHTML = nickname;
+            document.getElementById('playerRealName').textContent = [realname, location].filter(Boolean).join(' - ') || '未設置真實姓名';
+            
+            const stateEl = document.getElementById('playerState');
+            stateEl.innerHTML = stateMsg;
+            
+            const avatarBox = document.getElementById('avatarBox');
+            avatarBox.className = 'avatar-container'; 
+            stateEl.className = 'player-state';
+            
+            if (stateMsg.includes('In-Game') || stateMsg.includes('遊戲中')) {
+                avatarBox.classList.add('ingame');
+                stateEl.classList.add('ingame');
+            } else if (isOnline) {
+                avatarBox.classList.add('online');
+            }
+
+            // 設置按鈕鏈接
+            const profileUrl = `https://steamcommunity.com/profiles/${id64}`;
+            document.getElementById('linkProfile').href = profileUrl;
+            document.getElementById('linkGames').href = `${profileUrl}/games/?tab=all`;
+            document.getElementById('linkInventory').href = `${profileUrl}/inventory/`;
+
+        } catch(e) {
+            console.error(e);
+            document.getElementById('playerName').textContent = "檔案讀取失敗 (可能為隱私賬號或代理全掛)";
+        }
+    }
+
+    function showError(msg) {
+        document.getElementById('statusBadge').style.display = 'none';
+        document.getElementById('errorMsg').textContent = msg;
+        document.getElementById('errorMsg').style.display = 'block';
+    }
+</script>
+
+</body>
+</html>
