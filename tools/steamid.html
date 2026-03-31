@@ -112,7 +112,7 @@
         // 定義三個不同的代理伺服器及其數據解析方式
         const proxyTasks = [
             // 節點 1: CodeTabs (返回純文本 XML)
-            fetch(`https://api.codetabs.com/v1/proxy?quest=${encodedUrl}`).then(async res => {
+            fetch(`https://api.codetabs.com/v1/proxy/?quest=${encodedUrl}`).then(async res => {
                 if (!res.ok) throw new Error('CodeTabs 失敗');
                 return await res.text();
             }),
