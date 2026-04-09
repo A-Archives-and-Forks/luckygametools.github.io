@@ -3,9 +3,9 @@
 // This file is included for future enhancements
 var downloadUrl="javascript:void(0);";
 
-var downloadUrl1="https://gofile.io/d/EbgBZK";
-var downloadUrl2="https://ranoz.gg/file/QImCt968";
-var downloadUrl3="https://mega.nz/file/7lRBEaiD#Mffzte48hg1JvfaPgutQik-2PD0qusxtsr4fYNQDlZg";
+var downloadUrl1="https://gofile.io/d/bsx5O2";
+var downloadUrl2="https://ranoz.gg/file/AnKECG2T";
+var downloadUrl3="https://mega.nz/file/30B0XTKK#2IIvuGYW14eSsdr3pqSt6eBOLtOd6-zemlmFE1I7ru4";
 var downloadUrl4="https://share.feijipan.com/s/Fi21XbfG";
 var downloadUrl5="https://pan.xunlei.com/s/VOnMw7z6sJRTnLXvW6uJwTKxA1?pwd=ncg3";
 
