@@ -6,7 +6,7 @@ var downloadUrl="javascript:void(0);";
 var downloadUrl1="https://gofile.io/d/bsx5O2";
 var downloadUrl2="https://ranoz.gg/file/AnKECG2T";
 var downloadUrl3="https://mega.nz/file/30B0XTKK#2IIvuGYW14eSsdr3pqSt6eBOLtOd6-zemlmFE1I7ru4";
-var downloadUrl4="https://share.feijipan.com/s/Fi21XbfG";
+var downloadUrl4="https://share.feijipan.com/s/cn3ZEJoN";
 var downloadUrl5="https://pan.xunlei.com/s/VOnMw7z6sJRTnLXvW6uJwTKxA1?pwd=ncg3";
 
 // 友情鏈接資料陣列
