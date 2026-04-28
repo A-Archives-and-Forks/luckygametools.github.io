@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en-US">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="icon" type="image/svg+xml" href="site-icon.svg">
-<title>纯JS生成签到界面</title>
+<title>Pure JavaScript Check-in Interface</title>
 
     <link rel="stylesheet" href="styles.css">
 <!-- 依然需要引入库文件，或者你也可以动态加载它，这里为了方便直接引入 -->
@@ -23,12 +23,12 @@
         </button>
         <div class="navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav">
-                <li class="nav-item"><a href="README_zh.html" class="nav-link active">首頁</a></li>
-                <li class="nav-item"><a href="README_zh.html#download-section" class="nav-link">下載</a></li>
-                <li class="nav-item"><a href="qa_zh.html" class="nav-link">常見問題</a></li>
-                <li class="nav-item"><a href="game_update_zh.html" class="nav-link">遊戲庫</a></li>
-                <li class="nav-item"><a href="devLog.html" class="nav-link">開發日誌</a></li>
-                <li class="nav-item language-switch-item"><a href="activety_en.html" class="lang-toggle language-switch-toggle active" title="Switch language" aria-label="Switch to English"><span class="lang-toggle-slider"></span><span class="lang-toggle-option en">EN</span><span class="lang-toggle-option zh">中</span></a></li>
+                <li class="nav-item"><a href="README_en.html" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="README_en.html#download-section" class="nav-link">Download</a></li>
+                <li class="nav-item"><a href="qa_en.html" class="nav-link">FAQ</a></li>
+                <li class="nav-item"><a href="game_update_en.html" class="nav-link">Games</a></li>
+                <li class="nav-item"><a href="devLog.html" class="nav-link">DevLog</a></li>
+                <li class="nav-item language-switch-item"><a href="activety_zh.html" class="lang-toggle language-switch-toggle" title="Switch language" aria-label="切換到中文"><span class="lang-toggle-slider"></span><span class="lang-toggle-option en">EN</span><span class="lang-toggle-option zh">中</span></a></li>
             </ul>
         </div>
     </nav>
@@ -50,7 +50,7 @@
     .twp { position: fixed; inset: 0; z-index: 1; pointer-events: none; }
     .twp canvas { width: 100%; height: 100%; display: block; }
 
-    /* 侧滑面板 */
+    /* Slide panel */
     .side-panel {
       position: fixed; left: -320px; top: 50%; transform: translateY(-50%);
       z-index: 100; display: flex; align-items: center;
@@ -89,7 +89,7 @@
       box-shadow: 0 2px 10px rgba(255, 165, 0, 0.3);
     }
 
-    /* 签到计数 */
+    /* Check-in counter */
     .streak-section { margin: 25px 0; }
     .streak-label { font-size: 14px; opacity: 0.6; margin-bottom: 5px; }
     .streak-num {
@@ -99,7 +99,7 @@
     }
     .streak-unit { font-size: 16px; color: #aaa; margin-left: 5px; }
 
-    /* 把手 */
+    /* Handle */
     .toggle-handle {
       width: 50px; height: 60px; background: #facc15;
       border-radius: 0 12px 12px 0; margin-left: -1px;
@@ -110,7 +110,7 @@
     }
     .toggle-handle:hover { transform: translateX(3px); }
 
-    /* 按钮 */
+    /* Button */
     .btn-sign {
       width: 100%; padding: 14px; border-radius: 12px; border: none;
       font-size: 16px; font-weight: 600; cursor: pointer;
@@ -124,7 +124,7 @@
       box-shadow: none; pointer-events: none; transform: none;
     }
 
-    /* 庆祝全屏层 */
+    /* Celebration overlay */
     .celebration-overlay {
       position: fixed; inset: 0; z-index: 200;
       background: rgba(0,0,0,0.72); backdrop-filter: blur(8px);
@@ -169,46 +169,46 @@
   // 2. 注入 HTML 结构 (使用 Template String)
   // ============================================
   const htmlTemplate = `
-    <!-- 动态背景层 -->
+    <!-- Animated background layer -->
     <div class="twp" id="tw-container"></div>
 
-    <!-- 侧滑面板 -->
+    <!-- Slide panel -->
     <div class="side-panel" id="sidePanel">
       <div class="sign-card">
         
-        <!-- 用户区 -->
+        <!-- User area -->
         <div class="user-info">
           <div class="avatar"><span class="lgt-icon icon-avatar" aria-hidden="true"></span></div>
-          <div class="level-badge">LV.5 黄金会员</div>
+          <div class="level-badge">LV.5 Gold Member</div>
         </div>
 
         <div style="height:1px; background:rgba(255,255,255,0.1); width:100%;"></div>
 
-        <!-- 计数区 -->
+        <!-- Counter area -->
         <div class="streak-section">
-          <div class="streak-label">已连续签到</div>
+          <div class="streak-label">Current streak</div>
           <div>
             <span class="streak-num" id="streak-num">2</span>
-            <span class="streak-unit">天</span>
+            <span class="streak-unit">days</span>
           </div>
         </div>
 
-        <!-- 按钮 -->
-        <button class="btn-sign" id="sign-btn">立即签到</button>
+        <!-- Button -->
+        <button class="btn-sign" id="sign-btn">Check in now</button>
       </div>
 
-      <!-- 侧滑把手 -->
+      <!-- 侧滑Handle -->
       <div class="toggle-handle" id="toggle-handle"><span class="lgt-icon icon-gift" aria-hidden="true"></span></div>
     </div>
 
-    <!-- 庆祝弹窗 -->
+    <!-- Celebration popup -->
     <div class="celebration-overlay" id="celebrationOverlay">
       <div class="prize-box">
         <div class="rays"></div>
         <div class="prize-icon"><span class="lgt-icon icon-trophy" aria-hidden="true"></span></div>
-        <h2 class="prize-title">3天连签达成！</h2>
-        <p class="prize-desc">获得「坚持不懈」徽章 + 100 积分</p>
-        <button class="btn-collect" id="collect-btn">开心收下</button>
+        <h2 class="prize-title">3days连签达成！</h2>
+        <p class="prize-desc">Earned the "Persistent" badge + 100 points</p>
+        <button class="btn-collect" id="collect-btn">Collect reward</button>
       </div>
     </div>
   `;
@@ -224,10 +224,10 @@
 
 
   // ============================================
-  // 3. 业务逻辑 (JS)
+  // 3. Business logic (JS)
   // ============================================
   
-  // A. 初始化背景
+  // A. Initialize background
   const Tw = window.TWallpaper ? (window.TWallpaper.default || window.TWallpaper) : null;
   const twContainer = document.getElementById('tw-container');
   
@@ -245,7 +245,7 @@
   }
 
   // B. 状态与元素获取
-  const state = { streak: 2, hasSigned: false }; // 初始连续2天
+  const state = { streak: 2, hasSigned: false }; // 初始连续2days
   const sidePanel = document.getElementById('sidePanel');
   const toggleHandle = document.getElementById('toggle-handle');
   const signBtn = document.getElementById('sign-btn');
@@ -273,10 +273,10 @@
 
     // 更新界面
     streakNum.innerText = state.streak;
-    signBtn.innerText = "今日已签到";
+    signBtn.innerText = "Checked in today";
     signBtn.classList.add('disabled');
 
-    // ★ 关键逻辑：如果签到后达到 3 天，触发彩蛋
+    // ★ 关键逻辑：如果签到后达到 3 days，触发彩蛋
     if (state.streak === 3) {
       setTimeout(() => {
         overlay.classList.add('active'); // 显示庆祝
@@ -300,7 +300,7 @@
 
   // 点击空白关闭侧栏
   document.addEventListener('click', (e) => {
-    // 只有在面板打开，且没有点击面板内部，且没有点击庆祝弹窗时才关闭
+    // 只有在面板打开，且没有点击面板内部，且没有点击Celebration popup时才关闭
     if (isPanelOpen && 
         !sidePanel.contains(e.target) && 
         !overlay.contains(e.target)) {

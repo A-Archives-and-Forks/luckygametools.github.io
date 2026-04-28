@@ -7,6 +7,7 @@
     <meta name="description" content="luckygametools 安全、免費、易用、史上最強Steam遊戲工具|steam unlocked">
     <meta name="keywords" content="steam,steam unlocked, free,luckygametools, steamtools,入庫,入库,免費,免费,Free Forever,官網,官網,中文站,安全,易用">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" type="image/svg+xml" href="site-icon.svg">
     <link rel="stylesheet" href="styles.css">
     <!-- <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet"> -->
     <link rel="preload" as="style" crossorigin
@@ -34,57 +35,29 @@
     </script>
 </head>
 <body>
-    <!-- Navigation Bar -->
     <nav class="navbar" id="navbar">
         <a href="index.html" class="navbar-brand">
             <div class="logo-icon"></div>
             <span>LuckyGameTools</span>
         </a>
-
-        <button class="navbar-toggle" id="navbarToggle" aria-label="切換導航">
+        <button class="navbar-toggle" aria-expanded="false" id="navbarToggle" aria-label="Toggle navigation">
             <span></span>
             <span></span>
             <span></span>
         </button>
-
         <div class="navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a href="README_zh.html" class="nav-link active">
-                        <span class="nav-icon"><svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg></span> 首頁
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="README_zh.html#download-section" class="nav-link">
-                        <span class="nav-icon"><svg viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg></span> 下載
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="qa_zh.html" class="nav-link">
-                        <span class="nav-icon"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/></svg></span> 常見問題
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="game_update.html" class="nav-link">
-                        <span class="nav-icon"><svg viewBox="0 0 24 24"><path d="M21 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-10 7H8v3H6v-3H3v-2h3V8h2v3h3v2zm4.5 2c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4-3c-.83 0-1.5-.67-1.5-1.5S18.67 9 19.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg></span> 遊戲列表
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="devLog.html" class="nav-link">
-                        <span class="nav-icon"><svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg></span> 開發日誌
-                    </a>
-                </li>
+                <li class="nav-item"><a href="README_zh.html" class="nav-link active">首頁</a></li>
+                <li class="nav-item"><a href="README_zh.html#download-section" class="nav-link">下載</a></li>
+                <li class="nav-item"><a href="qa_zh.html" class="nav-link">常見問題</a></li>
+                <li class="nav-item"><a href="game_update_zh.html" class="nav-link">遊戲庫</a></li>
+                <li class="nav-item"><a href="devLog.html" class="nav-link">開發日誌</a></li>
+                <li class="nav-item language-switch-item"><a href="README_en.html" class="lang-toggle language-switch-toggle active" title="Switch language" aria-label="Switch to English"><span class="lang-toggle-slider"></span><span class="lang-toggle-option en">EN</span><span class="lang-toggle-option zh">中</span></a></li>
             </ul>
-
-            <div class="lang-switcher">
-                <a href="README_en.html" class="lang-toggle active" id="langToggle" title="Switch language">
-                    <span class="lang-toggle-slider"></span>
-                    <span class="lang-toggle-option en">EN</span>
-                    <span class="lang-toggle-option zh">中</span>
-                </a>
-            </div>
         </div>
     </nav>
+
+    <!-- Navigation Bar -->
 
     <!-- Animated Background -->
     <div class="twp"></div>
@@ -99,18 +72,18 @@
             <p class="subtitle">享受高質量的遊戲服務 - 永久免費</p>
 
             <div class="contact-links">
-                <a href="https://t.me/luckygametools" target="_blank" class="contact-btn telegram">電報群</a>
-                <a href="https://t.me/luckygametools2" target="_blank" class="contact-btn telegram">訂閱公告</a>
-                <a href="https://discord.gg/X4MTpDbcpT" target="_blank" class="contact-btn discord">Discord</a>
-                <a href="https://www.youtube.com/@GameToolsLucky" target="_blank" class="contact-btn youtube">Youtube</a>
-                <a href="mailto:LuckyGameTools@gmail.com" target="_blank" onclick="copyEmail(this,'luckygametools@gmail.com')" class="contact-btn email tooltip-wrapper">
+                <a href="https://t.me/luckygametools" target="_blank" rel="noopener noreferrer" class="contact-btn telegram">電報群</a>
+                <a href="https://t.me/luckygametools2" target="_blank" rel="noopener noreferrer" class="contact-btn telegram">訂閱公告</a>
+                <a href="https://discord.gg/X4MTpDbcpT" target="_blank" rel="noopener noreferrer" class="contact-btn discord">Discord</a>
+                <a href="https://www.youtube.com/@GameToolsLucky" target="_blank" rel="noopener noreferrer" class="contact-btn youtube">Youtube</a>
+                <a href="mailto:LuckyGameTools@gmail.com" target="_blank" rel="noopener noreferrer" onclick="copyEmail(this,'luckygametools@gmail.com')" class="contact-btn email tooltip-wrapper">
                     Email(作者)
                     <span class="tooltip-text">只接待捐贈 luckygametools@gmail.com </span>
                 </a>
-                <a href="https://github.com/luckygametools" target="_blank" class="contact-btn git">GITHUB</a>
+                <a href="https://github.com/luckygametools" target="_blank" rel="noopener noreferrer" class="contact-btn git">GITHUB</a>
 
 		<!--    
-                <a href="mailto:soffice528@gmail.com" target="_blank" onclick="copyEmail(this,'soffice528@gmail.com')" class="contact-btn email tooltip-wrapper">
+                <a href="mailto:soffice528@gmail.com" target="_blank" rel="noopener noreferrer" onclick="copyEmail(this,'soffice528@gmail.com')" class="contact-btn email tooltip-wrapper">
                     Email(管理員)
                     <span class="tooltip-text">接待分享貢獻 soffice528@gmail.com </span>
                 </a>
@@ -121,7 +94,7 @@
         <!-- 安全聲明 -->
         <section class="section">
             <div class="security-info">
-            <h2>🛡️ 安全聲明</h2>
+            <h2><span class="lgt-icon icon-shield" aria-hidden="true"></span> 安全聲明</h2>
                 <p>本軟體為純本地綠色安全軟體，無需管理員權限就可正常使用（加速器功能除外）</p>
                 <p>不會有用戶登錄等功能，不存在上報收集用戶任何隱私信息行為</p>
                 <p>沒有服務器，歡迎各路大神前來檢閱(個人作品，沒錢養服務器，換句話說:服務永久有效)</p>
@@ -131,11 +104,11 @@
 				<h2></h2>
                 <h3>安全檢測報告</h3>
             <div style="text-align: center;" class="contact-links">
-                <a href="https://www.virscan.org/report/6f6663f0356e0122fc6ef6ab6be22c07f25d54558d18010a3f8895f872165d08" target="_blank" class="contact-btn safe-button"><strong>Virscan</strong></a>
+                <a href="https://www.virscan.org/report/6f6663f0356e0122fc6ef6ab6be22c07f25d54558d18010a3f8895f872165d08" target="_blank" rel="noopener noreferrer" class="contact-btn safe-button"><strong>Virscan</strong></a>
 
-                <a href="https://www.virustotal.com/gui/file-analysis/NjBiOTI5YjlmZWQ2Y2YzM2ViZTBlZTQyM2FlMGNhMTA6MTc2MzgwMTgzNg==" target="_blank" class="contact-btn safe-button"><strong>Virustotal</strong></a>
+                <a href="https://www.virustotal.com/gui/file-analysis/NjBiOTI5YjlmZWQ2Y2YzM2ViZTBlZTQyM2FlMGNhMTA6MTc2MzgwMTgzNg==" target="_blank" rel="noopener noreferrer" class="contact-btn safe-button"><strong>Virustotal</strong></a>
 
-                <a href="https://sandbox.ti.qianxin.com/sandbox/page/detail?type=file&id=7892007c991b58c96dd367828c70e480712e6ccb" target="_blank" class="contact-btn safe-button"><strong>奇安信</strong></a>
+                <a href="https://sandbox.ti.qianxin.com/sandbox/page/detail?type=file&id=7892007c991b58c96dd367828c70e480712e6ccb" target="_blank" rel="noopener noreferrer" class="contact-btn safe-button"><strong>奇安信</strong></a>
 				  
             </div>
 
@@ -146,31 +119,31 @@
         </section>
         <!-- 下載區域 -->
         <section class="download-section" id="download-section">
-            <h2>📥 軟體下載</h2>
+            <h2><span class="lgt-icon icon-download" aria-hidden="true"></span> 軟體下載</h2>
             <div style="text-align: center;">
                 <div class="download-wrapper">
                     <a id="download5" href="javascript:void(0);" class="download-btn">迅雷网盘下載(速度快!)</a>
                     <div class="qr-box">
-                        <img src="china_download_xl.jpg" alt="大陸網盤下載">
+                        <img decoding="async" loading="lazy" src="china_download_xl.jpg" alt="大陸網盤下載">
                     </div>
                 </div>
                 <div class="download-wrapper">
 					<a id="download" href="javascript:void(0);" class="download-btn">夸克網盤下載(速度快!)</a>
                     <div class="qr-box">
-						<img src="china_download.jpg" alt="大陸網盤下載">
+						<img decoding="async" loading="lazy" src="china_download.jpg" alt="大陸網盤下載">
                     </div>
                 </div>
-				<a id="download4" href="https://share.feijipan.com/s/C4VCRD2b" target="_blank" class="download-btn">小飛機網盤下載</a>
-                <a href="https://raw.githubusercontent.com/luckygametools/steam-cfg/main/LuckyGameToolsInstaller.exe" target="_blank" class="download-btn">最新安裝包</a>
+				<a id="download4" href="https://share.feijipan.com/s/C4VCRD2b" target="_blank" rel="noopener noreferrer" class="download-btn">小飛機網盤下載</a>
+                <a href="https://raw.githubusercontent.com/luckygametools/steam-cfg/main/LuckyGameToolsInstaller.exe" target="_blank" rel="noopener noreferrer" class="download-btn">最新安裝包</a>
 				<!--
-                <a id="download1" href="https://gofile.io/d/7x1sZ9" target="_blank" class="download-btn">備用下載1</a>
+                <a id="download1" href="https://gofile.io/d/7x1sZ9" target="_blank" rel="noopener noreferrer" class="download-btn">備用下載1</a>
                 <span class="tooltip-wrapper">
-                  <a id="download2" href="https://ranoz.gg/file/cPOv0ao6" target="_blank" class="download-btn">
+                  <a id="download2" href="https://ranoz.gg/file/cPOv0ao6" target="_blank" rel="noopener noreferrer" class="download-btn">
                     備用下載2
                   </a>
                   <span class="tooltip-text">點擊第一次彈出的頁面是廣告，第二次會直接下載</span>
                 </span>
-                <a id="download3" href="https://mega.nz/file/Xp4jTbqa#T_CJyo6XD23tQ2Fa3iCFg0jvEMcmHfFibvRgQ_U1GZw" target="_blank" class="download-btn">備用下載3</a>
+                <a id="download3" href="https://mega.nz/file/Xp4jTbqa#T_CJyo6XD23tQ2Fa3iCFg0jvEMcmHfFibvRgQ_U1GZw" target="_blank" rel="noopener noreferrer" class="download-btn">備用下載3</a>
 				-->
             </div>
 
@@ -185,21 +158,21 @@
         <!-- 重要公告 -->
         <section class="section">
            <!-- <div class="notice happy">
-                🎉 為慶祝軟體運行一周年，最近一段時間將會不定期開放高級權限體驗，持續至2025-10-10！
+                <span class="lgt-icon icon-celebrate" aria-hidden="true"></span> 為慶祝軟體運行一周年，最近一段時間將會不定期開放高級權限體驗，持續至2025-10-10！
             </div>-->
            <!--  <div class="notice happy">
-                🎉 為慶祝軟體總用戶超過4萬，開放權限2持續至2025-12-01！
+                <span class="lgt-icon icon-celebrate" aria-hidden="true"></span> 為慶祝軟體總用戶超過4萬，開放權限2持續至2025-12-01！
             </div>  -->
             <div class="notice happy">
-                🎉 喜迎2026中國新年，開放權限2 2026-02-08 至 2026-02-26！
+                <span class="lgt-icon icon-celebrate" aria-hidden="true"></span> 喜迎2026中國新年，開放權限2 2026-02-08 至 2026-02-26！
             </div>
-            <h3>🎮 粉絲群資訊</h3>
+            <h3><span class="lgt-icon icon-gamepad" aria-hidden="true"></span> 粉絲群資訊</h3>
             <p>LuckyGameTools粉絲群現已開放，由熱愛LGT的各位用戶自發創建。官方給予推廣和獎勵！</p>
             <div class="fan-groups">
                 <div class="fan-group download-wrapper">
-                    <a id="download" href="https://pd.qq.com/s/8isgzq4ku?b=9"  target="_blank" >QQ频道</a>
+                    <a id="download" href="https://pd.qq.com/s/8isgzq4ku?b=9"  target="_blank" rel="noopener noreferrer" >QQ频道</a>
                     <div class="qr-box">
-                        <img src="qq_dc.jpg" alt="QQ频道">
+                        <img decoding="async" loading="lazy" src="qq_dc.jpg" alt="QQ频道">
                     </div>
                 </div>
                 <div class="fan-group">Q群1: 954568952</div>
@@ -211,43 +184,43 @@
 
         <!-- 功能特色 -->
         <section class="section">
-            <h2>🚀 核心功能</h2>
+            <h2><span class="lgt-icon icon-rocket" aria-hidden="true"></span> 核心功能</h2>
             <div class="feature-grid">
                 <div class="feature-card">
-                    <h3>🎯 自動安裝清單</h3>
+                    <h3><span class="lgt-icon icon-target" aria-hidden="true"></span> 自動安裝清單</h3>
                     <p>一鍵解鎖遊戲，自動安裝清單文件 (steam unlocked)</p>
                 </div>
 
                 <div class="feature-card">
-                    <h3>👥 Steam家庭共享</h3>
+                    <h3><span class="lgt-icon icon-users" aria-hidden="true"></span> Steam家庭共享</h3>
                     <p>解除正版Steam家庭共享限制，同時玩同一款遊戲，包括聯機遊戲(需要成員同時使用本軟件)</p>
                 </div>
 
                 <div class="feature-card">
-                    <h3>🧑‍🤝‍🧑 480聯機組隊</h3>
+                    <h3><span class="lgt-icon icon-users" aria-hidden="true"></span> 480聯機組隊</h3>
                     <p>支持SpaceWar聯機組隊，支持99.99%的Steam聯機組隊遊戲</p>
                 </div>
 
                 <div class="feature-card">
-                    <h3>🔐 D加密遊戲支持</h3>
+                    <h3><span class="lgt-icon icon-lock" aria-hidden="true"></span> D加密遊戲支持</h3>
                     <p>支持 D 加密遊戲啟動，支持自動授權（需要神秘代碼激活）</p>
                 </div>
 
                 <div class="feature-card">
-                    <h3>🗿 創意工坊支持</h3>
-                    <p>支持steam遊戲 創意工坊 任性下載，<a href="https://github.com/luckygametools/steam-cfg/blob/main/workshop-games" target="_blank">(目前支持的遊戲列表)</a> ，更多遊戲陸續開放中</p>
+                    <h3><span class="lgt-icon icon-workshop" aria-hidden="true"></span> 創意工坊支持</h3>
+                    <p>支持steam遊戲 創意工坊 任性下載，<a href="https://github.com/luckygametools/steam-cfg/blob/main/workshop-games" target="_blank" rel="noopener noreferrer">(目前支持的遊戲列表)</a> ，更多遊戲陸續開放中</p>
                 </div>
 
                 <div class="feature-card">
-                    <h3>🌐 支持需要聯網驗證的單機遊戲</h3>
+                    <h3><span class="lgt-icon icon-globe" aria-hidden="true"></span> 支持需要聯網驗證的單機遊戲</h3>
                     <p>支持部份需要聯網授權驗證的單機遊戲(steam認證失敗 的遊戲)</p>
                 </div>
                 <div class="feature-card">
-                    <h3>🎮 特色遊戲支持</h3>
+                    <h3><span class="lgt-icon icon-gamepad" aria-hidden="true"></span> 特色遊戲支持</h3>
                     <p>支持GTA系列、荒野大鏢客1&2、紙嫁衣 等一鍵暢玩(詳見->常見問題)</p>
                 </div>
                 <div class="feature-card">
-                    <h3>⚡ Steam加速</h3>
+                    <h3><span class="lgt-icon icon-bolt" aria-hidden="true"></span> Steam加速</h3>
                     <p>支持 Steam 及社區加速功能</p>
                 </div>
 
@@ -256,7 +229,7 @@
 
         <!-- D加密遊戲激活教學 -->
         <section class="section">
-            <h2>🔓 D加密遊戲激活教學<a href="https://youtu.be/vyAiCWiyotI" target="_blank">(視頻演示)</a></h2>
+            <h2><span class="lgt-icon icon-unlock" aria-hidden="true"></span> D加密遊戲激活教學<a href="https://youtu.be/vyAiCWiyotI" target="_blank" rel="noopener noreferrer">(視頻演示)</a></h2>
             <div class="steps">
                 <div class="step">
                     <div class="step-number">1</div>
@@ -296,7 +269,7 @@
 
         <!-- D加密遊戲激活教學 -->
         <section class="section">
-            <h2>🌐 支持需要聯網驗證的單機遊戲教學？</h2>
+            <h2><span class="lgt-icon icon-globe" aria-hidden="true"></span> 支持需要聯網驗證的單機遊戲教學？</h2>
             <div class="warning">
                 <p><strong>重要提醒：</strong></p>
                 參考D加密遊戲激活步驟,不同點是神秘代碼是lot開頭(每次遊戲玩都需要通過代碼啟動)
@@ -309,16 +282,16 @@
 
         <!-- 聯機注意事項 -->
         <section class="section">
-            <h2>🧑‍🤝‍🧑 480(SpaceWar)聯機注意事項<a href="https://youtu.be/I2f69LMkknA" target="_blank">(視頻演示)</a></h2>
+            <h2><span class="lgt-icon icon-users" aria-hidden="true"></span> 480(SpaceWar)聯機注意事項<a href="https://youtu.be/I2f69LMkknA" target="_blank" rel="noopener noreferrer">(視頻演示)</a></h2>
             <div class="warning">
                 <p><strong>重要提醒：</strong></p>
                 <ul style="margin-left: 20px; margin-top: 10px;">
                     <li>無需任何第三方聯機補丁，支持 99.99% 的 Steam 聯機組隊遊戲</li>
                     <li>只能和非官方服務器聯機</li>
-                    <li>好友也需要添加啟動參數 <code>-luckygametools</code> 或者 <code>-luckygametools=3</code> 或者 <a href="/qa_zh.html" target="_blank">查看QA常見問題聯機補充</a></li>
+                    <li>好友也需要添加啟動參數 <code>-luckygametools</code> 或者 <code>-luckygametools=3</code> 或者 <a href="/qa_zh.html" target="_blank" rel="noopener noreferrer">查看QA常見問題聯機補充</a></li>
                     <li>對于需要好友邀請組隊的遊戲，需要好友在接收到steam的聯機邀請消息前,需要先啟動遊戲，再點擊steam聊天消息中邀請鏈接進入聯機</li>
 		    <li>如果加了參數后，還是提示需要加參數的，可在從軟件左下角啟動steam,或者查看啟動steam時軟件正上方的紅字提示</li>
-                    <li>軟件目前已對部份遊戲自動集成參數：<a href="https://github.com/luckygametools/steam-cfg/blob/main/arg-luckygametools" target="_blank">(已收錄的遊戲列表)</a></li>
+                    <li>軟件目前已對部份遊戲自動集成參數：<a href="https://github.com/luckygametools/steam-cfg/blob/main/arg-luckygametools" target="_blank" rel="noopener noreferrer">(已收錄的遊戲列表)</a></li>
                     <li>聯機遊戲在steam上選擇的語言項無效，默認聯機時遊戲語言和軟件選擇的語言保持一至</li>
                     <li>部份聯機遊戲無法彈窗出邀請好友的界面,請使用幸運參數：-luckygametools=0 (eg:Sons of The Forest )</li>
                     <li>如果出現加入不了對方服務器的情況，請確認遊戲版本是否一至，部份遊戲版本不一至時會進不了對方服務器</li>			
@@ -328,26 +301,26 @@
 
         <!-- Toolbox -->
         <section class="section">
-            <h2>🛠️ 進階工具箱</h2>
+            <h2><span class="lgt-icon icon-tools" aria-hidden="true"></span> 進階工具箱</h2>
             <div class="tools-grid">
                 <div class="tool-card">
-                    <h3>🔄 離線遊戲平台</h3>
+                    <h3><span class="lgt-icon icon-sync" aria-hidden="true"></span> 離線遊戲平台</h3>
                     <p>一鍵離線 Ubisoft 等平台工具</p>
                 </div>
                 <div class="tool-card">
-                    <h3>📋 遊戲清單導出</h3>
+                    <h3><span class="lgt-icon icon-list" aria-hidden="true"></span> 遊戲清單導出</h3>
                     <p>輸入AppID一鍵導出對應遊戲清單 (還可以解鎖遊戲的DLC哦)</p>
                 </div>
                 <div class="tool-card">
-                    <h3>📂 清單文件導入</h3>
+                    <h3><span class="lgt-icon icon-folder" aria-hidden="true"></span> 清單文件導入</h3>
                     <p>支持拖入清單文件，入庫未添加的遊戲</p>
                 </div>
                 <div class="tool-card">
-                    <h3>🎟️ 生成lot神秘代碼</h3>
+                    <h3><span class="lgt-icon icon-ticket" aria-hidden="true"></span> 生成lot神秘代碼</h3>
                     <p>用于遊玩需要在線驗證的單機遊戲 (權限越高生成代碼的有效期越長)</p>
                 </div>
                 <div class="tool-card">
-                    <h3>🎟️ 生成lgt神秘代碼</h3>
+                    <h3><span class="lgt-icon icon-ticket" aria-hidden="true"></span> 生成lgt神秘代碼</h3>
                     <p>用于D加密遊戲的激活 (權限越高生成代碼的有效期越長)</p>
                 </div>
             </div>
@@ -355,7 +328,7 @@
 
         <!-- Contribution -->
         <section class="section">
-            <h2>⭐ 獲取神秘代碼 或 提升權限</h2>
+            <h2><span class="lgt-icon icon-star" aria-hidden="true"></span> 獲取神秘代碼 或 提升權限</h2>
             <h3>貢獻方式：</h3>
             <div class="steps">
                 <div class="step">
@@ -380,7 +353,7 @@
                 </div>
                 <div class="step">
                     <div class="step-number">6</div>
-                    <div>贊助本軟件(大陸只針對老用戶)可以 直接升级权限并获取神秘代码的购买资格，贊助方式可以通過 <a href="https://t.me/luckygametools" target="_blank">電報(Telegram)</a> 聯繫作者(電報群主)</div>
+                    <div>贊助本軟件(大陸只針對老用戶)可以 直接升级权限并获取神秘代码的购买资格，贊助方式可以通過 <a href="https://t.me/luckygametools" target="_blank" rel="noopener noreferrer">電報(Telegram)</a> 聯繫作者(電報群主)</div>
                 </div>
             </div>
 
@@ -388,7 +361,7 @@
                 <strong>以上貢獻方式只需要選擇一項完成,都算一次貢獻</strong>
             </div>
             <div class="warning">
-                <strong>分享貢獻後請截圖聯繫<a href="https://t.me/luckygametools" target="_blank">電報(Telegram)</a>開通權限或領取神秘代碼（領取神秘代碼時需告知遊戲的AppId）</strong>
+                <strong>分享貢獻後請截圖聯繫<a href="https://t.me/luckygametools" target="_blank" rel="noopener noreferrer">電報(Telegram)</a>開通權限或領取神秘代碼（領取神秘代碼時需告知遊戲的AppId）</strong>
             </div>
             <div class="warning">
                 <strong>權限永久:如果偶爾發現權限失效了，不用慌張哈，網絡的問題，架梯子(全局tun)或者聯繫作者可獲取另一種拉取權限的方式</strong>
@@ -400,7 +373,7 @@
         <!-- 頁尾 -->
         <footer style="text-align: center; margin-top: 50px; color: rgba(255,255,255,0.8);">
             <p>© 2025 LuckyGameTools - 遊戲資源每天更新中，很多遊戲都是滿DLC豪華版</p>
-            <p style="margin-top: 10px;">如有問題請先查看<a href="/qa_zh.html" target="_blank">QA常見問題</a>，或自行Google/AI查詢</p>
+            <p style="margin-top: 10px;">如有問題請先查看<a href="/qa_zh.html" target="_blank" rel="noopener noreferrer">QA常見問題</a>，或自行Google/AI查詢</p>
         </footer>
     </div>
 

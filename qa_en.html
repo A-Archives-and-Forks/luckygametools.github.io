@@ -7,6 +7,7 @@
     <meta name="description" content="luckygametools Secure, Fast and Free Forever Steam Game Tools(FAQ-QA)|steam unlocked">
     <meta name="keywords" content="steam,steam unlocked, free,luckygametools, steamtools,patch,Free Forever,FAQ,QA">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" type="image/svg+xml" href="site-icon.svg">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <link rel="preload" as="style" crossorigin
@@ -34,53 +35,30 @@
     </script>
 </head>
 <body>
-	<div id="google_translate_element" class="floating-top-left"></div>
-    <!-- Navigation Bar -->
     <nav class="navbar" id="navbar">
-        <a href="/" class="navbar-brand">
+        <a href="index.html" class="navbar-brand">
             <div class="logo-icon"></div>
             <span>LuckyGameTools</span>
         </a>
-
-        <button class="navbar-toggle" id="navbarToggle" aria-label="Toggle navigation">
+        <button class="navbar-toggle" aria-expanded="false" id="navbarToggle" aria-label="Toggle navigation">
             <span></span>
             <span></span>
             <span></span>
         </button>
-
         <div class="navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a href="README_en.html" class="nav-link">
-                        <span class="nav-icon"><svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg></span> Home
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="README_en.html#download-section" class="nav-link">
-                        <span class="nav-icon"><svg viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg></span> Download
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="qa_en.html" class="nav-link active">
-                        <span class="nav-icon"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/></svg></span> FAQ
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="game_update.html" class="nav-link">
-                        <span class="nav-icon"><svg viewBox="0 0 24 24"><path d="M21 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-10 7H8v3H6v-3H3v-2h3V8h2v3h3v2zm4.5 2c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4-3c-.83 0-1.5-.67-1.5-1.5S18.67 9 19.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg></span> Games
-                    </a>
-                </li>
+                <li class="nav-item"><a href="README_en.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="README_en.html#download-section" class="nav-link">Download</a></li>
+                <li class="nav-item"><a href="qa_en.html" class="nav-link active">FAQ</a></li>
+                <li class="nav-item"><a href="game_update_en.html" class="nav-link">Games</a></li>
+                <li class="nav-item"><a href="devLog.html" class="nav-link">DevLog</a></li>
+                <li class="nav-item language-switch-item"><a href="qa_zh.html" class="lang-toggle language-switch-toggle" title="Switch language" aria-label="切換到中文"><span class="lang-toggle-slider"></span><span class="lang-toggle-option en">EN</span><span class="lang-toggle-option zh">中</span></a></li>
             </ul>
-
-            <div class="lang-switcher">
-                <a href="qa_zh.html" class="lang-toggle" id="langToggle" title="Switch language">
-                    <span class="lang-toggle-slider"></span>
-                    <span class="lang-toggle-option en">EN</span>
-                    <span class="lang-toggle-option zh">中</span>
-                </a>
-            </div>
         </div>
     </nav>
+
+	<div id="google_translate_element" class="floating-top-left"></div>
+    <!-- Navigation Bar -->
 
     <div class="twp"></div>
     <div class="container content main-content">
@@ -89,7 +67,7 @@
 			<!-- 安全聲明 -->
 			<section class="section">
             <div class="security-info">
-                <h2>🛡️ Safety Statement</h2>
+                <h2><span class="lgt-icon icon-shield" aria-hidden="true"></span> Safety Statement</h2>
                 <p>this software is pure local green software, which can be used normally without administrator permission (except for the accelerator function)</p>
                 <p>All resources come from the Internet, and there is no server, so it is impossible to collect your private information</p>
                 <p>there will be no functions such as user login, and there may be anti-virus misinformation. Please rest assured that you can use it </p>
@@ -101,7 +79,7 @@
         </header>
 
         <section class="section">
-            <h2>⭐ Prompt when importing game: Network error？</h2>
+            <h2><span class="lgt-icon icon-star" aria-hidden="true"></span> Prompt when importing game: Network error？</h2>
             <div class="steps">
                 <div class="step">
                     <div class="step-number">1</div>
@@ -126,7 +104,7 @@
         </section>
 
         <section class="section">
-            <h2>⭐ Steam download or update game manifest not available solution(The version after 2.0.1.14 will not have this issue. If it occurs, try restarting Steam)</h2>
+            <h2><span class="lgt-icon icon-star" aria-hidden="true"></span> Steam download or update game manifest not available solution(The version after 2.0.1.14 will not have this issue. If it occurs, try restarting Steam)</h2>
 	    <div class="warning">
                 <strong>The reason is that this software will not affect users when it is not running steam No processing was done, so the update of the game list was not locked. </strong>
             	<br>
@@ -145,7 +123,7 @@
                 </div>
                 <div class="step">
                     <div class="step-number">3</div>
-                    <div>Click to clear Steam cache in software settings!<img class="img-default" src="https://github.com/user-attachments/assets/1d47b48d-5963-4065-84fa-1df12f17054b"></div>
+                    <div>Click to clear Steam cache in software settings!<img alt="LuckyGameTools image" decoding="async" loading="lazy" class="img-default" src="https://github.com/user-attachments/assets/1d47b48d-5963-4065-84fa-1df12f17054b"></div>
                 </div>
                 <div class="step">
                     <div class="step-number">4</div>
@@ -164,7 +142,7 @@
         </section>
 
 	<section class="section">
-            <h2>⭐ The official game has been updated, but my game version has suddenly stopped at the old version:</h2>
+            <h2><span class="lgt-icon icon-star" aria-hidden="true"></span> The official game has been updated, but my game version has suddenly stopped at the old version:</h2>
             <div class="steps">
                 <div class="step">
                     <div class="step-number">1</div>
@@ -187,7 +165,7 @@
         </section>
 
 	<section class="section">
-            <h2>⭐ Why mine steam Login successful, software still prompts: Please Restart Steam | Waiting Steam Active </h2>
+            <h2><span class="lgt-icon icon-star" aria-hidden="true"></span> Why mine steam Login successful, software still prompts: Please Restart Steam | Waiting Steam Active </h2>
 			<div class="warning">
                 <strong>Ensure that you are using Steam Not tampered with or hijacked by other third-party plugins (this software does not modify) Steam Any document)</strong>
             </div>
@@ -213,7 +191,7 @@
         </section>
 
         <section class="section">
-            <h2>⭐ Some single player games may prompt that network authentication is required, but I cannot enter the game. What should I do </h2>
+            <h2><span class="lgt-icon icon-star" aria-hidden="true"></span> Some single player games may prompt that network authentication is required, but I cannot enter the game. What should I do </h2>
             <div class="steps">
                 <div class="step">
                     <div class="step-number">1</div>
@@ -221,7 +199,7 @@
                 </div>
                 <div class="step">
                     <div class="step-number">2</div>
-                    <div>See instructions for usage<a href="https://luckygametools.github.io/README_en.html" target="_blank"> Support some single player games that require online authorization verification</a></div>
+                    <div>See instructions for usage<a href="https://luckygametools.github.io/README_en.html" target="_blank" rel="noopener noreferrer"> Support some single player games that require online authorization verification</a></div>
                 </div>
                 <div class="step">
                     <div class="step-number">3</div>
@@ -232,7 +210,7 @@
         </section>
 
 	<section class="section">
-            <h2>⭐ Why can't I access the Steam store after my computer is turned on today </h2>
+            <h2><span class="lgt-icon icon-star" aria-hidden="true"></span> Why can't I access the Steam store after my computer is turned on today </h2>
 	    <div class="warning">
                 <strong>If this software is launched with administrator privileges, the Steam Store or Community Network Acceleration feature will be enabled by default. Currently, this feature is achieved by modifying the system Hosts file. When the software exits normally, the Hosts file will be automatically restored</strong>
             </div>
@@ -252,7 +230,7 @@
         </section>
 
 	<section class="section">
-            <h2>⭐ Steam has entered the (wallpaper engine | Lossless Scaling) but cannot find it:</h2>
+            <h2><span class="lgt-icon icon-star" aria-hidden="true"></span> Steam has entered the (wallpaper engine | Lossless Scaling) but cannot find it:</h2>
             <div class="steps">
                 <div class="step">
                     <div class="step-number">1</div>
@@ -275,14 +253,14 @@
 
 
         <section class="section">
-            <h2>⭐ Why does the software prompt Ban On User</h2>
+            <h2><span class="lgt-icon icon-star" aria-hidden="true"></span> Why does the software prompt Ban On User</h2>
             <div class="warning">
                 <strong>Restricted steam account By Steam Or LuckyGameTools , or there are network issues</strong>
             </div>
 
         </section>
         <section class="section">
-            <h2>⭐ why Steam When starting the game, it will prompt: Cloud storage synchronization failed</h2>
+            <h2><span class="lgt-icon icon-star" aria-hidden="true"></span> why Steam When starting the game, it will prompt: Cloud storage synchronization failed</h2>
             <div class="warning">
                 <strong>This is Steam The official has made adjustments to game cloud storage, requiring the account to truly own the game in order to use it Steam The cloud synchronization function</strong>
                 <br/><br/><br/>
@@ -292,7 +270,7 @@
 
 
 		<section class="section">
-            <h2>⭐ What should I do if the game encounters an error when starting with online parameters added（-luckygametools）（Steam Error Application load error V:0000065432）</h2>
+            <h2><span class="lgt-icon icon-star" aria-hidden="true"></span> What should I do if the game encounters an error when starting with online parameters added（-luckygametools）（Steam Error Application load error V:0000065432）</h2>
             <div class="steps">
                 <div class="step">
                     <div class="step-number">1</div>
@@ -315,11 +293,11 @@
         </section>
 
 		<section class="section">
-            <h2>⭐ Why does a game released by CAPCOM crash? Eg: Resident Evil Remake, Street Fighter 6,Monster Hunter Wilds? </h2>
+            <h2><span class="lgt-icon icon-star" aria-hidden="true"></span> Why does a game released by CAPCOM crash? Eg: Resident Evil Remake, Street Fighter 6,Monster Hunter Wilds? </h2>
             <div class="steps">
                 <div class="step">
                     <div class="step-number">1</div>
-                    <div>To start Steam, you need to start it from the bottom left corner of luckygame tools !<img class="img-default" src="https://github.com/user-attachments/assets/8e18ba43-8b6a-49ed-8717-a4374b4766c0"></div>
+                    <div>To start Steam, you need to start it from the bottom left corner of luckygame tools !<img alt="LuckyGameTools image" decoding="async" loading="lazy" class="img-default" src="https://github.com/user-attachments/assets/8e18ba43-8b6a-49ed-8717-a4374b4766c0"></div>
                 </div>
                 <div class="step">
                     <div class="step-number">2</div>
@@ -334,7 +312,7 @@
         </section>
 
 		<section class="section">
-            <h2>⭐ My computer environment prompts Steam - Game startup failure (error code) when starting the game or cannot run properly . What should I do</h2>
+            <h2><span class="lgt-icon icon-star" aria-hidden="true"></span> My computer environment prompts Steam - Game startup failure (error code) when starting the game or cannot run properly . What should I do</h2>
             <div class="steps">
                 <div class="step">
                     <div class="step-number">1</div>
@@ -361,7 +339,7 @@
         </section>
 
 		<section class="section">
-            <h2>⭐ Why did I suddenly stop playing Red Dead Redemption 2 when I was able to play it normally before </h2>
+            <h2><span class="lgt-icon icon-star" aria-hidden="true"></span> Why did I suddenly stop playing Red Dead Redemption 2 when I was able to play it normally before </h2>
 			<div class="warning">
                 <strong>Previously, if you were able to play, it means that your game files are normal and have not been modified by other software (using other patches or...) Mod May tamper with game files)</strong>
             </div>
@@ -389,7 +367,7 @@
 
 
 		<section class="section">
-            <h2>⭐ Solutions for Net Bar or other computer environment software not working properly </h2>
+            <h2><span class="lgt-icon icon-star" aria-hidden="true"></span> Solutions for Net Bar or other computer environment software not working properly </h2>
             <div class="steps">
                 <div class="step">
                     <div class="step-number">1</div>
@@ -408,7 +386,7 @@
         </section>
 
 		<section class="section">
-            <h2>⭐ GTA V enhanced Crack patch instructions </h2>
+            <h2><span class="lgt-icon icon-star" aria-hidden="true"></span> GTA V enhanced Crack patch instructions </h2>
 			<div class="warning">
                 <strong>If after importing the enhanced version steam Unable to find in the library -> Remove the legacy version, import the enhanced version again, and restart steam</strong>
             </div>
@@ -419,7 +397,7 @@
                 </div>
                 <div class="step">
                     <div class="step-number">2</div>
-                    <div>We have found a patch from another cracking organization for everyone <a href="https://raw.githubusercontent.com/luckygametools/steam-cfg/main/gamePatch/GTA5_Enhanced1.0.814.9.zip" target="_blank"> Click to download patch file</a> | <a href="https://gofile.io/d/5B3dhX" target="_blank"> Backup download address 1</a> | <a href="https://ranoz.gg/file/aRfPi4l4" target="_blank"> Backup download address 2</a></div>
+                    <div>We have found a patch from another cracking organization for everyone <a href="https://raw.githubusercontent.com/luckygametools/steam-cfg/main/gamePatch/GTA5_Enhanced1.0.814.9.zip" target="_blank" rel="noopener noreferrer"> Click to download patch file</a> | <a href="https://gofile.io/d/5B3dhX" target="_blank" rel="noopener noreferrer"> Backup download address 1</a> | <a href="https://ranoz.gg/file/aRfPi4l4" target="_blank" rel="noopener noreferrer"> Backup download address 2</a></div>
                 </div>
                 <div class="step">
                     <div class="step-number">3</div>
@@ -435,11 +413,11 @@
         </section>
 
 		<section class="section">
-            <h2>⭐ GTA IV Crack patch instructions </h2>
+            <h2><span class="lgt-icon icon-star" aria-hidden="true"></span> GTA IV Crack patch instructions </h2>
             <div class="steps">
                 <div class="step">
                     <div class="step-number">1</div>
-                    <div>We have found a patch from another cracking organization for everyone<a href="https://raw.githubusercontent.com/luckygametools/steam-cfg/main/gamePatch/GTAIV1.2.0.59.zip" target="_blank">Click to download patch file</a>  | <a href="https://gofile.io/d/2wlteo" target="_blank">Backup download address 1</a> | <a href="https://ranoz.gg/file/OqJ0Grxx" target="_blank">Backup download address 2</a></div>
+                    <div>We have found a patch from another cracking organization for everyone<a href="https://raw.githubusercontent.com/luckygametools/steam-cfg/main/gamePatch/GTAIV1.2.0.59.zip" target="_blank" rel="noopener noreferrer">Click to download patch file</a>  | <a href="https://gofile.io/d/2wlteo" target="_blank" rel="noopener noreferrer">Backup download address 1</a> | <a href="https://ranoz.gg/file/OqJ0Grxx" target="_blank" rel="noopener noreferrer">Backup download address 2</a></div>
                 </div>
                 <div class="step">
                     <div class="step-number">2</div>
@@ -451,11 +429,11 @@
 
 
 		<section class="section">
-            <h2>⭐ 《Assassin's Creed Valhalla》 Crack patch instructions </h2>
+            <h2><span class="lgt-icon icon-star" aria-hidden="true"></span> 《Assassin's Creed Valhalla》 Crack patch instructions </h2>
             <div class="steps">
                 <div class="step">
                     <div class="step-number">1</div>
-                    <div>We have found a patch from another cracking organization for everyone，<a href="https://raw.githubusercontent.com/luckygametools/steam-cfg/main/gamePatch/ACV.DLC.Unlocker_for_v1.7.0.zip" target="_blank">Click to download patch file</a>  | <a href="https://gofile.io/d/faBw5L" target="_blank">Backup download address 1</a> | <a href="https://ranoz.gg/file/jOeJVFPs" target="_blank">Backup download address 2</a></div>
+                    <div>We have found a patch from another cracking organization for everyone，<a href="https://raw.githubusercontent.com/luckygametools/steam-cfg/main/gamePatch/ACV.DLC.Unlocker_for_v1.7.0.zip" target="_blank" rel="noopener noreferrer">Click to download patch file</a>  | <a href="https://gofile.io/d/faBw5L" target="_blank" rel="noopener noreferrer">Backup download address 1</a> | <a href="https://ranoz.gg/file/jOeJVFPs" target="_blank" rel="noopener noreferrer">Backup download address 2</a></div>
                 </div>
                 <div class="step">
                     <div class="step-number">2</div>
@@ -467,7 +445,7 @@
 
 
         <section class="section">
-            <h2>⭐ LuckyGameTools  Make external plugins instructions </h2>
+            <h2><span class="lgt-icon icon-star" aria-hidden="true"></span> LuckyGameTools  Make external plugins instructions </h2>
             <div class="warning">
                 <strong>Usage: After downloading the patch file,copy to LuckyGameTools Under the installation directory plugins Below (if not available) plugins Directory, please update and install the latest version of software)</strong>
                 <br>
@@ -483,15 +461,15 @@
 
                 <div class="step">
                     <div class="step-appid">3350200</div>
-                    <div class="step-gamename">撈女遊戲 情感反詐模擬器(Fixed version:18941501)<a href="https://raw.githubusercontent.com/luckygametools/steam-cfg/main/gamePatch/plugins/3350200.plug" target="_blank">Click to download plugin file</a>  </div>
+                    <div class="step-gamename">撈女遊戲 情感反詐模擬器(Fixed version:18941501)<a href="https://raw.githubusercontent.com/luckygametools/steam-cfg/main/gamePatch/plugins/3350200.plug" target="_blank" rel="noopener noreferrer">Click to download plugin file</a>  </div>
                 </div>
                 <div class="step">
                     <div class="step-appid">3218580</div>
-                    <div class="step-gamename">监寓<a href="https://raw.githubusercontent.com/luckygametools/steam-cfg/main/gamePatch/plugins/3218580.plug" target="_blank">Click to download plugin file</a>  </div>
+                    <div class="step-gamename">监寓<a href="https://raw.githubusercontent.com/luckygametools/steam-cfg/main/gamePatch/plugins/3218580.plug" target="_blank" rel="noopener noreferrer">Click to download plugin file</a>  </div>
                 </div>
                 <div class="step">
                     <div class="step-appid">3292340</div>
-                    <div class="step-gamename">时空重构<a href="https://raw.githubusercontent.com/luckygametools/steam-cfg/main/gamePatch/plugins/3292340.plug" target="_blank">Click to download plugin file</a>  </div>
+                    <div class="step-gamename">时空重构<a href="https://raw.githubusercontent.com/luckygametools/steam-cfg/main/gamePatch/plugins/3292340.plug" target="_blank" rel="noopener noreferrer">Click to download plugin file</a>  </div>
                 </div>
             </div>
 

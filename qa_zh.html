@@ -7,6 +7,7 @@
     <meta name="description" content="luckygametools 安全、免費、易用、史上最強Steam遊戲工具(常見問題、FAQ、QA)|steam unlocked">
     <meta name="keywords" content="steam,steam unlocked, free,luckygametools, steamtools,入庫,入库,免費,免费,Free Forever,官網,官網,中文站,安全,易用,常見問題,常见问题,FAQ,QA">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" type="image/svg+xml" href="site-icon.svg">
     <link rel="stylesheet" href="styles.css">
     <!-- <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet"> -->
     <link rel="preload" as="style" crossorigin
@@ -34,57 +35,29 @@
     </script>
 </head>
 <body>
-    <!-- Navigation Bar -->
     <nav class="navbar" id="navbar">
         <a href="index.html" class="navbar-brand">
             <div class="logo-icon"></div>
             <span>LuckyGameTools</span>
         </a>
-
-        <button class="navbar-toggle" id="navbarToggle" aria-label="切換導航">
+        <button class="navbar-toggle" aria-expanded="false" id="navbarToggle" aria-label="Toggle navigation">
             <span></span>
             <span></span>
             <span></span>
         </button>
-
         <div class="navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a href="README_zh.html" class="nav-link active">
-                        <span class="nav-icon"><svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg></span> 首頁
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="README_zh.html#download-section" class="nav-link">
-                        <span class="nav-icon"><svg viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg></span> 下載
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="qa_zh.html" class="nav-link">
-                        <span class="nav-icon"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/></svg></span> 常見問題
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="game_update.html" class="nav-link">
-                        <span class="nav-icon"><svg viewBox="0 0 24 24"><path d="M21 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-10 7H8v3H6v-3H3v-2h3V8h2v3h3v2zm4.5 2c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4-3c-.83 0-1.5-.67-1.5-1.5S18.67 9 19.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg></span> 遊戲列表
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="devLog.html" class="nav-link">
-                        <span class="nav-icon"><svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg></span> 開發日誌
-                    </a>
-                </li>
+                <li class="nav-item"><a href="README_zh.html" class="nav-link">首頁</a></li>
+                <li class="nav-item"><a href="README_zh.html#download-section" class="nav-link">下載</a></li>
+                <li class="nav-item"><a href="qa_zh.html" class="nav-link active">常見問題</a></li>
+                <li class="nav-item"><a href="game_update_zh.html" class="nav-link">遊戲庫</a></li>
+                <li class="nav-item"><a href="devLog.html" class="nav-link">開發日誌</a></li>
+                <li class="nav-item language-switch-item"><a href="qa_en.html" class="lang-toggle language-switch-toggle active" title="Switch language" aria-label="Switch to English"><span class="lang-toggle-slider"></span><span class="lang-toggle-option en">EN</span><span class="lang-toggle-option zh">中</span></a></li>
             </ul>
-
-            <div class="lang-switcher">
-                <a href="qa_en.html" class="lang-toggle active" id="langToggle" title="Switch language">
-                    <span class="lang-toggle-slider"></span>
-                    <span class="lang-toggle-option en">EN</span>
-                    <span class="lang-toggle-option zh">中</span>
-                </a>
-            </div>
         </div>
     </nav>
+
+    <!-- Navigation Bar -->
 
     <div class="twp"></div>
     <div class="container content main-content">
@@ -93,7 +66,7 @@
 			<!-- 安全聲明 -->
 			<section class="section">
 				<div class="security-info">
-					<h2>🛡️ 安全聲明</h2>
+					<h2><span class="lgt-icon icon-shield" aria-hidden="true"></span> 安全聲明</h2>
 					<p>本軟體為純本地綠色軟體，無需管理員權限就可正常使用（加速器功能除外）</p>
 					<p>所有資源來自互聯網，沒有服務器，不會收集用戶隱私信息</p>
 					<p>不會有用戶登錄等功能，可能出現殺毒誤報，請放心使用</p>
@@ -105,7 +78,7 @@
         </header>
 
         <section class="section">
-            <h2>⭐ 導入遊戲時提示:網絡錯誤？</h2>
+            <h2><span class="lgt-icon icon-star" aria-hidden="true"></span> 導入遊戲時提示:網絡錯誤？</h2>
             <div class="steps">
                 <div class="step">
                     <div class="step-number">1</div>
@@ -130,7 +103,7 @@
         </section>
 
         <section class="section">
-            <h2>⭐ steam下载或更新游戏提示清单不可用解决办法(2.0.1.14后的版本將不會出現此問題，如果出現試試重啟steam)</h2>
+            <h2><span class="lgt-icon icon-star" aria-hidden="true"></span> steam下载或更新游戏提示清单不可用解决办法(2.0.1.14后的版本將不會出現此問題，如果出現試試重啟steam)</h2>
 	    <div class="warning">
                 <strong>原因是本軟件在沒有運行的情況下，不會對用戶的steam做任何處理，所以也就沒有鎖住遊戲清單的更新</strong>
 		<br><br>
@@ -147,7 +120,7 @@
                 </div>
                 <div class="step">
                     <div class="step-number">3</div>
-                    <div>在本软件设置中点击清除steam缓存!<img class="img-default" src="https://github.com/user-attachments/assets/1d47b48d-5963-4065-84fa-1df12f17054b"></div>
+                    <div>在本软件设置中点击清除steam缓存!<img alt="LuckyGameTools image" decoding="async" loading="lazy" class="img-default" src="https://github.com/user-attachments/assets/1d47b48d-5963-4065-84fa-1df12f17054b"></div>
                 </div>
                 <div class="step">
                     <div class="step-number">4</div>
@@ -166,7 +139,7 @@
         </section>
 
 	<section class="section">
-            <h2>⭐ 官方游戏更新了,我的游戏版本却一下停在老版本:</h2>
+            <h2><span class="lgt-icon icon-star" aria-hidden="true"></span> 官方游戏更新了,我的游戏版本却一下停在老版本:</h2>
             <div class="steps">
                 <div class="step">
                     <div class="step-number">1</div>
@@ -189,7 +162,7 @@
         </section>
 
 	<section class="section">
-            <h2>⭐ 為什麽我的steam已登陸成功，軟件還是提示:請重新啟動Steam|等待Steam上線中 </h2>
+            <h2><span class="lgt-icon icon-star" aria-hidden="true"></span> 為什麽我的steam已登陸成功，軟件還是提示:請重新啟動Steam|等待Steam上線中 </h2>
 	    <div class="warning">
                 <strong>確保您使用的Steam未被其它的第三方插件篡改或劫持(本軟件不修改Steam的任何文件)</strong>
             </div>
@@ -215,7 +188,7 @@
         </section>
 
 	<section class="section">
-            <h2>⭐ 為什麽我的Steam商店突然打不開了 </h2>
+            <h2><span class="lgt-icon icon-star" aria-hidden="true"></span> 為什麽我的Steam商店突然打不開了 </h2>
 	    <div class="warning">
                 <strong>本軟件如果使用的管理員權限啟動時，默認會開啟Steam商店或社區網絡加速的功能，此功能目前是通過修改系統Hosts文件實現，軟件正常退出時會自動恢復Hosts文件</strong>
             </div>
@@ -235,7 +208,7 @@
         </section>
 
 		<section class="section">
-            <h2>⭐ 有些單機遊戲會提示需要聯網認證進入不了遊戲怎麼辦 </h2>
+            <h2><span class="lgt-icon icon-star" aria-hidden="true"></span> 有些單機遊戲會提示需要聯網認證進入不了遊戲怎麼辦 </h2>
             <div class="steps">
                 <div class="step">
                     <div class="step-number">1</div>
@@ -243,7 +216,7 @@
                 </div>
                 <div class="step">
                     <div class="step-number">2</div>
-                    <div>使用方法見<a href="README_zh.html" target="_blank">支持部份需要聯網授權驗證的單機遊戲</a> (steam認證失敗 的場景)</div>
+                    <div>使用方法見<a href="README_zh.html" target="_blank" rel="noopener noreferrer">支持部份需要聯網授權驗證的單機遊戲</a> (steam認證失敗 的場景)</div>
                 </div>
                 <div class="step">
                     <div class="step-number">3</div>
@@ -254,7 +227,7 @@
         </section>
 
 		<section class="section">
-            <h2>⭐ 加了聯機參數（-luckygametools）啟動遊戲時,提示報錯怎麼辦（Steam Error  Application load error V:0000065432）</h2>
+            <h2><span class="lgt-icon icon-star" aria-hidden="true"></span> 加了聯機參數（-luckygametools）啟動遊戲時,提示報錯怎麼辦（Steam Error  Application load error V:0000065432）</h2>
             <div class="steps">
                 <div class="step">
                     <div class="step-number">1</div>
@@ -277,7 +250,7 @@
         </section>
 
 		<section class="section">
-            <h2>⭐ steam入库了(壁纸引擎、小黃鴨)却找不到</h2>
+            <h2><span class="lgt-icon icon-star" aria-hidden="true"></span> steam入库了(壁纸引擎、小黃鴨)却找不到</h2>
             <div class="steps">
                 <div class="step">
                     <div class="step-number">1</div>
@@ -299,11 +272,11 @@
         </section>
 
 		<section class="section">
-            <h2>⭐ 為什麽 啟動  CAPCOM 發行的遊戲崩潰  eg: 生化危機重制、街霸系列、怪物獵人荒野 </h2>
+            <h2><span class="lgt-icon icon-star" aria-hidden="true"></span> 為什麽 啟動  CAPCOM 發行的遊戲崩潰  eg: 生化危機重制、街霸系列、怪物獵人荒野 </h2>
             <div class="steps">
                 <div class="step">
                     <div class="step-number">1</div>
-                    <div>啟動steam需要從luckygametools的左下角啟動!<img class="img-default" src="https://github.com/user-attachments/assets/8e18ba43-8b6a-49ed-8717-a4374b4766c0"></div>
+                    <div>啟動steam需要從luckygametools的左下角啟動!<img alt="LuckyGameTools image" decoding="async" loading="lazy" class="img-default" src="https://github.com/user-attachments/assets/8e18ba43-8b6a-49ed-8717-a4374b4766c0"></div>
                 </div>
                 <div class="step">
                     <div class="step-number">2</div>
@@ -318,7 +291,7 @@
         </section>
 
 		<section class="section">
-            <h2>⭐ 我的電腦環境啟動遊戲時 提示 Steam - 遊戲啟動失敗 (錯誤代碼) 或者 無法完整運行時 怎麼處理</h2>
+            <h2><span class="lgt-icon icon-star" aria-hidden="true"></span> 我的電腦環境啟動遊戲時 提示 Steam - 遊戲啟動失敗 (錯誤代碼) 或者 無法完整運行時 怎麼處理</h2>
             <div class="steps">
                 <div class="step">
                     <div class="step-number">1</div>
@@ -344,7 +317,7 @@
         </section>
 
 		<section class="section">
-            <h2>⭐ 為什麽軟件會提示 Ban On User(禁止使用)</h2>
+            <h2><span class="lgt-icon icon-star" aria-hidden="true"></span> 為什麽軟件會提示 Ban On User(禁止使用)</h2>
 			<div class="warning">
                 <strong>紅信號 或者 Steam賬戶被luckygametools的群組被管理ban了 或者 網絡問題</strong>
             </div>
@@ -352,7 +325,7 @@
         </section>
 
 		<section class="section">
-            <h2>⭐ 為什麽Steam啟動遊戲時會提示：云存儲同步失敗</h2>
+            <h2><span class="lgt-icon icon-star" aria-hidden="true"></span> 為什麽Steam啟動遊戲時會提示：云存儲同步失敗</h2>
             <div class="warning">
                 <strong>這是Steam官方對遊戲云存儲做了調整，需要帳號真正擁有遊戲才能使用Steam的這個云同步功能</strong>
                 <br/><br/><br/>
@@ -361,7 +334,7 @@
         </section>
 
 		<section class="section">
-            <h2>⭐ 為什麽我的《荒野大镖客2》 之前可以正常玩，突然玩不了了 </h2>
+            <h2><span class="lgt-icon icon-star" aria-hidden="true"></span> 為什麽我的《荒野大镖客2》 之前可以正常玩，突然玩不了了 </h2>
 			<div class="warning">
                 <strong>之前可以玩說明您的遊戲文件都是正常的，未被其它軟件修改過(使用其它的補丁或Mod可能會篡改遊戲的文件)</strong>
             </div>
@@ -390,7 +363,7 @@
 
 
 		<section class="section">
-            <h2>⭐ 關于網吧或其它電腦環境軟件無法正常工作的解決辦法 </h2>
+            <h2><span class="lgt-icon icon-star" aria-hidden="true"></span> 關于網吧或其它電腦環境軟件無法正常工作的解決辦法 </h2>
             <div class="steps">
                 <div class="step">
                     <div class="step-number">1</div>
@@ -409,7 +382,7 @@
         </section>
 
 		<section class="section">
-            <h2>⭐ GTA5增強版破解補丁說明 </h2>
+            <h2><span class="lgt-icon icon-star" aria-hidden="true"></span> GTA5增強版破解補丁說明 </h2>
 			<div class="warning">
                 <strong>如果導入增強版后在steam庫中找不到->移除傳承版后,再導入增强版,重啟一下steam</strong>
             </div>
@@ -420,7 +393,7 @@
                 </div>
                 <div class="step">
                     <div class="step-number">2</div>
-                    <div>給大家找到了個其它破解組織的補丁，<a href="https://raw.githubusercontent.com/luckygametools/steam-cfg/main/gamePatch/GTA5_Enhanced1.0.814.9_zh.zip" target="_blank">點擊下載補丁文件</a>  | <a href="https://gofile.io/d/ifvkmz" target="_blank">備用下載地址1</a> | <a href="https://ranoz.gg/file/ciNEbuCC" target="_blank">備用下載地址2</a></div>
+                    <div>給大家找到了個其它破解組織的補丁，<a href="https://raw.githubusercontent.com/luckygametools/steam-cfg/main/gamePatch/GTA5_Enhanced1.0.814.9_zh.zip" target="_blank" rel="noopener noreferrer">點擊下載補丁文件</a>  | <a href="https://gofile.io/d/ifvkmz" target="_blank" rel="noopener noreferrer">備用下載地址1</a> | <a href="https://ranoz.gg/file/ciNEbuCC" target="_blank" rel="noopener noreferrer">備用下載地址2</a></div>
                 </div>
 
 				 <div class="step">
@@ -436,11 +409,11 @@
         </section>
 
 	<section class="section">
-            <h2>⭐ GTA4破解補丁說明 </h2>
+            <h2><span class="lgt-icon icon-star" aria-hidden="true"></span> GTA4破解補丁說明 </h2>
             <div class="steps">
                 <div class="step">
                     <div class="step-number">1</div>
-                    <div>給大家找到了個其它破解組織的補丁，<a href="https://raw.githubusercontent.com/luckygametools/steam-cfg/main/gamePatch/GTAIV1.2.0.59.zip" target="_blank">點擊下載補丁文件</a>  | <a href="https://gofile.io/d/2wlteo" target="_blank">備用下載地址1</a> | <a href="https://ranoz.gg/file/OqJ0Grxx" target="_blank">備用下載地址2</a></div>
+                    <div>給大家找到了個其它破解組織的補丁，<a href="https://raw.githubusercontent.com/luckygametools/steam-cfg/main/gamePatch/GTAIV1.2.0.59.zip" target="_blank" rel="noopener noreferrer">點擊下載補丁文件</a>  | <a href="https://gofile.io/d/2wlteo" target="_blank" rel="noopener noreferrer">備用下載地址1</a> | <a href="https://ranoz.gg/file/OqJ0Grxx" target="_blank" rel="noopener noreferrer">備用下載地址2</a></div>
                 </div>
                 <div class="step">
                     <div class="step-number">2</div>
@@ -451,11 +424,11 @@
         </section>
 
 	<section class="section">
-            <h2>⭐ 刺客信条：英灵殿 破解補丁說明 </h2>
+            <h2><span class="lgt-icon icon-star" aria-hidden="true"></span> 刺客信条：英灵殿 破解補丁說明 </h2>
             <div class="steps">
                 <div class="step">
                     <div class="step-number">1</div>
-                    <div>給大家找到了個其它破解組織的補丁，<a href="https://raw.githubusercontent.com/luckygametools/steam-cfg/main/gamePatch/ACV.DLC.Unlocker_for_v1.7.0.zip" target="_blank">點擊下載補丁文件</a>  |  <a href="https://gofile.io/d/faBw5L" target="_blank">備用下載地址1</a> | <a href="https://ranoz.gg/file/jOeJVFPs" target="_blank">備用下載地址2</a></div>
+                    <div>給大家找到了個其它破解組織的補丁，<a href="https://raw.githubusercontent.com/luckygametools/steam-cfg/main/gamePatch/ACV.DLC.Unlocker_for_v1.7.0.zip" target="_blank" rel="noopener noreferrer">點擊下載補丁文件</a>  |  <a href="https://gofile.io/d/faBw5L" target="_blank" rel="noopener noreferrer">備用下載地址1</a> | <a href="https://ranoz.gg/file/jOeJVFPs" target="_blank" rel="noopener noreferrer">備用下載地址2</a></div>
                 </div>
                 <div class="step">
                     <div class="step-number">2</div>
@@ -466,7 +439,7 @@
         </section>
 
         <section class="section">
-            <h2>⭐ LuckyGameTools出品 插件說明 </h2>
+            <h2><span class="lgt-icon icon-star" aria-hidden="true"></span> LuckyGameTools出品 插件說明 </h2>
             <div class="warning">
                 <strong>使用方法：下載完對應的插件文件后，將其copy至 LuckyGameTools 安裝目錄下的plugins下(注意是LuckyGameTools的安裝目錄,如果沒有plugins目錄,請安裝最新版本的軟件)</strong>
                 <br>
@@ -481,15 +454,15 @@
 
                 <div class="step">
                     <div class="step-appid">3350200</div>
-                    <div class="step-gamename">撈女遊戲 情感反詐模擬器 (固定版本號:18941501)<a href="https://raw.githubusercontent.com/luckygametools/steam-cfg/main/gamePatch/plugins/3350200.plug" target="_blank">點擊下載插件文件</a>  </div>
+                    <div class="step-gamename">撈女遊戲 情感反詐模擬器 (固定版本號:18941501)<a href="https://raw.githubusercontent.com/luckygametools/steam-cfg/main/gamePatch/plugins/3350200.plug" target="_blank" rel="noopener noreferrer">點擊下載插件文件</a>  </div>
                 </div>
                 <div class="step">
                     <div class="step-appid">3218580</div>
-                    <div class="step-gamename">监寓<a href="https://raw.githubusercontent.com/luckygametools/steam-cfg/main/gamePatch/plugins/3218580.plug" target="_blank">點擊下載插件文件</a>  </div>
+                    <div class="step-gamename">监寓<a href="https://raw.githubusercontent.com/luckygametools/steam-cfg/main/gamePatch/plugins/3218580.plug" target="_blank" rel="noopener noreferrer">點擊下載插件文件</a>  </div>
                 </div>
                 <div class="step">
                     <div class="step-appid">3292340</div>
-                    <div class="step-gamename">时空重构<a href="https://raw.githubusercontent.com/luckygametools/steam-cfg/main/gamePatch/plugins/3292340.plug" target="_blank">點擊下載插件文件</a>  </div>
+                    <div class="step-gamename">时空重构<a href="https://raw.githubusercontent.com/luckygametools/steam-cfg/main/gamePatch/plugins/3292340.plug" target="_blank" rel="noopener noreferrer">點擊下載插件文件</a>  </div>
                 </div>
             </div>
 

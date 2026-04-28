@@ -7,6 +7,7 @@
     <meta name="description" content="luckygametools 安全、免費、易用、史上最強Steam遊戲工具(CDK使用手冊)|steam unlocked">
     <meta name="keywords" content="steam,steam unlocked, free,luckygametools, steamtools,入庫,入库,免費,免费,Free Forever,官網,官網,中文站,安全,易用,CDK,使用手冊,機器人,bot">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" type="image/svg+xml" href="site-icon.svg">
     <link rel="stylesheet" href="styles.css">
     <!-- <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet"> -->
 	<link rel="preload" as="style" crossorigin
@@ -36,57 +37,29 @@
 
 </head>
 <body>
-    <!-- Navigation Bar -->
     <nav class="navbar" id="navbar">
         <a href="index.html" class="navbar-brand">
             <div class="logo-icon"></div>
             <span>LuckyGameTools</span>
         </a>
-
-        <button class="navbar-toggle" id="navbarToggle" aria-label="切換導航">
+        <button class="navbar-toggle" aria-expanded="false" id="navbarToggle" aria-label="Toggle navigation">
             <span></span>
             <span></span>
             <span></span>
         </button>
-
         <div class="navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a href="README_zh.html" class="nav-link active">
-                        <span class="nav-icon"><svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg></span> 首頁
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="README_zh.html#download-section" class="nav-link">
-                        <span class="nav-icon"><svg viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg></span> 下載
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="qa_zh.html" class="nav-link">
-                        <span class="nav-icon"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/></svg></span> 常見問題
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="game_update.html" class="nav-link">
-                        <span class="nav-icon"><svg viewBox="0 0 24 24"><path d="M21 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-10 7H8v3H6v-3H3v-2h3V8h2v3h3v2zm4.5 2c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4-3c-.83 0-1.5-.67-1.5-1.5S18.67 9 19.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg></span> 遊戲列表
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="devLog.html" class="nav-link">
-                        <span class="nav-icon"><svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg></span> 開發日誌
-                    </a>
-                </li>
+                <li class="nav-item"><a href="README_zh.html" class="nav-link">首頁</a></li>
+                <li class="nav-item"><a href="README_zh.html#download-section" class="nav-link">下載</a></li>
+                <li class="nav-item"><a href="qa_zh.html" class="nav-link">常見問題</a></li>
+                <li class="nav-item"><a href="game_update_zh.html" class="nav-link">遊戲庫</a></li>
+                <li class="nav-item"><a href="devLog.html" class="nav-link">開發日誌</a></li>
+                <li class="nav-item language-switch-item"><a href="cdk_en.html" class="lang-toggle language-switch-toggle active" title="Switch language" aria-label="Switch to English"><span class="lang-toggle-slider"></span><span class="lang-toggle-option en">EN</span><span class="lang-toggle-option zh">中</span></a></li>
             </ul>
-
-            <div class="lang-switcher">
-                <a href="cdk_en.html" class="lang-toggle active" id="langToggle" title="Switch language">
-                    <span class="lang-toggle-slider"></span>
-                    <span class="lang-toggle-option en">EN</span>
-                    <span class="lang-toggle-option zh">中</span>
-                </a>
-            </div>
         </div>
     </nav>
+
+    <!-- Navigation Bar -->
 
     <div class="twp"></div>
     <div class="container content main-content">
@@ -96,7 +69,7 @@
 
 			<section class="section">
 				<div class="security-info">
-					<h2>🗝️ CDK兌換指南</h2>
+					<h2><span class="lgt-icon icon-key" aria-hidden="true"></span> CDK兌換指南</h2>
 					<p>目前只針對捐贈過的用戶開放，捐贈時會贈送部份CDK,后續可聯繫作者繼續捐贈單獨獲取更多的CDK</p>
 					<h2></h2>
 					<p>您的SteamID等級權限保存于: https://github.com/luckygametools/steam-cfg/tree/main/gameauthdb/76561199784153002 (將76561199784153002替換成你的SteamID)  </p>
@@ -106,7 +79,7 @@
         </header>
         
 		<section class="section">
-            <h2>⚠️ 機器人使用注意事項 </h2>
+            <h2><span class="lgt-icon icon-warning" aria-hidden="true"></span> 機器人使用注意事項 </h2>
             <div class="steps">
                 <div class="step">
                     <div class="step-number">1</div>
@@ -132,15 +105,15 @@
 
 		
 		<section class="section">
-            <h2>🧿 兌換步驟 (一定要看完，機器人無響應請忽略第3步,大部份人請忽略第3步)</h2>
+            <h2><span class="lgt-icon icon-steps" aria-hidden="true"></span> 兌換步驟 (一定要看完，機器人無響應請忽略第3步,大部份人請忽略第3步)</h2>
             <div class="steps">
                 <div class="step">
                     <div class="step-number">1</div>
                     <div>在luckygametools的steam聊天群組中找到一個名為:luckygametools-bot的機器人，該機器人的有個特定的角色叫:bot，防止他人假冒（使用指令前確保機器人是在線狀態）
 		    <br>
-			    ??什麽，你不知道Steam聊天的群組在哪？，在steam軟件的右下角點擊 好友與聊天
+			    提示：什麽，你不知道Steam聊天的群組在哪？，在steam軟件的右下角點擊 好友與聊天
 		    <br>	
-		    <img class="img-default" src="https://github.com/user-attachments/assets/9182c8a6-ad50-49b2-9f53-d5bcd192795b"></div>
+		    <img alt="LuckyGameTools image" decoding="async" loading="lazy" class="img-default" src="https://github.com/user-attachments/assets/9182c8a6-ad50-49b2-9f53-d5bcd192795b"></div>
                 </div>
                 <div class="step">
                     <div class="step-number">2</div>
@@ -153,7 +126,7 @@
 						<br>
 			    			注意appid3489700后面緊要的是豎劃線(竖划线|) 符號，鍵盤上找不是就在這copy吧 ||||||||||||
 					    	<br>
-						<img class="img-default" src="https://github.com/user-attachments/assets/0f621163-de7a-4f50-89f8-8f51209db8c3">
+						<img alt="LuckyGameTools image" decoding="async" loading="lazy" class="img-default" src="https://github.com/user-attachments/assets/0f621163-de7a-4f50-89f8-8f51209db8c3">
 					</div>
                 </div>
                 <div class="step">
@@ -163,7 +136,7 @@
 						<br>
 						<strong>呼叫boss</strong> 或 <strong>呼叫bot</strong> 或 <strong>callboss</strong> 或 <strong>callbot</strong>,請勿爛用，否則機器人會生氣不回復的 
 						<br>
-						<img class="img-default" src="https://github.com/user-attachments/assets/428203f8-3f5b-4d7e-818f-c842ec4772eb">
+						<img alt="LuckyGameTools image" decoding="async" loading="lazy" class="img-default" src="https://github.com/user-attachments/assets/428203f8-3f5b-4d7e-818f-c842ec4772eb">
 						<br>機器人自動回復后，就可以正常使用指令功能了<strong>【如果機器人無響應,請看第4步】</strong> 
 					</div>
                 </div>
@@ -185,7 +158,7 @@
         </section>
 		
 		<section class="section benefits">
-            <h2>⭐ 額外福利 </h2>
+            <h2><span class="lgt-icon icon-star" aria-hidden="true"></span> 額外福利 </h2>
 
 			<div class="steps">
 				<div class="step">

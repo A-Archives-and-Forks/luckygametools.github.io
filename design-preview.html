@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuckyGameTools Design Preview</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" type="image/svg+xml" href="site-icon.svg">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body { padding-top: 0; }
+        .preview-wrap { max-width: 1180px; margin: 0 auto; padding: 36px 22px 64px; position: relative; z-index: 10; }
+        .preview-head { margin-bottom: 28px; }
+        .preview-kicker { color: var(--primary); font-weight: 800; font-size: 13px; text-transform: uppercase; letter-spacing: .08em; }
+        .preview-title { font-size: clamp(2rem, 5vw, 3.4rem); line-height: 1.05; margin: 10px 0 12px; }
+        .preview-copy { max-width: 720px; color: var(--text-secondary); font-size: 16px; line-height: 1.65; }
+        .preview-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 18px; margin: 22px 0 34px; }
+        .swatch { min-height: 128px; border-radius: 8px; border: 1px solid var(--border-console); padding: 16px; display: flex; flex-direction: column; justify-content: flex-end; box-shadow: var(--shadow-sm); }
+        .swatch strong { display: block; margin-bottom: 4px; }
+        .swatch code { color: inherit; opacity: .86; }
+        .console-black { background: #06080d; }
+        .panel-black { background: rgba(8, 13, 18, 0.78); }
+        .raised-surface { background: rgba(12, 19, 26, 0.88); }
+        .emerald-signal { background: #35f0c6; color: #04100b; }
+        .amber-warning { background: #ffbd4a; color: #1a1000; }
+        .info-blue { background: #49c7ff; color: #001018; }
+        .rose-accent { background: #ff5fa2; color: #1b020d; }
+        .violet-accent { background: #a78bfa; color: #120926; }
+    </style>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="navbar-brand">
+            <div class="logo-icon"></div>
+            <span>LuckyGameTools</span>
+        </a>
+        <button class="navbar-toggle" aria-expanded="false" id="navbarToggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="README_en.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="README_en.html#download-section" class="nav-link">Download</a></li>
+                <li class="nav-item"><a href="qa_en.html" class="nav-link">FAQ</a></li>
+                <li class="nav-item"><a href="game_update_en.html" class="nav-link">Games</a></li>
+                <li class="nav-item"><a href="devLog.html" class="nav-link">DevLog</a></li>
+                <li class="nav-item language-switch-item"><a href="README_zh.html" class="lang-toggle language-switch-toggle" title="Switch language" aria-label="切換到中文"><span class="lang-toggle-slider"></span><span class="lang-toggle-option en">EN</span><span class="lang-toggle-option zh">中</span></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="preview-wrap">
+        <header class="preview-head">
+            <div class="preview-kicker">DESIGN.md Preview</div>
+            <h1 class="preview-title">LuckyGameTools Console UI</h1>
+            <p class="preview-copy">A compact game utility interface: colorful animated background, translucent console surfaces, aurora accents, readable notices, and navigation-first language switching.</p>
+        </header>
+
+        <section class="section">
+            <h2>Color Tokens</h2>
+            <div class="preview-grid">
+                <div class="swatch console-black"><strong>Aurora Black</strong><code>#06080d</code></div>
+                <div class="swatch panel-black"><strong>Translucent Panel</strong><code>rgba(8,13,18,.78)</code></div>
+                <div class="swatch raised-surface"><strong>Raised Surface</strong><code>rgba(12,19,26,.88)</code></div>
+                <div class="swatch emerald-signal"><strong>Emerald Signal</strong><code>#35f0c6</code></div>
+                <div class="swatch info-blue"><strong>Cyan Link</strong><code>#49c7ff</code></div>
+                <div class="swatch amber-warning"><strong>Amber Warning</strong><code>#ffbd4a</code></div>
+                <div class="swatch rose-accent"><strong>Rose Accent</strong><code>#ff5fa2</code></div>
+                <div class="swatch violet-accent"><strong>Violet Accent</strong><code>#a78bfa</code></div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Buttons</h2>
+            <div class="contact-links" style="justify-content:flex-start;">
+                <a href="index.html" class="contact-btn">Home</a>
+                <a href="README_en.html" class="contact-btn site-international">International</a>
+                <a href="README_zh.html" class="contact-btn site-china">Chinese</a>
+                <a href="qa_en.html" class="contact-btn qa-en">FAQ</a>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Cards</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h4>Fast Utility Surface</h4>
+                    <p>Cards stay compact, bordered, and readable. Emerald is used as a signal, not a full background.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>Safety First</h4>
+                    <p>Notices, safety reports, and download choices keep strong contrast and stable spacing.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>Responsive Tools</h4>
+                    <p>Tables scroll on mobile, buttons keep reliable tap targets, and text avoids overflow.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Notices</h2>
+            <div class="security-info"><strong>Verified Safe</strong> - Success and trust messages use emerald-tinted surfaces.</div>
+            <div class="warning"><strong>Note:</strong> Warnings and important operational notes use amber-tinted surfaces.</div>
+        </section>
+
+        <section class="section">
+            <h2>Table</h2>
+            <table style="width:100%; text-align:left;">
+                <thead>
+                    <tr><th>Game</th><th>AppID</th><th>Status</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Example Game</td><td><code>480</code></td><td class="added">Added</td></tr>
+                    <tr><td>Example Update</td><td><code>123456</code></td><td class="updated">Updated</td></tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

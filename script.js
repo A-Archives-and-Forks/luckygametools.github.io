@@ -1,60 +1,67 @@
-// JavaScript file for Lucky Game Tools
-// Currently no interactive functionality is needed
-// This file is included for future enhancements
-var downloadUrl="javascript:void(0);";
+// Shared JavaScript for Lucky Game Tools.
+var downloadUrl = "javascript:void(0);";
+var downloadUrl1 = "https://gofile.io/d/Pm6pFz";
+var downloadUrl2 = "https://ranoz.gg/file/gz4D1EI2";
+var downloadUrl3 = "https://mega.nz/file/L0pFxayB#p7Gq2FElTA0VXNovkYvd5oXKUaCD0otgaruD6plpsFI";
+var downloadUrl4 = "https://share.feijipan.com/s/iy3wqBWx";
+var downloadUrl5 = "https://pan.xunlei.com/s/VOnMw7z6sJRTnLXvW6uJwTKxA1?pwd=ncg3";
 
-var downloadUrl1="https://gofile.io/d/Pm6pFz";
-var downloadUrl2="https://ranoz.gg/file/gz4D1EI2";
-var downloadUrl3="https://mega.nz/file/L0pFxayB#p7Gq2FElTA0VXNovkYvd5oXKUaCD0otgaruD6plpsFI";
-var downloadUrl4="https://share.feijipan.com/s/iy3wqBWx";
-var downloadUrl5="https://pan.xunlei.com/s/VOnMw7z6sJRTnLXvW6uJwTKxA1?pwd=ncg3";
-
-// 友情鏈接資料陣列
 const friendLinks = [
-{ name: "Telegram", url: "https://t.me/luckygametools" },
-{ name: "Discord", url: "https://discord.gg/X4MTpDbcpT" },
-{ name: "Youtube", url: "https://www.youtube.com/@GameToolsLucky" },
-{ name: "BaiLuAI", url: "https://bailucode.com" },
-{ name: "YuCursorTool", url: "https://970410.xyz/" }
+  { name: "Telegram", url: "https://t.me/luckygametools" },
+  { name: "Discord", url: "https://discord.gg/X4MTpDbcpT" },
+  { name: "Youtube", url: "https://www.youtube.com/@GameToolsLucky" },
+  { name: "BaiLuAI", url: "https://bailucode.com" },
+  { name: "YuCursorTool", url: "https://970410.xyz/" }
 ];
 
 function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+  const target = document.getElementById("google_translate_element");
+  if (target && window.google && google.translate) {
+    new google.translate.TranslateElement({ pageLanguage: "en" }, "google_translate_element");
+  }
 }
 
-function copyEmail(thiz,email) {
-
-    // 複製到剪貼簿
-    navigator.clipboard.writeText(email).then(() => {
-        const tooltip = thiz.firstElementChild;
-        var oldTooltipText=tooltip.textContent;
-        tooltip.textContent = "Copied！"; 
-
-        setTimeout(() => {
-            tooltip.textContent = oldTooltipText;
-        }, 2000);
-    });
-}
-
-{
-  // 1. 获取库对象
-  const Tw = window.TWallpaper.default || window.TWallpaper;
-
-  // 2. 性能/分辨率优化 (可选)
-  if (Tw.prototype) {
-    Tw.prototype.width  = Math.floor(window.innerWidth  / 12);
-    Tw.prototype.height = Math.floor(window.innerHeight / 12);
+function copyEmail(thiz, email) {
+  if (!navigator.clipboard) {
+    return;
   }
 
-  // 3. 准备配置项
+  navigator.clipboard.writeText(email).then(() => {
+    const tooltip = thiz.firstElementChild;
+    if (!tooltip) {
+      return;
+    }
+
+    const oldTooltipText = tooltip.textContent;
+    tooltip.textContent = "Copied!";
+
+    setTimeout(() => {
+      tooltip.textContent = oldTooltipText;
+    }, 2000);
+  });
+}
+
+function initAnimatedBackground() {
+  const container = document.querySelector(".twp");
+  const Tw = window.TWallpaper && (window.TWallpaper.default || window.TWallpaper);
+
+  if (!container || container.id === "tw-container" || !Tw) {
+    return;
+  }
+
+  const setCanvasSize = () => {
+    if (Tw.prototype) {
+      Tw.prototype.width = Math.max(80, Math.floor(window.innerWidth / 12));
+      Tw.prototype.height = Math.max(80, Math.floor(window.innerHeight / 12));
+    }
+  };
+
   const options = {
-    fps: 60,
-    tails: 90,      // 粒子数量
-    animate: true,  // 开启初始动画
+    fps: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? 20 : 45,
+    tails: 90,
+    animate: !window.matchMedia("(prefers-reduced-motion: reduce)").matches,
     scrollAnimate: true,
-    colors: [
-      "#6366f1", "#8b5cf6", "#ec4899", "#f59e0b"
-    ],
+    colors: ["#6366f1", "#8b5cf6", "#ec4899", "#f59e0b"],
     pattern: {
       image: "games.svg",
       background: "transparent",
@@ -64,167 +71,155 @@ function copyEmail(thiz,email) {
     }
   };
 
-  // 4. 获取 DOM 元素
-  const container = document.querySelector(".twp");
+  const render = () => {
+    setCanvasSize();
+    container.innerHTML = "";
+    const tw = new Tw(container, options);
+    tw.init();
+  };
 
-  // 【关键修复步骤】
-  // 这里的构造函数需要两个参数：(容器Element, 选项Object)
-  const tw = new Tw(container, options);
+  render();
 
-  // 【关键修复步骤】
-  // 启动方法是 init()，不是 play()
-  tw.init(); 
-
-  // 窗口大小改变处理（防抖动 + 重新渲染）
   let resizeTimer;
-
-  window.addEventListener('resize', () => {
-    // 防抖：拖动窗口过程中不执行，停下后执行
+  window.addEventListener("resize", () => {
     clearTimeout(resizeTimer);
-    
-    resizeTimer = setTimeout(() => {
-      console.log("窗口大小改变，正在重新渲染背景...");
-
-      // 1. 清空容器内容 (移除旧的 canvas)
-      // 这样不会导致页面闪烁，只会重绘背景
-      container.innerHTML = '';
-
-      // 2. 重新计算分辨率 (非常重要，否则新背景会变形或模糊)
-      if (Tw.prototype) {
-        Tw.prototype.width  = Math.floor(window.innerWidth  / 12);
-        Tw.prototype.height = Math.floor(window.innerHeight / 12);
-      }
-
-      // 3. 重新实例化并启动
-      // 注意：这里不需要 let/const 重新声明，或者用一个临时变量即可
-      const newTw = new Tw(container, options);
-      newTw.init();
-
-    }, 200); // 200毫秒延迟，响应比较快
+    resizeTimer = setTimeout(render, 200);
   });
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-    // Page loaded successfully
-  console.log('LuckyGameTools page loaded');
-	if(document.getElementById('download')!=null){
-	    document.getElementById('download').href=downloadUrl;
-	}
-	if(document.getElementById('download1')!=null){
-		document.getElementById('download1').href=downloadUrl1;
-	}
-	if(document.getElementById('download2')!=null){
-		document.getElementById('download2').href=downloadUrl2;
-	}
-  if(document.getElementById('download3')!=null){
-    document.getElementById('download3').href=downloadUrl3;
-  }
-  if(document.getElementById('download4')!=null){
-    document.getElementById('download4').href=downloadUrl4;
-  }
-  if(document.getElementById('download5')!=null){
-    document.getElementById('download5').href=downloadUrl;
-  }
+function initDownloadLinks() {
+  const links = {
+    download: downloadUrl,
+    download1: downloadUrl1,
+    download2: downloadUrl2,
+    download3: downloadUrl3,
+    download4: downloadUrl4,
+    download5: downloadUrl5
+  };
 
-  // 創建modal元素（如果頁面上還沒有）
-  let modal = document.getElementById('imageModal');
+  Object.entries(links).forEach(([id, url]) => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.href = url;
+    }
+  });
+}
+
+function initImageModal() {
+  let modal = document.getElementById("imageModal");
   if (!modal) {
-    modal = document.createElement('div');
-    modal.id = 'imageModal';
-    modal.className = 'modal';
-    
-    const closeBtn = document.createElement('span');
-    closeBtn.className = 'close';
-    closeBtn.innerHTML = '&times;';
-    
-    const modalImg = document.createElement('img');
-    modalImg.className = 'modal-content';
-    modalImg.id = 'modalImage';
-    
+    modal = document.createElement("div");
+    modal.id = "imageModal";
+    modal.className = "modal";
+
+    const closeBtn = document.createElement("button");
+    closeBtn.type = "button";
+    closeBtn.className = "close";
+    closeBtn.setAttribute("aria-label", "Close image preview");
+    closeBtn.innerHTML = "&times;";
+
+    const modalImg = document.createElement("img");
+    modalImg.className = "modal-content";
+    modalImg.id = "modalImage";
+    modalImg.alt = "Image preview";
+
     modal.appendChild(closeBtn);
     modal.appendChild(modalImg);
     document.body.appendChild(modal);
   }
-  
-  const modalImg = document.getElementById('modalImage');
-  const close = modal.querySelector('.close');
-  
-  // 為頁面上所有圖片添加點擊事件
-  document.addEventListener('click', function(e) {
-    if (e.target.tagName === 'IMG' && !e.target.classList.contains('modal-content')) {
-      modal.style.display = 'flex';
-      modalImg.src = e.target.src;
-      // 可選：使用高解析度圖片（如果有）
-      if (e.target.dataset.fullsize) {
-        modalImg.src = e.target.dataset.fullsize;
-      }
+
+  const modalImg = document.getElementById("modalImage");
+  const close = modal.querySelector(".close");
+  if (!modalImg || !close) {
+    return;
+  }
+
+  document.addEventListener("click", function(e) {
+    const target = e.target;
+    if (target && target.tagName === "IMG" && !target.classList.contains("modal-content")) {
+      modal.style.display = "flex";
+      modalImg.src = target.dataset.fullsize || target.src;
     }
   });
-  
-  // 關閉按鈕事件
-  close.addEventListener('click', function() {
-    modal.style.display = 'none';
+
+  close.addEventListener("click", function() {
+    modal.style.display = "none";
   });
-  
-  // 點擊modal背景關閉
-  modal.addEventListener('click', function(e) {
+
+  modal.addEventListener("click", function(e) {
     if (e.target === modal) {
-      modal.style.display = 'none';
+      modal.style.display = "none";
     }
   });
 
-  // 取得 footer 元素
-  const footer = document.getElementsByTagName('footer')[0];
+  document.addEventListener("keydown", function(e) {
+    if (e.key === "Escape") {
+      modal.style.display = "none";
+    }
+  });
+}
 
-  // 建立容器元素
-  const linkContainer = document.createElement('div');
-  linkContainer.style.marginTop = '10px';
-  linkContainer.innerHTML = 'Link：';
+function initFriendLinks() {
+  const footer = document.getElementsByTagName("footer")[0];
+  if (!footer || footer.querySelector(".friend-links")) {
+    return;
+  }
 
-  // 建立每個連結並加到容器中
+  const linkContainer = document.createElement("div");
+  linkContainer.className = "friend-links";
+  linkContainer.style.marginTop = "10px";
+  linkContainer.appendChild(document.createTextNode("Link: "));
+
   friendLinks.forEach(link => {
-    const a = document.createElement('a');
+    const a = document.createElement("a");
     a.href = link.url;
     a.textContent = link.name;
-    a.target = '_blank';
-    a.style.margin = '0 8px';
-    a.style.color = '#99ccff';
-    a.style.textDecoration = 'none';
-    a.addEventListener('mouseover', () => a.style.textDecoration = 'underline');
-    a.addEventListener('mouseout', () => a.style.textDecoration = 'none');
+    a.target = "_blank";
+    a.rel = "noopener noreferrer";
+    a.style.margin = "0 8px";
+    a.style.color = "#99ccff";
+    a.style.textDecoration = "none";
+    a.addEventListener("mouseover", () => a.style.textDecoration = "underline");
+    a.addEventListener("mouseout", () => a.style.textDecoration = "none");
     linkContainer.appendChild(a);
   });
 
-  // 加入 footer 中
   footer.appendChild(linkContainer);
+}
 
-  {
-    // Navbar scroll effect
-      const navbar = document.getElementById('navbar');
-      window.addEventListener('scroll', () => {
-          if (window.scrollY > 50) {
-              navbar.classList.add('scrolled');
-          } else {
-              navbar.classList.remove('scrolled');
-          }
-      });
+function initNavbar() {
+  const navbar = document.getElementById("navbar");
+  const navbarToggle = document.getElementById("navbarToggle");
+  const navbarCollapse = document.getElementById("navbarCollapse");
 
-      // Mobile menu toggle
-      const navbarToggle = document.getElementById('navbarToggle');
-      const navbarCollapse = document.getElementById('navbarCollapse');
-
-      navbarToggle.addEventListener('click', () => {
-          navbarToggle.classList.toggle('active');
-          navbarCollapse.classList.toggle('active');
-      });
-
-      // Close mobile menu when clicking on a link
-      document.querySelectorAll('.nav-link').forEach(link => {
-          link.addEventListener('click', () => {
-              navbarToggle.classList.remove('active');
-              navbarCollapse.classList.remove('active');
-          });
-      });
+  if (navbar) {
+    window.addEventListener("scroll", () => {
+      navbar.classList.toggle("scrolled", window.scrollY > 50);
+    }, { passive: true });
   }
-        
+
+  if (navbarToggle && navbarCollapse) {
+    navbarToggle.addEventListener("click", () => {
+      const isActive = navbarToggle.classList.toggle("active");
+      navbarCollapse.classList.toggle("active", isActive);
+      navbarToggle.setAttribute("aria-expanded", String(isActive));
+    });
+
+    document.querySelectorAll(".nav-link").forEach(link => {
+      link.addEventListener("click", () => {
+        navbarToggle.classList.remove("active");
+        navbarCollapse.classList.remove("active");
+        navbarToggle.setAttribute("aria-expanded", "false");
+      });
+    });
+  }
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  initDownloadLinks();
+  initImageModal();
+  initFriendLinks();
+  initNavbar();
 });
+
+initAnimatedBackground();
