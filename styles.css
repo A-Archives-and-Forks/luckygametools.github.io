@@ -1192,6 +1192,24 @@ input:focus-visible {
   opacity: 1;
 }
 
+.tool-card-link {
+  display: block;
+  text-decoration: none;
+}
+
+.tool-card-link p {
+  color: rgba(255, 255, 255, 0.84);
+}
+
+.tool-card-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 16px;
+  color: var(--primary-light);
+  font-weight: 700;
+}
+
 /* ========================================
    Footer
    ======================================== */
