@@ -24,6 +24,13 @@ const manualAdSlots = Object.assign({
 
 const customFontFamily = "\"NanoDyongChyangSong CN 24\"";
 
+function isAdDisabledPage() {
+  const robotsMeta = document.querySelector("meta[name='robots']");
+  const robotsContent = robotsMeta ? robotsMeta.getAttribute("content") || "" : "";
+
+  return document.documentElement.dataset.lgtAds === "off" || /\bnoindex\b/i.test(robotsContent);
+}
+
 function runAfterFirstPaint(callback, timeout, delay) {
   const schedule = () => {
     const run = () => {
@@ -302,6 +309,10 @@ function initNavbar() {
 }
 
 function loadAdSense() {
+  if (isAdDisabledPage()) {
+    return;
+  }
+
   const srcPrefix = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
   const hasAdSense = Array.from(document.scripts).some(script => script.src && script.src.startsWith(srcPrefix));
 
@@ -368,6 +379,10 @@ function insertAdAfter(target, ad) {
 }
 
 function initManualAdSlots() {
+  if (isAdDisabledPage()) {
+    return;
+  }
+
   if (document.documentElement.dataset.lgtAdsInitialized === "true") {
     return;
   }
