@@ -1,4 +1,3 @@
-<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
 <style>
 body {
   background-image: url('background.jpg'); 
@@ -6,7 +5,7 @@ body {
   background-position: center;
   background-repeat: no-repeat; 
   background-attachment: fixed; 
-  font-family: 'Poppins', sans-serif;
+  font-family: "Segoe UI", "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", Arial, sans-serif;
 }
 </style>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7261994485465423"
@@ -28,4 +27,3 @@ function googleTranslateElementInit() {
   有效期20天(過期請聯繫作者重新生成)，激活后需要自行登陸一個擁用該steam版本遊戲的UB帳號，才可以最終啟動遊戲，啟動成功遊戲后，使用本軟件的工具箱一鍵離線UB![image](https://github.com/user-attachments/assets/b510c5ee-e9c3-43a3-9ed0-ebcb44ae5b3d)
 
   損贈的高級用戶可以在高級群中查看作者分享的UB帳號
-

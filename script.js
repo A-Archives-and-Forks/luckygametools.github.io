@@ -14,6 +14,92 @@ const friendLinks = [
   { name: "YuCursorTool", url: "https://970410.xyz/" }
 ];
 
+const adsenseClient = "ca-pub-7261994485465423";
+const manualAdSlots = Object.assign({
+  contentTop: "",
+  contentMid: "",
+  contentBottom: "",
+  toolBottom: ""
+}, window.LGT_AD_SLOTS || {});
+
+const customFontFamily = "\"NanoDyongChyangSong CN 24\"";
+
+function runAfterFirstPaint(callback, timeout, delay) {
+  const schedule = () => {
+    const run = () => {
+      try {
+        Promise.resolve(callback()).catch(error => console.warn("Deferred task skipped:", error));
+      } catch (error) {
+        console.warn("Deferred task skipped:", error);
+      }
+    };
+    const delayedRun = () => window.setTimeout(run, delay || 0);
+
+    if ("requestIdleCallback" in window) {
+      window.requestIdleCallback(delayedRun, { timeout: timeout || 1600 });
+      return;
+    }
+
+    window.requestAnimationFrame(() => {
+      window.setTimeout(run, delay || 0);
+    });
+  };
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", schedule, { once: true });
+    return;
+  }
+
+  schedule();
+}
+
+function waitForFontStylesheet(link) {
+  return new Promise(resolve => {
+    if (link.rel === "stylesheet" || link.dataset.lgtFontLoaded === "true") {
+      resolve();
+      return;
+    }
+
+    const done = () => {
+      link.dataset.lgtFontLoaded = "true";
+      resolve();
+    };
+
+    link.addEventListener("load", done, { once: true });
+    link.addEventListener("error", done, { once: true });
+  });
+}
+
+async function initDeferredFont() {
+  const fontLinks = Array.from(document.querySelectorAll("link[href*='fontsapi.zeoseven.com'], link[href*='fontsapi-storage.zeoseven.com']"));
+
+  if (!fontLinks.length || document.documentElement.classList.contains("lgt-font-ready")) {
+    return;
+  }
+
+  document.documentElement.classList.add("lgt-font-deferred");
+
+  await Promise.race([
+    Promise.all(fontLinks.map(waitForFontStylesheet)),
+    new Promise(resolve => window.setTimeout(resolve, 3200))
+  ]);
+
+  if (document.fonts && document.fonts.load) {
+    const loaded = await Promise.race([
+      document.fonts.load(`1em ${customFontFamily}`)
+        .then(fonts => fonts.length > 0 && document.fonts.check(`1em ${customFontFamily}`))
+        .catch(() => false),
+      new Promise(resolve => window.setTimeout(() => resolve(false), 1800))
+    ]);
+
+    if (!loaded) {
+      return;
+    }
+  }
+
+  document.documentElement.classList.add("lgt-font-ready");
+}
+
 function googleTranslateElementInit() {
   const target = document.getElementById("google_translate_element");
   if (target && window.google && google.translate) {
@@ -215,11 +301,123 @@ function initNavbar() {
   }
 }
 
+function loadAdSense() {
+  const srcPrefix = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+  const hasAdSense = Array.from(document.scripts).some(script => script.src && script.src.startsWith(srcPrefix));
+
+  if (hasAdSense) {
+    return;
+  }
+
+  const script = document.createElement("script");
+  script.async = true;
+  script.crossOrigin = "anonymous";
+  script.src = `${srcPrefix}?client=${adsenseClient}`;
+  document.head.appendChild(script);
+}
+
+function createManualAd(slotName, className) {
+  const slot = manualAdSlots[slotName];
+
+  if (!slot) {
+    return null;
+  }
+
+  const wrapper = document.createElement("aside");
+  wrapper.className = `lgt-ad-slot ${className || ""}`.trim();
+  wrapper.setAttribute("aria-label", "Advertisements");
+
+  const label = document.createElement("span");
+  label.className = "lgt-ad-label";
+  label.textContent = "Advertisements";
+
+  const ad = document.createElement("ins");
+  ad.className = "adsbygoogle";
+  ad.style.display = "block";
+  ad.dataset.adClient = adsenseClient;
+  ad.dataset.adSlot = slot;
+  ad.dataset.adFormat = "auto";
+  ad.dataset.fullWidthResponsive = "true";
+
+  wrapper.appendChild(label);
+  wrapper.appendChild(ad);
+
+  return wrapper;
+}
+
+function pushManualAd(wrapper) {
+  if (!wrapper) {
+    return;
+  }
+
+  try {
+    (window.adsbygoogle = window.adsbygoogle || []).push({});
+  } catch (error) {
+    console.warn("AdSense ad request skipped:", error);
+  }
+}
+
+function insertAdAfter(target, ad) {
+  if (!target || !ad || ad.dataset.lgtInserted === "true") {
+    return;
+  }
+
+  target.insertAdjacentElement("afterend", ad);
+  ad.dataset.lgtInserted = "true";
+  pushManualAd(ad);
+}
+
+function initManualAdSlots() {
+  if (document.documentElement.dataset.lgtAdsInitialized === "true") {
+    return;
+  }
+
+  document.documentElement.dataset.lgtAdsInitialized = "true";
+
+  const hasConfiguredSlot = Object.values(manualAdSlots).some(Boolean);
+  if (!hasConfiguredSlot) {
+    return;
+  }
+
+  loadAdSense();
+
+  const isToolPage = location.pathname.includes("/tools/");
+  const container = document.querySelector(".container.content, .main-content .container, body > .container");
+
+  if (!container) {
+    return;
+  }
+
+  if (isToolPage) {
+    const toolAnchor = container.querySelector(".main-grid, .info, .card:last-child") || container.lastElementChild;
+    insertAdAfter(toolAnchor, createManualAd("toolBottom", "lgt-ad-slot--tool"));
+    return;
+  }
+
+  const sections = Array.from(container.querySelectorAll(":scope > .section, :scope > .download-section"));
+  const firstSafeSection = sections.find(section => !section.classList.contains("download-section"));
+  const midSafeSection = sections.find((section, index) => index >= 2 && !section.classList.contains("download-section"));
+  const lastSafeSection = [...sections].reverse().find(section => !section.classList.contains("download-section"));
+
+  insertAdAfter(firstSafeSection, createManualAd("contentTop", "lgt-ad-slot--content"));
+
+  if (midSafeSection && midSafeSection !== firstSafeSection && midSafeSection !== lastSafeSection) {
+    insertAdAfter(midSafeSection, createManualAd("contentMid", "lgt-ad-slot--content"));
+  }
+
+  if (lastSafeSection && lastSafeSection !== firstSafeSection && lastSafeSection !== midSafeSection) {
+    insertAdAfter(lastSafeSection, createManualAd("contentBottom", "lgt-ad-slot--content"));
+  }
+}
+
 document.addEventListener("DOMContentLoaded", function() {
+  loadAdSense();
   initDownloadLinks();
   initImageModal();
   initFriendLinks();
   initNavbar();
+  initManualAdSlots();
 });
 
-initAnimatedBackground();
+runAfterFirstPaint(initDeferredFont, 1800);
+runAfterFirstPaint(initAnimatedBackground, 1200, 700);

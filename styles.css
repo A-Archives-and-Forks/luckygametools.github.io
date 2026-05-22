@@ -110,13 +110,21 @@ html {
 }
 
 body {
-  font-family: 'Poppins', 'Microsoft YaHei', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: "Segoe UI", "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", Arial, sans-serif;
   line-height: 1.6;
   background: var(--bg-dark);
   min-height: 100vh;
   color: var(--text-primary);
   overflow-x: hidden;
   padding-top: 70px;
+}
+
+html.lgt-font-deferred body {
+  font-family: "Segoe UI", "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", Arial, sans-serif !important;
+}
+
+html.lgt-font-deferred.lgt-font-ready body {
+  font-family: "NanoDyongChyangSong CN 24", "Segoe UI", "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", Arial, sans-serif !important;
 }
 
 /* Animated Background Overlay */
@@ -2481,4 +2489,50 @@ td .lgt-icon {
 
 .game-library-table .shake {
   width: 100%;
+}
+
+/* AdSense: reserved, clearly labeled manual ad space. Slots render only after IDs are configured in script.js. */
+.lgt-ad-slot {
+  position: relative;
+  z-index: 10;
+  width: min(100%, 970px);
+  min-height: 280px;
+  margin: 28px auto 34px;
+  padding: 12px;
+  border: 1px solid rgba(73, 199, 255, 0.16);
+  border-radius: 8px;
+  background: rgba(5, 12, 18, 0.34);
+  overflow: hidden;
+}
+
+.lgt-ad-slot--tool {
+  width: min(100%, 728px);
+  min-height: 250px;
+  margin-top: 24px;
+}
+
+.lgt-ad-label {
+  display: block;
+  margin-bottom: 8px;
+  color: rgba(199, 213, 224, 0.62);
+  font-size: 11px;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.lgt-ad-slot .adsbygoogle {
+  min-height: 240px;
+}
+
+@media (max-width: 768px) {
+  .lgt-ad-slot {
+    min-height: 250px;
+    margin: 22px auto 28px;
+    padding: 10px;
+  }
+
+  .lgt-ad-slot .adsbygoogle {
+    min-height: 210px;
+  }
 }
