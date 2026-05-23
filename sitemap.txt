@@ -1,0 +1,15 @@
+https://luckygametools.github.io/
+https://luckygametools.github.io/README_en.html
+https://luckygametools.github.io/README_zh.html
+https://luckygametools.github.io/qa_en.html
+https://luckygametools.github.io/qa_zh.html
+https://luckygametools.github.io/game_update_en.html
+https://luckygametools.github.io/game_update_zh.html
+https://luckygametools.github.io/cdk_en.html
+https://luckygametools.github.io/cdk_zh.html
+https://luckygametools.github.io/tools/index_en.html
+https://luckygametools.github.io/tools/index_zh.html
+https://luckygametools.github.io/tools/steamid_en.html
+https://luckygametools.github.io/tools/steamid_zh.html
+https://luckygametools.github.io/tools/steamid32-64_en.html
+https://luckygametools.github.io/tools/steamid32-64_zh.html
