@@ -25,6 +25,10 @@ const manualAdSlots = Object.assign({
 const customFontFamily = "\"NanoDyongChyangSong CN 24\"";
 
 function isAdDisabledPage() {
+  if (document.documentElement.dataset.lgtAds === "on") {
+    return false;
+  }
+
   const robotsMeta = document.querySelector("meta[name='robots']");
   const robotsContent = robotsMeta ? robotsMeta.getAttribute("content") || "" : "";
 
