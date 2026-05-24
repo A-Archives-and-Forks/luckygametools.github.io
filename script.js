@@ -620,7 +620,6 @@ document.addEventListener("DOMContentLoaded", function() {
   initFriendLinks();
   initNavbar();
   initGoogleTranslateBannerOffset();
-  initDuelVisualHover();
   initScrollPerformanceMode();
   initManualAdSlots();
 });
