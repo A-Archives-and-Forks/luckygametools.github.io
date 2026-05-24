@@ -392,6 +392,70 @@ function initGoogleTranslateBannerOffset() {
   window.setTimeout(updateOffset, 3000);
 }
 
+function initDuelVisualHover() {
+  const root = document.documentElement;
+
+  if (!root.classList.contains("lgt-duel-visual")) {
+    return;
+  }
+
+  const media = window.matchMedia("(min-width: 1440px) and (min-height: 641px) and (hover: hover) and (pointer: fine)");
+  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+  let rafId = 0;
+  let pointerX = -1;
+  let pointerY = -1;
+
+  const clearHover = () => {
+    root.classList.remove("lgt-duel-hover-left", "lgt-duel-hover-right");
+  };
+
+  const getTranslateBannerHeight = () => {
+    const value = window.getComputedStyle(root).getPropertyValue("--lgt-translate-banner-height");
+    const height = parseFloat(value);
+    return Number.isFinite(height) ? height : 0;
+  };
+
+  const updateHover = () => {
+    rafId = 0;
+
+    if (!media.matches || reducedMotion.matches) {
+      clearHover();
+      return;
+    }
+
+    const viewportWidth = window.innerWidth;
+    const viewportHeight = window.innerHeight;
+    const layerWidth = Math.min(viewportWidth * 0.19, 340);
+    const sideOffset = Math.max(0, (viewportWidth - 1200) / 2 - 390);
+    const layerTop = 90 + getTranslateBannerHeight();
+    const magnet = 56;
+
+    const inVerticalRange = pointerY >= layerTop && pointerY <= viewportHeight;
+    const inLeftRange = pointerX >= sideOffset && pointerX <= sideOffset + layerWidth + magnet;
+    const rightStart = viewportWidth - sideOffset - layerWidth - magnet;
+    const rightEnd = viewportWidth - sideOffset;
+    const inRightRange = pointerX >= rightStart && pointerX <= rightEnd;
+
+    root.classList.toggle("lgt-duel-hover-left", inVerticalRange && inLeftRange);
+    root.classList.toggle("lgt-duel-hover-right", inVerticalRange && inRightRange);
+  };
+
+  const scheduleHoverUpdate = event => {
+    pointerX = event.clientX;
+    pointerY = event.clientY;
+
+    if (!rafId) {
+      rafId = window.requestAnimationFrame(updateHover);
+    }
+  };
+
+  window.addEventListener("pointermove", scheduleHoverUpdate, { passive: true });
+  window.addEventListener("pointerleave", clearHover, { passive: true });
+  window.addEventListener("blur", clearHover);
+  media.addEventListener("change", clearHover);
+  reducedMotion.addEventListener("change", clearHover);
+}
+
 function initScrollPerformanceMode() {
   const root = document.documentElement;
   let scrollTimer;
@@ -536,6 +600,7 @@ document.addEventListener("DOMContentLoaded", function() {
   initFriendLinks();
   initNavbar();
   initGoogleTranslateBannerOffset();
+  initDuelVisualHover();
   initScrollPerformanceMode();
   initManualAdSlots();
 });
