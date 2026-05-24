@@ -38,6 +38,7 @@
   --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  --lgt-translate-banner-height: 0px;
 }
 
 /* Reset & Base */
@@ -996,25 +997,13 @@ html.lgt-duel-visual .preview-wrap,
   z-index: 10;
 }
 
-html.lgt-duel-visual::before,
-html.lgt-duel-visual::after {
+html.lgt-duel-visual body::after {
   content: none;
 }
 
-html.lgt-duel-visual body::after {
-  content: '';
-  position: fixed;
-  inset: 70px 0 0;
-  z-index: 1;
-  pointer-events: none;
-  background:
-    linear-gradient(90deg, rgba(20, 12, 36, 0.08), transparent 28%, transparent 72%, rgba(10, 24, 42, 0.08));
-  opacity: 0;
-}
-
 @media (min-width: 1681px) and (min-height: 641px) {
-  html.lgt-duel-visual::before,
-  html.lgt-duel-visual::after {
+  html.lgt-duel-visual body::before,
+  html.lgt-duel-visual body::after {
     content: '';
     position: fixed;
     top: 90px;
@@ -1035,21 +1024,14 @@ html.lgt-duel-visual body::after {
     mask-composite: intersect;
   }
 
-  html.lgt-duel-visual::before {
+  html.lgt-duel-visual body::before {
     left: max(0px, calc((100vw - 1200px) / 2 - 390px));
     background-position: 36% 50%;
   }
 
-  html.lgt-duel-visual::after {
+  html.lgt-duel-visual body::after {
     right: max(0px, calc((100vw - 1200px) / 2 - 390px));
     background-position: 72% 50%;
-  }
-
-  html.lgt-duel-visual body::after {
-    background:
-      linear-gradient(90deg, rgba(20, 12, 36, 0.08), transparent 28%, transparent 72%, rgba(10, 24, 42, 0.08)),
-      url('assets/df_eve.png') center top / cover no-repeat;
-    opacity: 0.13;
   }
 }
 
@@ -1744,6 +1726,31 @@ footer a:hover::after {
   left: 16px;
   z-index: 900;
   transition: all var(--transition-normal);
+}
+
+/* Google Translate top banner guard */
+html.lgt-translate-banner body {
+  top: 0 !important;
+  padding-top: calc(70px + var(--lgt-translate-banner-height)) !important;
+}
+
+html.lgt-translate-banner .navbar {
+  top: var(--lgt-translate-banner-height) !important;
+}
+
+html.lgt-translate-banner .navbar-collapse {
+  top: calc(70px + var(--lgt-translate-banner-height)) !important;
+}
+
+html.lgt-translate-banner .floating-top-left {
+  top: calc(82px + var(--lgt-translate-banner-height)) !important;
+}
+
+@media (min-width: 1681px) and (min-height: 641px) {
+  html.lgt-translate-banner.lgt-duel-visual body::before,
+  html.lgt-translate-banner.lgt-duel-visual body::after {
+    top: calc(90px + var(--lgt-translate-banner-height));
+  }
 }
 
 /* ========================================

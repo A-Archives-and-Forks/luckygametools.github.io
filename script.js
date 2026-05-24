@@ -333,6 +333,65 @@ function initNavbar() {
   }
 }
 
+function initGoogleTranslateBannerOffset() {
+  const root = document.documentElement;
+  let lastHeight = -1;
+
+  const getBannerHeight = () => {
+    const candidates = Array.from(document.querySelectorAll("iframe.goog-te-banner-frame, iframe.skiptranslate, .goog-te-banner-frame"));
+    const banner = candidates.find(element => {
+      const rect = element.getBoundingClientRect();
+      const style = window.getComputedStyle(element);
+      return style.display !== "none" && style.visibility !== "hidden" && rect.height > 20 && rect.width > 100 && rect.top <= 8;
+    });
+
+    if (banner) {
+      return Math.ceil(banner.getBoundingClientRect().height);
+    }
+
+    const bodyTop = parseInt(document.body.style.top || "0", 10);
+    return Number.isFinite(bodyTop) && bodyTop > 20 ? bodyTop : 0;
+  };
+
+  const updateOffset = () => {
+    const nextHeight = getBannerHeight();
+    if (nextHeight === lastHeight) {
+      if (nextHeight > 0 && document.body.style.top && document.body.style.top !== "0px") {
+        document.body.style.top = "0px";
+      }
+      return;
+    }
+
+    lastHeight = nextHeight;
+    root.style.setProperty("--lgt-translate-banner-height", `${nextHeight}px`);
+    root.classList.toggle("lgt-translate-banner", nextHeight > 0);
+
+    if (nextHeight > 0) {
+      document.body.style.top = "0px";
+    }
+  };
+
+  updateOffset();
+
+  if ("ResizeObserver" in window) {
+    const resizeObserver = new ResizeObserver(updateOffset);
+    resizeObserver.observe(document.body);
+  }
+
+  const mutationObserver = new MutationObserver(updateOffset);
+  mutationObserver.observe(document.documentElement, {
+    childList: true,
+    subtree: true,
+    attributes: true,
+    attributeFilter: ["style", "class"]
+  });
+
+  window.addEventListener("resize", updateOffset, { passive: true });
+  window.setTimeout(updateOffset, 500);
+  window.setTimeout(updateOffset, 1500);
+  window.setTimeout(updateOffset, 3000);
+}
+
 function initScrollPerformanceMode() {
   const root = document.documentElement;
   let scrollTimer;
@@ -476,6 +535,7 @@ document.addEventListener("DOMContentLoaded", function() {
   initImageModal();
   initFriendLinks();
   initNavbar();
+  initGoogleTranslateBannerOffset();
   initScrollPerformanceMode();
   initManualAdSlots();
 });
