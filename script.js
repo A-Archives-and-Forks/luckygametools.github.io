@@ -425,8 +425,17 @@ function initDuelVisualHover() {
 
     const viewportWidth = window.innerWidth;
     const viewportHeight = window.innerHeight;
-    const layerWidth = Math.min(viewportWidth * 0.19, 340);
-    const sideOffset = Math.max(0, (viewportWidth - 1200) / 2 - 390);
+    let layerWidth = Math.min(Math.max(300, viewportWidth * 0.2), 390);
+    let sideOffset = Math.max(0, (viewportWidth - 1200) / 2 - layerWidth);
+
+    if (viewportWidth >= 2560) {
+      layerWidth = Math.min(Math.max(640, viewportWidth * 0.28), 760);
+      sideOffset = 0;
+    } else if (viewportWidth >= 1920) {
+      layerWidth = Math.min(Math.max(480, viewportWidth * 0.25), 640);
+      sideOffset = 0;
+    }
+
     const layerTop = 90 + getTranslateBannerHeight();
     const magnet = 56;
 
