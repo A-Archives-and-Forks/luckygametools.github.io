@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="lgt-font-deferred">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denuvo 啟動驗證流程 - LuckyGameTools 功能專題</title>
+    <meta name="description" content="LuckyGameTools Denuvo 啟動驗證專題，說明啟動驗證流程、驗證碼使用、Steam 啟動順序、系統變更注意事項與常見排查。">
+    <meta name="keywords" content="Denuvo啟動驗證,steam驗證,驗證代碼,驗證碼,steam工具,luckygametools">
+    <!-- SEO metadata -->
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="author" content="LuckyGameTools">
+    <link rel="canonical" href="/features/denuvo-verification_zh.html">
+    <link rel="alternate" hreflang="en" href="/features/denuvo-verification_en.html">
+    <link rel="alternate" hreflang="zh-Hant" href="/features/denuvo-verification_zh.html">
+    <link rel="alternate" hreflang="x-default" href="/features/denuvo-verification_en.html">
+    <meta property="og:site_name" content="LuckyGameTools">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Denuvo 啟動驗證流程 - LuckyGameTools 功能專題">
+    <meta property="og:description" content="LuckyGameTools Denuvo 啟動驗證專題，說明啟動驗證流程、驗證碼使用、Steam 啟動順序、系統變更注意事項與常見排查。">
+    <meta property="og:url" content="/features/denuvo-verification_zh.html">
+    <meta property="og:image" content="/background.jpg">
+    <meta property="og:locale" content="zh_TW">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Denuvo 啟動驗證流程 - LuckyGameTools 功能專題">
+    <meta name="twitter:description" content="LuckyGameTools Denuvo 啟動驗證專題，說明啟動驗證流程、驗證碼使用、Steam 啟動順序、系統變更注意事項與常見排查。">
+    <meta name="twitter:image" content="/background.jpg">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Denuvo 啟動驗證流程 - LuckyGameTools 功能專題",
+      "url": "/features/denuvo-verification_zh.html",
+      "description": "LuckyGameTools Denuvo 啟動驗證專題，說明啟動驗證流程、驗證碼使用、Steam 啟動順序、系統變更注意事項與常見排查。",
+      "inLanguage": "zh-Hant",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "LuckyGameTools",
+        "url": "/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "LuckyGameTools",
+        "url": "/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "/site-icon.svg"
+        }
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首頁",
+          "item": "/README_zh.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "核心功能",
+          "item": "/README_zh.html#core-features"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Denuvo 啟動驗證流程",
+          "item": "/features/denuvo-verification_zh.html"
+        }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+                {
+                      "@type": "Question",
+                      "name": "Denuvo 驗證一定需要驗證碼嗎？",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "不是所有場景都需要，具體取決於遊戲、當前版本和啟動狀態；頁面保留了需要驗證碼時的處理路徑。"
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "驗證失敗可以重復提交嗎？",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "建議先檢查時間、網絡、遊戲版本和軟件版本，避免在同一個異常狀態下重復嘗試。"
+                      }
+                }
+          ]
+    }
+    </script>
+    <!-- /SEO metadata -->
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../styles.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7261994485465423" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <a href="../index.html" class="navbar-brand">
+            <div class="logo-icon"></div>
+            <span>LuckyGameTools</span>
+        </a>
+        <button class="navbar-toggle" aria-expanded="false" id="navbarToggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="../README_zh.html" class="nav-link">首頁</a></li>
+                <li class="nav-item"><a href="../README_zh.html#download-section" class="nav-link">下載</a></li>
+                <li class="nav-item"><a href="../qa_zh.html" class="nav-link">常見問題</a></li>
+                <li class="nav-item"><a href="../patches_zh.html" class="nav-link">補丁插件</a></li>
+                <li class="nav-item"><a href="../game_update_zh.html" class="nav-link">遊戲庫</a></li>
+                <li class="nav-item"><a href="../tools/index_zh.html" class="nav-link">工具箱</a></li>
+                <li class="nav-item"><a href="../devLog.html" class="nav-link">開發日誌</a></li>
+                <li class="nav-item language-switch-item"><a href="" class="lang-toggle language-switch-toggle active" data-lang-switch title="Switch language" aria-label="Switch to English"><span class="lang-toggle-slider"></span><span class="lang-toggle-option en">EN</span><span class="lang-toggle-option zh">中</span></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="twp"></div>
+    <div class="container content main-content">
+        <header class="header">
+            <div class="badge">核心功能專題</div>
+            <h1 class="logo"><a href="denuvo-verification_zh.html" class="no-underline">Denuvo 啟動驗證流程</a></h1>
+            <p class="subtitle">說明 Denuvo 官方驗證機制下的啟動流程、驗證碼和注意事項</p>
+        </header>
+
+        <section class="section">
+            <h2><span class="lgt-icon icon-lock" aria-hidden="true"></span> 功能概覽</h2>
+            <p>Denuvo 啟動驗證專題用於幫助用戶理解驗證提示、驗證碼有效期、Steam 啟動順序和驗證完成後的注意事項。</p>
+        </section>
+
+        <section class="section feature-scenarios">
+            <h2><span class="lgt-icon icon-list" aria-hidden="true"></span> 適合場景</h2>
+            <div class="feature-grid feature-scenario-grid">
+                <div class="feature-card">
+                    <h3>啟動驗證提示</h3>
+                    <p>適合遊戲啟動時出現驗證提示、需要按流程提交或使用驗證代碼的場景。</p>
+                </div>
+                <div class="feature-card">
+                    <h3>驗證失敗排查</h3>
+                    <p>當驗證碼、時間、網絡或版本狀態不匹配時，可以按步驟逐項確認。</p>
+                </div>
+                <div class="feature-card">
+                    <h3>新版本切換</h3>
+                    <p>遊戲更新後驗證狀態可能變化，建議先確認遊戲版本和軟件版本再嘗試。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2><span class="lgt-icon icon-list" aria-hidden="true"></span> 可以解決什麼</h2>
+            <ul class="feature-detail-list">
+                    <li>把驗證碼復制、Steam 退出、軟件啟動和驗證完成放在一個清晰流程裡。</li>
+                    <li>減少因為剪貼板、Steam 未退出或系統變更導致的失敗。</li>
+                    <li>說明何時需要重新完成驗證流程。</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2><span class="lgt-icon icon-steps" aria-hidden="true"></span> Denuvo 啟動驗證教學 <a href="https://youtu.be/vyAiCWiyotI" target="_blank" rel="noopener noreferrer">(視頻演示)</a></h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div>安裝完成遊戲後，啟動一次確認遊戲存在彈出 Denuvo 驗證提示窗</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div>退出正在運行的 Steam</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div>復制完整的驗證代碼（以字母 lgt 開頭，有效期 30 分鐘；如何獲取驗證代碼，詳見下文的貢獻方式）</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div>鼠標移至軟件左側對應的遊戲上，點擊三角啟動按鈕（如果沒有出現，可能是系統剪切板問題，找個空地粘貼試試）</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <div>登錄你的 Steam 賬號（確保是從第 4 步啟動的 Steam）</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">6</div>
+                    <div>啟動遊戲，等待驗證完成（會彈出【DRM Activation successful】提示，點擊確認後會自動退出遊戲和 Steam）</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">7</div>
+                    <div>最後以正常方式啟動 Steam 即可暢玩遊戲（無需再次使用驗證代碼啟動，驗證後請勿更新系統）</div>
+                </div>
+            </div>
+            <div class="warning">
+                <p><strong>小提示：</strong></p>
+                <p>1. Denuvo 是遊戲官方驗證機制（本軟件只是輔助完成啟動驗證流程），Denuvo 驗證原理大致是將加密的遊戲文件和系統綁定，通常只有系統或遊戲文件變動才需要重新驗證；在不變動的情況下，驗證狀態通常可以持續一段時間，如果失效，請重新使用新的驗證代碼完成流程！</p>
+                <p>2. 從 Steam 跳轉到第三方平臺的遊戲，驗證後<strong>目前需要</strong>自行登錄一個擁有該 Steam 版本遊戲的第三方平臺賬號，才可以最終啟動遊戲。啟動成功後可使用本軟件中《工具箱》一鍵離線第三方平臺，例如：UB 平臺的《刺客信條.影》。</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2><span class="lgt-icon icon-warning" aria-hidden="true"></span> 注意事項</h2>
+            <div class="warning">
+                <ul class="feature-detail-list">
+                    <li>Denuvo 是遊戲官方驗證機制，軟件只輔助完成啟動驗證流程。</li>
+                    <li>系統或遊戲文件變化後可能需要重新驗證。</li>
+                    <li>驗證碼有有效期，失效後需要重新獲取。</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section feature-faq">
+            <h2><span class="lgt-icon icon-list" aria-hidden="true"></span> 常見疑問</h2>
+            <div class="feature-faq-list">
+                <div class="feature-faq-item">
+                    <h3>Denuvo 驗證一定需要驗證碼嗎？</h3>
+                    <p>不是所有場景都需要，具體取決於遊戲、當前版本和啟動狀態；頁面保留了需要驗證碼時的處理路徑。</p>
+                </div>
+                <div class="feature-faq-item">
+                    <h3>驗證失敗可以重復提交嗎？</h3>
+                    <p>建議先檢查時間、網絡、遊戲版本和軟件版本，避免在同一個異常狀態下重復嘗試。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2><span class="lgt-icon icon-link" aria-hidden="true"></span> 相關入口</h2>
+            <div class="feature-grid">
+                <a class="feature-card feature-card-link" href="../README_zh.html#core-features">
+                    <h3><span class="lgt-icon icon-link" aria-hidden="true"></span> 返回核心功能</h3>
+                    <span class="feature-card-action">查看</span>
+                </a>
+                <a class="feature-card feature-card-link" href="../qa_zh.html">
+                    <h3><span class="lgt-icon icon-link" aria-hidden="true"></span> 查看常見問題</h3>
+                    <span class="feature-card-action">查看</span>
+                </a>
+                <a class="feature-card feature-card-link" href="../game_update_zh.html">
+                    <h3><span class="lgt-icon icon-link" aria-hidden="true"></span> 查看遊戲庫更新</h3>
+                    <span class="feature-card-action">查看</span>
+                </a>
+                <a class="feature-card feature-card-link" href="../tools/index_zh.html">
+                    <h3><span class="lgt-icon icon-link" aria-hidden="true"></span> 打開工具箱</h3>
+                    <span class="feature-card-action">查看</span>
+                </a>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2025 LuckyGameTools</p>
+            <p><a href="../README_zh.html">返回首頁</a></p>
+        </footer>
+    </div>
+
+    <script src="../twallpaper.js"></script>
+    <script src="../script.js"></script>
+</body>
+</html>

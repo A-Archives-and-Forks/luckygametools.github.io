@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en-US" class="lgt-font-deferred">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denuvo Startup Verification Workflow - LuckyGameTools Feature Guide</title>
+    <meta name="description" content="LuckyGameTools Denuvo startup verification guide covering verification codes, Steam startup order, system change notes, and common troubleshooting.">
+    <meta name="keywords" content="Denuvo startup verification,steam verification,verification code,luckygametools">
+    <!-- SEO metadata -->
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="author" content="LuckyGameTools">
+    <link rel="canonical" href="/features/denuvo-verification_en.html">
+    <link rel="alternate" hreflang="en" href="/features/denuvo-verification_en.html">
+    <link rel="alternate" hreflang="zh-Hant" href="/features/denuvo-verification_zh.html">
+    <link rel="alternate" hreflang="x-default" href="/features/denuvo-verification_en.html">
+    <meta property="og:site_name" content="LuckyGameTools">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Denuvo Startup Verification Workflow - LuckyGameTools Feature Guide">
+    <meta property="og:description" content="LuckyGameTools Denuvo startup verification guide covering verification codes, Steam startup order, system change notes, and common troubleshooting.">
+    <meta property="og:url" content="/features/denuvo-verification_en.html">
+    <meta property="og:image" content="/background.jpg">
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Denuvo Startup Verification Workflow - LuckyGameTools Feature Guide">
+    <meta name="twitter:description" content="LuckyGameTools Denuvo startup verification guide covering verification codes, Steam startup order, system change notes, and common troubleshooting.">
+    <meta name="twitter:image" content="/background.jpg">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Denuvo Startup Verification Workflow - LuckyGameTools Feature Guide",
+      "url": "/features/denuvo-verification_en.html",
+      "description": "LuckyGameTools Denuvo startup verification guide covering verification codes, Steam startup order, system change notes, and common troubleshooting.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "LuckyGameTools",
+        "url": "/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "LuckyGameTools",
+        "url": "/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "/site-icon.svg"
+        }
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "/README_en.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Core Features",
+          "item": "/README_en.html#core-features"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Denuvo Startup Verification Workflow",
+          "item": "/features/denuvo-verification_en.html"
+        }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+                {
+                      "@type": "Question",
+                      "name": "Does Denuvo verification always require a code?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Not always. It depends on the game, current version, and launch state."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Should I retry immediately after failure?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Check time, network, game version, and software version first to avoid repeating the same failed state."
+                      }
+                }
+          ]
+    }
+    </script>
+    <!-- /SEO metadata -->
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../styles.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7261994485465423" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <a href="../index.html" class="navbar-brand">
+            <div class="logo-icon"></div>
+            <span>LuckyGameTools</span>
+        </a>
+        <button class="navbar-toggle" aria-expanded="false" id="navbarToggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="../README_en.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="../README_en.html#download-section" class="nav-link">Download</a></li>
+                <li class="nav-item"><a href="../qa_en.html" class="nav-link">FAQ</a></li>
+                <li class="nav-item"><a href="../patches_en.html" class="nav-link">Patches</a></li>
+                <li class="nav-item"><a href="../game_update_en.html" class="nav-link">Games</a></li>
+                <li class="nav-item"><a href="../tools/index_en.html" class="nav-link">Tools</a></li>
+                <li class="nav-item"><a href="../devLog.html" class="nav-link">DevLog</a></li>
+                <li class="nav-item language-switch-item"><a href="" class="lang-toggle language-switch-toggle" data-lang-switch title="Switch language" aria-label="切換到中文"><span class="lang-toggle-slider"></span><span class="lang-toggle-option en">EN</span><span class="lang-toggle-option zh">中</span></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="twp"></div>
+    <div class="container content main-content">
+        <header class="header">
+            <div class="badge">Feature guide</div>
+            <h1 class="logo"><a href="denuvo-verification_en.html" class="no-underline">Denuvo Startup Verification Workflow</a></h1>
+            <p class="subtitle">Verification code usage, Steam startup order, and troubleshooting notes</p>
+        </header>
+
+        <section class="section">
+            <h2><span class="lgt-icon icon-lock" aria-hidden="true"></span> Overview</h2>
+            <p>This guide helps users understand Denuvo prompts, verification code timing, Steam startup order, and what to check after verification completes.</p>
+        </section>
+
+        <section class="section feature-scenarios">
+            <h2><span class="lgt-icon icon-list" aria-hidden="true"></span> Use Cases</h2>
+            <div class="feature-grid feature-scenario-grid">
+                <div class="feature-card">
+                    <h3>Startup verification prompt</h3>
+                    <p>Useful when a game shows a verification prompt and requires a clear handling path.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Verification failure checks</h3>
+                    <p>Check code, time, network, version, and software state in a predictable order.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>After game updates</h3>
+                    <p>Verification state may change after updates, so confirm both game and software versions first.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2><span class="lgt-icon icon-list" aria-hidden="true"></span> What It Helps With</h2>
+            <ul class="feature-detail-list">
+                    <li>Put code copying, Steam exit, software startup, and completion into one workflow.</li>
+                    <li>Reduce failures caused by clipboard issues, running Steam, or system changes.</li>
+                    <li>Explain when the verification flow may need to be completed again.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2><span class="lgt-icon icon-steps" aria-hidden="true"></span> How to use LuckyGameTools for Denuvo startup verification <a href="https://youtu.be/vyAiCWiyotI" target="_blank" rel="noopener noreferrer">(Video guide)</a></h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div>After installed the game, a pop-up message will appear when starting the game indicating that the Denuvo game needs to be activated</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div>Exit the running Steam</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div>Copy the complete verification code. The verification code starts with lgt and is valid for 30 minutes; refer to the contribution method below for details on how to get it.</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div>Hover over the corresponding game on the left side of the software and click the triangular start button. If it does not appear, it may be a system clipboard issue; try pasting in an empty area.</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <div>Log in to your Steam account. Make sure Steam was started from step 4.</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">6</div>
+                    <div>Launch the game and wait for verification to complete. A DRM Activation successful message should appear, then the game and Steam will exit automatically.</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">7</div>
+                    <div>After that, start Steam normally to play the game. You do not need to use the verification code again after completion; do not update the system after verification.</div>
+                </div>
+            </div>
+            <div class="warning">
+                <p><strong>Tip:</strong></p>
+                <p>1. Denuvo is an official game verification mechanism. This software only assists with the startup verification workflow. The general principle is that encrypted game files are bound to the system, so verification is usually only needed again when the system or game files change. If the verification status expires, complete the flow again with a new verification code.</p>
+                <p>2. For games that jump from Steam to a third-party platform, you currently need to log in to a third-party platform account that owns the Steam version of the game before the game can finally launch. After the game launches successfully, use the Toolbox in this software for the supported third-party platform helper flow, for example: Assassin's Creed Shadow on the Ubisoft platform.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2><span class="lgt-icon icon-warning" aria-hidden="true"></span> Notes</h2>
+            <div class="warning">
+                <ul class="feature-detail-list">
+                    <li>Denuvo is an official game verification mechanism; the software assists with the startup workflow.</li>
+                    <li>System or game file changes may require verification again.</li>
+                    <li>Verification codes expire, so use a fresh code when needed.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section feature-faq">
+            <h2><span class="lgt-icon icon-list" aria-hidden="true"></span> Common Questions</h2>
+            <div class="feature-faq-list">
+                <div class="feature-faq-item">
+                    <h3>Does Denuvo verification always require a code?</h3>
+                    <p>Not always. It depends on the game, current version, and launch state.</p>
+                </div>
+                <div class="feature-faq-item">
+                    <h3>Should I retry immediately after failure?</h3>
+                    <p>Check time, network, game version, and software version first to avoid repeating the same failed state.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2><span class="lgt-icon icon-link" aria-hidden="true"></span> Related Pages</h2>
+            <div class="feature-grid">
+                <a class="feature-card feature-card-link" href="../README_en.html#core-features">
+                    <h3><span class="lgt-icon icon-link" aria-hidden="true"></span> Back to core features</h3>
+                    <span class="feature-card-action">Open</span>
+                </a>
+                <a class="feature-card feature-card-link" href="../qa_en.html">
+                    <h3><span class="lgt-icon icon-link" aria-hidden="true"></span> View FAQ</h3>
+                    <span class="feature-card-action">Open</span>
+                </a>
+                <a class="feature-card feature-card-link" href="../game_update_en.html">
+                    <h3><span class="lgt-icon icon-link" aria-hidden="true"></span> View game updates</h3>
+                    <span class="feature-card-action">Open</span>
+                </a>
+                <a class="feature-card feature-card-link" href="../tools/index_en.html">
+                    <h3><span class="lgt-icon icon-link" aria-hidden="true"></span> Open tools</h3>
+                    <span class="feature-card-action">Open</span>
+                </a>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2025 LuckyGameTools</p>
+            <p><a href="../README_en.html">Back to home</a></p>
+        </footer>
+    </div>
+
+    <script src="../twallpaper.js"></script>
+    <script src="../script.js"></script>
+</body>
+</html>

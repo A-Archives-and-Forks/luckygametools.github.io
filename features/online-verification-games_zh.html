@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="lgt-font-deferred">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>聯網驗證單機遊戲支持 - LuckyGameTools 功能專題</title>
+    <meta name="description" content="LuckyGameTools 聯網驗證單機遊戲專題，說明在線授權驗證、lot 驗證代碼、啟動順序、支持場景與常見問題。">
+    <meta name="keywords" content="steam在線驗證,聯網驗證,單機遊戲驗證,lot驗證碼,steam工具,luckygametools">
+    <!-- SEO metadata -->
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="author" content="LuckyGameTools">
+    <link rel="canonical" href="/features/online-verification-games_zh.html">
+    <link rel="alternate" hreflang="en" href="/features/online-verification-games_en.html">
+    <link rel="alternate" hreflang="zh-Hant" href="/features/online-verification-games_zh.html">
+    <link rel="alternate" hreflang="x-default" href="/features/online-verification-games_en.html">
+    <meta property="og:site_name" content="LuckyGameTools">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="聯網驗證單機遊戲支持 - LuckyGameTools 功能專題">
+    <meta property="og:description" content="LuckyGameTools 聯網驗證單機遊戲專題，說明在線授權驗證、lot 驗證代碼、啟動順序、支持場景與常見問題。">
+    <meta property="og:url" content="/features/online-verification-games_zh.html">
+    <meta property="og:image" content="/background.jpg">
+    <meta property="og:locale" content="zh_TW">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="聯網驗證單機遊戲支持 - LuckyGameTools 功能專題">
+    <meta name="twitter:description" content="LuckyGameTools 聯網驗證單機遊戲專題，說明在線授權驗證、lot 驗證代碼、啟動順序、支持場景與常見問題。">
+    <meta name="twitter:image" content="/background.jpg">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "聯網驗證單機遊戲支持 - LuckyGameTools 功能專題",
+      "url": "/features/online-verification-games_zh.html",
+      "description": "LuckyGameTools 聯網驗證單機遊戲專題，說明在線授權驗證、lot 驗證代碼、啟動順序、支持場景與常見問題。",
+      "inLanguage": "zh-Hant",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "LuckyGameTools",
+        "url": "/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "LuckyGameTools",
+        "url": "/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "/site-icon.svg"
+        }
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首頁",
+          "item": "/README_zh.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "核心功能",
+          "item": "/README_zh.html#core-features"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "聯網驗證單機遊戲支持",
+          "item": "/features/online-verification-games_zh.html"
+        }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+                {
+                      "@type": "Question",
+                      "name": "單機遊戲為什麼還需要聯網？",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "部分遊戲會在首次啟動、版本更新或權限校驗時要求聯網確認，這和遊戲本身機制有關。"
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "認證失敗一定是清單問題嗎？",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "不一定，也可能和 Steam 登錄狀態、網絡代理、權限拉取或遊戲版本有關。"
+                      }
+                }
+          ]
+    }
+    </script>
+    <!-- /SEO metadata -->
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../styles.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7261994485465423" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <a href="../index.html" class="navbar-brand">
+            <div class="logo-icon"></div>
+            <span>LuckyGameTools</span>
+        </a>
+        <button class="navbar-toggle" aria-expanded="false" id="navbarToggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="../README_zh.html" class="nav-link">首頁</a></li>
+                <li class="nav-item"><a href="../README_zh.html#download-section" class="nav-link">下載</a></li>
+                <li class="nav-item"><a href="../qa_zh.html" class="nav-link">常見問題</a></li>
+                <li class="nav-item"><a href="../patches_zh.html" class="nav-link">補丁插件</a></li>
+                <li class="nav-item"><a href="../game_update_zh.html" class="nav-link">遊戲庫</a></li>
+                <li class="nav-item"><a href="../tools/index_zh.html" class="nav-link">工具箱</a></li>
+                <li class="nav-item"><a href="../devLog.html" class="nav-link">開發日誌</a></li>
+                <li class="nav-item language-switch-item"><a href="" class="lang-toggle language-switch-toggle active" data-lang-switch title="Switch language" aria-label="Switch to English"><span class="lang-toggle-slider"></span><span class="lang-toggle-option en">EN</span><span class="lang-toggle-option zh">中</span></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="twp"></div>
+    <div class="container content main-content">
+        <header class="header">
+            <div class="badge">核心功能專題</div>
+            <h1 class="logo"><a href="online-verification-games_zh.html" class="no-underline">聯網驗證單機遊戲支持</a></h1>
+            <p class="subtitle">針對需要在線授權驗證的單機遊戲，整理啟動代碼和使用流程</p>
+        </header>
+
+        <section class="section">
+            <h2><span class="lgt-icon icon-globe" aria-hidden="true"></span> 功能概覽</h2>
+            <p>部分單機遊戲啟動時需要在線授權驗證。本專題說明 lot 開頭驗證碼的使用場景、啟動方式和常見注意事項。</p>
+        </section>
+
+        <section class="section feature-scenarios">
+            <h2><span class="lgt-icon icon-list" aria-hidden="true"></span> 適合場景</h2>
+            <div class="feature-grid feature-scenario-grid">
+                <div class="feature-card">
+                    <h3>聯網授權檢查</h3>
+                    <p>適合單機遊戲啟動時仍需要聯網授權、Steam 認證或權限拉取的場景。</p>
+                </div>
+                <div class="feature-card">
+                    <h3>離線與在線切換</h3>
+                    <p>當網絡狀態變化後遊戲表現不同，可以按頁面流程檢查當前授權狀態。</p>
+                </div>
+                <div class="feature-card">
+                    <h3>認證失敗排查</h3>
+                    <p>把 Steam 登錄狀態、軟件權限、網絡代理和遊戲版本放在一起確認。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2><span class="lgt-icon icon-list" aria-hidden="true"></span> 可以解決什麼</h2>
+            <ul class="feature-detail-list">
+                    <li>說明 lot 驗證代碼和 Denuvo 驗證代碼的差異。</li>
+                    <li>幫助用戶理解每次啟動時可能需要通過代碼進入遊戲的場景。</li>
+                    <li>整理支持示例和 CDK 手冊入口。</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2><span class="lgt-icon icon-steps" aria-hidden="true"></span> 需要聯網驗證的單機遊戲教學</h2>
+            <div class="warning">
+                <p><strong>重要提醒：</strong></p>
+                <p>參考 D 加密遊戲啟動驗證步驟，不同點是驗證代碼是 lot 開頭（每次玩遊戲都需要通過代碼啟動）。</p>
+                <p>例如：女王的遊戲：盛世天下、英雄連 3、真人快打、夜族崛起、微軟飛行模擬器、美女，請別影響我成仙等。</p>
+                <p>lot 開頭驗證代碼的獲取方式：詳見 CDK 使用手冊福利部分（可無限使用，暫只對贊助用戶開放）。</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2><span class="lgt-icon icon-warning" aria-hidden="true"></span> 注意事項</h2>
+            <div class="warning">
+                <ul class="feature-detail-list">
+                    <li>lot 驗證代碼通常用於需要在線驗證的單機遊戲。</li>
+                    <li>部分功能可能僅對贊助用戶或特定權限開放。</li>
+                    <li>具體支持範圍會隨遊戲和軟件版本變化。</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section feature-faq">
+            <h2><span class="lgt-icon icon-list" aria-hidden="true"></span> 常見疑問</h2>
+            <div class="feature-faq-list">
+                <div class="feature-faq-item">
+                    <h3>單機遊戲為什麼還需要聯網？</h3>
+                    <p>部分遊戲會在首次啟動、版本更新或權限校驗時要求聯網確認，這和遊戲本身機制有關。</p>
+                </div>
+                <div class="feature-faq-item">
+                    <h3>認證失敗一定是清單問題嗎？</h3>
+                    <p>不一定，也可能和 Steam 登錄狀態、網絡代理、權限拉取或遊戲版本有關。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2><span class="lgt-icon icon-link" aria-hidden="true"></span> 相關入口</h2>
+            <div class="feature-grid">
+                <a class="feature-card feature-card-link" href="../README_zh.html#core-features">
+                    <h3><span class="lgt-icon icon-link" aria-hidden="true"></span> 返回核心功能</h3>
+                    <span class="feature-card-action">查看</span>
+                </a>
+                <a class="feature-card feature-card-link" href="../qa_zh.html">
+                    <h3><span class="lgt-icon icon-link" aria-hidden="true"></span> 查看常見問題</h3>
+                    <span class="feature-card-action">查看</span>
+                </a>
+                <a class="feature-card feature-card-link" href="../game_update_zh.html">
+                    <h3><span class="lgt-icon icon-link" aria-hidden="true"></span> 查看遊戲庫更新</h3>
+                    <span class="feature-card-action">查看</span>
+                </a>
+                <a class="feature-card feature-card-link" href="../tools/index_zh.html">
+                    <h3><span class="lgt-icon icon-link" aria-hidden="true"></span> 打開工具箱</h3>
+                    <span class="feature-card-action">查看</span>
+                </a>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2025 LuckyGameTools</p>
+            <p><a href="../README_zh.html">返回首頁</a></p>
+        </footer>
+    </div>
+
+    <script src="../twallpaper.js"></script>
+    <script src="../script.js"></script>
+</body>
+</html>
+="true"></span> 查看常見問題</h3>
+                    <span class="feature-card-action">查看</span>
+                </a>
+                <a class="feature-card feature-card-link" href="../game_update_zh.html">
+                    <h3><span class="lgt-icon icon-link" aria-hidden="true"></span> 查看遊戲庫更新</h3>
+                    <span class="feature-card-action">查看</span>
+                </a>
+                <a class="feature-card feature-card-link" href="../tools/index_zh.html">
+                    <h3><span class="lgt-icon icon-link" aria-hidden="true"></span> 打開工具箱</h3>
+                    <span class="feature-card-action">查看</span>
+                </a>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2025 LuckyGameTools</p>
+            <p><a href="../README_zh.html">返回首頁</a></p>
+        </footer>
+    </div>
+
+    <script src="../twallpaper.js"></script>
+    <script src="../script.js"></script>
+</body>
+</html>

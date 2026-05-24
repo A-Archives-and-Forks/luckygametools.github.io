@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="lgt-font-deferred">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>480 聯機組隊與 Steam 在線聯機 - LuckyGameTools 功能專題</title>
+    <meta name="description" content="LuckyGameTools 480 聯機組隊專題，說明 Steam 在線聯機、SpaceWar 參數、好友邀請、版本一致性與常見問題排查。">
+    <meta name="keywords" content="480聯機,SpaceWar,steam在線,steam聯機,steam組隊,聯機參數,luckygametools">
+    <!-- SEO metadata -->
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="author" content="LuckyGameTools">
+    <link rel="canonical" href="/features/online-team_zh.html">
+    <link rel="alternate" hreflang="en" href="/features/online-team_en.html">
+    <link rel="alternate" hreflang="zh-Hant" href="/features/online-team_zh.html">
+    <link rel="alternate" hreflang="x-default" href="/features/online-team_en.html">
+    <meta property="og:site_name" content="LuckyGameTools">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="480 聯機組隊與 Steam 在線聯機 - LuckyGameTools 功能專題">
+    <meta property="og:description" content="LuckyGameTools 480 聯機組隊專題，說明 Steam 在線聯機、SpaceWar 參數、好友邀請、版本一致性與常見問題排查。">
+    <meta property="og:url" content="/features/online-team_zh.html">
+    <meta property="og:image" content="/background.jpg">
+    <meta property="og:locale" content="zh_TW">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="480 聯機組隊與 Steam 在線聯機 - LuckyGameTools 功能專題">
+    <meta name="twitter:description" content="LuckyGameTools 480 聯機組隊專題，說明 Steam 在線聯機、SpaceWar 參數、好友邀請、版本一致性與常見問題排查。">
+    <meta name="twitter:image" content="/background.jpg">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "480 聯機組隊與 Steam 在線聯機 - LuckyGameTools 功能專題",
+      "url": "/features/online-team_zh.html",
+      "description": "LuckyGameTools 480 聯機組隊專題，說明 Steam 在線聯機、SpaceWar 參數、好友邀請、版本一致性與常見問題排查。",
+      "inLanguage": "zh-Hant",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "LuckyGameTools",
+        "url": "/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "LuckyGameTools",
+        "url": "/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "/site-icon.svg"
+        }
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首頁",
+          "item": "/README_zh.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "核心功能",
+          "item": "/README_zh.html#core-features"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "480 聯機組隊與 Steam 在線聯機",
+          "item": "/features/online-team_zh.html"
+        }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+                {
+                      "@type": "Question",
+                      "name": "480 聯機適合所有遊戲嗎？",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "頁面說明的是常見支持場景和排查方式，具體遊戲還需要看遊戲本身的聯機機制和當前支持狀態。"
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "聯機失敗應該先查什麼？",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "優先查 Steam 是否在線、好友邀請鏈路是否正常、遊戲版本是否一致、加速或代理是否影響連接。"
+                      }
+                }
+          ]
+    }
+    </script>
+    <!-- /SEO metadata -->
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../styles.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7261994485465423" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <a href="../index.html" class="navbar-brand">
+            <div class="logo-icon"></div>
+            <span>LuckyGameTools</span>
+        </a>
+        <button class="navbar-toggle" aria-expanded="false" id="navbarToggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="../README_zh.html" class="nav-link">首頁</a></li>
+                <li class="nav-item"><a href="../README_zh.html#download-section" class="nav-link">下載</a></li>
+                <li class="nav-item"><a href="../qa_zh.html" class="nav-link">常見問題</a></li>
+                <li class="nav-item"><a href="../patches_zh.html" class="nav-link">補丁插件</a></li>
+                <li class="nav-item"><a href="../game_update_zh.html" class="nav-link">遊戲庫</a></li>
+                <li class="nav-item"><a href="../tools/index_zh.html" class="nav-link">工具箱</a></li>
+                <li class="nav-item"><a href="../devLog.html" class="nav-link">開發日誌</a></li>
+                <li class="nav-item language-switch-item"><a href="" class="lang-toggle language-switch-toggle active" data-lang-switch title="Switch language" aria-label="Switch to English"><span class="lang-toggle-slider"></span><span class="lang-toggle-option en">EN</span><span class="lang-toggle-option zh">中</span></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="twp"></div>
+    <div class="container content main-content">
+        <header class="header">
+            <div class="badge">核心功能專題</div>
+            <h1 class="logo"><a href="online-team_zh.html" class="no-underline">480 聯機組隊與 Steam 在線聯機</a></h1>
+            <p class="subtitle">整理 SpaceWar/480 聯機參數、邀請流程和常見排查步驟</p>
+        </header>
+
+        <section class="section">
+            <h2><span class="lgt-icon icon-users" aria-hidden="true"></span> 功能概覽</h2>
+            <p>480 聯機組隊專題用於說明在線組隊場景下的啟動參數、好友邀請順序和版本一致性檢查。</p>
+        </section>
+
+        <section class="section feature-scenarios">
+            <h2><span class="lgt-icon icon-list" aria-hidden="true"></span> 適合場景</h2>
+            <div class="feature-grid feature-scenario-grid">
+                <div class="feature-card">
+                    <h3>Steam 在線組隊</h3>
+                    <p>適合需要通過 SpaceWar / 480 場景進行 Steam 在線組隊、邀請和多人聯機的遊戲。</p>
+                </div>
+                <div class="feature-card">
+                    <h3>邀請失敗排查</h3>
+                    <p>當好友不可見、邀請無響應或房間連接失敗時，先檢查 Steam 在線狀態和網絡路徑。</p>
+                </div>
+                <div class="feature-card">
+                    <h3>版本一致檢查</h3>
+                    <p>多人遊戲最容易受版本差異影響，頁面把遊戲版本、啟動參數和網絡狀態放在一起說明。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2><span class="lgt-icon icon-list" aria-hidden="true"></span> 可以解決什麼</h2>
+            <ul class="feature-detail-list">
+                    <li>整理 -luckygametools 等啟動參數的使用場景。</li>
+                    <li>說明好友邀請進入遊戲時的先後順序。</li>
+                    <li>提供版本不一致、無法加入房間、邀請彈窗異常的排查方向。</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2><span class="lgt-icon icon-steps" aria-hidden="true"></span> 480 / SpaceWar 聯機注意事項 <a href="https://youtu.be/I2f69LMkknA" target="_blank" rel="noopener noreferrer">(視頻演示)</a></h2>
+            <div class="warning">
+                <p><strong>重要提醒：</strong></p>
+                <ul class="feature-detail-list">
+                    <li>無需任何第三方聯機補丁，支持 99.99% 的 Steam 聯機組隊遊戲</li>
+                    <li>只能和非官方服務器聯機</li>
+                    <li>好友也需要添加啟動參數 <code>-luckygametools</code> 或者 <code>-luckygametools=3</code>，也可以查看 <a href="/qa_zh.html" target="_blank" rel="noopener noreferrer">QA 常見問題聯機補充</a></li>
+                    <li>對於需要好友邀請組隊的遊戲，好友在接收到 Steam 的聯機邀請消息前，需要先啟動遊戲，再點擊 Steam 聊天消息中的邀請鏈接進入聯機</li>
+                    <li>如果加了參數後還是提示需要加參數，可從軟件左下角啟動 Steam，或者查看啟動 Steam 時軟件正上方的紅字提示</li>
+                    <li>軟件目前已對部分遊戲自動集成參數：<a href="https://github.com/luckygametools/steam-cfg/blob/main/arg-luckygametools" target="_blank" rel="noopener noreferrer">已收錄的遊戲列表</a></li>
+                    <li>聯機遊戲在 Steam 上選擇的語言項無效，默認聯機時遊戲語言和軟件選擇的語言保持一致</li>
+                    <li>部分聯機遊戲無法彈窗出邀請好友的界面，請使用幸運參數：<code>-luckygametools=0</code>，例如 Sons of The Forest</li>
+                    <li>如果出現加入不了對方服務器的情況，請確認遊戲版本是否一致，部分遊戲版本不一致時會進不了對方服務器</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2><span class="lgt-icon icon-warning" aria-hidden="true"></span> 注意事項</h2>
+            <div class="warning">
+                <ul class="feature-detail-list">
+                    <li>聯機效果和遊戲自身聯機機制有關。</li>
+                    <li>非官方服務器、版本不一致或網絡不穩定都可能導致加入失敗。</li>
+                    <li>部分遊戲需要使用特定參數，請優先查看 FAQ。</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section feature-faq">
+            <h2><span class="lgt-icon icon-list" aria-hidden="true"></span> 常見疑問</h2>
+            <div class="feature-faq-list">
+                <div class="feature-faq-item">
+                    <h3>480 聯機適合所有遊戲嗎？</h3>
+                    <p>頁面說明的是常見支持場景和排查方式，具體遊戲還需要看遊戲本身的聯機機制和當前支持狀態。</p>
+                </div>
+                <div class="feature-faq-item">
+                    <h3>聯機失敗應該先查什麼？</h3>
+                    <p>優先查 Steam 是否在線、好友邀請鏈路是否正常、遊戲版本是否一致、加速或代理是否影響連接。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2><span class="lgt-icon icon-link" aria-hidden="true"></span> 相關入口</h2>
+            <div class="feature-grid">
+                <a class="feature-card feature-card-link" href="../README_zh.html#core-features">
+                    <h3><span class="lgt-icon icon-link" aria-hidden="true"></span> 返回核心功能</h3>
+                    <span class="feature-card-action">查看</span>
+                </a>
+                <a class="feature-card feature-card-link" href="../qa_zh.html">
+                    <h3><span class="lgt-icon icon-link" aria-hidden="true"></span> 查看常見問題</h3>
+                    <span class="feature-card-action">查看</span>
+                </a>
+                <a class="feature-card feature-card-link" href="../game_update_zh.html">
+                    <h3><span class="lgt-icon icon-link" aria-hidden="true"></span> 查看遊戲庫更新</h3>
+                    <span class="feature-card-action">查看</span>
+                </a>
+                <a class="feature-card feature-card-link" href="../tools/index_zh.html">
+                    <h3><span class="lgt-icon icon-link" aria-hidden="true"></span> 打開工具箱</h3>
+                    <span class="feature-card-action">查看</span>
+                </a>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2025 LuckyGameTools</p>
+            <p><a href="../README_zh.html">返回首頁</a></p>
+        </footer>
+    </div>
+
+    <script src="../twallpaper.js"></script>
+    <script src="../script.js"></script>
+</body>
+</html>

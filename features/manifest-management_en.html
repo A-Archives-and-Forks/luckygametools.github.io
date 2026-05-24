@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en-US" class="lgt-font-deferred">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steam Game Manifest Management - LuckyGameTools Feature Guide</title>
+    <meta name="description" content="LuckyGameTools guide for centrally maintained Steam game manifests in the client, sorted by added time, with one-click import from GitHub and no Steam restart required.">
+    <meta name="keywords" content="steam manifest,steam game tools,game library management,appid,luckygametools">
+    <!-- SEO metadata -->
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="author" content="LuckyGameTools">
+    <link rel="canonical" href="/features/manifest-management_en.html">
+    <link rel="alternate" hreflang="en" href="/features/manifest-management_en.html">
+    <link rel="alternate" hreflang="zh-Hant" href="/features/manifest-management_zh.html">
+    <link rel="alternate" hreflang="x-default" href="/features/manifest-management_en.html">
+    <meta property="og:site_name" content="LuckyGameTools">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Steam Game Manifest Management - LuckyGameTools Feature Guide">
+    <meta property="og:description" content="LuckyGameTools guide for centrally maintained Steam game manifests in the client, sorted by added time, with one-click import from GitHub and no Steam restart required.">
+    <meta property="og:url" content="/features/manifest-management_en.html">
+    <meta property="og:image" content="/background.jpg">
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Steam Game Manifest Management - LuckyGameTools Feature Guide">
+    <meta name="twitter:description" content="LuckyGameTools guide for centrally maintained Steam game manifests in the client, sorted by added time, with one-click import from GitHub and no Steam restart required.">
+    <meta name="twitter:image" content="/background.jpg">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Steam Game Manifest Management - LuckyGameTools Feature Guide",
+      "url": "/features/manifest-management_en.html",
+      "description": "LuckyGameTools guide for centrally maintained Steam game manifests in the client, sorted by added time, with one-click import from GitHub and no Steam restart required.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "LuckyGameTools",
+        "url": "/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "LuckyGameTools",
+        "url": "/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "/site-icon.svg"
+        }
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "/README_en.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Core Features",
+          "item": "/README_en.html#core-features"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Steam Game Manifest Management",
+          "item": "/features/manifest-management_en.html"
+        }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+                {
+                      "@type": "Question",
+                      "name": "Do users need to maintain manifest files manually?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "No. Manifests are centrally added, updated, and maintained by the author in the client. Users only need to find the game and click one-click import."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Do users need to restart Steam after one-click import?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "No. After one-click import, the software downloads the manifest files from GitHub and imports them locally, then the game appears directly in the Steam library for normal use."
+                      }
+                }
+          ]
+    }
+    </script>
+    <!-- /SEO metadata -->
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../styles.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7261994485465423" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <a href="../index.html" class="navbar-brand">
+            <div class="logo-icon"></div>
+            <span>LuckyGameTools</span>
+        </a>
+        <button class="navbar-toggle" aria-expanded="false" id="navbarToggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="../README_en.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="../README_en.html#download-section" class="nav-link">Download</a></li>
+                <li class="nav-item"><a href="../qa_en.html" class="nav-link">FAQ</a></li>
+                <li class="nav-item"><a href="../patches_en.html" class="nav-link">Patches</a></li>
+                <li class="nav-item"><a href="../game_update_en.html" class="nav-link">Games</a></li>
+                <li class="nav-item"><a href="../tools/index_en.html" class="nav-link">Tools</a></li>
+                <li class="nav-item"><a href="../devLog.html" class="nav-link">DevLog</a></li>
+                <li class="nav-item language-switch-item"><a href="" class="lang-toggle language-switch-toggle" data-lang-switch title="Switch language" aria-label="切換到中文"><span class="lang-toggle-slider"></span><span class="lang-toggle-option en">EN</span><span class="lang-toggle-option zh">中</span></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="twp"></div>
+    <div class="container content main-content">
+        <header class="header">
+            <div class="badge">Feature guide</div>
+            <h1 class="logo"><a href="manifest-management_en.html" class="no-underline">Steam Game Manifest Management</a></h1>
+            <p class="subtitle">Centrally maintained manifests, sorted by added time, with one-click Steam library import</p>
+        </header>
+
+        <section class="section">
+            <h2><span class="lgt-icon icon-target" aria-hidden="true"></span> Overview</h2>
+            <p>LuckyGameTools manifests are centrally added, updated, and maintained by the author inside the client. Users do not need to maintain manifest files manually. The client displays supported games as a flat list sorted by added time descending. When users click one-click import, the software downloads the manifest files hosted on GitHub and imports them into the local Steam library; no Steam restart is required, and the game appears in the Steam library for normal use.</p>
+        </section>
+
+        <section class="section feature-scenarios">
+            <h2><span class="lgt-icon icon-list" aria-hidden="true"></span> Use Cases</h2>
+            <div class="feature-grid feature-scenario-grid">
+                <div class="feature-card">
+                    <h3>Steam library organization</h3>
+                    <p>Useful when users want to find a supported game in the client and import it without manually searching for or maintaining manifest files.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Maintainer-managed updates</h3>
+                    <p>Manifests are added, updated, and maintained by the author in the client, so users only need a refreshed client list.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Newest games first</h3>
+                    <p>The client lays out supported games by added time descending, making newly supported games easier to find.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2><span class="lgt-icon icon-list" aria-hidden="true"></span> What It Helps With</h2>
+            <ul class="feature-detail-list">
+                    <li>Reduces the need to manually search for, drag in, or maintain manifest versions.</li>
+                    <li>Shows supported games in the client by added time descending, so recent additions are easier to spot.</li>
+                    <li>Downloads the GitHub-hosted manifest files after one-click import and shows the game directly in the Steam library.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2><span class="lgt-icon icon-steps" aria-hidden="true"></span> Recommended Workflow</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div>Open the client and find the target game in the list sorted by added time descending.</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div>Click the one-click import button for that game.</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div>The software downloads the GitHub-hosted manifest files and completes the import automatically.</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div>No Steam restart is required; return to the Steam library and the game should appear for normal use.</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2><span class="lgt-icon icon-warning" aria-hidden="true"></span> Notes</h2>
+            <div class="warning">
+                <ul class="feature-detail-list">
+                    <li>Manifests are centrally added, updated, and maintained by the author; users do not need to maintain manifest files manually.</li>
+                    <li>One-click import requires the client to be online so it can download the GitHub-hosted manifest files.</li>
+                    <li>If the game does not appear after import, first check whether the download succeeded, whether the game is supported in the client, and whether Steam is logged in normally.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section feature-faq">
+            <h2><span class="lgt-icon icon-list" aria-hidden="true"></span> Common Questions</h2>
+            <div class="feature-faq-list">
+                <div class="feature-faq-item">
+                    <h3>Do users need to maintain manifest files manually?</h3>
+                    <p>No. Manifests are centrally added, updated, and maintained by the author in the client. Users only need to find the game and click one-click import.</p>
+                </div>
+                <div class="feature-faq-item">
+                    <h3>Do users need to restart Steam after one-click import?</h3>
+                    <p>No. After one-click import, the software downloads the manifest files from GitHub and imports them locally, then the game appears directly in the Steam library for normal use.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2><span class="lgt-icon icon-link" aria-hidden="true"></span> Related Pages</h2>
+            <div class="feature-grid">
+                <a class="feature-card feature-card-link" href="../README_en.html#core-features">
+                    <h3><span class="lgt-icon icon-link" aria-hidden="true"></span> Back to core features</h3>
+                    <span class="feature-card-action">Open</span>
+                </a>
+                <a class="feature-card feature-card-link" href="../qa_en.html">
+                    <h3><span class="lgt-icon icon-link" aria-hidden="true"></span> View FAQ</h3>
+                    <span class="feature-card-action">Open</span>
+                </a>
+                <a class="feature-card feature-card-link" href="../game_update_en.html">
+                    <h3><span class="lgt-icon icon-link" aria-hidden="true"></span> View game updates</h3>
+                    <span class="feature-card-action">Open</span>
+                </a>
+                <a class="feature-card feature-card-link" href="../tools/index_en.html">
+                    <h3><span class="lgt-icon icon-link" aria-hidden="true"></span> Open tools</h3>
+                    <span class="feature-card-action">Open</span>
+                </a>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2025 LuckyGameTools</p>
+            <p><a href="../README_en.html">Back to home</a></p>
+        </footer>
+    </div>
+
+    <script src="../twallpaper.js"></script>
+    <script src="../script.js"></script>
+</body>
+</html>

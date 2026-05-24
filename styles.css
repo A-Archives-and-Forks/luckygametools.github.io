@@ -918,6 +918,71 @@ html, body {
   line-height: 1.7;
 }
 
+.feature-card-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  min-height: 100%;
+}
+
+.feature-card-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+  color: #baf7ff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.feature-card-action::after {
+  content: '\2192';
+  font-size: 1rem;
+  line-height: 1;
+  transition: transform var(--transition-fast);
+}
+
+.feature-card:hover .feature-card-action::after,
+.feature-card-action:hover::after {
+  transform: translateX(4px);
+}
+
+.feature-detail-list {
+  margin: 18px 0 0 22px;
+  color: var(--text-secondary);
+}
+
+.feature-detail-list li {
+  margin: 10px 0;
+  line-height: 1.75;
+}
+
+.feature-scenario-grid {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.feature-faq-list {
+  display: grid;
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.feature-faq-item {
+  padding: 20px 22px;
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.feature-faq-item h3 {
+  margin: 0 0 8px;
+}
+
+.feature-faq-item p {
+  color: var(--text-secondary);
+  line-height: 1.75;
+}
+
 img {
   max-width: 100%;
   height: auto;

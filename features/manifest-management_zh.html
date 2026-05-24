@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="lgt-font-deferred">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steam 遊戲清單管理 - LuckyGameTools 功能專題</title>
+    <meta name="description" content="LuckyGameTools Steam 遊戲清單管理專題，說明作者在客戶端統一維護清單、按加入時間倒序展示、一鍵入庫自動下載 GitHub 清單文件，並無需重啟 Steam 即可顯示到遊戲庫。">
+    <meta name="keywords" content="steam入庫,Steam入庫,steam清單,Steam清單,遊戲清單,遊戲清單,遊戲庫管理,清單管理,luckygametools">
+    <!-- SEO metadata -->
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="author" content="LuckyGameTools">
+    <link rel="canonical" href="/features/manifest-management_zh.html">
+    <link rel="alternate" hreflang="en" href="/features/manifest-management_en.html">
+    <link rel="alternate" hreflang="zh-Hant" href="/features/manifest-management_zh.html">
+    <link rel="alternate" hreflang="x-default" href="/features/manifest-management_en.html">
+    <meta property="og:site_name" content="LuckyGameTools">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Steam 遊戲清單管理 - LuckyGameTools 功能專題">
+    <meta property="og:description" content="LuckyGameTools Steam 遊戲清單管理專題，說明作者在客戶端統一維護清單、按加入時間倒序展示、一鍵入庫自動下載 GitHub 清單文件，並無需重啟 Steam 即可顯示到遊戲庫。">
+    <meta property="og:url" content="/features/manifest-management_zh.html">
+    <meta property="og:image" content="/background.jpg">
+    <meta property="og:locale" content="zh_TW">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Steam 遊戲清單管理 - LuckyGameTools 功能專題">
+    <meta name="twitter:description" content="LuckyGameTools Steam 遊戲清單管理專題，說明作者在客戶端統一維護清單、按加入時間倒序展示、一鍵入庫自動下載 GitHub 清單文件，並無需重啟 Steam 即可顯示到遊戲庫。">
+    <meta name="twitter:image" content="/background.jpg">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Steam 遊戲清單管理 - LuckyGameTools 功能專題",
+      "url": "/features/manifest-management_zh.html",
+      "description": "LuckyGameTools Steam 遊戲清單管理專題，說明作者在客戶端統一維護清單、按加入時間倒序展示、一鍵入庫自動下載 GitHub 清單文件，並無需重啟 Steam 即可顯示到遊戲庫。",
+      "inLanguage": "zh-Hant",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "LuckyGameTools",
+        "url": "/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "LuckyGameTools",
+        "url": "/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "/site-icon.svg"
+        }
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首頁",
+          "item": "/README_zh.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "核心功能",
+          "item": "/README_zh.html#core-features"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Steam 遊戲清單管理",
+          "item": "/features/manifest-management_zh.html"
+        }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+                {
+                      "@type": "Question",
+                      "name": "清單需要用戶手動維護嗎？",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "不需要。清單由作者在客戶端統一添加、更新和維護，用戶只需要在客戶端裡找到遊戲並點擊一鍵入庫。"
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "一鍵入庫後需要重啟 Steam 嗎？",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "不需要。點擊一鍵入庫後，軟件會下載 GitHub 上的清單文件並導入，本機 Steam 遊戲庫會直接顯示並可以正常使用。"
+                      }
+                }
+          ]
+    }
+    </script>
+    <!-- /SEO metadata -->
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../styles.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7261994485465423" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <a href="../index.html" class="navbar-brand">
+            <div class="logo-icon"></div>
+            <span>LuckyGameTools</span>
+        </a>
+        <button class="navbar-toggle" aria-expanded="false" id="navbarToggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="../README_zh.html" class="nav-link">首頁</a></li>
+                <li class="nav-item"><a href="../README_zh.html#download-section" class="nav-link">下載</a></li>
+                <li class="nav-item"><a href="../qa_zh.html" class="nav-link">常見問題</a></li>
+                <li class="nav-item"><a href="../patches_zh.html" class="nav-link">補丁插件</a></li>
+                <li class="nav-item"><a href="../game_update_zh.html" class="nav-link">遊戲庫</a></li>
+                <li class="nav-item"><a href="../tools/index_zh.html" class="nav-link">工具箱</a></li>
+                <li class="nav-item"><a href="../devLog.html" class="nav-link">開發日誌</a></li>
+                <li class="nav-item language-switch-item"><a href="" class="lang-toggle language-switch-toggle active" data-lang-switch title="Switch language" aria-label="Switch to English"><span class="lang-toggle-slider"></span><span class="lang-toggle-option en">EN</span><span class="lang-toggle-option zh">中</span></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="twp"></div>
+    <div class="container content main-content">
+        <header class="header">
+            <div class="badge">核心功能專題</div>
+            <h1 class="logo"><a href="manifest-management_zh.html" class="no-underline">Steam 遊戲清單管理</a></h1>
+            <p class="subtitle">作者統一維護清單，客戶端倒序展示，一鍵入庫後直接顯示到 Steam 遊戲庫</p>
+        </header>
+
+        <section class="section">
+            <h2><span class="lgt-icon icon-target" aria-hidden="true"></span> 功能概覽</h2>
+            <p>LuckyGameTools 的遊戲清單由作者在客戶端統一添加、更新和維護，用戶不需要自己維護清單文件。客戶端會按加入時間倒序平鋪展示已支持遊戲，點擊“一鍵入庫”後，軟件會自動下載託管在 GitHub 上的清單文件並導入到本機 Steam 庫；導入完成後無需重啟 Steam，遊戲會直接在 Steam 遊戲庫中顯示並正常使用。</p>
+        </section>
+
+        <section class="section feature-scenarios">
+            <h2><span class="lgt-icon icon-list" aria-hidden="true"></span> 適合場景</h2>
+            <div class="feature-grid feature-scenario-grid">
+                <div class="feature-card">
+                    <h3>Steam 入庫整理</h3>
+                    <p>適合想直接從客戶端列表裡找到遊戲並入庫的用戶，不需要手動查找或維護清單文件。</p>
+                </div>
+                <div class="feature-card">
+                    <h3>作者統一維護</h3>
+                    <p>清單由作者在客戶端統一添加、更新和維護，用戶只需要保持客戶端列表可正常刷新。</p>
+                </div>
+                <div class="feature-card">
+                    <h3>按加入時間倒序展示</h3>
+                    <p>客戶端會把已加入的遊戲按時間倒序平鋪出來，最新支持的遊戲更容易被看到。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2><span class="lgt-icon icon-list" aria-hidden="true"></span> 可以解決什麼</h2>
+            <ul class="feature-detail-list">
+                    <li>減少用戶手動找清單、拖清單、維護清單版本的成本。</li>
+                    <li>客戶端按加入時間倒序平鋪展示，最新支持遊戲更容易找到。</li>
+                    <li>點擊一鍵入庫後自動從 GitHub 下載清單文件，完成後直接在 Steam 遊戲庫顯示。</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2><span class="lgt-icon icon-steps" aria-hidden="true"></span> 推薦使用流程</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div>打開客戶端，在按加入時間倒序排列的遊戲清單中找到目標遊戲。</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div>點擊目標遊戲的一鍵入庫按鈕。</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div>軟件會自動下載 GitHub 上維護的清單文件並完成導入。</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div>無需重啟 Steam，回到 Steam 遊戲庫即可看到遊戲並正常使用。</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2><span class="lgt-icon icon-warning" aria-hidden="true"></span> 注意事項</h2>
+            <div class="warning">
+                <ul class="feature-detail-list">
+                    <li>清單由作者統一添加、更新和維護，用戶不需要自行維護清單文件。</li>
+                    <li>一鍵入庫需要客戶端能夠正常聯網，以便下載 GitHub 上的清單文件。</li>
+                    <li>如果入庫後未顯示，優先檢查網絡下載是否成功、遊戲是否已被客戶端支持，以及 Steam 是否處於正常登錄狀態。</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section feature-faq">
+            <h2><span class="lgt-icon icon-list" aria-hidden="true"></span> 常見疑問</h2>
+            <div class="feature-faq-list">
+                <div class="feature-faq-item">
+                    <h3>清單需要用戶手動維護嗎？</h3>
+                    <p>不需要。清單由作者在客戶端統一添加、更新和維護，用戶只需要在客戶端裡找到遊戲並點擊一鍵入庫。</p>
+                </div>
+                <div class="feature-faq-item">
+                    <h3>一鍵入庫後需要重啟 Steam 嗎？</h3>
+                    <p>不需要。點擊一鍵入庫後，軟件會下載 GitHub 上的清單文件並導入，本機 Steam 遊戲庫會直接顯示並可以正常使用。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2><span class="lgt-icon icon-link" aria-hidden="true"></span> 相關入口</h2>
+            <div class="feature-grid">
+                <a class="feature-card feature-card-link" href="../README_zh.html#core-features">
+                    <h3><span class="lgt-icon icon-link" aria-hidden="true"></span> 返回核心功能</h3>
+                    <span class="feature-card-action">查看</span>
+                </a>
+                <a class="feature-card feature-card-link" href="../qa_zh.html">
+                    <h3><span class="lgt-icon icon-link" aria-hidden="true"></span> 查看常見問題</h3>
+                    <span class="feature-card-action">查看</span>
+                </a>
+                <a class="feature-card feature-card-link" href="../game_update_zh.html">
+                    <h3><span class="lgt-icon icon-link" aria-hidden="true"></span> 查看遊戲庫更新</h3>
+                    <span class="feature-card-action">查看</span>
+                </a>
+                <a class="feature-card feature-card-link" href="../tools/index_zh.html">
+                    <h3><span class="lgt-icon icon-link" aria-hidden="true"></span> 打開工具箱</h3>
+                    <span class="feature-card-action">查看</span>
+                </a>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2025 LuckyGameTools</p>
+            <p><a href="../README_zh.html">返回首頁</a></p>
+        </footer>
+    </div>
+
+    <script src="../twallpaper.js"></script>
+    <script src="../script.js"></script>
+</body>
+</html>
