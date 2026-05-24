@@ -427,22 +427,33 @@ function initDuelVisualHover() {
     const viewportHeight = window.innerHeight;
     let layerWidth = Math.min(Math.max(300, viewportWidth * 0.2), 390);
     let sideOffset = Math.max(0, (viewportWidth - 1200) / 2 - layerWidth);
+    let edgeBleed = 36;
+    let innerReach = 0;
 
     if (viewportWidth >= 2560) {
       layerWidth = Math.min(Math.max(640, viewportWidth * 0.28), 760);
       sideOffset = 0;
+      edgeBleed = 72;
+      innerReach = Math.min(Math.max(150, viewportWidth * 0.07), 220);
+    } else if (viewportWidth >= 2200) {
+      layerWidth = Math.min(Math.max(480, viewportWidth * 0.25), 640);
+      sideOffset = 0;
+      edgeBleed = 56;
+      innerReach = Math.min(Math.max(110, viewportWidth * 0.055), 160);
     } else if (viewportWidth >= 1920) {
       layerWidth = Math.min(Math.max(480, viewportWidth * 0.25), 640);
       sideOffset = 0;
+      edgeBleed = 56;
+      innerReach = Math.min(Math.max(80, viewportWidth * 0.05), 120);
     }
 
     const layerTop = 90 + getTranslateBannerHeight();
     const magnet = 56;
 
     const inVerticalRange = pointerY >= layerTop && pointerY <= viewportHeight;
-    const inLeftRange = pointerX >= sideOffset && pointerX <= sideOffset + layerWidth + magnet;
-    const rightStart = viewportWidth - sideOffset - layerWidth - magnet;
-    const rightEnd = viewportWidth - sideOffset;
+    const inLeftRange = pointerX >= Math.max(0, sideOffset - edgeBleed) && pointerX <= sideOffset + layerWidth + innerReach + magnet;
+    const rightStart = viewportWidth - sideOffset - layerWidth - innerReach - magnet;
+    const rightEnd = Math.min(viewportWidth, viewportWidth - sideOffset + edgeBleed);
     const inRightRange = pointerX >= rightStart && pointerX <= rightEnd;
 
     root.classList.toggle("lgt-duel-hover-left", inVerticalRange && inLeftRange);
