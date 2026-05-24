@@ -153,17 +153,22 @@ function initAnimatedBackground() {
     }
   };
 
+  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const saveData = navigator.connection && navigator.connection.saveData;
+  const lowerPowerDevice = navigator.hardwareConcurrency && navigator.hardwareConcurrency <= 4;
+  const shouldAnimate = !reducedMotion && !saveData && !lowerPowerDevice;
+
   const options = {
-    fps: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? 20 : 45,
-    tails: 90,
-    animate: !window.matchMedia("(prefers-reduced-motion: reduce)").matches,
-    scrollAnimate: true,
+    fps: shouldAnimate ? 24 : 15,
+    tails: shouldAnimate ? 64 : 40,
+    animate: shouldAnimate,
+    scrollAnimate: false,
     colors: ["#6366f1", "#8b5cf6", "#ec4899", "#f59e0b"],
     pattern: {
       image: "games.svg",
       background: "transparent",
-      blur: 0.5,
-      opacity: 0.4,
+      blur: 0,
+      opacity: 0.34,
       mask: false
     }
   };
@@ -290,9 +295,25 @@ function initNavbar() {
   const navbarCollapse = document.getElementById("navbarCollapse");
 
   if (navbar) {
-    window.addEventListener("scroll", () => {
-      navbar.classList.toggle("scrolled", window.scrollY > 50);
-    }, { passive: true });
+    let isScrolled = null;
+    let ticking = false;
+    const updateScrolledState = () => {
+      ticking = false;
+      const nextScrolled = window.scrollY > 50;
+      if (nextScrolled !== isScrolled) {
+        navbar.classList.toggle("scrolled", nextScrolled);
+        isScrolled = nextScrolled;
+      }
+    };
+    const requestUpdate = () => {
+      if (!ticking) {
+        ticking = true;
+        window.requestAnimationFrame(updateScrolledState);
+      }
+    };
+
+    updateScrolledState();
+    window.addEventListener("scroll", requestUpdate, { passive: true });
   }
 
   if (navbarToggle && navbarCollapse) {
@@ -310,6 +331,26 @@ function initNavbar() {
       });
     });
   }
+}
+
+function initScrollPerformanceMode() {
+  const root = document.documentElement;
+  let scrollTimer;
+
+  const markScrolling = () => {
+    if (!root.classList.contains("lgt-is-scrolling")) {
+      root.classList.add("lgt-is-scrolling");
+    }
+
+    clearTimeout(scrollTimer);
+    scrollTimer = window.setTimeout(() => {
+      root.classList.remove("lgt-is-scrolling");
+    }, 160);
+  };
+
+  window.addEventListener("scroll", markScrolling, { passive: true });
+  window.addEventListener("wheel", markScrolling, { passive: true });
+  window.addEventListener("touchmove", markScrolling, { passive: true });
 }
 
 function loadAdSense() {
@@ -435,6 +476,7 @@ document.addEventListener("DOMContentLoaded", function() {
   initImageModal();
   initFriendLinks();
   initNavbar();
+  initScrollPerformanceMode();
   initManualAdSlots();
 });
 

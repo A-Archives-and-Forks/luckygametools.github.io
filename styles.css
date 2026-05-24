@@ -50,9 +50,8 @@
 html {
   scroll-behavior: smooth;
   pointer-events: auto;
-  cursor: url('cursor/01.svg') 15 25, pointer;
-  animation: playcursor 1.5s steps(1, end) infinite;
-  -webkit-animation: playcursor 1.5s steps(1, end) infinite;
+  cursor: url('cursor/01.svg') 15 25, auto;
+  scrollbar-gutter: stable;
 }
 
 @keyframes playcursor {
@@ -117,6 +116,8 @@ body {
   color: var(--text-primary);
   overflow-x: hidden;
   padding-top: 70px;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 html.lgt-font-deferred body {
@@ -138,7 +139,8 @@ body::before {
     radial-gradient(ellipse at 50% 50%, rgba(240, 147, 251, 0.08) 0%, transparent 70%);
   pointer-events: none;
   z-index: 0;
-  animation: bgPulse 15s ease-in-out infinite;
+  opacity: 0.88;
+  transform: translateZ(0);
 }
 
 @keyframes bgPulse {
@@ -177,8 +179,8 @@ html, body {
   height: 70px;
   min-height: 70px;
   background: rgba(15, 15, 26, 0.85);
-  backdrop-filter: blur(20px) saturate(180%);
-  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  backdrop-filter: blur(12px) saturate(150%);
+  -webkit-backdrop-filter: blur(12px) saturate(150%);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   z-index: 1000;
   display: flex;
@@ -187,6 +189,7 @@ html, body {
   padding: 0 40px;
   transition: background var(--transition-normal), box-shadow var(--transition-normal);
   box-sizing: border-box;
+  transform: translateZ(0);
 }
 
 .navbar.scrolled {
@@ -476,7 +479,8 @@ html, body {
     right: 0;
     bottom: 0;
     background: rgba(15, 15, 26, 0.98);
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     padding: 30px;
     transform: translateX(100%);
     transition: transform var(--transition-normal);
@@ -524,8 +528,8 @@ html, body {
 .header {
   text-align: center;
   background: var(--bg-card);
-  backdrop-filter: blur(20px) saturate(180%);
-  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  backdrop-filter: blur(14px) saturate(150%);
+  -webkit-backdrop-filter: blur(14px) saturate(150%);
   border-radius: var(--radius-lg);
   padding: 50px 40px;
   margin-bottom: 40px;
@@ -724,7 +728,8 @@ html, body {
 /* Download Button */
 .download-section {
   background: var(--bg-card);
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
   border-radius: var(--radius-lg);
   padding: 80px;
   margin-bottom: 40px;
@@ -811,8 +816,8 @@ html, body {
    ======================================== */
 .section {
   background: var(--bg-card);
-  backdrop-filter: blur(20px) saturate(180%);
-  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  backdrop-filter: blur(14px) saturate(150%);
+  -webkit-backdrop-filter: blur(14px) saturate(150%);
   border-radius: var(--radius-lg);
   padding: 40px;
   margin-bottom: 32px;
@@ -981,6 +986,363 @@ html, body {
 .feature-faq-item p {
   color: var(--text-secondary);
   line-height: 1.75;
+}
+
+html.lgt-duel-visual .wrapper,
+html.lgt-duel-visual .container,
+html.lgt-duel-visual .preview-wrap,
+.feature-character-frame .content {
+  position: relative;
+  z-index: 10;
+}
+
+html.lgt-duel-visual::before,
+html.lgt-duel-visual::after {
+  content: none;
+}
+
+html.lgt-duel-visual body::after {
+  content: '';
+  position: fixed;
+  inset: 70px 0 0;
+  z-index: 1;
+  pointer-events: none;
+  background:
+    linear-gradient(90deg, rgba(20, 12, 36, 0.08), transparent 28%, transparent 72%, rgba(10, 24, 42, 0.08));
+  opacity: 0;
+}
+
+@media (min-width: 1681px) and (min-height: 641px) {
+  html.lgt-duel-visual::before,
+  html.lgt-duel-visual::after {
+    content: '';
+    position: fixed;
+    top: 90px;
+    bottom: 0;
+    width: min(19vw, 340px);
+    z-index: 3;
+    pointer-events: none;
+    opacity: 0.86;
+    background-image: url('assets/df_eve.png');
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    filter: saturate(1.14) contrast(1.04) brightness(0.94);
+    transform: scale(1.04);
+    transform-origin: center;
+    -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 8%, #000 88%, transparent 100%), linear-gradient(90deg, transparent 0%, #000 18%, #000 82%, transparent 100%);
+    -webkit-mask-composite: source-in;
+    mask-image: linear-gradient(180deg, transparent 0%, #000 8%, #000 88%, transparent 100%), linear-gradient(90deg, transparent 0%, #000 18%, #000 82%, transparent 100%);
+    mask-composite: intersect;
+  }
+
+  html.lgt-duel-visual::before {
+    left: max(0px, calc((100vw - 1200px) / 2 - 390px));
+    background-position: 36% 50%;
+  }
+
+  html.lgt-duel-visual::after {
+    right: max(0px, calc((100vw - 1200px) / 2 - 390px));
+    background-position: 72% 50%;
+  }
+
+  html.lgt-duel-visual body::after {
+    background:
+      linear-gradient(90deg, rgba(20, 12, 36, 0.08), transparent 28%, transparent 72%, rgba(10, 24, 42, 0.08)),
+      url('assets/df_eve.png') center top / cover no-repeat;
+    opacity: 0.13;
+  }
+}
+
+body.feature-workshop-characters::after {
+  content: '';
+  position: fixed;
+  inset: 70px 0 0;
+  z-index: 1;
+  pointer-events: none;
+  background:
+    linear-gradient(90deg, rgba(20, 12, 36, 0.08), transparent 28%, transparent 72%, rgba(10, 24, 42, 0.08));
+  opacity: 0;
+}
+
+.feature-character-rail {
+  position: fixed;
+  top: 90px;
+  bottom: 0;
+  width: min(17vw, 270px);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  pointer-events: none;
+  z-index: 3;
+  opacity: 0.86;
+}
+
+.feature-character-left {
+  left: max(0px, calc((100vw - 1200px) / 2 - 308px));
+}
+
+.feature-character-right {
+  right: max(0px, calc((100vw - 1200px) / 2 - 308px));
+}
+
+.feature-character-card {
+  position: relative;
+  width: min(16.5vw, 270px);
+  height: min(82vh, 760px);
+  min-height: 560px;
+  overflow: hidden;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 8%, #000 88%, transparent 100%), linear-gradient(90deg, transparent 0%, #000 18%, #000 82%, transparent 100%);
+  -webkit-mask-composite: source-in;
+  mask-image: linear-gradient(180deg, transparent 0%, #000 8%, #000 88%, transparent 100%), linear-gradient(90deg, transparent 0%, #000 18%, #000 82%, transparent 100%);
+  mask-composite: intersect;
+}
+
+.feature-character-card::before {
+  content: '';
+  position: absolute;
+  inset: 0 -18px;
+  z-index: 2;
+  background:
+    radial-gradient(ellipse at 50% 44%, rgba(255, 255, 255, 0.16), transparent 45%),
+    linear-gradient(180deg, rgba(99, 102, 241, 0.1), rgba(245, 158, 11, 0.08));
+  mix-blend-mode: screen;
+  opacity: 0.42;
+  pointer-events: none;
+}
+
+.feature-character-card::after {
+  content: '';
+  position: absolute;
+  inset: 0 -12px;
+  z-index: 3;
+  background:
+    linear-gradient(180deg, rgba(15, 15, 26, 0.48) 0%, transparent 18%, transparent 66%, rgba(15, 15, 26, 0.52) 100%),
+    linear-gradient(90deg, rgba(15, 15, 26, 0.6), transparent 26%, transparent 74%, rgba(15, 15, 26, 0.6));
+  pointer-events: none;
+}
+
+.character-portrait {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  overflow: hidden;
+  border-radius: 0;
+}
+
+.feature-character-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(1.08) contrast(1.04);
+  transform-origin: center;
+}
+
+.feature-workshop-characters .character-duel-sprite {
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  filter: saturate(1.14) contrast(1.04) brightness(0.94);
+  transform-origin: center;
+}
+
+.feature-workshop-characters .character-tifa .character-duel-sprite {
+  background-position: 31% 50%;
+  transform: scale(1.04);
+}
+
+.feature-workshop-characters .character-stellar .character-duel-sprite {
+  background-position: 79% 50%;
+  transform: scale(1.04);
+}
+
+@media (min-width: 1681px) and (min-height: 641px) {
+  body.feature-workshop-characters::after {
+    background:
+      linear-gradient(90deg, rgba(20, 12, 36, 0.08), transparent 28%, transparent 72%, rgba(10, 24, 42, 0.08)),
+      url('assets/df_eve.png') center top / cover no-repeat;
+    opacity: 0.13;
+  }
+
+  .feature-workshop-characters .character-duel-sprite {
+    background-image: url('assets/df_eve.png');
+  }
+}
+
+.character-tifa .feature-character-image {
+  object-position: 76% 50%;
+  transform: scale(1.03);
+}
+
+.character-stellar .feature-character-image {
+  object-position: 48% 50%;
+  transform: scale(1.04);
+}
+
+.character-portrait span {
+  position: absolute;
+  display: block;
+}
+
+.character-glow {
+  inset: 8px 16px 0;
+  border-radius: 50% 50% 42% 42%;
+  filter: blur(18px);
+  opacity: 0.72;
+}
+
+.character-hair {
+  top: 20px;
+  left: 34px;
+  width: 104px;
+  height: 144px;
+  border-radius: 52% 52% 44% 44%;
+  z-index: 2;
+}
+
+.character-head {
+  top: 50px;
+  left: 62px;
+  width: 48px;
+  height: 56px;
+  border-radius: 46% 46% 42% 42%;
+  background: linear-gradient(180deg, #ffd6bb, #e9a987);
+  z-index: 3;
+}
+
+.character-torso {
+  top: 112px;
+  left: 45px;
+  width: 82px;
+  height: 130px;
+  border-radius: 42% 42% 18% 18%;
+  clip-path: polygon(16% 0, 84% 0, 100% 78%, 66% 100%, 34% 100%, 0 78%);
+  z-index: 2;
+}
+
+.character-waist {
+  top: 228px;
+  left: 48px;
+  width: 76px;
+  height: 34px;
+  border-radius: 14px 14px 22px 22px;
+  z-index: 3;
+}
+
+.character-arm {
+  top: 126px;
+  width: 22px;
+  height: 142px;
+  border-radius: 999px;
+  transform-origin: top center;
+  z-index: 1;
+}
+
+.character-arm-left {
+  left: 24px;
+  transform: rotate(11deg);
+}
+
+.character-arm-right {
+  right: 24px;
+  transform: rotate(-11deg);
+}
+
+.character-leg {
+  top: 254px;
+  width: 27px;
+  height: 140px;
+  border-radius: 999px 999px 20px 20px;
+  z-index: 1;
+}
+
+.character-leg-left {
+  left: 55px;
+  transform: rotate(3deg);
+}
+
+.character-leg-right {
+  right: 55px;
+  transform: rotate(-3deg);
+}
+
+.character-boot {
+  top: 384px;
+  width: 42px;
+  height: 18px;
+  border-radius: 14px 14px 7px 7px;
+  z-index: 3;
+}
+
+.character-boot-left {
+  left: 44px;
+}
+
+.character-boot-right {
+  right: 44px;
+}
+
+.character-tifa .character-glow {
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.32), rgba(239, 68, 68, 0.18) 52%, transparent 74%);
+}
+
+.character-tifa .character-hair {
+  background: linear-gradient(180deg, #14131a, #050508);
+  box-shadow: -22px 36px 0 -6px #050508, 24px 42px 0 -8px #050508;
+}
+
+.character-tifa .character-torso {
+  background: linear-gradient(180deg, #fff7ea 0 45%, #171720 46% 100%);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+}
+
+.character-tifa .character-waist,
+.character-tifa .character-leg,
+.character-tifa .character-boot {
+  background: linear-gradient(180deg, #171720, #060609);
+}
+
+.character-tifa .character-arm {
+  background: linear-gradient(180deg, #e9b192 0 44%, #b91c1c 45% 100%);
+}
+
+.character-stellar .character-glow {
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.34), rgba(168, 85, 247, 0.2) 55%, transparent 74%);
+}
+
+.character-stellar .character-weapon {
+  top: 40px;
+  right: 4px;
+  width: 8px;
+  height: 350px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, rgba(207, 250, 254, 0.9), rgba(56, 189, 248, 0.35));
+  box-shadow: 0 0 18px rgba(56, 189, 248, 0.55);
+  transform: rotate(8deg);
+  z-index: 0;
+}
+
+.character-stellar .character-hair {
+  background: linear-gradient(180deg, #f4d18a, #835f32);
+  box-shadow: 30px 54px 0 -14px #8a6232;
+}
+
+.character-stellar .character-torso {
+  background: linear-gradient(145deg, #151727 0 38%, #2dd4bf 39% 48%, #371b58 49% 100%);
+  border: 1px solid rgba(103, 232, 249, 0.28);
+  box-shadow: inset 0 0 22px rgba(45, 212, 191, 0.18);
+}
+
+.character-stellar .character-waist,
+.character-stellar .character-leg,
+.character-stellar .character-boot {
+  background: linear-gradient(180deg, #151727, #060710);
+}
+
+.character-stellar .character-arm {
+  background: linear-gradient(180deg, #eab891 0 30%, #1d2440 31% 100%);
 }
 
 img {
@@ -1577,7 +1939,70 @@ footer a:hover::after {
   background-image: var(--tw-image);
   background-color: var(--tw-background);
   opacity: var(--tw-opacity);
-  filter: blur(var(--tw-blur));
+  filter: none;
+}
+
+/* Keep wheel/touch scrolling from triggering hover lifts and long transitions. */
+html.lgt-is-scrolling .section,
+html.lgt-is-scrolling .download-section,
+html.lgt-is-scrolling .feature-card,
+html.lgt-is-scrolling .tool-card,
+html.lgt-is-scrolling .step,
+html.lgt-is-scrolling .contact-btn,
+html.lgt-is-scrolling .download-btn,
+html.lgt-is-scrolling .safe-button,
+html.lgt-is-scrolling .fan-group,
+html.lgt-is-scrolling .fan-groups img,
+html.lgt-is-scrolling .gallery img,
+html.lgt-is-scrolling .floating-btn-right,
+html.lgt-is-scrolling .navbar-brand .logo-icon {
+  transition: none !important;
+}
+
+html.lgt-is-scrolling .navbar,
+html.lgt-is-scrolling .header,
+html.lgt-is-scrolling .section,
+html.lgt-is-scrolling .download-section,
+html.lgt-is-scrolling .feature-card,
+html.lgt-is-scrolling .tool-card,
+html.lgt-is-scrolling .steps,
+html.lgt-is-scrolling .step {
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+html.lgt-is-scrolling .section:hover,
+html.lgt-is-scrolling .feature-card:hover,
+html.lgt-is-scrolling .tool-card:hover,
+html.lgt-is-scrolling .step:hover,
+html.lgt-is-scrolling .contact-btn:hover,
+html.lgt-is-scrolling .download-btn:hover,
+html.lgt-is-scrolling .safe-button:hover,
+html.lgt-is-scrolling .fan-group:hover,
+html.lgt-is-scrolling .fan-groups img:hover,
+html.lgt-is-scrolling .gallery img:hover,
+html.lgt-is-scrolling .navbar-brand:hover .logo-icon {
+  transform: none !important;
+}
+
+@media (hover: none), (pointer: coarse) {
+  html {
+    cursor: auto;
+  }
+
+  .section:hover,
+  .feature-card:hover,
+  .tool-card:hover,
+  .step:hover,
+  .contact-btn:hover,
+  .download-btn:hover,
+  .safe-button:hover,
+  .fan-group:hover,
+  .fan-groups img:hover,
+  .gallery img:hover,
+  .navbar-brand:hover .logo-icon {
+    transform: none;
+  }
 }
 
 .content {
@@ -1648,6 +2073,12 @@ footer a:hover::after {
   .gallery img {
     width: 120px;
     height: 120px;
+  }
+}
+
+@media (max-width: 1680px), (max-height: 640px) {
+  .feature-character-rail {
+    display: none;
   }
 }
 
@@ -2133,8 +2564,8 @@ body::before {
     linear-gradient(180deg, rgba(6, 8, 13, 0.92), rgba(6, 8, 13, 0.78)),
     linear-gradient(90deg, rgba(53, 240, 198, 0.12), rgba(73, 199, 255, 0.08), rgba(255, 189, 74, 0.08));
   border-bottom: 1px solid rgba(143, 255, 226, 0.2);
-  backdrop-filter: blur(14px) saturate(145%);
-  -webkit-backdrop-filter: blur(14px) saturate(145%);
+  backdrop-filter: blur(10px) saturate(135%);
+  -webkit-backdrop-filter: blur(10px) saturate(135%);
 }
 
 .navbar.scrolled {
@@ -2169,8 +2600,8 @@ body::before {
   box-shadow:
     0 0 0 1px rgba(255, 255, 255, 0.035) inset,
     0 18px 48px rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(10px) saturate(130%);
-  -webkit-backdrop-filter: blur(10px) saturate(130%);
+  backdrop-filter: blur(6px) saturate(120%);
+  -webkit-backdrop-filter: blur(6px) saturate(120%);
 }
 
 .header {
