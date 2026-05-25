@@ -69,8 +69,8 @@
     /* 卡片样式 */
     .sign-card {
       width: 300px;
-      background: rgba(20, 20, 20, 0.58);
-      backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+      background: rgba(20, 20, 20, 0.94);
+      backdrop-filter: none; -webkit-backdrop-filter: none;
       border: 1px solid rgba(255, 255, 255, 0.15);
       border-radius: 24px; padding: 30px 24px;
       box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
@@ -245,7 +245,7 @@
       Tw.prototype.height = Math.floor(window.innerHeight / 12);
     }
     const tw = new Tw(twContainer, {
-      fps: 60, tails: 90, animate: true, scrollAnimate: true,
+      fps: 60, tails: 90, animate: false, scrollAnimate: false,
       colors: ["#4183f1", "#5d3e1c", "#c9b3c0", "#c9a72c"],
       pattern: { image: "games.svg", background: "transparent", blur: 0.3, opacity: 0.6, mask: false }
     });

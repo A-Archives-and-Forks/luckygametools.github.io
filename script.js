@@ -161,7 +161,7 @@ function initAnimatedBackground() {
   const options = {
     fps: shouldAnimate ? 24 : 15,
     tails: shouldAnimate ? 64 : 40,
-    animate: shouldAnimate,
+    animate: false,
     scrollAnimate: false,
     colors: ["#6366f1", "#8b5cf6", "#ec4899", "#f59e0b"],
     pattern: {
