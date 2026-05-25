@@ -614,15 +614,15 @@ function initManualAdSlots() {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-  loadAdSense();
   initDownloadLinks();
   initImageModal();
   initFriendLinks();
   initNavbar();
   initGoogleTranslateBannerOffset();
   initScrollPerformanceMode();
-  initManualAdSlots();
 });
 
 runAfterFirstPaint(initDeferredFont, 1800);
 runAfterFirstPaint(initAnimatedBackground, 1200, 700);
+runAfterFirstPaint(loadAdSense, 3200, 1600);
+runAfterFirstPaint(initManualAdSlots, 3600, 2000);

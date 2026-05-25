@@ -51,6 +51,8 @@
     <!-- /SEO metadata -->
 
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preload" as="image" href="assets/df_eve.avif" type="image/avif" media="(min-width: 1440px) and (min-height: 641px)" fetchpriority="high">
+    <link rel="preload" as="image" href="games.svg" type="image/svg+xml" fetchpriority="high">
     <link rel="stylesheet" href="styles.css?v=20260524-duel-split">
     <link rel="preload" as="style" crossorigin fetchpriority="low"
         href="https://fontsapi.zeoseven.com/532/main/result.css"
@@ -65,8 +67,6 @@
 	        font-weight: normal;
 	    }
 	</style>
-	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7261994485465423" crossorigin="anonymous"></script>
-
 	<!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-9897WHQ9FH"></script>
     <script>
@@ -148,63 +148,103 @@
     <script src="twallpaper.js"></script>
     <script src="script.js?v=20260524-duel-split"></script>
 
-    <script type="text/javascript">
-		const gitSteamDBUrl="https://raw.githubusercontent.com/luckygametools/steam-cfg/refs/heads/main/output/steamdb2_dir_times.json"
-
+	<script type="text/javascript">
+		const gitSteamDBUrl = "https://raw.githubusercontent.com/luckygametools/steam-cfg/refs/heads/main/output/steamdb2_dir_times.json";
 		const tbody = document.getElementById('table-body');
+		const renderBatchSize = 80;
+
+		function scheduleGameTask(callback) {
+			if ('requestIdleCallback' in window) {
+				window.requestIdleCallback(callback, { timeout: 900 });
+				return;
+			}
+
+			window.setTimeout(callback, 0);
+		}
+
+		function createGameRow(item, index) {
+			const date = new Date(item.last_modified);
+			const type = item.change_type;
+			const typeClass = type === 'added' ? 'added' : 'updated';
+			const typeLabel = type === 'added' ? '<span class="lgt-icon icon-added" aria-hidden="true"></span> 新增' : '<span class="lgt-icon icon-updated" aria-hidden="true"></span> 更新';
+			const appid = String(item.directory || '');
+			const row = document.createElement('tr');
+			const imageLoading = index < 4 ? 'eager' : 'lazy';
+
+			row.innerHTML = [
+				'<td><img alt="LuckyGameTools image" decoding="async" loading="' + imageLoading + '" fetchpriority="low" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/' + appid + '/capsule_184x69.jpg"></td>',
+				'<td><a href="https://steamdb.info/app/' + appid + '" target="_blank" rel="noopener noreferrer" class="no-underline">' + appid + '</a></td>',
+				'<td>' + date.toLocaleString() + '</td>',
+				'<td class="' + typeClass + '">' + typeLabel + '</td>'
+			].join('');
+
+			return row;
+		}
+
+		function renderGameRows(rows, startIndex) {
+			const fragment = document.createDocumentFragment();
+			const endIndex = Math.min(startIndex + renderBatchSize, rows.length);
+
+			for (let index = startIndex; index < endIndex; index += 1) {
+				fragment.appendChild(createGameRow(rows[index], index));
+			}
+
+			tbody.appendChild(fragment);
+
+			if (endIndex < rows.length) {
+				scheduleGameTask(() => renderGameRows(rows, endIndex));
+			}
+		}
 
 		async function loadData() {
 			try {
-				const response = await fetch(gitSteamDBUrl);
-				const data = await response.json();
+				const response = await fetch(gitSteamDBUrl, { cache: 'force-cache' });
 
-				// 按最後更新時間倒序
-				const sorted = data.sort((a, b) => new Date(b.last_modified) - new Date(a.last_modified));
-
-				tbody.innerHTML = '';
-				let index = 0;
-				const onceSize = 500;
-
-				let nowRowsHtml="";
-
-				for (; index < data.length; index++)  {
-				  const item = data[index];
-				  const date = new Date(item.last_modified);
-				  const displayTime = date.toLocaleString();
-				  const type = item.change_type;
-				  const typeLabel = type === 'added' ? '<span class="lgt-icon icon-added" aria-hidden="true"></span> 新增' : '<span class="lgt-icon icon-updated" aria-hidden="true"></span> 更新';
-				  const typeClass = type === 'added' ? 'added' : 'updated';
-
-				  const row = `
-					<tr>
-					  <td><img alt="LuckyGameTools image" decoding="async" loading="lazy" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/${item.directory}/capsule_184x69.jpg"></td>
-					  <td><a href="https://steamdb.info/app/${item.directory}" target="_blank" rel="noopener noreferrer" class="no-underline">${item.directory}</a></td>
-					  <td>${displayTime}</td>
-					  <td class="${typeClass}">${typeLabel}</td>
-					</tr>
-				  `;
-
-				  nowRowsHtml+=row;
-				  if(index!=0&&index%onceSize==0){
-				  	tbody.innerHTML += nowRowsHtml;
-					nowRowsHtml="";
-				  }
+				if (!response.ok) {
+					throw new Error('SteamDB list request failed: ' + response.status);
 				}
 
-				tbody.innerHTML += nowRowsHtml;
+				const data = await response.json();
+				const sorted = Array.isArray(data)
+					? data.slice().sort((a, b) => new Date(b.last_modified) - new Date(a.last_modified))
+					: [];
+
+				tbody.replaceChildren();
+				renderGameRows(sorted, 0);
 			} catch (err) {
-				const tbody = document.getElementById('table-body');
 				tbody.innerHTML = '<tr><td colspan="4"  style="height:30vh"><span class="lgt-icon icon-fail" aria-hidden="true"></span> 載入失敗，請重試！</td></tr>';
 				console.error(err);
 			}
 		}
 
+		function startGameLibraryLoad() {
+			if (typeof runAfterFirstPaint === 'function') {
+				runAfterFirstPaint(loadData, 3600, 1400);
+				return;
+			}
 
-		document.addEventListener('DOMContentLoaded', function() {
-			loadData();
-		})
+			window.requestAnimationFrame(() => window.setTimeout(loadData, 1400));
+		}
+
+		startGameLibraryLoad();
 
 	</script>
-	<script async type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+	<script>
+		(function() {
+		  const loadTranslate = function() {
+			const script = document.createElement('script');
+			script.async = true;
+			script.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+			document.body.appendChild(script);
+		  };
+
+		  if (typeof runAfterFirstPaint === 'function') {
+			runAfterFirstPaint(loadTranslate, 4200, 2200);
+			return;
+		  }
+
+		  window.requestAnimationFrame(() => window.setTimeout(loadTranslate, 2200));
+		}());
+	</script>
 </body>
 </html>
