@@ -2,4 +2,3 @@ User-agent: *
 Allow: /
 
 Sitemap: https://luckygametools.github.io/sitemap.xml
-Sitemap: https://luckygametools.github.io/sitemap.txt
