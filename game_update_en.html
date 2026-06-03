@@ -51,7 +51,7 @@
     <!-- /SEO metadata -->
 
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="styles.css?v=20260524-duel-split">
+    <link rel="stylesheet" href="styles.css?v=20260604-appid-search">
     <link rel="preload" as="style" crossorigin fetchpriority="low"
         href="https://fontsapi.zeoseven.com/532/main/result.css"
         onload="this.rel='stylesheet'"
@@ -121,6 +121,15 @@
         </header>
 
         <section class="section">
+			<div class="appid-search-panel" aria-labelledby="appidSearchTitle">
+				<div class="appid-search-title" id="appidSearchTitle" role="heading" aria-level="2"><span class="lgt-icon icon-hash" aria-hidden="true"></span> Search AppID by Name</div>
+				<form class="appid-search-form" id="appidSearchForm">
+					<input class="appid-search-input" id="appidSearchInput" type="search" autocomplete="off" placeholder="Game name or alias" aria-label="Game name or alias">
+					<button class="appid-search-button" id="appidSearchButton" type="submit"><span class="lgt-icon icon-hash" aria-hidden="true"></span> Search</button>
+				</form>
+				<div class="appid-search-status" id="appidSearchStatus" role="status" aria-live="polite"></div>
+				<div class="appid-search-results" id="appidSearchResults"></div>
+			</div>
 			<div class="warning">There are too many game resources, which require system resources. Please be patient and wait for the loading to complete!</div>
 			<div class="game-library-table-wrap">
 				<table class="game-library-table" style="border-collapse: collapse; width: 100%; text-align: center;">
@@ -152,6 +161,252 @@
 		const gitSteamDBUrl="https://raw.githubusercontent.com/luckygametools/steam-cfg/refs/heads/main/output/steamdb2_dir_times.json"
 
 		const tbody = document.getElementById('table-body');
+		const aliasSearchPrimaryUrls = [
+			'data/steam-game-aliases/search/by-language/english.json'
+		];
+		const aliasSearchFullUrl = 'data/steam-game-aliases/search/all.json';
+		const aliasSearchPreferredLanguages = ['english'];
+		const aliasSearchLanguageNames = {
+			brazilian: 'Portuguese - Brazil',
+			bulgarian: 'Bulgarian',
+			czech: 'Czech',
+			danish: 'Danish',
+			dutch: 'Dutch',
+			english: 'English',
+			finnish: 'Finnish',
+			french: 'French',
+			german: 'German',
+			greek: 'Greek',
+			hungarian: 'Hungarian',
+			indonesian: 'Indonesian',
+			italian: 'Italian',
+			japanese: 'Japanese',
+			koreana: 'Korean',
+			latam: 'Spanish - Latin America',
+			norwegian: 'Norwegian',
+			polish: 'Polish',
+			portuguese: 'Portuguese',
+			romanian: 'Romanian',
+			russian: 'Russian',
+			schinese: 'Simplified Chinese',
+			spanish: 'Spanish - Spain',
+			swedish: 'Swedish',
+			tchinese: 'Traditional Chinese',
+			thai: 'Thai',
+			turkish: 'Turkish',
+			ukrainian: 'Ukrainian',
+			vietnamese: 'Vietnamese'
+		};
+		const aliasSearchTexts = {
+			emptyQuery: 'Enter a game name first.',
+			loadingPrimary: 'Loading name index...',
+			loadingFull: 'Loading all language aliases...',
+			error: 'Search failed. Please retry.',
+			noResults: 'No matching AppID found.',
+			resultCount: function(count) {
+				return count === 1 ? '1 result' : count + ' results';
+			}
+		};
+		const aliasSearchLimit = 20;
+		const aliasSearchForm = document.getElementById('appidSearchForm');
+		const aliasSearchInput = document.getElementById('appidSearchInput');
+		const aliasSearchButton = document.getElementById('appidSearchButton');
+		const aliasSearchStatus = document.getElementById('appidSearchStatus');
+		const aliasSearchResults = document.getElementById('appidSearchResults');
+		let aliasSearchPrimaryPromise = null;
+		let aliasSearchFullPromise = null;
+
+		function normalizeAliasQuery(value) {
+			return String(value || '').trim().toLowerCase().replace(/\s+/g, ' ');
+		}
+
+		function escapeAliasHtml(value) {
+			return String(value == null ? '' : value).replace(/[&<>"']/g, function(char) {
+				return {
+					'&': '&amp;',
+					'<': '&lt;',
+					'>': '&gt;',
+					'"': '&quot;',
+					"'": '&#39;'
+				}[char];
+			});
+		}
+
+		function loadAliasPayload(url) {
+			return fetch(url, { cache: 'force-cache' }).then(function(response) {
+				if (!response.ok) {
+					throw new Error('Alias index request failed: ' + response.status);
+				}
+
+				return response.json();
+			});
+		}
+
+		function mergeAliasEntries(payloads) {
+			const merged = Object.create(null);
+
+			payloads.forEach(function(payload) {
+				const entries = payload && payload.entries ? payload.entries : {};
+
+				Object.keys(entries).forEach(function(key) {
+					const list = Array.isArray(entries[key]) ? entries[key] : [];
+					merged[key] = merged[key] ? merged[key].concat(list) : list.slice();
+				});
+			});
+
+			return merged;
+		}
+
+		function loadAliasPrimaryEntries() {
+			if (!aliasSearchPrimaryPromise) {
+				aliasSearchPrimaryPromise = Promise.all(aliasSearchPrimaryUrls.map(loadAliasPayload)).then(mergeAliasEntries);
+			}
+
+			return aliasSearchPrimaryPromise;
+		}
+
+		function loadAliasFullEntries() {
+			if (!aliasSearchFullPromise) {
+				aliasSearchFullPromise = loadAliasPayload(aliasSearchFullUrl).then(function(payload) {
+					return payload && payload.entries ? payload.entries : {};
+				});
+			}
+
+			return aliasSearchFullPromise;
+		}
+
+		function getAliasLanguageKey(entry) {
+			return String(entry.language_key || entry.steam_language || '').toLowerCase();
+		}
+
+		function getAliasLanguageRank(entry) {
+			const index = aliasSearchPreferredLanguages.indexOf(getAliasLanguageKey(entry));
+			return index === -1 ? aliasSearchPreferredLanguages.length : index;
+		}
+
+		function getAliasCandidateScore(entry, queryKey) {
+			let score = getAliasLanguageRank(entry) * 10;
+
+			if (normalizeAliasQuery(entry.name) !== queryKey) {
+				score += 1;
+			}
+
+			return score;
+		}
+
+		function uniqueAliasResults(matches, queryKey) {
+			const byAppid = new Map();
+
+			matches.forEach(function(entry) {
+				const appid = String(entry.appid || '').trim();
+
+				if (!appid) {
+					return;
+				}
+
+				const previous = byAppid.get(appid);
+
+				if (!previous || getAliasCandidateScore(entry, queryKey) < getAliasCandidateScore(previous, queryKey)) {
+					byAppid.set(appid, entry);
+				}
+			});
+
+			return Array.from(byAppid.values()).slice(0, aliasSearchLimit);
+		}
+
+		function findAliasMatches(entries, queryKey) {
+			const exactEntries = entries[queryKey];
+
+			if (Array.isArray(exactEntries) && exactEntries.length > 0) {
+				return uniqueAliasResults(exactEntries, queryKey);
+			}
+
+			const matches = [];
+			const keys = Object.keys(entries);
+
+			for (let index = 0; index < keys.length; index += 1) {
+				const candidateKey = keys[index];
+
+				if (!candidateKey.includes(queryKey)) {
+					continue;
+				}
+
+				const list = Array.isArray(entries[candidateKey]) ? entries[candidateKey] : [];
+
+				for (let itemIndex = 0; itemIndex < list.length; itemIndex += 1) {
+					matches.push(list[itemIndex]);
+				}
+
+				if (matches.length >= aliasSearchLimit * 8) {
+					break;
+				}
+			}
+
+			return uniqueAliasResults(matches, queryKey);
+		}
+
+		function renderAliasSearchResults(results) {
+			if (!results.length) {
+				aliasSearchStatus.textContent = aliasSearchTexts.noResults;
+				aliasSearchResults.innerHTML = '<div class="appid-search-empty">' + escapeAliasHtml(aliasSearchTexts.noResults) + '</div>';
+				return;
+			}
+
+			aliasSearchStatus.textContent = aliasSearchTexts.resultCount(results.length);
+			aliasSearchResults.innerHTML = results.map(function(entry) {
+				const appid = escapeAliasHtml(entry.appid);
+				const name = escapeAliasHtml(entry.name || entry.appid);
+				const languageKey = getAliasLanguageKey(entry);
+				const language = escapeAliasHtml(aliasSearchLanguageNames[languageKey] || languageKey || 'Alias');
+
+				return [
+					'<article class="appid-search-result">',
+					'<img class="appid-search-cover" alt="" decoding="async" loading="lazy" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/' + appid + '/capsule_184x69.jpg">',
+					'<div class="appid-search-meta">',
+					'<div class="appid-search-name">' + name + '</div>',
+					'<a class="appid-search-appid" href="https://steamdb.info/app/' + appid + '" target="_blank" rel="noopener noreferrer">AppID ' + appid + '</a>',
+					'<div class="appid-search-language">' + language + '</div>',
+					'</div>',
+					'</article>'
+				].join('');
+			}).join('');
+		}
+
+		async function runAliasSearch(event) {
+			event.preventDefault();
+
+			const queryKey = normalizeAliasQuery(aliasSearchInput.value);
+
+			if (!queryKey) {
+				aliasSearchStatus.textContent = aliasSearchTexts.emptyQuery;
+				aliasSearchResults.replaceChildren();
+				return;
+			}
+
+			aliasSearchButton.disabled = true;
+			aliasSearchStatus.textContent = aliasSearchTexts.loadingPrimary;
+
+			try {
+				const primaryEntries = await loadAliasPrimaryEntries();
+				let results = findAliasMatches(primaryEntries, queryKey);
+
+				if (!results.length) {
+					aliasSearchStatus.textContent = aliasSearchTexts.loadingFull;
+					const fullEntries = await loadAliasFullEntries();
+					results = findAliasMatches(fullEntries, queryKey);
+				}
+
+				renderAliasSearchResults(results);
+			} catch (err) {
+				aliasSearchStatus.textContent = aliasSearchTexts.error;
+				aliasSearchResults.innerHTML = '<div class="appid-search-empty">' + escapeAliasHtml(aliasSearchTexts.error) + '</div>';
+				console.error(err);
+			} finally {
+				aliasSearchButton.disabled = false;
+			}
+		}
+
+		aliasSearchForm.addEventListener('submit', runAliasSearch);
 
 		async function loadData() {
 			try {
