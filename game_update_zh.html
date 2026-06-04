@@ -53,7 +53,7 @@
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="preload" as="image" href="assets/df_eve.avif" type="image/avif" media="(min-width: 1440px) and (min-height: 641px)" fetchpriority="high">
     <link rel="preload" as="image" href="games.svg" type="image/svg+xml" fetchpriority="high">
-    <link rel="stylesheet" href="styles.css?v=20260604-appid-search">
+    <link rel="stylesheet" href="styles.css?v=20260604-appid-search-polish">
     <link rel="preload" as="style" crossorigin fetchpriority="low"
         href="https://fontsapi.zeoseven.com/532/main/result.css"
         onload="this.rel='stylesheet'"
@@ -122,13 +122,19 @@
 
         <section class="section">
 			<div class="appid-search-panel" aria-labelledby="appidSearchTitle">
-				<div class="appid-search-title" id="appidSearchTitle" role="heading" aria-level="2"><span class="lgt-icon icon-hash" aria-hidden="true"></span> 按名稱搜尋 AppID</div>
+				<div class="appid-search-header">
+					<div class="appid-search-title" id="appidSearchTitle" role="heading" aria-level="2"><span class="lgt-icon icon-hash" aria-hidden="true"></span> 按名稱搜尋 AppID</div>
+					<div class="appid-search-status" id="appidSearchStatus" role="status" aria-live="polite"></div>
+				</div>
 				<form class="appid-search-form" id="appidSearchForm">
-					<input class="appid-search-input" id="appidSearchInput" type="search" autocomplete="off" placeholder="遊戲名稱或別名" aria-label="遊戲名稱或別名">
+					<div class="appid-search-input-wrap">
+						<span class="lgt-icon icon-gamepad appid-search-input-icon" aria-hidden="true"></span>
+						<input class="appid-search-input" id="appidSearchInput" type="search" autocomplete="off" placeholder="遊戲名稱或別名" aria-label="遊戲名稱或別名">
+						<button class="appid-search-clear" id="appidSearchClear" type="button" aria-label="清除搜尋" title="清除搜尋">×</button>
+					</div>
 					<button class="appid-search-button" id="appidSearchButton" type="submit"><span class="lgt-icon icon-hash" aria-hidden="true"></span> 搜尋</button>
 				</form>
-				<div class="appid-search-status" id="appidSearchStatus" role="status" aria-live="polite"></div>
-				<div class="appid-search-results" id="appidSearchResults"></div>
+				<div class="appid-search-results" id="appidSearchResults" aria-live="polite"></div>
 			</div>
 			<div class="warning">遊戲資源較多，載入需要一些系統資源，請耐心等待載入完成！</div>
 			<div class="game-library-table-wrap">
@@ -205,18 +211,26 @@
 			loadingFull: '正在載入全語言別名...',
 			error: '搜尋失敗，請重試。',
 			noResults: '未找到匹配的 AppID。',
+			copied: function(appid) {
+				return '已複製 AppID ' + appid;
+			},
+			copyFailed: '複製失敗，請重試。',
 			resultCount: function(count) {
 				return '找到 ' + count + ' 個結果';
 			}
 		};
 		const aliasSearchLimit = 20;
+		const aliasSearchPanel = document.querySelector('.appid-search-panel');
 		const aliasSearchForm = document.getElementById('appidSearchForm');
 		const aliasSearchInput = document.getElementById('appidSearchInput');
+		const aliasSearchClear = document.getElementById('appidSearchClear');
 		const aliasSearchButton = document.getElementById('appidSearchButton');
 		const aliasSearchStatus = document.getElementById('appidSearchStatus');
 		const aliasSearchResults = document.getElementById('appidSearchResults');
 		let aliasSearchPrimaryPromise = null;
 		let aliasSearchFullPromise = null;
+		let aliasSearchDebounceTimer = null;
+		let aliasSearchRequestId = 0;
 
 		function normalizeAliasQuery(value) {
 			return String(value || '').trim().toLowerCase().replace(/\s+/g, ' ');
@@ -275,6 +289,25 @@
 			}
 
 			return aliasSearchFullPromise;
+		}
+
+		function setAliasSearchLoading(isLoading, message) {
+			aliasSearchButton.disabled = isLoading;
+			aliasSearchResults.setAttribute('aria-busy', isLoading ? 'true' : 'false');
+
+			if (aliasSearchPanel) {
+				aliasSearchPanel.classList.toggle('is-loading', isLoading);
+			}
+
+			if (message) {
+				aliasSearchStatus.textContent = message;
+			}
+		}
+
+		function updateAliasQueryState() {
+			if (aliasSearchPanel) {
+				aliasSearchPanel.classList.toggle('has-query', aliasSearchInput.value.trim().length > 0);
+			}
 		}
 
 		function getAliasLanguageKey(entry) {
@@ -366,7 +399,10 @@
 					'<img class="appid-search-cover" alt="" decoding="async" loading="lazy" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/' + appid + '/capsule_184x69.jpg">',
 					'<div class="appid-search-meta">',
 					'<div class="appid-search-name">' + name + '</div>',
+					'<div class="appid-search-actions">',
 					'<a class="appid-search-appid" href="https://steamdb.info/app/' + appid + '" target="_blank" rel="noopener noreferrer">AppID ' + appid + '</a>',
+					'<button class="appid-search-copy" type="button" data-appid="' + appid + '">複製</button>',
+					'</div>',
 					'<div class="appid-search-language">' + language + '</div>',
 					'</div>',
 					'</article>'
@@ -374,27 +410,85 @@
 			}).join('');
 		}
 
-		async function runAliasSearch(event) {
-			event.preventDefault();
+		function copyTextToClipboard(text) {
+			if (navigator.clipboard && navigator.clipboard.writeText) {
+				return navigator.clipboard.writeText(text);
+			}
+
+			const textarea = document.createElement('textarea');
+			textarea.value = text;
+			textarea.setAttribute('readonly', '');
+			textarea.style.position = 'fixed';
+			textarea.style.left = '-9999px';
+			document.body.appendChild(textarea);
+			textarea.select();
+
+			try {
+				document.execCommand('copy');
+				return Promise.resolve();
+			} catch (err) {
+				return Promise.reject(err);
+			} finally {
+				document.body.removeChild(textarea);
+			}
+		}
+
+		async function handleAliasResultClick(event) {
+			const copyButton = event.target.closest('.appid-search-copy');
+
+			if (!copyButton) {
+				return;
+			}
+
+			const appid = copyButton.getAttribute('data-appid');
+			try {
+				await copyTextToClipboard(appid);
+				aliasSearchStatus.textContent = aliasSearchTexts.copied(appid);
+				copyButton.textContent = '已複製';
+				window.setTimeout(function() {
+					copyButton.textContent = '複製';
+				}, 1200);
+			} catch (err) {
+				aliasSearchStatus.textContent = aliasSearchTexts.copyFailed;
+				console.error(err);
+			}
+		}
+
+		async function runAliasSearch(event, options) {
+			if (event) {
+				event.preventDefault();
+			}
+
+			const includeFull = !options || options.includeFull !== false;
+			const requestId = ++aliasSearchRequestId;
 
 			const queryKey = normalizeAliasQuery(aliasSearchInput.value);
+			updateAliasQueryState();
 
 			if (!queryKey) {
 				aliasSearchStatus.textContent = aliasSearchTexts.emptyQuery;
 				aliasSearchResults.replaceChildren();
+				setAliasSearchLoading(false);
 				return;
 			}
 
-			aliasSearchButton.disabled = true;
-			aliasSearchStatus.textContent = aliasSearchTexts.loadingPrimary;
+			setAliasSearchLoading(true, aliasSearchTexts.loadingPrimary);
 
 			try {
 				const primaryEntries = await loadAliasPrimaryEntries();
+				if (requestId !== aliasSearchRequestId) {
+					return;
+				}
+
 				let results = findAliasMatches(primaryEntries, queryKey);
 
-				if (!results.length) {
-					aliasSearchStatus.textContent = aliasSearchTexts.loadingFull;
+				if (!results.length && includeFull) {
+					setAliasSearchLoading(true, aliasSearchTexts.loadingFull);
 					const fullEntries = await loadAliasFullEntries();
+					if (requestId !== aliasSearchRequestId) {
+						return;
+					}
+
 					results = findAliasMatches(fullEntries, queryKey);
 				}
 
@@ -404,11 +498,47 @@
 				aliasSearchResults.innerHTML = '<div class="appid-search-empty">' + escapeAliasHtml(aliasSearchTexts.error) + '</div>';
 				console.error(err);
 			} finally {
-				aliasSearchButton.disabled = false;
+				if (requestId === aliasSearchRequestId) {
+					setAliasSearchLoading(false);
+				}
 			}
 		}
 
-		aliasSearchForm.addEventListener('submit', runAliasSearch);
+		function scheduleAliasSearch() {
+			updateAliasQueryState();
+			window.clearTimeout(aliasSearchDebounceTimer);
+
+			const queryKey = normalizeAliasQuery(aliasSearchInput.value);
+			if (queryKey.length < 2) {
+				aliasSearchRequestId += 1;
+				setAliasSearchLoading(false);
+				aliasSearchStatus.textContent = '';
+				aliasSearchResults.replaceChildren();
+				return;
+			}
+
+			aliasSearchDebounceTimer = window.setTimeout(function() {
+				runAliasSearch(null, { includeFull: false });
+			}, 280);
+		}
+
+		aliasSearchForm.addEventListener('submit', function(event) {
+			window.clearTimeout(aliasSearchDebounceTimer);
+			runAliasSearch(event, { includeFull: true });
+		});
+		aliasSearchInput.addEventListener('input', scheduleAliasSearch);
+		aliasSearchClear.addEventListener('click', function() {
+			aliasSearchRequestId += 1;
+			window.clearTimeout(aliasSearchDebounceTimer);
+			aliasSearchInput.value = '';
+			updateAliasQueryState();
+			setAliasSearchLoading(false);
+			aliasSearchStatus.textContent = '';
+			aliasSearchResults.replaceChildren();
+			aliasSearchInput.focus();
+		});
+		aliasSearchResults.addEventListener('click', handleAliasResultClick);
+		updateAliasQueryState();
 
 		function scheduleGameTask(callback) {
 			if ('requestIdleCallback' in window) {

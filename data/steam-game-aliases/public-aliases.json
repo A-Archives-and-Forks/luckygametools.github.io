@@ -1,0 +1,268 @@
+{
+  "schema_version": 1,
+  "description": "Public and common aliases merged into the generated Steam alias database. Keep names as UTF-8 text, not unicode escapes.",
+  "sources": [
+    {
+      "id": "wikidata-p1733",
+      "name": "Wikidata Steam application ID (P1733)",
+      "url": "https://www.wikidata.org/wiki/Property:P1733"
+    },
+    {
+      "id": "zhwiki-gta-series",
+      "name": "中文维基百科：俠盜獵車手系列",
+      "url": "https://zh.wikipedia.org/wiki/俠盜獵車手系列"
+    },
+    {
+      "id": "zhwiki-gta-v",
+      "name": "中文维基百科：俠盜獵車手V",
+      "url": "https://zh.wikipedia.org/wiki/俠盜獵車手V"
+    },
+    {
+      "id": "steam-official-search",
+      "name": "Steam 官方搜索",
+      "url": "https://store.steampowered.com/search/"
+    }
+  ],
+  "apps": {
+    "1086940": {
+      "source_ids": ["steam-official-search"],
+      "aliases": {
+        "english": ["BG3", "BG 3", "Baldurs Gate 3", "Baldur Gate 3"],
+        "schinese": ["BG3", "BG 3", "博德3", "博德之门3"],
+        "tchinese": ["BG3", "BG 3", "柏德3", "柏德之門3", "博德之門3"]
+      }
+    },
+    "1174180": {
+      "source_ids": ["steam-official-search"],
+      "aliases": {
+        "english": ["RDR2", "RDR 2", "Red Dead 2", "Red Dead Redemption II"],
+        "schinese": ["RDR2", "RDR 2", "荒野大镖客2", "荒野大镖客 2", "大镖客2", "大表哥2", "红色死亡救赎2"],
+        "tchinese": ["RDR2", "RDR 2", "碧血狂殺2", "碧血狂殺 2", "荒野大鏢客2", "荒野大鏢客 2"]
+      }
+    },
+    "1091500": {
+      "source_ids": ["steam-official-search"],
+      "aliases": {
+        "english": ["CP2077", "CP 2077", "Cyberpunk2077"],
+        "schinese": ["CP2077", "CP 2077", "赛博朋克2077", "电驭叛客2077"],
+        "tchinese": ["CP2077", "CP 2077", "電馭叛客2077", "赛博朋克2077"]
+      }
+    },
+    "1245620": {
+      "source_ids": ["steam-official-search"],
+      "aliases": {
+        "english": ["EldenRing"],
+        "schinese": ["老头环", "艾尔登法环", "艾尔登法环黄金树幽影"],
+        "tchinese": ["老頭環", "艾爾登法環", "艾爾登法環黃金樹幽影"]
+      }
+    },
+    "292030": {
+      "source_ids": ["steam-official-search"],
+      "aliases": {
+        "english": ["TW3", "TW 3", "Witcher 3", "Witcher3", "The Witcher3"],
+        "schinese": ["巫师3", "巫师3狂猎", "巫师三", "猎魔人3"],
+        "tchinese": ["巫師3", "巫師3狂獵", "巫師三", "獵魔士3"]
+      }
+    },
+    "990080": {
+      "source_ids": ["steam-official-search"],
+      "aliases": {
+        "english": ["HogwartsLegacy"],
+        "schinese": ["霍格沃茨之遗", "霍格华兹之遗", "霍格沃兹之遗"],
+        "tchinese": ["霍格華茲的傳承", "霍格沃茨之遺", "霍格華茲之遺"]
+      }
+    },
+    "1551360": {
+      "source_ids": ["steam-official-search"],
+      "aliases": {
+        "english": ["FH5", "FH 5", "Forza5", "Forza Horizon5"],
+        "schinese": ["FH5", "FH 5", "极限竞速地平线5", "地平线5"],
+        "tchinese": ["FH5", "FH 5", "極限競速地平線5", "地平線5"]
+      }
+    },
+    "2050650": {
+      "source_ids": ["steam-official-search"],
+      "aliases": {
+        "english": ["RE4", "RE 4", "Resident Evil4", "Biohazard RE4"],
+        "schinese": ["RE4", "RE 4", "生化危机4", "生化危机 4", "生化4"],
+        "tchinese": ["RE4", "RE 4", "惡靈古堡4", "惡靈古堡 4", "生化危機4"]
+      }
+    },
+    "582010": {
+      "source_ids": ["steam-official-search"],
+      "aliases": {
+        "english": ["MHW", "Monster Hunter World", "MonsterHunterWorld"],
+        "schinese": ["MHW", "怪物猎人世界", "怪猎世界"],
+        "tchinese": ["MHW", "魔物獵人世界", "魔物猎人世界"]
+      }
+    },
+    "1446780": {
+      "source_ids": ["steam-official-search"],
+      "aliases": {
+        "english": ["MHR", "MHRise", "Monster Hunter Rise", "MonsterHunterRise"],
+        "schinese": ["MHR", "怪物猎人崛起", "怪猎崛起"],
+        "tchinese": ["MHR", "魔物獵人崛起", "魔物猎人崛起"]
+      }
+    },
+    "1817070": {
+      "source_ids": ["steam-official-search"],
+      "aliases": {
+        "english": ["SpiderMan", "Spider Man", "Marvel Spider Man"],
+        "schinese": ["蜘蛛侠", "漫威蜘蛛侠", "漫威蜘蛛侠重制版"],
+        "tchinese": ["蜘蛛人", "漫威蜘蛛人", "漫威蜘蛛人重製版"]
+      }
+    },
+    "1888930": {
+      "source_ids": ["steam-official-search"],
+      "aliases": {
+        "english": ["TLOU", "TLOU1", "The Last of Us Part 1", "The Last of Us Part I"],
+        "schinese": ["TLOU", "最后生还者", "最后生还者第一部", "最后的生还者"],
+        "tchinese": ["TLOU", "最後生還者", "最後生還者第一部", "最後的生還者"]
+      }
+    },
+    "413150": {
+      "source_ids": ["steam-official-search"],
+      "aliases": {
+        "english": ["StardewValley"],
+        "schinese": ["星露谷", "星露谷物语"],
+        "tchinese": ["星露谷", "星露谷物語"]
+      }
+    },
+    "105600": {
+      "source_ids": ["steam-official-search"],
+      "aliases": {
+        "english": ["Terraria"],
+        "schinese": ["泰拉瑞亚"],
+        "tchinese": ["泰拉瑞亞"]
+      }
+    },
+    "275850": {
+      "source_ids": ["steam-official-search"],
+      "aliases": {
+        "english": ["NMS", "No Mans Sky", "NoMansSky"],
+        "schinese": ["NMS", "无人深空"],
+        "tchinese": ["NMS", "無人深空"]
+      }
+    },
+    "252490": {
+      "source_ids": ["steam-official-search"],
+      "aliases": {
+        "english": ["Rust"],
+        "schinese": ["腐蚀"],
+        "tchinese": ["腐蝕"]
+      }
+    },
+    "236390": {
+      "source_ids": ["steam-official-search"],
+      "aliases": {
+        "english": ["WT", "WarThunder"],
+        "schinese": ["战争雷霆"],
+        "tchinese": ["戰爭雷霆"]
+      }
+    },
+    "367520": {
+      "source_ids": ["steam-official-search"],
+      "aliases": {
+        "english": ["HollowKnight"],
+        "schinese": ["空洞骑士"],
+        "tchinese": ["空洞騎士"]
+      }
+    },
+    "1145360": {
+      "source_ids": ["steam-official-search"],
+      "aliases": {
+        "english": ["Hades"],
+        "schinese": ["哈迪斯", "黑帝斯"],
+        "tchinese": ["黑帝斯", "哈迪斯"]
+      }
+    },
+    "242760": {
+      "source_ids": ["steam-official-search"],
+      "aliases": {
+        "english": ["TheForest"],
+        "schinese": ["森林"],
+        "tchinese": ["森林"]
+      }
+    },
+    "1326470": {
+      "source_ids": ["steam-official-search"],
+      "aliases": {
+        "english": ["SOTF", "Sons of Forest", "SonsOfTheForest"],
+        "schinese": ["森林之子"],
+        "tchinese": ["森林之子"]
+      }
+    },
+    "1142710": {
+      "source_ids": ["steam-official-search"],
+      "aliases": {
+        "english": ["TWW3", "TWW 3", "Total War Warhammer 3", "Total War Warhammer III"],
+        "schinese": ["全面战争战锤3", "全面战争战锤III", "战锤3"],
+        "tchinese": ["全軍破敵戰鎚3", "全軍破敵戰鎚III", "戰鎚3"]
+      }
+    },
+    "12110": {
+      "source_ids": ["zhwiki-gta-series"],
+      "aliases": {
+        "english": ["GTA", "GTA Vice City", "Grand Theft Auto Vice City"],
+        "schinese": ["GTA", "侠盗猎车手", "侠盗飞车", "侠盗猎车手：罪恶都市", "侠盗猎车手：罪恶城市", "侠盗飞车：罪恶都市", "罪恶都市"],
+        "tchinese": ["GTA", "俠盜獵車手", "俠盜飛車", "俠盜獵車手：罪惡都市", "俠盜獵車手：罪惡城市", "俠盜飛車：罪惡都市", "罪惡都市"]
+      }
+    },
+    "12120": {
+      "source_ids": ["zhwiki-gta-series"],
+      "aliases": {
+        "english": ["GTA", "GTA SA", "GTA San Andreas", "Grand Theft Auto San Andreas"],
+        "schinese": ["GTA", "侠盗猎车手", "侠盗飞车", "侠盗猎车手：圣安地列斯", "侠盗飞车：圣安地列斯", "圣安地列斯"],
+        "tchinese": ["GTA", "俠盜獵車手", "俠盜飛車", "俠盜獵車手：聖安地列斯", "俠盜飛車：聖安地列斯", "聖安地列斯"]
+      }
+    },
+    "12210": {
+      "source_ids": ["zhwiki-gta-series"],
+      "aliases": {
+        "english": ["GTA", "GTA IV", "GTA 4", "Grand Theft Auto 4"],
+        "schinese": ["GTA", "侠盗猎车手", "侠盗飞车", "侠盗猎车手IV", "侠盗猎车手4", "侠盗飞车4"],
+        "tchinese": ["GTA", "俠盜獵車手", "俠盜飛車", "俠盜獵車手IV", "俠盜獵車手4", "俠盜飛車4"]
+      }
+    },
+    "271590": {
+      "source_ids": ["zhwiki-gta-series", "zhwiki-gta-v"],
+      "aliases": {
+        "english": ["GTA", "GTA V", "GTA 5", "GTAV", "Grand Theft Auto 5"],
+        "schinese": ["GTA", "GTA5", "GTA 5", "侠盗猎车手", "侠盗飞车", "侠盗猎车手V", "侠盗猎车手5", "侠盗飞车5"],
+        "tchinese": ["GTA", "GTA5", "GTA 5", "俠盜獵車手", "俠盜飛車", "俠盜獵車手V", "俠盜獵車手5", "俠盜飛車5"]
+      }
+    },
+    "1546970": {
+      "source_ids": ["zhwiki-gta-series"],
+      "aliases": {
+        "english": ["GTA", "GTA III", "GTA 3", "GTA III Definitive Edition", "GTA 3 Definitive Edition", "Grand Theft Auto 3"],
+        "schinese": ["GTA", "侠盗猎车手", "侠盗飞车", "侠盗猎车手III", "侠盗猎车手3", "侠盗飞车3", "侠盗猎车手III 最终版", "侠盗猎车手3 最终版"],
+        "tchinese": ["GTA", "俠盜獵車手", "俠盜飛車", "俠盜獵車手III", "俠盜獵車手3", "俠盜飛車3", "俠盜獵車手III 最終版", "俠盜獵車手3 最終版"]
+      }
+    },
+    "1546990": {
+      "source_ids": ["zhwiki-gta-series"],
+      "aliases": {
+        "english": ["GTA", "GTA Vice City Definitive Edition", "Grand Theft Auto Vice City Definitive Edition"],
+        "schinese": ["GTA", "侠盗猎车手", "侠盗飞车", "侠盗猎车手：罪恶都市 最终版", "侠盗猎车手：罪恶城市 最终版", "侠盗飞车：罪恶都市 最终版", "罪恶都市 最终版"],
+        "tchinese": ["GTA", "俠盜獵車手", "俠盜飛車", "俠盜獵車手：罪惡都市 最終版", "俠盜獵車手：罪惡城市 最終版", "俠盜飛車：罪惡都市 最終版", "罪惡都市 最終版"]
+      }
+    },
+    "1547000": {
+      "source_ids": ["zhwiki-gta-series"],
+      "aliases": {
+        "english": ["GTA", "GTA SA Definitive Edition", "GTA San Andreas Definitive Edition", "Grand Theft Auto San Andreas Definitive Edition"],
+        "schinese": ["GTA", "侠盗猎车手", "侠盗飞车", "侠盗猎车手：圣安地列斯 最终版", "侠盗飞车：圣安地列斯 最终版", "圣安地列斯 最终版"],
+        "tchinese": ["GTA", "俠盜獵車手", "俠盜飛車", "俠盜獵車手：聖安地列斯 最終版", "俠盜飛車：聖安地列斯 最終版", "聖安地列斯 最終版"]
+      }
+    },
+    "3240220": {
+      "source_ids": ["zhwiki-gta-v"],
+      "aliases": {
+        "english": ["GTA", "GTA V", "GTA 5", "GTAV", "GTA V Enhanced", "GTA 5 Enhanced", "Grand Theft Auto 5 Enhanced"],
+        "schinese": ["GTA", "GTA5", "GTA 5", "侠盗猎车手", "侠盗飞车", "侠盗猎车手V", "侠盗猎车手5", "侠盗飞车5", "侠盗猎车手V 增强版", "侠盗猎车手5 增强版", "增强版"],
+        "tchinese": ["GTA", "GTA5", "GTA 5", "俠盜獵車手", "俠盜飛車", "俠盜獵車手V", "俠盜獵車手5", "俠盜飛車5", "俠盜獵車手V 增強版", "俠盜獵車手5 增強版", "增強版"]
+      }
+    }
+  }
+}
