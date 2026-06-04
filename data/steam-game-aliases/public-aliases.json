@@ -21,9 +21,63 @@
       "id": "steam-official-search",
       "name": "Steam 官方搜索",
       "url": "https://store.steampowered.com/search/"
+    },
+    {
+      "id": "steamdb-public",
+      "name": "SteamDB public app pages",
+      "url": "https://steamdb.info/"
     }
   ],
   "apps": {
+    "2118510": {
+      "source_ids": ["steamdb-public"],
+      "official": {
+        "english": "RINA RhythmERROR",
+        "schinese": "RINA RhythmERROR 瑞娜：致错旋律",
+        "tchinese": "RINA RhythmERROR 瑞娜：致錯旋律"
+      },
+      "aliases": {
+        "english": ["RINA RhythmERROR", "RINA RhythmERROR 瑞娜：致错旋律"],
+        "schinese": ["RINA RhythmERROR", "RINA RhythmERROR 瑞娜：致错旋律", "瑞娜：致错旋律"],
+        "tchinese": ["RINA RhythmERROR", "RINA RhythmERROR 瑞娜：致錯旋律", "瑞娜：致錯旋律"]
+      }
+    },
+    "4272540": {
+      "source_ids": ["steamdb-public"],
+      "official": {
+        "english": "Lovers' Fun!"
+      },
+      "aliases": {
+        "english": ["Lovers' Fun!", "Lovers Fun"]
+      }
+    },
+    "4442190": {
+      "source_ids": ["steamdb-public"],
+      "official": {
+        "english": "Lust Poker Club"
+      },
+      "aliases": {
+        "english": ["Lust Poker Club"]
+      }
+    },
+    "4466620": {
+      "source_ids": ["steamdb-public"],
+      "official": {
+        "english": "SiNiSistar 2"
+      },
+      "aliases": {
+        "english": ["SiNiSistar 2", "SiNiSistar2"]
+      }
+    },
+    "4620930": {
+      "source_ids": ["steamdb-public"],
+      "official": {
+        "english": "Ghost of Tokyo"
+      },
+      "aliases": {
+        "english": ["Ghost of Tokyo"]
+      }
+    },
     "1086940": {
       "source_ids": ["steam-official-search"],
       "aliases": {
