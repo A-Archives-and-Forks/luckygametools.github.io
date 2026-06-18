@@ -51,7 +51,7 @@
     <!-- /SEO metadata -->
 
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="styles.css?v=20260604-appid-search-polish">
+    <link rel="stylesheet" href="styles.css?v=20260618-appid-title">
     <link rel="preload" as="style" crossorigin fetchpriority="low"
         href="https://fontsapi.zeoseven.com/532/main/result.css"
         onload="this.rel='stylesheet'"
@@ -170,6 +170,9 @@
 		const aliasSearchPrimaryUrls = [
 			'data/steam-game-aliases/search/by-language/english.json'
 		];
+		const aliasGameDetailUrls = [
+			'data/steam-game-aliases/by-language/english.json'
+		];
 		const aliasSearchFullUrl = 'data/steam-game-aliases/search/all.json';
 		const aliasSearchPreferredLanguages = ['english'];
 		const aliasSearchLanguageNames = {
@@ -213,6 +216,7 @@
 				return 'Copied AppID ' + appid;
 			},
 			copyFailed: 'Copy failed. Please retry.',
+			matchPrefix: 'Matched: ',
 			resultCount: function(count) {
 				return count === 1 ? '1 result' : count + ' results';
 			}
@@ -227,6 +231,7 @@
 		const aliasSearchResults = document.getElementById('appidSearchResults');
 		let aliasSearchPrimaryPromise = null;
 		let aliasSearchFullPromise = null;
+		let aliasGameDetailsPromise = null;
 		let aliasSearchDebounceTimer = null;
 		let aliasSearchRequestId = 0;
 
@@ -287,6 +292,72 @@
 			}
 
 			return aliasSearchFullPromise;
+		}
+
+		function getAliasRecordDisplayName(record, appid) {
+			const official = String(record && record.official || '').trim();
+
+			if (official) {
+				return official;
+			}
+
+			const aliases = Array.isArray(record && record.aliases) ? record.aliases : [];
+			let appidAlias = '';
+
+			for (let index = 0; index < aliases.length; index += 1) {
+				const alias = String(aliases[index] || '').trim();
+
+				if (!alias) {
+					continue;
+				}
+
+				if (alias !== appid) {
+					return alias;
+				}
+
+				appidAlias = alias;
+			}
+
+			return appidAlias;
+		}
+
+		function mergeAliasGameDetails(payloads) {
+			const details = Object.create(null);
+
+			payloads.forEach(function(payload) {
+				const apps = payload && payload.apps ? payload.apps : {};
+				const languageKey = String(payload && (payload.language_key || payload.steam_language) || '').toLowerCase();
+
+				Object.keys(apps).forEach(function(appid) {
+					const appidText = String(appid || '').trim();
+					const title = getAliasRecordDisplayName(apps[appid], appidText);
+
+					if (!appidText || !title) {
+						return;
+					}
+
+					const isAppidOnly = title === appidText;
+					const previous = details[appidText];
+
+					if (!previous || (previous.isAppidOnly && !isAppidOnly)) {
+						details[appidText] = {
+							title: title,
+							languageKey: languageKey,
+							isAppidOnly: isAppidOnly
+						};
+					}
+				});
+			});
+
+			return details;
+		}
+
+		function loadAliasGameDetails() {
+			if (!aliasGameDetailsPromise) {
+				aliasGameDetailsPromise = Promise.all(aliasGameDetailUrls.map(loadAliasPayload)).then(mergeAliasGameDetails);
+			}
+
+			return aliasGameDetailsPromise;
 		}
 
 		function setAliasSearchLoading(isLoading, message) {
@@ -378,7 +449,18 @@
 			return uniqueAliasResults(matches, queryKey);
 		}
 
-		function renderAliasSearchResults(results) {
+		function getAliasResultTitle(entry, gameDetails) {
+			const appid = String(entry.appid || '').trim();
+			const detail = gameDetails && gameDetails[appid];
+
+			if (detail && detail.title) {
+				return detail.title;
+			}
+
+			return String(entry.name || appid || '').trim();
+		}
+
+		function renderAliasSearchResults(results, gameDetails) {
 			if (!results.length) {
 				aliasSearchStatus.textContent = aliasSearchTexts.noResults;
 				aliasSearchResults.innerHTML = '<div class="appid-search-empty">' + escapeAliasHtml(aliasSearchTexts.noResults) + '</div>';
@@ -387,16 +469,22 @@
 
 			aliasSearchStatus.textContent = aliasSearchTexts.resultCount(results.length);
 			aliasSearchResults.innerHTML = results.map(function(entry) {
-				const appid = escapeAliasHtml(entry.appid);
-				const name = escapeAliasHtml(entry.name || entry.appid);
+				const rawAppid = String(entry.appid || '').trim();
+				const appid = escapeAliasHtml(rawAppid);
+				const displayTitle = getAliasResultTitle(entry, gameDetails);
+				const name = escapeAliasHtml(displayTitle || rawAppid);
+				const matchedName = String(entry.name || '').trim();
+				const showMatchedName = matchedName && normalizeAliasQuery(matchedName) !== normalizeAliasQuery(displayTitle);
 				const languageKey = getAliasLanguageKey(entry);
 				const language = escapeAliasHtml(aliasSearchLanguageNames[languageKey] || languageKey || 'Alias');
+				const matchedMarkup = showMatchedName ? '<div class="appid-search-match">' + escapeAliasHtml(aliasSearchTexts.matchPrefix + matchedName) + '</div>' : '';
 
 				return [
 					'<article class="appid-search-result">',
 					'<img class="appid-search-cover" alt="" decoding="async" loading="lazy" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/' + appid + '/capsule_184x69.jpg">',
 					'<div class="appid-search-meta">',
 					'<div class="appid-search-name">' + name + '</div>',
+					matchedMarkup,
 					'<div class="appid-search-actions">',
 					'<a class="appid-search-appid" href="https://steamdb.info/app/' + appid + '" target="_blank" rel="noopener noreferrer">AppID ' + appid + '</a>',
 					'<button class="appid-search-copy" type="button" data-appid="' + appid + '">Copy</button>',
@@ -490,7 +578,19 @@
 					results = findAliasMatches(fullEntries, queryKey);
 				}
 
-				renderAliasSearchResults(results);
+				let gameDetails = {};
+				if (results.length) {
+					try {
+						gameDetails = await loadAliasGameDetails();
+						if (requestId !== aliasSearchRequestId) {
+							return;
+						}
+					} catch (detailErr) {
+						console.warn(detailErr);
+					}
+				}
+
+				renderAliasSearchResults(results, gameDetails);
 			} catch (err) {
 				aliasSearchStatus.textContent = aliasSearchTexts.error;
 				aliasSearchResults.innerHTML = '<div class="appid-search-empty">' + escapeAliasHtml(aliasSearchTexts.error) + '</div>';
