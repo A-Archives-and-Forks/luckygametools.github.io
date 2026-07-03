@@ -11,7 +11,8 @@ const friendLinks = [
   { name: "Discord", url: "https://discord.gg/X4MTpDbcpT" },
   { name: "Youtube", url: "https://www.youtube.com/@GameToolsLucky" },
   { name: "BaiLuAI", url: "https://bailucode.com" },
-  { name: "YuCursorTool", url: "https://970410.xyz/" }
+  { name: "YuCursorTool", url: "https://970410.xyz/" },
+  { name: "WePlayPower", url: "https://www.weplaypower.com/" }
 ];
 
 const adsenseClient = "ca-pub-7261994485465423";
