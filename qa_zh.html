@@ -55,6 +55,14 @@
       "mainEntity": [
         {
           "@type": "Question",
+          "name": "Windows Defender 誤報怎麼處理？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "如果 Windows Defender 將 LuckyGameTools 或相關文件誤判，請先下載 Windows Defender 排除項目腳本到軟體安裝目錄，然後右鍵以系統管理員身分執行。"
+          }
+        },
+        {
+          "@type": "Question",
           "name": "導入遊戲時為什麼會出現網路錯誤？",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -153,6 +161,27 @@
             <p class="subtitle"><strong>常見問題持續收集更新中</strong></p>
 
         </header>
+
+        <section class="section">
+            <h2><span class="lgt-icon icon-shield" aria-hidden="true"></span> Windows Defender 誤報怎麼處理？</h2>
+            <div class="warning">
+                <strong>如果 Windows Defender 將 LuckyGameTools 或相關文件誤判，請先下載排除項目腳本到軟體安裝目錄，然後右鍵以系統管理員身分執行。</strong>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div><a href="assets/s/add_windows_defender_exclusions_cn.bat" download>下載 Windows Defender 排除項目腳本</a>，保存到 LuckyGameTools 的軟體安裝目錄。</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div>在安裝目錄中找到 <code>add_windows_defender_exclusions_cn.bat</code>，右鍵選擇「以系統管理員身分執行」。</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div>腳本完成後重新打開 LuckyGameTools；如果仍被攔截，請先確認 Windows Defender 或第三方安全軟體是否由系統策略管理。</div>
+                </div>
+            </div>
+        </section>
 
         <section class="section">
             <h2><span class="lgt-icon icon-star" aria-hidden="true"></span> 導入遊戲時提示:網絡錯誤？</h2>

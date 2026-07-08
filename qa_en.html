@@ -55,6 +55,14 @@
       "mainEntity": [
         {
           "@type": "Question",
+          "name": "How do I handle Windows Defender false positives?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "If Windows Defender flags LuckyGameTools or related files incorrectly, download the Windows Defender exclusion script to the software installation directory, then right-click it and run it as administrator."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "Why do I see a network error when importing games?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -154,6 +162,27 @@
             <p class="subtitle"><strong>Frequently asked questions are being continuously collected and updated</strong></p>
 
         </header>
+
+        <section class="section">
+            <h2><span class="lgt-icon icon-shield" aria-hidden="true"></span> How do I handle Windows Defender false positives?</h2>
+            <div class="warning">
+                <strong>If Windows Defender flags LuckyGameTools or related files incorrectly, download the exclusion script to the software installation directory first, then right-click it and choose "Run as administrator".</strong>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div><a href="assets/s/add_windows_defender_exclusions.bat" download>Download the Windows Defender exclusion script</a> and save it to the LuckyGameTools software installation directory.</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div>Find <code>add_windows_defender_exclusions.bat</code> in the installation directory, right-click it, and choose "Run as administrator".</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div>After the script completes, reopen LuckyGameTools. If it is still blocked, check whether Windows Defender or third-party security software is managed by system policy.</div>
+                </div>
+            </div>
+        </section>
 
         <section class="section">
             <h2><span class="lgt-icon icon-star" aria-hidden="true"></span> Prompt when importing game: Network error？</h2>
