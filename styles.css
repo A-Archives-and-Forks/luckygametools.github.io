@@ -3284,6 +3284,39 @@ td .lgt-icon {
   box-shadow: 0 14px 34px rgba(53, 240, 198, 0.15);
 }
 
+#sponsor .sponsor-donation-table {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  overflow: visible;
+}
+
+#sponsor .sponsor-donation-table th,
+#sponsor .sponsor-donation-table td {
+  vertical-align: middle;
+  overflow-wrap: anywhere;
+}
+
+#sponsor .sponsor-donation-table th:nth-child(1),
+#sponsor .sponsor-donation-table td:nth-child(1) {
+  width: 14%;
+}
+
+#sponsor .sponsor-donation-table th:nth-child(2),
+#sponsor .sponsor-donation-table td:nth-child(2) {
+  width: 18%;
+}
+
+#sponsor .sponsor-donation-table th:nth-child(3),
+#sponsor .sponsor-donation-table td:nth-child(3) {
+  width: 24%;
+}
+
+#sponsor .sponsor-donation-table th:nth-child(4),
+#sponsor .sponsor-donation-table td:nth-child(4) {
+  width: 44%;
+}
+
 @media (max-width: 760px) {
   #sponsor .sponsor-options,
   #sponsor .sponsor-card-featured {
