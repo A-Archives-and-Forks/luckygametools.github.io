@@ -3053,6 +3053,262 @@ td .lgt-icon {
   --nav-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M7 3h7l4 4v14H7z'/%3E%3Cpath d='M14 3v5h5'/%3E%3Cpath d='M9.5 13.5 8 15l1.5 1.5'/%3E%3Cpath d='m14.5 13.5 1.5 1.5-1.5 1.5'/%3E%3Cpath d='M12.8 12.8 11.2 17'/%3E%3C/svg%3E");
 }
 
+#sponsor .sponsor-options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin: 26px 0 24px;
+}
+
+#sponsor .sponsor-title {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+#sponsor .sponsor-title > span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 30px;
+  padding: 0 10px;
+  border: 1px solid rgba(53, 240, 198, 0.34);
+  border-radius: 8px;
+  color: #baf7ff;
+  background: rgba(53, 240, 198, 0.08);
+  font-size: 0.95rem;
+  font-weight: 800;
+}
+
+#sponsor .sponsor-cdk-chip {
+  position: relative;
+  overflow: hidden;
+  color: #111827;
+  border-color: rgba(255, 217, 138, 0.72);
+  background: linear-gradient(135deg, #ffd98a 0%, #35f0c6 58%, #49c7ff 100%);
+  box-shadow:
+    0 0 0 1px rgba(255, 217, 138, 0.12) inset,
+    0 0 18px rgba(53, 240, 198, 0.18);
+  animation: sponsorCdkGlow 2.8s ease-in-out infinite;
+}
+
+#sponsor .sponsor-cdk-chip::after {
+  content: '';
+  position: absolute;
+  inset: -40% auto -40% -70%;
+  width: 42%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.72), transparent);
+  transform: rotate(18deg);
+  animation: sponsorCdkSweep 3.2s ease-in-out infinite;
+}
+
+#sponsor .sponsor-cdk-text {
+  margin-left: 6px;
+  color: #fff2bd;
+  text-shadow:
+    0 0 10px rgba(255, 217, 138, 0.38),
+    0 0 18px rgba(53, 240, 198, 0.22);
+  letter-spacing: 0.04em;
+}
+
+@keyframes sponsorCdkGlow {
+  0%, 100% {
+    box-shadow:
+      0 0 0 1px rgba(255, 217, 138, 0.12) inset,
+      0 0 16px rgba(53, 240, 198, 0.16);
+  }
+  50% {
+    box-shadow:
+      0 0 0 1px rgba(255, 217, 138, 0.26) inset,
+      0 0 28px rgba(255, 217, 138, 0.28),
+      0 0 20px rgba(53, 240, 198, 0.2);
+  }
+}
+
+@keyframes sponsorCdkSweep {
+  0%, 35% {
+    left: -70%;
+  }
+  65%, 100% {
+    left: 130%;
+  }
+}
+
+@keyframes sponsorRewardGlow {
+  0%, 100% {
+    box-shadow:
+      0 0 0 1px rgba(255, 217, 138, 0.12) inset,
+      0 0 16px rgba(255, 189, 74, 0.12);
+  }
+  50% {
+    box-shadow:
+      0 0 0 1px rgba(255, 217, 138, 0.26) inset,
+      0 0 26px rgba(255, 189, 74, 0.26),
+      0 0 18px rgba(53, 240, 198, 0.16);
+  }
+}
+
+#sponsor .sponsor-card {
+  position: relative;
+  min-height: 100%;
+  padding: 22px;
+  border: 1px solid rgba(73, 199, 255, 0.28);
+  border-radius: 8px;
+  background:
+    linear-gradient(180deg, rgba(73, 199, 255, 0.08), rgba(53, 240, 198, 0.035)),
+    rgba(6, 8, 13, 0.34);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.2);
+}
+
+#sponsor .sponsor-card-featured {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(190px, 260px);
+  align-items: center;
+  gap: 10px 22px;
+  border-color: rgba(255, 189, 74, 0.58);
+  background:
+    linear-gradient(135deg, rgba(255, 189, 74, 0.18), rgba(53, 240, 198, 0.09)),
+    rgba(6, 8, 13, 0.58);
+  box-shadow:
+    0 0 0 1px rgba(255, 189, 74, 0.08) inset,
+    0 20px 46px rgba(0, 0, 0, 0.28),
+    0 0 34px rgba(255, 189, 74, 0.08);
+}
+
+#sponsor .sponsor-card-featured > :not(.sponsor-contact-list) {
+  grid-column: 1;
+}
+
+#sponsor .sponsor-kicker {
+  color: #ffd98a;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
+#sponsor .sponsor-card h3 {
+  margin: 6px 0 8px;
+  color: var(--text-primary);
+  font-size: 1.35rem;
+  line-height: 1.3;
+}
+
+#sponsor .sponsor-card p,
+#sponsor .sponsor-card li {
+  color: var(--text-secondary);
+  line-height: 1.75;
+}
+
+#sponsor .sponsor-card ul {
+  margin: 10px 0 18px 20px;
+}
+
+#sponsor .sponsor-reward {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  max-width: 100%;
+  margin-top: 12px;
+  padding: 9px 13px;
+  border: 1px solid rgba(53, 240, 198, 0.36);
+  border-radius: 8px;
+  color: #baf7ff;
+  background: rgba(53, 240, 198, 0.08);
+  font-weight: 800;
+}
+
+#sponsor .sponsor-card-featured .sponsor-reward {
+  position: relative;
+  overflow: hidden;
+  color: #fff2bd;
+  border-color: rgba(255, 217, 138, 0.72);
+  background:
+    linear-gradient(135deg, rgba(255, 217, 138, 0.18), rgba(53, 240, 198, 0.12)),
+    rgba(255, 189, 74, 0.1);
+  box-shadow:
+    0 0 0 1px rgba(255, 217, 138, 0.12) inset,
+    0 0 18px rgba(255, 189, 74, 0.12);
+  animation: sponsorRewardGlow 2.8s ease-in-out infinite;
+}
+
+#sponsor .sponsor-card-featured .sponsor-reward::after {
+  content: '';
+  position: absolute;
+  inset: -40% auto -40% -70%;
+  width: 38%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+  transform: rotate(18deg);
+  animation: sponsorCdkSweep 3.4s ease-in-out infinite;
+  pointer-events: none;
+}
+
+#sponsor .sponsor-note {
+  margin: 2px 0 0;
+  font-size: 0.95rem;
+}
+
+#sponsor .sponsor-contact-list {
+  grid-column: 2;
+  grid-row: 1 / span 4;
+  align-self: center;
+  justify-self: end;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  margin-top: 0;
+}
+
+#sponsor .sponsor-contact-list a,
+#sponsor .sponsor-contact-list span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 16px;
+  border: 1px solid rgba(255, 189, 74, 0.58);
+  border-radius: 8px;
+  color: #0b1118;
+  background: linear-gradient(135deg, #ffd98a, #35f0c6);
+  font-size: 1rem;
+  font-weight: 900;
+  text-decoration: none;
+  white-space: nowrap;
+  box-shadow: 0 10px 28px rgba(255, 189, 74, 0.12);
+}
+
+#sponsor .sponsor-contact-list a:hover {
+  color: #0b1118;
+  transform: translateY(-1px);
+  box-shadow: 0 14px 34px rgba(53, 240, 198, 0.15);
+}
+
+@media (max-width: 760px) {
+  #sponsor .sponsor-options,
+  #sponsor .sponsor-card-featured {
+    grid-template-columns: 1fr;
+  }
+
+  #sponsor .sponsor-card-featured > :not(.sponsor-contact-list) {
+    grid-column: auto;
+  }
+
+  #sponsor .sponsor-contact-list {
+    grid-column: auto;
+    grid-row: auto;
+    justify-self: stretch;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  #sponsor .sponsor-contact-list a,
+  #sponsor .sponsor-contact-list span {
+    white-space: normal;
+    text-align: center;
+  }
+}
+
 /* Steam AppID search panel for game library pages. */
 .appid-search-panel {
   margin: 0 0 22px;
