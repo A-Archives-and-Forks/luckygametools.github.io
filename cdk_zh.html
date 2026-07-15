@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LuckyGameTools CDK 使用手冊 - 驗證代碼與權限指南</title>
-    <meta name="description" content="LuckyGameTools CDK 使用手冊，說明機器人、兌換碼、權限福利、驗證代碼、Steam 在线/在線驗證與支援流程。">
-    <meta name="keywords" content="steam,luckygametools,steamtools,CDK,驗證代碼,验证代码,steam在线,steam在線,在線驗證,在线验证,權限指南,機器人,bot,中文站,安全,易用">
+    <title>LuckyGameTools CDK 使用手冊 - 神秘代碼與權限指南</title>
+    <meta name="description" content="LuckyGameTools CDK 使用手冊，說明軟件內生成神秘代碼、權限福利、Steam 在线/在線驗證與支援流程。">
+    <meta name="keywords" content="steam,luckygametools,steamtools,CDK,神秘代碼,神秘代码,steam在线,steam在線,在線驗證,在线验证,權限指南,中文站,安全,易用">
     <!-- SEO metadata -->
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="author" content="LuckyGameTools">
@@ -16,13 +16,13 @@
     <meta property="og:site_name" content="LuckyGameTools">
     <meta property="og:type" content="website">
     <meta property="og:title" content="LuckyGameTools CDK 使用手冊">
-    <meta property="og:description" content="LuckyGameTools CDK 使用手冊，說明機器人、兌換碼、權限福利、驗證代碼、Steam 在线/在線驗證與支援流程。">
+    <meta property="og:description" content="LuckyGameTools CDK 使用手冊，說明軟件內生成神秘代碼、權限福利、Steam 在线/在線驗證與支援流程。">
     <meta property="og:url" content="https://luckygametools.github.io/cdk_zh.html">
     <meta property="og:image" content="https://luckygametools.github.io/background.jpg">
     <meta property="og:locale" content="zh_TW">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="LuckyGameTools CDK 使用手冊">
-    <meta name="twitter:description" content="LuckyGameTools CDK 使用手冊，說明機器人、兌換碼、權限福利、驗證代碼、Steam 在线/在線驗證與支援流程。">
+    <meta name="twitter:description" content="LuckyGameTools CDK 使用手冊，說明軟件內生成神秘代碼、權限福利、Steam 在线/在線驗證與支援流程。">
     <meta name="twitter:image" content="https://luckygametools.github.io/background.jpg">
     <script type="application/ld+json">
     {
@@ -30,7 +30,7 @@
       "@type": "WebPage",
       "name": "LuckyGameTools CDK 使用手冊",
       "url": "https://luckygametools.github.io/cdk_zh.html",
-      "description": "LuckyGameTools CDK 使用手冊，說明機器人、兌換碼、權限福利、驗證代碼、Steam 在线/在線驗證與支援流程。",
+      "description": "LuckyGameTools CDK 使用手冊，說明軟件內生成神秘代碼、權限福利、Steam 在线/在線驗證與支援流程。",
       "inLanguage": "zh-Hant",
       "isPartOf": {
         "@type": "WebSite",
@@ -123,110 +123,149 @@
 
         </header>
         
+		<section class="section cdk-guide-section">
+            <h2><span class="lgt-icon icon-steps" aria-hidden="true"></span> CDK 使用說明</h2>
+            <div class="cdk-guide-tabs">
+                <input class="cdk-tab-input" type="radio" name="cdk-guide-tab" id="cdk-guide-new" checked>
+                <input class="cdk-tab-input" type="radio" name="cdk-guide-tab" id="cdk-guide-legacy">
+
+                <div class="cdk-tab-list" role="tablist" aria-label="CDK 使用說明版本">
+                    <label class="cdk-tab-label" for="cdk-guide-new" role="tab">6.0.3.152+ 新版</label>
+                    <label class="cdk-tab-label" for="cdk-guide-legacy" role="tab">舊版機器人方式</label>
+                </div>
+
+                <div class="cdk-tab-panels">
+                    <div class="cdk-tab-panel cdk-tab-panel-new" role="tabpanel">
+                        <div class="notice">
+                            <strong>新版已內置 CDK 生成流程：</strong>不需要再去 Steam 群找機器人，也不需要手動發送 <strong>drm+AppId+|+CDK</strong> 指令。
+                        </div>
+                        <div class="steps">
+                            <div class="step">
+                                <div class="step-number">1</div>
+                                <div>打開 LuckyGameTools，在左側遊戲列表中選中要啟動的遊戲。</div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">2</div>
+                                <div>在 <strong>CDK 兌換神秘代碼</strong> 彈窗中確認遊戲 AppID，類型一般保持 <strong>DRM</strong> 即可。</div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">3</div>
+                                <div>輸入 CDK，點擊 <strong>生成</strong>。提示生成神秘代碼成功後，代表當前遊戲已完成激活。</div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">4</div>
+                                <div>點擊 <strong>啟動遊戲</strong>，等待遊戲啟動完成即可。</div>
+                            </div>
+                        </div>
+                        <div class="notice cdk-image-notice">
+                            <img alt="LuckyGameTools CDK 兌換神秘代碼示意圖" decoding="async" loading="lazy" class="img-default cdk-guide-image" src="assets/active_drm_new.jpg">
+                        </div>
+                    </div>
+
+                    <div class="cdk-tab-panel cdk-tab-panel-legacy" role="tabpanel">
+                        <div class="warning">
+                            舊版僅供仍在使用 6.0.3.152 之前版本的用戶參考。新版請優先使用左側「6.0.3.152+ 新版」流程。
+                        </div>
+
+                        <h3>機器人使用注意事項</h3>
+                        <div class="steps">
+                            <div class="step">
+                                <div class="step-number">1</div>
+                                <div>以前版本需要通過 luckygametools-bot 機器人兌換神秘代碼。</div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">2</div>
+                                <div>一個 CDK 只能兌換一個神秘代碼，CDK 使用完成後會自動失效。</div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">3</div>
+                                <div>兌換後的神秘代碼只可用於當前 Steam 賬號。</div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">4</div>
+                                <div>CDK 獲取後請自行保存，不補發，未使用前永久有效。</div>
+                            </div>
+                        </div>
+
+                        <h3>舊版兌換步驟</h3>
+                        <div class="steps">
+                            <div class="step">
+                                <div class="step-number">1</div>
+                                <div>
+                                    在 luckygametools 的 Steam 聊天群組中找到名為 <strong>luckygametools-bot</strong> 的機器人，該機器人的角色為 <strong>bot</strong>，使用指令前請確認機器人在線。
+                                    <br>
+                                    <img alt="Steam 群組中查找 luckygametools-bot 示意圖" decoding="async" loading="lazy" class="img-default" src="https://github.com/user-attachments/assets/9182c8a6-ad50-49b2-9f53-d5bcd192795b">
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">2</div>
+                                <div>
+                                    在機器人頭像上右鍵發送消息，按格式發送：<strong>drm1234567|AAA-BBB-CCC-DDD-EEE-FFF-GGG</strong>
+                                    <br>
+                                    將 <strong>1234567</strong> 替換為遊戲 AppID，將後面的內容替換為你的 CDK。AppID 後面緊跟豎劃線 <strong>|</strong>。
+                                    <br>
+                                    <img alt="舊版機器人 CDK 指令示意圖" decoding="async" loading="lazy" class="img-default" src="https://github.com/user-attachments/assets/0f621163-de7a-4f50-89f8-8f51209db8c3">
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">3</div>
+                                <div>
+                                    如果發送消息時 Steam 提示無權限，或機器人無響應，可在 Steam 群組中發送 <strong>呼叫boss</strong>、<strong>呼叫bot</strong>、<strong>callboss</strong> 或 <strong>callbot</strong>。
+                                    <br>
+                                    <img alt="舊版呼叫機器人示意圖" decoding="async" loading="lazy" class="img-default" src="https://github.com/user-attachments/assets/428203f8-3f5b-4d7e-818f-c842ec4772eb">
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">4</div>
+                                <div>
+                                    如果機器人仍無法正常回復，可以把 <strong>drm1234567|AAA-BBB-CCC-DDD-EEE-FFF-GGG</strong> 指令發在 Steam 群組內。機器人收到消息後會刪除 CDK 指令，並私發神秘代碼。
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3>舊版 Online 指令</h3>
+                        <div class="steps">
+                            <div class="step">
+                                <div class="step-number">1</div>
+                                <div><strong>online1234567|AAA-BBB-CCC-DDD-EEE-FFF-GGG</strong> 用於部分啟動後還需要聯網驗證的單機遊戲，例如 1250410 微軟飛行模擬器。</div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">2</div>
+                                <div>此指令免費提供給捐贈用戶使用，不會消耗 CDK，僅用於驗證。</div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">3</div>
+                                <div>此指令會生成 lot 開頭的神秘代碼。</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 		<section class="section">
-            <h2><span class="lgt-icon icon-warning" aria-hidden="true"></span> 機器人使用注意事項 </h2>
+            <h2><span class="lgt-icon icon-warning" aria-hidden="true"></span> CDK 使用注意事項 </h2>
             <div class="steps">
                 <div class="step">
                     <div class="step-number">1</div>
-                    <div>目前luckygametools機器人只開發了CDK兌換驗證代碼的功能</div>
+                    <div>6.0.3.152 及之後版本請優先使用軟件內置流程生成神秘代碼。</div>
                 </div>
                 <div class="step">
                     <div class="step-number">2</div>
-                    <div>一個CDK只能兌換一個驗證代碼(CDK使用完成后會自動失效)</div>
+                    <div>一個 CDK 只能兌換一個神秘代碼，CDK 使用完成後會自動失效。</div>
                 </div>
                 <div class="step">
                     <div class="step-number">3</div>
-                    <div>兌換后的驗證代碼只可用於當前Steam賬號</div>
+                    <div>生成後的神秘代碼只可用於當前 Steam 賬號與當前選中的遊戲 AppID。</div>
                 </div>
                 <div class="step">
                     <div class="step-number">4</div>
-                    <div>CDK獲取后請自行保存(不補發,未使用前永久有效)</div>
+                    <div>CDK 獲取後請自行保存，未使用前永久有效，不補發。</div>
                 </div>
             </div>
             <div class="warning">
-                如果CDK兌換了驗證代碼后沒有及時完成遊戲驗證流程(驗證代碼有效期1小時),可以再次使用此CDK去兌換上次相同的遊戲AppId<strong>一次</strong>
+                如果神秘代碼生成成功後沒有及時啟動遊戲，請回到同一個遊戲頁面重新生成或聯繫作者協助處理。
             </div>
-        </section>
-
-		
-		<section class="section">
-            <h2><span class="lgt-icon icon-steps" aria-hidden="true"></span> 兌換步驟 (一定要看完，機器人無響應請忽略第3步,大部份人請忽略第3步)</h2>
-            <div class="steps">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <div>在luckygametools的steam聊天群組中找到一個名為:luckygametools-bot的機器人，該機器人的有個特定的角色叫:bot，防止他人假冒（使用指令前確保機器人是在線狀態）
-		    <br>
-			    提示：什麽，你不知道Steam聊天的群組在哪？，在steam軟件的右下角點擊 好友與聊天
-		    <br>	
-		    <img alt="LuckyGameTools image" decoding="async" loading="lazy" class="img-default" src="https://github.com/user-attachments/assets/9182c8a6-ad50-49b2-9f53-d5bcd192795b"></div>
-                </div>
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <div>
-						在機器人頭像上右鍵->發送消息,就可以看到機器人的指令說明了：CDK exchange verification code instruction(CDK兌換驗證代碼指令):drm+appid+|+cdk
-						<br>eg(例如):drm1234567|AAA-BBB-CCC-DDD-EEE-FFF-GGG
-			    			舉個例子,當前要玩的遊戲是《劍星》，它的appid是3489700，假設你要使用CDK是: ABC-ABC-ABC-ABC-ABC-ABC-ABC，
-			  			<br>
-						那發送的指令是:<strong>drm3489700|ABC-ABC-ABC-ABC-ABC-ABC-ABC</strong> 
-						<br>
-			    			注意appid3489700后面緊要的是豎劃線(竖划线|) 符號，鍵盤上找不是就在這copy吧 ||||||||||||
-					    	<br>
-						<img alt="LuckyGameTools image" decoding="async" loading="lazy" class="img-default" src="https://github.com/user-attachments/assets/0f621163-de7a-4f50-89f8-8f51209db8c3">
-					</div>
-                </div>
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <div style="text-decoration: line-through;">
-						如果發送消息指令時steam提示無權限 或者 發完機器人無響應，則可以在luckygametools的steam聊天群組(大群中)發送關鍵指令：
-						<br>
-						<strong>呼叫boss</strong> 或 <strong>呼叫bot</strong> 或 <strong>callboss</strong> 或 <strong>callbot</strong>,請勿爛用，否則機器人會生氣不回復的 
-						<br>
-						<img alt="LuckyGameTools image" decoding="async" loading="lazy" class="img-default" src="https://github.com/user-attachments/assets/428203f8-3f5b-4d7e-818f-c842ec4772eb">
-						<br>機器人自動回復后，就可以正常使用指令功能了<strong>【如果機器人無響應,請看第4步】</strong> 
-					</div>
-                </div>
-		<div class="step">
-                    <div class="step-number">4</div>
-                    <div>
-						如果機器人還是無法正常回復消息,可以選擇直接把(drm1234567|AAA-BBB-CCC-DDD-EEE-FFF-GGG)指令發在Steam群組里面
-						<br>
-						<strong>機器人收到消息后會刪除cdk(指令)，并私發驗證代碼(請打開機器人的聊天窗查看)</strong>
-
-						<br>如果機器人沒有刪除cdk的消息，避免CDK送人，請用戶自己刪除(因為這時機器人應該在重啟中,無法正常響應)
-					</div>
-                </div>
-            </div>
-			<div class="warning">
-                Denuvo驗證代碼使用說明詳見<a href="/README_zh.html"><strong>官網</strong></a>
-            </div>
-            
-        </section>
-		
-		<section class="section benefits">
-            <h2><span class="lgt-icon icon-star" aria-hidden="true"></span> 額外福利 </h2>
-
-			<div class="steps">
-				<div class="step">
-					<div class="step-number">1</div>
-					<div><strong>機器人新增指令：online  eg:`online1234567|AAA-BBB-CCC-DDD-EEE-FFF-GGG`</strong>(將1234567替換成你要玩的遊戲的Appid,將ABCDEFG替換成CDK)</div>
-				</div>
-				<div class="step">
-					<div class="step-number">2</div>
-					<div>用于解決部份遊戲啟動后還要進行聯網驗證  eg:1250410 微软飞行模拟器</div>
-				</div>
-				
-				 <div class="step">
-					<div class="step-number">3</div>
-					<div>免費提供給捐贈用戶使用，此指令不會消耗CDK,僅用于驗證</div>
-				</div>
-				 <div class="step">
-					<div class="step-number">4</div>
-					<div>此指令會生成lot開頭的驗證代碼，使用方法詳見 <strong>支持需要聯網驗證的單機遊戲</strong></div>
-				</div>
-			</div>
-
-           
-            
         </section>
 		
         <!-- 頁尾 -->
