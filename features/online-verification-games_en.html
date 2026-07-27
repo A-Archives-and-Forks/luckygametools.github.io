@@ -100,7 +100,7 @@
     </script>
     <!-- /SEO metadata -->
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../styles.css?v=20260524-duel-split">
+    <link rel="stylesheet" href="../styles.css?v=20260727-online-apps">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7261994485465423" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -167,6 +167,18 @@
                     <li>Clarify scenarios where a code may be needed each time the game starts.</li>
                     <li>Point users to examples, the CDK manual, and the flow for redeeming lot codes with a CDK.</li>
             </ul>
+        </section>
+
+        <section class="section">
+            <h2><span class="lgt-icon icon-gamepad" aria-hidden="true"></span> Supported Games</h2>
+            <p><strong id="onlineVerificationAppCount">0</strong> games are currently supported. Select an AppID to view its SteamDB details.</p>
+            <div
+                class="online-verification-app-list"
+                id="onlineVerificationAppList"
+                data-empty="No supported games are currently listed."
+                data-open-label="View AppID on SteamDB"
+            ></div>
+            <noscript><p class="online-verification-app-empty">Enable JavaScript to view the supported games list.</p></noscript>
         </section>
 
         <section class="section">
@@ -263,6 +275,8 @@
     </div>
 
     <script src="../twallpaper.js"></script>
+    <script src="online-verification-appids.js?v=20260727"></script>
+    <script src="online-verification-games.js?v=20260727"></script>
     <script src="../script.js?v=20260524-duel-split"></script>
 </body>
 </html>

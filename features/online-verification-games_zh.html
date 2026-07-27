@@ -100,7 +100,7 @@
     </script>
     <!-- /SEO metadata -->
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../styles.css?v=20260524-duel-split">
+    <link rel="stylesheet" href="../styles.css?v=20260727-online-apps">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7261994485465423" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -167,6 +167,18 @@
                     <li>幫助用戶理解每次啟動時可能需要通過代碼進入遊戲的場景。</li>
                     <li>整理支持示例、CDK 手冊入口，以及通過 CDK 兌換 lot 代碼的流程。</li>
             </ul>
+        </section>
+
+        <section class="section">
+            <h2><span class="lgt-icon icon-gamepad" aria-hidden="true"></span> 支持的遊戲</h2>
+            <p>目前支持 <strong id="onlineVerificationAppCount">0</strong> 款遊戲。點擊 AppID 可前往 SteamDB 查看詳情。</p>
+            <div
+                class="online-verification-app-list"
+                id="onlineVerificationAppList"
+                data-empty="暫無支持的遊戲。"
+                data-open-label="前往 SteamDB 查看 AppID"
+            ></div>
+            <noscript><p class="online-verification-app-empty">請啟用 JavaScript 以查看支持的遊戲列表。</p></noscript>
         </section>
 
         <section class="section">
@@ -263,6 +275,8 @@
     </div>
 
     <script src="../twallpaper.js"></script>
+    <script src="online-verification-appids.js?v=20260727"></script>
+    <script src="online-verification-games.js?v=20260727"></script>
     <script src="../script.js?v=20260524-duel-split"></script>
 </body>
 </html>
