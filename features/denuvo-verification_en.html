@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Denuvo Startup Verification Workflow - LuckyGameTools Feature Guide</title>
-    <meta name="description" content="LuckyGameTools Denuvo startup verification guide covering mystery codes, Steam startup order, system change notes, and common troubleshooting.">
-    <meta name="keywords" content="Denuvo startup verification,steam verification,mystery code,luckygametools">
+    <meta name="description" content="LuckyGameTools Denuvo startup verification guide covering mystery codes, Steam startup order, and launch errors 85500000, 85500005, and 85500006.">
+    <meta name="keywords" content="Denuvo startup verification,steam verification,mystery code,85500000,85500005,85500006,luckygametools">
     <!-- SEO metadata -->
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="author" content="LuckyGameTools">
@@ -16,13 +16,13 @@
     <meta property="og:site_name" content="LuckyGameTools">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Denuvo Startup Verification Workflow - LuckyGameTools Feature Guide">
-    <meta property="og:description" content="LuckyGameTools Denuvo startup verification guide covering mystery codes, Steam startup order, system change notes, and common troubleshooting.">
+    <meta property="og:description" content="LuckyGameTools Denuvo startup verification guide covering mystery codes, Steam startup order, and launch errors 85500000, 85500005, and 85500006.">
     <meta property="og:url" content="https://luckygametools.github.io/features/denuvo-verification_en.html">
     <meta property="og:image" content="https://luckygametools.github.io/background.jpg">
     <meta property="og:locale" content="en_US">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Denuvo Startup Verification Workflow - LuckyGameTools Feature Guide">
-    <meta name="twitter:description" content="LuckyGameTools Denuvo startup verification guide covering mystery codes, Steam startup order, system change notes, and common troubleshooting.">
+    <meta name="twitter:description" content="LuckyGameTools Denuvo startup verification guide covering mystery codes, Steam startup order, and launch errors 85500000, 85500005, and 85500006.">
     <meta name="twitter:image" content="https://luckygametools.github.io/background.jpg">
     <script type="application/ld+json">
     {
@@ -30,7 +30,7 @@
       "@type": "WebPage",
       "name": "Denuvo Startup Verification Workflow - LuckyGameTools Feature Guide",
       "url": "https://luckygametools.github.io/features/denuvo-verification_en.html",
-      "description": "LuckyGameTools Denuvo startup verification guide covering mystery codes, Steam startup order, system change notes, and common troubleshooting.",
+      "description": "LuckyGameTools Denuvo startup verification guide covering mystery codes, Steam startup order, and launch errors 85500000, 85500005, and 85500006.",
       "inLanguage": "en",
       "isPartOf": {
         "@type": "WebSite",
@@ -93,6 +93,14 @@
                       "acceptedAnswer": {
                             "@type": "Answer",
                             "text": "Check time, network, game version, and software version first to avoid repeating the same failed state."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "What should I do with launch errors 85500000, 85500005, or 85500006?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "85500000 means not authorized and 85500005 means the license expired or is invalid: follow this page to activate. 85500006 means daily attempts are used up (usually 5 per day); wait for the cooldown and do not keep retrying."
                       }
                 }
           ]
@@ -209,6 +217,24 @@
             </div>
         </section>
 
+        <section class="section" id="launch-errors">
+            <h2><span class="lgt-icon icon-warning" aria-hidden="true"></span> Launch errors that mean activation is needed</h2>
+            <p>If a Denuvo game shows one of these codes on launch, activation is usually required. Match the code first, then either follow the workflow above or wait for the cooldown.</p>
+            <div class="feature-grid feature-scenario-grid">
+                <div class="feature-card">
+                    <h3><code>85500000</code></h3>
+                    <p>Not authorized. Complete the startup verification workflow above.</p>
+                </div>
+                <div class="feature-card">
+                    <h3><code>85500005</code></h3>
+                    <p>The license file has expired or is invalid. The license is valid for 30 minutes; use a fresh code and activate again.</p>
+                </div>
+                <div class="feature-card">
+                    <h3><code>85500006</code></h3>
+                    <p>Activation attempts for the last 24 hours are used up (usually 5 per day). Do not keep retrying; wait for the cooldown.</p>
+                </div>
+            </div>
+        </section>
         <section class="section">
             <h2><span class="lgt-icon icon-warning" aria-hidden="true"></span> Notes</h2>
             <div class="warning">
@@ -230,6 +256,10 @@
                 <div class="feature-faq-item">
                     <h3>Should I retry immediately after failure?</h3>
                     <p>Check time, network, game version, and software version first to avoid repeating the same failed state.</p>
+                </div>
+                <div class="feature-faq-item">
+                    <h3>What should I do with launch errors 85500000, 85500005, or 85500006?</h3>
+                    <p>85500000 means not authorized and 85500005 means the license expired or is invalid: follow this page to activate. 85500006 means daily attempts are used up (usually 5 per day); wait for the cooldown and do not keep retrying.</p>
                 </div>
             </div>
         </section>

@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Denuvo 啟動驗證流程 - LuckyGameTools 功能專題</title>
-    <meta name="description" content="LuckyGameTools Denuvo 啟動驗證專題，說明啟動驗證流程、驗證碼使用、Steam 啟動順序、系統變更注意事項與常見排查。">
-    <meta name="keywords" content="Denuvo啟動驗證,steam驗證,驗證代碼,驗證碼,steam工具,luckygametools">
+    <meta name="description" content="LuckyGameTools Denuvo 啟動驗證專題，說明啟動驗證流程、驗證碼使用、Steam 啟動順序，以及 85500000、85500005、85500006 等啟動報錯的處理方式。">
+    <meta name="keywords" content="Denuvo啟動驗證,steam驗證,驗證代碼,驗證碼,85500000,85500005,85500006,steam工具,luckygametools">
     <!-- SEO metadata -->
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="author" content="LuckyGameTools">
@@ -16,13 +16,13 @@
     <meta property="og:site_name" content="LuckyGameTools">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Denuvo 啟動驗證流程 - LuckyGameTools 功能專題">
-    <meta property="og:description" content="LuckyGameTools Denuvo 啟動驗證專題，說明啟動驗證流程、驗證碼使用、Steam 啟動順序、系統變更注意事項與常見排查。">
+    <meta property="og:description" content="LuckyGameTools Denuvo 啟動驗證專題，說明啟動驗證流程、驗證碼使用、Steam 啟動順序，以及 85500000、85500005、85500006 等啟動報錯的處理方式。">
     <meta property="og:url" content="https://luckygametools.github.io/features/denuvo-verification_zh.html">
     <meta property="og:image" content="https://luckygametools.github.io/background.jpg">
     <meta property="og:locale" content="zh_TW">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Denuvo 啟動驗證流程 - LuckyGameTools 功能專題">
-    <meta name="twitter:description" content="LuckyGameTools Denuvo 啟動驗證專題，說明啟動驗證流程、驗證碼使用、Steam 啟動順序、系統變更注意事項與常見排查。">
+    <meta name="twitter:description" content="LuckyGameTools Denuvo 啟動驗證專題，說明啟動驗證流程、驗證碼使用、Steam 啟動順序，以及 85500000、85500005、85500006 等啟動報錯的處理方式。">
     <meta name="twitter:image" content="https://luckygametools.github.io/background.jpg">
     <script type="application/ld+json">
     {
@@ -30,7 +30,7 @@
       "@type": "WebPage",
       "name": "Denuvo 啟動驗證流程 - LuckyGameTools 功能專題",
       "url": "https://luckygametools.github.io/features/denuvo-verification_zh.html",
-      "description": "LuckyGameTools Denuvo 啟動驗證專題，說明啟動驗證流程、驗證碼使用、Steam 啟動順序、系統變更注意事項與常見排查。",
+      "description": "LuckyGameTools Denuvo 啟動驗證專題，說明啟動驗證流程、驗證碼使用、Steam 啟動順序，以及 85500000、85500005、85500006 等啟動報錯的處理方式。",
       "inLanguage": "zh-Hant",
       "isPartOf": {
         "@type": "WebSite",
@@ -93,6 +93,14 @@
                       "acceptedAnswer": {
                             "@type": "Answer",
                             "text": "建議先檢查時間、網絡、遊戲版本和軟件版本，避免在同一個異常狀態下重復嘗試。"
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "啟動出現 85500000、85500005、85500006 怎麼辦？",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "85500000 沒有授權、85500005 授權過期或失效，都需要按本頁流程激活；85500006 表示 24 小時內次數用盡（大部分是 5 次 / 1 天），需要等待冷卻，不要繼續重試。"
                       }
                 }
           ]
@@ -209,6 +217,24 @@
             </div>
         </section>
 
+        <section class="section" id="launch-errors">
+            <h2><span class="lgt-icon icon-warning" aria-hidden="true"></span> 遊戲啟動報錯：說明需要激活</h2>
+            <p>啟動 D加密遊戲時如果看到這些錯誤碼，通常表示需要激活。先對一下代碼，再決定是走驗證流程還是等待冷卻。</p>
+            <div class="feature-grid feature-scenario-grid">
+                <div class="feature-card">
+                    <h3><code>85500000</code></h3>
+                    <p>沒有授權。按上方流程完成啟動驗證。</p>
+                </div>
+                <div class="feature-card">
+                    <h3><code>85500005</code></h3>
+                    <p>授權文件已過期或失效。授權存在 30 分鐘有效期，過期後請用新的驗證代碼重新激活。</p>
+                </div>
+                <div class="feature-card">
+                    <h3><code>85500006</code></h3>
+                    <p>24 小時內已經用光激活機會（大部分是 5 次 / 1 天）。不要繼續嘗試，等待冷卻後再驗證。</p>
+                </div>
+            </div>
+        </section>
         <section class="section">
             <h2><span class="lgt-icon icon-warning" aria-hidden="true"></span> 注意事項</h2>
             <div class="warning">
@@ -230,6 +256,10 @@
                 <div class="feature-faq-item">
                     <h3>驗證失敗可以重復提交嗎？</h3>
                     <p>建議先檢查時間、網絡、遊戲版本和軟件版本，避免在同一個異常狀態下重復嘗試。</p>
+                </div>
+                <div class="feature-faq-item">
+                    <h3>啟動出現 85500000、85500005、85500006 怎麼辦？</h3>
+                    <p>85500000 沒有授權、85500005 授權過期或失效，都需要按本頁流程激活；85500006 表示 24 小時內次數用盡（大部分是 5 次 / 1 天），需要等待冷卻，不要繼續重試。</p>
                 </div>
             </div>
         </section>

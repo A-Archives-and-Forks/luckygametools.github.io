@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>What is Denuvo (D-encryption) in Steam games? - LuckyGameTools Guides</title>
-    <meta name="description" content="D-encryption is the Chinese community name for Denuvo-protected games. This guide maps the slang to Denuvo Anti-Tamper and points to the LuckyGameTools startup verification page.">
-    <meta name="keywords" content="what is denuvo,d-encryption,denuvo steam,startup verification,luckygametools">
+    <meta name="description" content="D-encryption is the Chinese community name for Denuvo-protected games. Launch errors 85500000, 85500005, and 85500006 usually mean activation is needed. This guide maps the slang and points to the verification workflow.">
+    <meta name="keywords" content="what is denuvo,d-encryption,denuvo steam,startup verification,85500000,85500005,85500006,luckygametools">
     <!-- SEO metadata -->
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="author" content="LuckyGameTools">
@@ -16,20 +16,20 @@
     <meta property="og:site_name" content="LuckyGameTools">
     <meta property="og:type" content="article">
     <meta property="og:title" content="What is Denuvo (D-encryption) in Steam games? - LuckyGameTools Guides">
-    <meta property="og:description" content="D-encryption is the Chinese community name for Denuvo-protected games. This guide maps the slang to Denuvo Anti-Tamper and points to the LuckyGameTools startup verification page.">
+    <meta property="og:description" content="D-encryption is the Chinese community name for Denuvo-protected games. Launch errors 85500000, 85500005, and 85500006 usually mean activation is needed. This guide maps the slang and points to the verification workflow.">
     <meta property="og:url" content="https://luckygametools.github.io/guides/what-is-denuvo_en.html">
     <meta property="og:image" content="https://luckygametools.github.io/background.jpg">
     <meta property="og:locale" content="en_US">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="What is Denuvo (D-encryption) in Steam games? - LuckyGameTools Guides">
-    <meta name="twitter:description" content="D-encryption is the Chinese community name for Denuvo-protected games. This guide maps the slang to Denuvo Anti-Tamper and points to the LuckyGameTools startup verification page.">
+    <meta name="twitter:description" content="D-encryption is the Chinese community name for Denuvo-protected games. Launch errors 85500000, 85500005, and 85500006 usually mean activation is needed. This guide maps the slang and points to the verification workflow.">
     <meta name="twitter:image" content="https://luckygametools.github.io/background.jpg">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Article",
       "headline": "What is Denuvo (D-encryption) in Steam games? - LuckyGameTools Guides",
-      "description": "D-encryption is the Chinese community name for Denuvo-protected games. This guide maps the slang to Denuvo Anti-Tamper and points to the LuckyGameTools startup verification page.",
+      "description": "D-encryption is the Chinese community name for Denuvo-protected games. Launch errors 85500000, 85500005, and 85500006 usually mean activation is needed. This guide maps the slang and points to the verification workflow.",
       "url": "https://luckygametools.github.io/guides/what-is-denuvo_en.html",
       "inLanguage": "en",
       "author": {
@@ -112,6 +112,14 @@
                         "@type": "Answer",
                         "text": "Not always. Environment or file changes can require another verification. Follow the feature guide when that happens."
                   }
+            },
+            {
+                  "@type": "Question",
+                  "name": "What do launch errors 85500000, 85500005, and 85500006 mean?",
+                  "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "They mean the Denuvo game needs activation: 85500000 is not authorized; 85500005 is an expired or invalid license (about 30 minutes); 85500006 means daily activation attempts are used up, so wait for the cooldown."
+                  }
             }
       ]
 }
@@ -161,6 +169,25 @@
             <p><strong>D-encryption</strong> (D加密) is community slang for games that ship with Denuvo Anti-Tamper. Denuvo is third-party startup protection used by some publishers. It is not a Steam AppID, and it is not present on every Steam game.</p>
             <p>Denuvo often binds the game build to the current system environment. After an OS change, hardware change, or a large game-file update, startup verification may be required again. LuckyGameTools only helps complete the supported startup workflow; it is not Denuvo itself.</p>
         </section>
+        <section class="section" id="launch-errors">
+            <h2><span class="lgt-icon icon-warning" aria-hidden="true"></span> Launch errors that mean activation is needed</h2>
+            <p>If a Denuvo-protected game shows one of these error codes on launch, it usually means there is no valid license yet and startup verification is required. This is not a broken Steam install and not a wrong AppID.</p>
+            <div class="feature-grid feature-scenario-grid">
+                <div class="feature-card">
+                    <h3><code>85500000</code></h3>
+                    <p>Not authorized. The game has not completed startup verification and needs activation.</p>
+                </div>
+                <div class="feature-card">
+                    <h3><code>85500005</code></h3>
+                    <p>The license file has expired or is invalid. The license is valid for 30 minutes; after that, activate again.</p>
+                </div>
+                <div class="feature-card">
+                    <h3><code>85500006</code></h3>
+                    <p>Activation attempts for the last 24 hours are used up (usually 5 per day). Do not keep retrying; wait for the cooldown.</p>
+                </div>
+            </div>
+            <p>For <code>85500000</code> and <code>85500005</code>, follow the <a href="../features/denuvo-verification_en.html">Denuvo startup verification</a> guide. For <code>85500006</code>, wait until the cooldown ends, then verify again.</p>
+        </section>
         <section class="section feature-scenarios">
             <h2><span class="lgt-icon icon-list" aria-hidden="true"></span> Term mapping</h2>
             <div class="feature-grid feature-scenario-grid">
@@ -203,6 +230,10 @@
                 <div class="feature-faq-item">
                     <h3>Does one successful verification last forever?</h3>
                     <p>Not always. Environment or file changes can require another verification. Follow the feature guide when that happens.</p>
+                </div>
+                <div class="feature-faq-item">
+                    <h3>What do launch errors 85500000, 85500005, and 85500006 mean?</h3>
+                    <p>They mean the Denuvo game needs activation: 85500000 is not authorized; 85500005 is an expired or invalid license (about 30 minutes); 85500006 means daily activation attempts are used up, so wait for the cooldown.</p>
                 </div>
             </div>
         </section>

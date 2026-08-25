@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>什么是D加密游戏？Denuvo 启动保护说明 - LuckyGameTools 資料庫</title>
-    <meta name="description" content="什麼是D加密游戏？D加密是中文玩家对 Denuvo 启动保护的俗称。本文对照官方名称、常见误解，并链到 LuckyGameTools 验证流程专页。">
-    <meta name="keywords" content="什么是D加密,D加密游戏,Denuvo是什么,Denuvo验证,启动验证,luckygametools">
+    <meta name="description" content="什麼是D加密游戏？D加密是中文玩家对 Denuvo 启动保护的俗称。啟動出現 85500000、85500005、85500006 通常表示需要激活。本文对照官方名称、常见报错，并链到验证流程专页。">
+    <meta name="keywords" content="什么是D加密,D加密游戏,Denuvo是什么,Denuvo验证,启动验证,85500000,85500005,85500006,D加密报错,luckygametools">
     <!-- SEO metadata -->
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="author" content="LuckyGameTools">
@@ -16,20 +16,20 @@
     <meta property="og:site_name" content="LuckyGameTools">
     <meta property="og:type" content="article">
     <meta property="og:title" content="什么是D加密游戏？Denuvo 启动保护说明 - LuckyGameTools 資料庫">
-    <meta property="og:description" content="什麼是D加密游戏？D加密是中文玩家对 Denuvo 启动保护的俗称。本文对照官方名称、常见误解，并链到 LuckyGameTools 验证流程专页。">
+    <meta property="og:description" content="什麼是D加密游戏？D加密是中文玩家对 Denuvo 启动保护的俗称。啟動出現 85500000、85500005、85500006 通常表示需要激活。本文对照官方名称、常见报错，并链到验证流程专页。">
     <meta property="og:url" content="https://luckygametools.github.io/guides/what-is-denuvo_zh.html">
     <meta property="og:image" content="https://luckygametools.github.io/background.jpg">
     <meta property="og:locale" content="zh_TW">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="什么是D加密游戏？Denuvo 启动保护说明 - LuckyGameTools 資料庫">
-    <meta name="twitter:description" content="什麼是D加密游戏？D加密是中文玩家对 Denuvo 启动保护的俗称。本文对照官方名称、常见误解，并链到 LuckyGameTools 验证流程专页。">
+    <meta name="twitter:description" content="什麼是D加密游戏？D加密是中文玩家对 Denuvo 启动保护的俗称。啟動出現 85500000、85500005、85500006 通常表示需要激活。本文对照官方名称、常见报错，并链到验证流程专页。">
     <meta name="twitter:image" content="https://luckygametools.github.io/background.jpg">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Article",
       "headline": "什么是D加密游戏？Denuvo 启动保护说明 - LuckyGameTools 資料庫",
-      "description": "什麼是D加密游戏？D加密是中文玩家对 Denuvo 启动保护的俗称。本文对照官方名称、常见误解，并链到 LuckyGameTools 验证流程专页。",
+      "description": "什麼是D加密游戏？D加密是中文玩家对 Denuvo 启动保护的俗称。啟動出現 85500000、85500005、85500006 通常表示需要激活。本文对照官方名称、常见报错，并链到验证流程专页。",
       "url": "https://luckygametools.github.io/guides/what-is-denuvo_zh.html",
       "inLanguage": "zh-Hant",
       "author": {
@@ -112,6 +112,14 @@
                         "@type": "Answer",
                         "text": "不一定。環境或遊戲檔案變化後，可能需要重新驗證。請以功能專題裡的說明為準。"
                   }
+            },
+            {
+                  "@type": "Question",
+                  "name": "啟動出現 85500000、85500005、85500006 是什麼意思？",
+                  "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "這些錯誤碼表示 D加密遊戲需要激活：85500000 沒有授權；85500005 授權過期或失效（約 30 分鐘有效）；85500006 當天激活次數用盡，需等待冷卻。"
+                  }
             }
       ]
 }
@@ -161,6 +169,25 @@
             <p><strong>D加密遊戲</strong>指接入了 Denuvo Anti-Tamper 的 PC 遊戲。Denuvo 是發行商使用的第三方啟動保護，不是 Steam 自己的 AppID，也不是所有 Steam 遊戲都有。</p>
             <p>帶 Denuvo 的遊戲常會把可執行檔與目前系統環境綁定。換系統、改硬體或大幅更新遊戲檔案後，有時需要重新完成啟動驗證。LuckyGameTools 只協助走完支援遊戲的啟動流程，它不是 Denuvo 本身。</p>
         </section>
+        <section class="section" id="launch-errors">
+            <h2><span class="lgt-icon icon-warning" aria-hidden="true"></span> 遊戲啟動報錯：說明需要激活</h2>
+            <p>D加密遊戲啟動時如果出現下列錯誤碼，通常表示還沒有有效授權，需要先完成啟動驗證。這不是 Steam 壞掉，也不是 AppID 填錯。</p>
+            <div class="feature-grid feature-scenario-grid">
+                <div class="feature-card">
+                    <h3><code>85500000</code></h3>
+                    <p>沒有授權。遊戲尚未完成啟動驗證，需要激活。</p>
+                </div>
+                <div class="feature-card">
+                    <h3><code>85500005</code></h3>
+                    <p>授權文件已過期或失效。授權存在 30 分鐘有效期，過期後需要重新激活。</p>
+                </div>
+                <div class="feature-card">
+                    <h3><code>85500006</code></h3>
+                    <p>24 小時內已經用光激活機會（大部分是 5 次 / 1 天）。此時不要繼續嘗試，需要等待冷卻。</p>
+                </div>
+            </div>
+            <p><code>85500000</code> 和 <code>85500005</code> 請按 <a href="../features/denuvo-verification_zh.html">Denuvo 啟動驗證流程</a> 操作。<code>85500006</code> 是當天次數用盡，等冷卻結束後再驗證。</p>
+        </section>
         <section class="section feature-scenarios">
             <h2><span class="lgt-icon icon-list" aria-hidden="true"></span> 術語對照</h2>
             <div class="feature-grid feature-scenario-grid">
@@ -203,6 +230,10 @@
                 <div class="feature-faq-item">
                     <h3>驗證一次就能永遠不用再做嗎？</h3>
                     <p>不一定。環境或遊戲檔案變化後，可能需要重新驗證。請以功能專題裡的說明為準。</p>
+                </div>
+                <div class="feature-faq-item">
+                    <h3>啟動出現 85500000、85500005、85500006 是什麼意思？</h3>
+                    <p>這些錯誤碼表示 D加密遊戲需要激活：85500000 沒有授權；85500005 授權過期或失效（約 30 分鐘有效）；85500006 當天激活次數用盡，需等待冷卻。</p>
                 </div>
             </div>
         </section>
