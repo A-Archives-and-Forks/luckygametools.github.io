@@ -29,3 +29,13 @@ https://luckygametools.github.io/features/featured-games_en.html
 https://luckygametools.github.io/features/featured-games_zh.html
 https://luckygametools.github.io/features/steam-acceleration_en.html
 https://luckygametools.github.io/features/steam-acceleration_zh.html
+https://luckygametools.github.io/guides/index_en.html
+https://luckygametools.github.io/guides/index_zh.html
+https://luckygametools.github.io/guides/what-is-denuvo_en.html
+https://luckygametools.github.io/guides/what-is-denuvo_zh.html
+https://luckygametools.github.io/guides/what-is-480-online_en.html
+https://luckygametools.github.io/guides/what-is-480-online_zh.html
+https://luckygametools.github.io/guides/what-is-steam-appid_en.html
+https://luckygametools.github.io/guides/what-is-steam-appid_zh.html
+https://luckygametools.github.io/guides/what-is-steamid_en.html
+https://luckygametools.github.io/guides/what-is-steamid_zh.html

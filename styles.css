@@ -1548,15 +1548,20 @@ input:focus-visible {
   background: var(--gradient-primary);
   color: white;
   border-radius: 12px;
+  box-sizing: border-box;
   width: 36px;
   height: 36px;
+  min-width: 36px;
+  max-width: 36px;
   display: flex;
   align-items: center;
   justify-content: center;
+  align-self: flex-start;
   font-weight: 700;
   margin-right: 16px;
-  flex-shrink: 0;
+  flex: 0 0 36px;
   font-size: 0.9rem;
+  line-height: 1;
   box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
 }
 
@@ -1916,6 +1921,35 @@ html.lgt-translate-banner .floating-top-left {
   height: auto;
   width: auto;
   border-radius: var(--radius-sm);
+}
+
+.guide-figure {
+  margin: 16px 0 4px;
+  width: 100%;
+  min-width: 0;
+}
+
+.step > :not(.step-number):not(.step-appid) {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.guide-screenshot.img-default {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  max-height: none;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid rgba(142, 255, 226, 0.18);
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.28);
+}
+
+.guide-figure figcaption {
+  margin-top: 8px;
+  color: #8ea3a2;
+  font-size: 13px;
+  line-height: 1.5;
 }
 
 .cdk-guide-tabs {
